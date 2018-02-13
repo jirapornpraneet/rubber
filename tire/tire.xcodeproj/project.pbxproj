@@ -136,6 +136,7 @@
 				AB59E4C92032C99500C0631C /* Resources */,
 				9E16DA8F643A315E5A78913C /* [CP] Embed Pods Frameworks */,
 				F549EDC0DE23BAD28BFEAB9D /* [CP] Copy Pods Resources */,
+				ABD85541203330FE00B50E4C /* Swiftlint */,
 			);
 			buildRules = (
 			);
@@ -255,6 +256,20 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-tire/Pods-tire-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		ABD85541203330FE00B50E4C /* Swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = Swiftlint;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"";
 		};
 		F549EDC0DE23BAD28BFEAB9D /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
