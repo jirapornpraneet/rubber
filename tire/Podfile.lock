@@ -1,0 +1,68 @@
+PODS:
+  - Alamofire (4.6.0)
+  - CocoaSecurity (1.2.4)
+  - ESPullToRefresh (2.7)
+  - EVReflection/Alamofire (5.4.5):
+    - Alamofire
+    - EVReflection/Core
+  - EVReflection/Core (5.4.5)
+  - Floaty (4.0.0)
+  - IQKeyboardManagerSwift (5.0.7)
+  - KRActivityIndicatorView (2.0.2)
+  - KRProgressHUD (3.0.0):
+    - KRActivityIndicatorView (~> 2.0.2)
+  - Material (2.13.6):
+    - Material/Core (= 2.13.6)
+  - Material/Core (2.13.6):
+    - Motion (~> 1.3.0)
+  - Motion (1.3.5):
+    - Motion/Core (= 1.3.5)
+  - Motion/Core (1.3.5)
+  - NVActivityIndicatorView (4.1.1):
+    - NVActivityIndicatorView/Presenter (= 4.1.1)
+  - NVActivityIndicatorView/Presenter (4.1.1)
+  - OCThumbor (0.3.1):
+    - CocoaSecurity (~> 1.2)
+  - R.swift (4.0.0):
+    - R.swift.Library (~> 4.0.0)
+  - R.swift.Library (4.0.0)
+  - SDWebImage (4.2.3):
+    - SDWebImage/Core (= 4.2.3)
+  - SDWebImage/Core (4.2.3)
+  - SwiftLint (0.24.2)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.6.0)
+  - ESPullToRefresh (~> 2.7)
+  - EVReflection/Alamofire (~> 5.4.4)
+  - Floaty (~> 4.0.0)
+  - IQKeyboardManagerSwift (~> 5.0.7)
+  - KRProgressHUD (~> 3.0.0)
+  - Material (~> 2.13.4)
+  - NVActivityIndicatorView (~> 4.1.1)
+  - OCThumbor (~> 0.3.1)
+  - R.swift (~> 4.0.0)
+  - SDWebImage (~> 4.2.3)
+  - SwiftLint (~> 0.24.2)
+
+SPEC CHECKSUMS:
+  Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
+  CocoaSecurity: d288a6f87e0f363823d2cb83e753814a6944f71a
+  ESPullToRefresh: 119e2710b82b75536aab2bbe4883ba119fca35c8
+  EVReflection: f3205ee16ca5dae19f3aa2b0bda51b7c2dbf2a16
+  Floaty: 4f88811bbf08521807f42355db6a9c0db85d5d78
+  IQKeyboardManagerSwift: 30fb3a61de1af53a95e02b80fb54ed0a19d5ede5
+  KRActivityIndicatorView: 2a9d5442ba8da6274db3afdf46aeaef7cf6dd8ad
+  KRProgressHUD: 14f9fad06080bdb1e59569104a8eda654c83e813
+  Material: ef704dcc1bced32ab7c91ece2ba734da557e3f36
+  Motion: 9f74d115d7f72bb5380a8e3cde2f8a1fc898ac36
+  NVActivityIndicatorView: 60109b9bf46efc2e71ab81453196ccdfdfeea870
+  OCThumbor: 60b83bb204b7f860aecf515ed183a198f30c6f43
+  R.swift: d6a5ec2f55a8441dc0ed9f1f8b37d7d11ae85c66
+  R.swift.Library: c3af34921024333546e23b70e70d0b4e0cffca75
+  SDWebImage: 791bb72962b3492327ddcac4b1880bd1b5458431
+  SwiftLint: 2aa21b96c8d13396a051bc1cb659d2ce1e0075b0
+
+PODFILE CHECKSUM: dfeb86e590d1894561ed7ab864255dbf9780e861
+
+COCOAPODS: 1.3.1

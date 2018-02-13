@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F9CE93CC5848479496BDB2D /* Pods_tire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0695F2EE99C913961CDC9B4 /* Pods_tire.framework */; };
 		AB59E4CF2032C99500C0631C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB59E4CE2032C99500C0631C /* AppDelegate.swift */; };
 		AB59E4D42032C99500C0631C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB59E4D22032C99500C0631C /* Main.storyboard */; };
 		AB59E4D62032C99500C0631C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB59E4D52032C99500C0631C /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		01B3E5692DA6663D2D1B744A /* Pods-tire.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tire.release.xcconfig"; path = "Pods/Target Support Files/Pods-tire/Pods-tire.release.xcconfig"; sourceTree = "<group>"; };
 		AB59E4CB2032C99500C0631C /* tire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tire.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB59E4CE2032C99500C0631C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AB59E4D32032C99500C0631C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		AB59E4DA2032C99500C0631C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ABD8553C20332CE100B50E4C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		ABD8553E20332D4D00B50E4C /* BaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseManager.swift; sourceTree = "<group>"; };
+		F0695F2EE99C913961CDC9B4 /* Pods_tire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE60D6DCF61F5751AACA7E4A /* Pods-tire.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tire.debug.xcconfig"; path = "Pods/Target Support Files/Pods-tire/Pods-tire.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F9CE93CC5848479496BDB2D /* Pods_tire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04C753CAF4857CE169AFE4C5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FE60D6DCF61F5751AACA7E4A /* Pods-tire.debug.xcconfig */,
+				01B3E5692DA6663D2D1B744A /* Pods-tire.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		AB59E4C22032C99500C0631C = {
 			isa = PBXGroup;
 			children = (
 				AB59E4CD2032C99500C0631C /* tire */,
 				AB59E4CC2032C99500C0631C /* Products */,
+				04C753CAF4857CE169AFE4C5 /* Pods */,
+				D5C46511D362D26B13BEC95F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +115,14 @@
 			path = Resource;
 			sourceTree = "<group>";
 		};
+		D5C46511D362D26B13BEC95F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F0695F2EE99C913961CDC9B4 /* Pods_tire.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,9 +130,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AB59E4DD2032C99500C0631C /* Build configuration list for PBXNativeTarget "tire" */;
 			buildPhases = (
+				6AA3C8D7ECD8CB852D9E7A65 /* [CP] Check Pods Manifest.lock */,
 				AB59E4C72032C99500C0631C /* Sources */,
 				AB59E4C82032C99500C0631C /* Frameworks */,
 				AB59E4C92032C99500C0631C /* Resources */,
+				9E16DA8F643A315E5A78913C /* [CP] Embed Pods Frameworks */,
+				F549EDC0DE23BAD28BFEAB9D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -165,6 +192,86 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6AA3C8D7ECD8CB852D9E7A65 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-tire-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9E16DA8F643A315E5A78913C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-tire/Pods-tire-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/CocoaSecurity/CocoaSecurity.framework",
+				"${BUILT_PRODUCTS_DIR}/ESPullToRefresh/ESPullToRefresh.framework",
+				"${BUILT_PRODUCTS_DIR}/EVReflection/EVReflection.framework",
+				"${BUILT_PRODUCTS_DIR}/Floaty/Floaty.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/KRActivityIndicatorView/KRActivityIndicatorView.framework",
+				"${BUILT_PRODUCTS_DIR}/KRProgressHUD/KRProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/Material/Material.framework",
+				"${BUILT_PRODUCTS_DIR}/Motion/Motion.framework",
+				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
+				"${BUILT_PRODUCTS_DIR}/OCThumbor/OCThumbor.framework",
+				"${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaSecurity.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ESPullToRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EVReflection.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Floaty.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KRActivityIndicatorView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KRProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Material.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Motion.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OCThumbor.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Rswift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-tire/Pods-tire-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F549EDC0DE23BAD28BFEAB9D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-tire/Pods-tire-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AB59E4C72032C99500C0631C /* Sources */ = {
@@ -308,6 +415,7 @@
 		};
 		AB59E4DE2032C99500C0631C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE60D6DCF61F5751AACA7E4A /* Pods-tire.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -323,6 +431,7 @@
 		};
 		AB59E4DF2032C99500C0631C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01B3E5692DA6663D2D1B744A /* Pods-tire.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

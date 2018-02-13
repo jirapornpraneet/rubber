@@ -1,0 +1,26 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '9.0'
+
+target 'tire' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+#Alamofire && Network
+pod 'Alamofire', '~> 4.6.0'
+pod 'EVReflection/Alamofire', '~> 5.4.4'
+
+#UI
+pod 'Material', '~> 2.13.4'
+pod 'NVActivityIndicatorView', '~> 4.1.1'
+pod 'Floaty', '~> 4.0.0'
+
+#Utilities
+pod 'OCThumbor', '~> 0.3.1'
+pod 'IQKeyboardManagerSwift', '~> 5.0.7'
+pod 'SwiftLint', '~> 0.24.2'
+pod 'R.swift', '~> 4.0.0'
+pod 'SDWebImage', '~> 4.2.3'
+pod 'ESPullToRefresh', '~> 2.7'
+pod 'KRProgressHUD', '~> 3.0.0'
+
+end
