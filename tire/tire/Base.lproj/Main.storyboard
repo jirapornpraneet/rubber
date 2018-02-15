@@ -35,6 +35,9 @@
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                                <connections>
+                                                    <action selector="emailFieldEditingChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="PVa-v1-OA9"/>
+                                                </connections>
                                             </textField>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aHy-zc-YJh">
                                                 <rect key="frame" x="51" y="50" width="257" height="1"/>
@@ -73,6 +76,9 @@
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits" returnKeyType="go" secureTextEntry="YES"/>
+                                                <connections>
+                                                    <action selector="passwordFieldEditingChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="2ze-fM-X4t"/>
+                                                </connections>
                                             </textField>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nkz-N2-wIi">
                                                 <rect key="frame" x="51" y="50" width="257" height="1"/>
@@ -131,8 +137,8 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jr3-Hy-BH8">
-                                <rect key="frame" x="21" y="430" width="334" height="40"/>
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jr3-Hy-BH8">
+                                <rect key="frame" x="20" y="430" width="335" height="40"/>
                                 <color key="backgroundColor" red="0.8980392157" green="0.1215686275" blue="0.18039215689999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="hlC-B7-Qod"/>
@@ -140,6 +146,9 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="LOGIN"/>
+                                <connections>
+                                    <action selector="loginClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="s5W-Dv-dVX"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.92003184559999995" green="0.6619461434474736" blue="0.71728674309518148" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -148,11 +157,16 @@
                             <constraint firstItem="EYq-fM-7US" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9cy-L8-65U"/>
                             <constraint firstItem="tnH-Vu-ThW" firstAttribute="top" secondItem="EYq-fM-7US" secondAttribute="bottom" constant="114" id="D41-uu-sLR"/>
                             <constraint firstItem="jr3-Hy-BH8" firstAttribute="top" secondItem="tnH-Vu-ThW" secondAttribute="bottom" constant="22" id="QdE-e7-A4q"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jr3-Hy-BH8" secondAttribute="trailing" constant="20" id="cjS-S2-2NV"/>
+                            <constraint firstItem="jr3-Hy-BH8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ePD-Rd-ixX"/>
                             <constraint firstItem="tnH-Vu-ThW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nZK-le-TvI"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="emailTextField" destination="uMV-xQ-uhn" id="R8t-W8-GCY"/>
+                        <outlet property="loginButton" destination="jr3-Hy-BH8" id="m5A-UY-6WN"/>
+                        <outlet property="passwordTextField" destination="gzd-GS-dAj" id="tvw-q5-WUU"/>
                         <segue destination="38W-Pa-jZN" kind="presentation" id="Tmq-bC-jdQ"/>
                     </connections>
                 </viewController>

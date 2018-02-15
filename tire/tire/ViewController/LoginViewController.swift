@@ -7,27 +7,73 @@
 //
 
 import UIKit
+import NVActivityIndicatorView
 
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController, UITextFieldDelegate, NVActivityIndicatorViewable {
+    
+    @IBOutlet var emailTextField: UITextField!
+    @IBOutlet var passwordTextField: UITextField!
+    @IBOutlet var loginButton: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        let tapGestureRecognizerKeyboard: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
+        view.addGestureRecognizer(tapGestureRecognizerKeyboard)
+        
+        emailTextField.delegate = self
+        passwordTextField.delegate = self
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
     }
-    */
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        if textField == emailTextField {
+            passwordTextField.becomeFirstResponder()
+        } else if textField == passwordTextField {
+            loginClicked(self)
+        }
+        return true
+    }
+    
+    func setLoginButtonIsEnabled() {
+        let editTexts = [emailTextField, passwordTextField]
+        let emptyCount = editTexts
+            .filter { (textField) -> Bool in
+                textField?.text == "" }
+            .count
+        loginButton.isEnabled = emptyCount == 0
+    }
+    
+    @IBAction func emailFieldEditingChanged(_ sender: Any) {
+        setLoginButtonIsEnabled()
+    }
+    
+    @IBAction func passwordFieldEditingChanged(_ sender: Any) {
+        setLoginButtonIsEnabled()
+    }
+    
+    @IBAction func loginClicked(_ sender: Any) {
+        self.dismissKeyboard()
+        startAnimating()
+        
+//        LoginManager().login(identity: emailTextField.text!, password: passwordTextField.text!, onSuccess: {(resource) in
+//            self.stopAnimating()
+//            UserDefaults.saveAccessToken(value: resource.accessToken!)
+//            
+//            self.performSegue(withIdentifier: R.segue.loginViewController.toMainView, sender: nil)
+//        }, onFailure: { errorResource in
+//            self.stopAnimating()
+//            ErrorResult().showError(errorResource: errorResource, vc: self)
+//        })
+    }
+
 
 }
