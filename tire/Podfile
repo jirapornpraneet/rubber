@@ -9,6 +9,11 @@ target 'tire' do
 pod 'Alamofire', '~> 4.6.0'
 pod 'EVReflection/Alamofire', '~> 5.4.4'
 
+#Firebase
+pod 'Firebase', '~> 4.7.0'
+pod 'Firebase/Messaging', '~> 4.7.0'
+pod 'Firebase/Crash', '~> 4.7.0'
+
 #UI
 pod 'Material', '~> 2.13.4'
 pod 'NVActivityIndicatorView', '~> 4.1.1'
