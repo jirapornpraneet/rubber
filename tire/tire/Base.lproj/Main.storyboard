@@ -35,9 +35,6 @@
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits" returnKeyType="next"/>
-                                                <connections>
-                                                    <action selector="emailFieldEditingChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="PVa-v1-OA9"/>
-                                                </connections>
                                             </textField>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aHy-zc-YJh">
                                                 <rect key="frame" x="51" y="50" width="257" height="1"/>
@@ -167,6 +164,7 @@
                         <outlet property="emailTextField" destination="uMV-xQ-uhn" id="R8t-W8-GCY"/>
                         <outlet property="loginButton" destination="jr3-Hy-BH8" id="m5A-UY-6WN"/>
                         <outlet property="passwordTextField" destination="gzd-GS-dAj" id="tvw-q5-WUU"/>
+                        <outlet property="usernameTextField" destination="uMV-xQ-uhn" id="A8j-O4-Yow"/>
                         <segue destination="38W-Pa-jZN" kind="presentation" id="Tmq-bC-jdQ"/>
                     </connections>
                 </viewController>
