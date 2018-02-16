@@ -11,17 +11,14 @@ import IQKeyboardManagerSwift
 import NVActivityIndicatorView
 import UserNotifications
 import EVReflection
-import Firebase
-import FirebaseMessaging
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate, MessagingDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate {
 
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        FirebaseApp.configure()
-        Messaging.messaging().delegate = self
+
         IQKeyboardManager.sharedManager().enable = true
         NVActivityIndicatorView.DEFAULT_TYPE = .ballClipRotateMultiple
         PrintOptions.Active = [.UnknownKeypath,
@@ -57,22 +54,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
                                                object: nil)
 
         return true
-    }
-
-    func messaging(_ messaging: Messaging, didRefreshRegistrationToken fcmToken: String) {
-        print("Firebase registration token: \(fcmToken)")
-    }
-
-    func messaging(_ messaging: Messaging, didReceive remoteMessage: MessagingRemoteMessage) {
-        print(remoteMessage)
-    }
-
-    func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
-        Messaging.messaging().apnsToken = deviceToken as Data
-    }
-
-    public func application(received remoteMessage: MessagingRemoteMessage) {
-        print(remoteMessage)
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

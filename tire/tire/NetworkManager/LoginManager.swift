@@ -16,7 +16,7 @@ typealias LoginResourceOnFailure = (ErrorResource) -> Void
 class LoginManager: NSObject {
     func login(username: String, password: String, onSuccess: @escaping  LoginResourceOnSuccess, onFailure: @escaping LoginResourceOnFailure) {
         let params = ["username": username, "password": password, "personUserMode": "true" ]
-        
+
         BaseManager().post(path: loginPath, params: params, onSuccess: { (response: LoginResource) in
             onSuccess(response)
         }, onFailure: { errorResource in

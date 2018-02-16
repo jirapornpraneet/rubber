@@ -63,14 +63,14 @@ class LoginViewController: UIViewController, UITextFieldDelegate, NVActivityIndi
     @IBAction func loginClicked(_ sender: Any) {
         self.dismissKeyboard()
         startAnimating()
-//        LoginManager().login(identity: emailTextField.text!, password: passwordTextField.text!, onSuccess: {(resource) in
-//            self.stopAnimating()
-//            UserDefaults.saveAccessToken(value: resource.accessToken!)
-//            
-//            self.performSegue(withIdentifier: R.segue.loginViewController.toMainView, sender: nil)
-//        }, onFailure: { errorResource in
-//            self.stopAnimating()
-//            ErrorResult().showError(errorResource: errorResource, vc: self)
-//        })
+        LoginManager().login(username: usernameTextField.text!, password: passwordTextField.text!, onSuccess: {(resource) in
+            self.stopAnimating()
+            UserDefaults.saveAccessToken(value: resource.accessToken!)
+
+            self.performSegue(withIdentifier: R.segue.loginViewController.toMainView, sender: nil)
+        }, onFailure: { errorResource in
+            self.stopAnimating()
+            ErrorResult().showError(errorResource: errorResource, vc: self)
+        })
     }
 }
