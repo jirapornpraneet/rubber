@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3F9CE93CC5848479496BDB2D /* Pods_tire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0695F2EE99C913961CDC9B4 /* Pods_tire.framework */; };
+		AB2496CD2036AD7E00F2658F /* CustomerResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2496CC2036AD7E00F2658F /* CustomerResource.swift */; };
 		AB59E4CF2032C99500C0631C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB59E4CE2032C99500C0631C /* AppDelegate.swift */; };
 		AB59E4D42032C99500C0631C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB59E4D22032C99500C0631C /* Main.storyboard */; };
 		AB59E4D62032C99500C0631C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB59E4D52032C99500C0631C /* Assets.xcassets */; };
@@ -22,6 +23,7 @@
 
 /* Begin PBXFileReference section */
 		01B3E5692DA6663D2D1B744A /* Pods-tire.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tire.release.xcconfig"; path = "Pods/Target Support Files/Pods-tire/Pods-tire.release.xcconfig"; sourceTree = "<group>"; };
+		AB2496CC2036AD7E00F2658F /* CustomerResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerResource.swift; sourceTree = "<group>"; };
 		AB59E4CB2032C99500C0631C /* tire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tire.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB59E4CE2032C99500C0631C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AB59E4D32032C99500C0631C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 		ABD8553B20332C5E00B50E4C /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				AB2496CC2036AD7E00F2658F /* CustomerResource.swift */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -329,6 +332,7 @@
 				AB6B4B572035D1BA00BC895A /* UserDefault+Tire.swift in Sources */,
 				AB6B4B552035D13000BC895A /* Constants.swift in Sources */,
 				ABD8553F20332D4D00B50E4C /* BaseManager.swift in Sources */,
+				AB2496CD2036AD7E00F2658F /* CustomerResource.swift in Sources */,
 				ABD8553D20332CE100B50E4C /* LoginViewController.swift in Sources */,
 				AB59E4CF2032C99500C0631C /* AppDelegate.swift in Sources */,
 				AB6B4B592035D7C700BC895A /* FunctionHelper.swift in Sources */,
