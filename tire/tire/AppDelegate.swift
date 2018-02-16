@@ -11,13 +11,17 @@ import IQKeyboardManagerSwift
 import NVActivityIndicatorView
 import UserNotifications
 import EVReflection
+import Firebase
+import FirebaseMessaging
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate, MessagingDelegate {
 
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        FirebaseApp.configure()
+        Messaging.messaging().delegate = self
         IQKeyboardManager.sharedManager().enable = true
         NVActivityIndicatorView.DEFAULT_TYPE = .ballClipRotateMultiple
         PrintOptions.Active = [.UnknownKeypath,
@@ -33,7 +37,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         if !UserDefaults.loadAccessToken().isEmpty {
             self.window?.rootViewController = R.storyboard.main.mainNavigation()
         }
-        
+
         if #available(iOS 10.0, *) {
             // For iOS 10 display notification (sent via APNS)
             UNUserNotificationCenter.current().delegate = self
@@ -53,6 +57,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
                                                object: nil)
 
         return true
+    }
+
+    func messaging(_ messaging: Messaging, didRefreshRegistrationToken fcmToken: String) {
+        print("Firebase registration token: \(fcmToken)")
+    }
+
+    func messaging(_ messaging: Messaging, didReceive remoteMessage: MessagingRemoteMessage) {
+        print(remoteMessage)
+    }
+
+    func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
+        Messaging.messaging().apnsToken = deviceToken as Data
+    }
+
+    public func application(received remoteMessage: MessagingRemoteMessage) {
+        print(remoteMessage)
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
