@@ -165,6 +165,13 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="vkn-9D-diw">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.18563973772039266" green="0.21810432034068467" blue="0.80980329949238583" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="sTP-jU-bPH" kind="relationship" relationship="rootViewController" id="qgj-QX-hnF"/>
@@ -175,20 +182,114 @@
             <point key="canvasLocation" x="866" y="136"/>
         </scene>
         <!--View Controller-->
+        <scene sceneID="vj0-Ex-y1M">
+            <objects>
+                <viewController id="xMi-7R-ret" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="g5I-cO-JJn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="xrq-he-3YO"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yaI-VI-Tk1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2414" y="-341"/>
+        </scene>
+        <!--TireShop-->
         <scene sceneID="g8A-b4-qyv">
             <objects>
                 <viewController id="sTP-jU-bPH" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="r55-Go-m6N">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9rN-Ib-UO7">
+                                <rect key="frame" x="20" y="223.5" width="335" height="220"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Menu" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YY8-3C-lRn">
+                                        <rect key="frame" x="125" y="15" width="84" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="34" id="AeE-OP-tXg"/>
+                                            <constraint firstAttribute="width" constant="84" id="ffX-Yo-pOD"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gFZ-th-H8B">
+                                        <rect key="frame" x="10" y="69" width="315" height="43"/>
+                                        <color key="backgroundColor" red="0.4090850460781707" green="0.68121753449183775" blue="0.85822493654822329" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="43" id="8D4-YG-LFe"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                        <state key="normal" title="SEARCH CUSTOMER">
+                                            <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="xMi-7R-ret" kind="show" id="UqQ-Tn-cgO"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kd4-5U-WzJ">
+                                        <rect key="frame" x="10" y="134" width="315" height="43"/>
+                                        <color key="backgroundColor" red="0.97305089235305786" green="0.79877198516182801" blue="0.4118024280349219" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="43" id="dhm-HC-q2h"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                        <state key="normal" title="NEW CUSTOMER">
+                                            <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="7DE-3q-ZBQ" kind="push" id="nNL-CP-r4x"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="gFZ-th-H8B" firstAttribute="top" secondItem="YY8-3C-lRn" secondAttribute="bottom" constant="20" id="Go2-qH-esi"/>
+                                    <constraint firstItem="YY8-3C-lRn" firstAttribute="centerX" secondItem="9rN-Ib-UO7" secondAttribute="centerX" id="MQr-sB-ypo"/>
+                                    <constraint firstAttribute="trailing" secondItem="Kd4-5U-WzJ" secondAttribute="trailing" constant="10" id="WTc-Su-ARX"/>
+                                    <constraint firstItem="Kd4-5U-WzJ" firstAttribute="top" secondItem="gFZ-th-H8B" secondAttribute="bottom" constant="22" id="atL-xk-IJD"/>
+                                    <constraint firstItem="gFZ-th-H8B" firstAttribute="leading" secondItem="9rN-Ib-UO7" secondAttribute="leading" constant="10" id="bTF-VY-lMg"/>
+                                    <constraint firstAttribute="trailing" secondItem="gFZ-th-H8B" secondAttribute="trailing" constant="10" id="hx7-CN-biG"/>
+                                    <constraint firstItem="Kd4-5U-WzJ" firstAttribute="leading" secondItem="9rN-Ib-UO7" secondAttribute="leading" constant="10" id="vGx-H3-nn4"/>
+                                    <constraint firstItem="YY8-3C-lRn" firstAttribute="top" secondItem="9rN-Ib-UO7" secondAttribute="top" constant="15" id="wf0-0s-bSc"/>
+                                    <constraint firstAttribute="height" constant="220" id="xDN-JG-UOZ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="qtv-VT-EOx" firstAttribute="trailing" secondItem="9rN-Ib-UO7" secondAttribute="trailing" constant="20" id="CAp-ZL-lQM"/>
+                            <constraint firstItem="9rN-Ib-UO7" firstAttribute="centerX" secondItem="r55-Go-m6N" secondAttribute="centerX" id="ReZ-Ue-mZL"/>
+                            <constraint firstItem="9rN-Ib-UO7" firstAttribute="leading" secondItem="qtv-VT-EOx" secondAttribute="leading" constant="20" id="WZE-tv-Ycn"/>
+                            <constraint firstItem="9rN-Ib-UO7" firstAttribute="centerY" secondItem="r55-Go-m6N" secondAttribute="centerY" id="iW6-uQ-dOo"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="qtv-VT-EOx"/>
                     </view>
-                    <navigationItem key="navigationItem" id="dwq-5u-uFx"/>
+                    <navigationItem key="navigationItem" title="TireShop" id="dwq-5u-uFx"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mwx-aC-D1B" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1626" y="135"/>
+            <point key="canvasLocation" x="1624.8" y="134.48275862068968"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="HPT-hu-MFd">
+            <objects>
+                <viewController id="7DE-3q-ZBQ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8sw-Qo-IbZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="PUe-hq-VG3"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="nyZ-D6-5xA"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KfG-Kc-Btt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2438" y="353"/>
         </scene>
     </scenes>
     <resources>
