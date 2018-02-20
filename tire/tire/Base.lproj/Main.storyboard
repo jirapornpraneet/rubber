@@ -215,7 +215,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Je5-3A-2qN">
                                         <rect key="frame" x="20" y="72" width="305" height="35"/>
                                         <subviews>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="First name" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="92r-F7-Jsx">
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="name" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="92r-F7-Jsx">
                                                 <rect key="frame" x="8" y="0.0" width="289" height="35"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="35" id="uwp-AB-Cwf"/>
@@ -258,7 +258,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qwt-r3-Kfx">
                                         <rect key="frame" x="20" y="148" width="305" height="35"/>
                                         <subviews>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="First name" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="3qM-1Z-7x3">
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Surname" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="3qM-1Z-7x3">
                                                 <rect key="frame" x="8" y="0.0" width="289" height="35"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="35" id="01k-7T-rnk"/>
