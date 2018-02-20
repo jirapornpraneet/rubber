@@ -13,6 +13,7 @@
 		AB2496D12036B00D00F2658F /* LoginResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2496D02036B00D00F2658F /* LoginResource.swift */; };
 		AB2496D32036B04A00F2658F /* ErrorResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2496D22036B04A00F2658F /* ErrorResource.swift */; };
 		AB2496D52036B08E00F2658F /* ErrorResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2496D42036B08E00F2658F /* ErrorResult.swift */; };
+		AB4888FC203C781700ED2779 /* SearchCustomerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4888FB203C781700ED2779 /* SearchCustomerViewController.swift */; };
 		AB59E4CF2032C99500C0631C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB59E4CE2032C99500C0631C /* AppDelegate.swift */; };
 		AB59E4D42032C99500C0631C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB59E4D22032C99500C0631C /* Main.storyboard */; };
 		AB59E4D62032C99500C0631C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB59E4D52032C99500C0631C /* Assets.xcassets */; };
@@ -34,6 +35,7 @@
 		AB2496D02036B00D00F2658F /* LoginResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResource.swift; sourceTree = "<group>"; };
 		AB2496D22036B04A00F2658F /* ErrorResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorResource.swift; sourceTree = "<group>"; };
 		AB2496D42036B08E00F2658F /* ErrorResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorResult.swift; sourceTree = "<group>"; };
+		AB4888FB203C781700ED2779 /* SearchCustomerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCustomerViewController.swift; sourceTree = "<group>"; };
 		AB59E4CB2032C99500C0631C /* tire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tire.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB59E4CE2032C99500C0631C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AB59E4D32032C99500C0631C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 				ABD8553C20332CE100B50E4C /* LoginViewController.swift */,
 				AB62AB1A203C6E2D009F8055 /* MainViewController.swift */,
 				AB62AB1C203C6E3F009F8055 /* NewCustomerViewController.swift */,
+				AB4888FB203C781700ED2779 /* SearchCustomerViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -349,6 +352,7 @@
 			files = (
 				AB6B4B572035D1BA00BC895A /* UserDefault+Tire.swift in Sources */,
 				AB62AB1B203C6E2D009F8055 /* MainViewController.swift in Sources */,
+				AB4888FC203C781700ED2779 /* SearchCustomerViewController.swift in Sources */,
 				AB2496D12036B00D00F2658F /* LoginResource.swift in Sources */,
 				AB6B4B552035D13000BC895A /* Constants.swift in Sources */,
 				ABD8553F20332D4D00B50E4C /* BaseManager.swift in Sources */,
