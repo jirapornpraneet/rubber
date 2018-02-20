@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sTP-jU-bPH">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="38W-Pa-jZN">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -121,7 +121,6 @@
                                 <state key="normal" title="LOGIN"/>
                                 <connections>
                                     <action selector="loginClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="s5W-Dv-dVX"/>
-                                    <segue destination="38W-Pa-jZN" kind="presentation" id="Epx-VV-Qa1"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icApple" translatesAutoresizingMaskIntoConstraints="NO" id="zSW-PA-6Wq">
@@ -200,7 +199,7 @@
         <!--TireShop-->
         <scene sceneID="g8A-b4-qyv">
             <objects>
-                <viewController id="sTP-jU-bPH" sceneMemberID="viewController">
+                <viewController id="sTP-jU-bPH" customClass="MainViewController" customModule="tire" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="r55-Go-m6N">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -276,10 +275,10 @@
             </objects>
             <point key="canvasLocation" x="1624.8" y="134.48275862068968"/>
         </scene>
-        <!--View Controller-->
+        <!--New Customer View Controller-->
         <scene sceneID="ev1-vR-AgG">
             <objects>
-                <viewController id="60h-aY-wSi" sceneMemberID="viewController">
+                <viewController id="60h-aY-wSi" customClass="NewCustomerViewController" customModule="tire" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="te3-5U-EOF">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="700"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -784,7 +783,4 @@ layer.masksToBounds</string>
         <image name="icApple" width="302" height="302"/>
         <image name="ic_done_white" width="24" height="24"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="Epx-VV-Qa1"/>
-    </inferredMetricsTieBreakers>
 </document>
