@@ -353,7 +353,7 @@
         <!--TireShop-->
         <scene sceneID="yPH-65-zfS">
             <objects>
-                <viewController id="Kbg-8y-yiK" sceneMemberID="viewController">
+                <viewController id="Kbg-8y-yiK" customClass="CustomerViewController" customModule="tire" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2Gd-ai-2VW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -495,6 +495,16 @@
                         <viewLayoutGuide key="safeArea" id="wov-lJ-aYX"/>
                     </view>
                     <navigationItem key="navigationItem" title="TireShop" id="Gac-GB-BLq"/>
+                    <connections>
+                        <outlet property="addressLabel" destination="R6C-hk-yNI" id="BXk-ca-uIg"/>
+                        <outlet property="carBrandLabel" destination="zL0-fA-WNL" id="GAz-bZ-2Dx"/>
+                        <outlet property="emailLabel" destination="jwN-bh-jLz" id="txs-ct-mUV"/>
+                        <outlet property="firstNameLabel" destination="gTh-nW-av4" id="t6V-eB-7pk"/>
+                        <outlet property="lastNameLabel" destination="x8W-yn-DNd" id="H2W-i7-pZS"/>
+                        <outlet property="licensePlateLabel" destination="1Mb-86-4AX" id="Znc-nE-IzI"/>
+                        <outlet property="phoneNumberLabel" destination="ned-NH-71K" id="Unm-cM-Xs8"/>
+                        <outlet property="provinceLabel" destination="dco-16-WQV" id="BZo-Si-uA4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V8Z-2I-CiQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
