@@ -20,7 +20,7 @@ class NewCustomerViewController: UIViewController, UITextFieldDelegate, NVActivi
     @IBOutlet var emailTextField: UITextField!
     @IBOutlet var phoneNumberTextField: UITextField!
     @IBOutlet var saveButton: UIBarButtonItem!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -87,19 +87,19 @@ class NewCustomerViewController: UIViewController, UITextFieldDelegate, NVActivi
     @IBAction func firstNameFieldEditingChanged(_ sender: Any) {
         setSaveButtonIsEnabled()
     }
-    
+
     @IBAction func lastNameFieldEditingChanged(_ sender: Any) {
         setSaveButtonIsEnabled()
     }
-    
+
     @IBAction func carBrandFieldEditingChanged(_ sender: Any) {
         setSaveButtonIsEnabled()
     }
-    
+
     @IBAction func licensePlateFieldEditingChanged(_ sender: Any) {
         setSaveButtonIsEnabled()
     }
-    
+
     @IBAction func provinceFieldEditingChanged(_ sender: Any) {
         setSaveButtonIsEnabled()
     }
@@ -107,15 +107,15 @@ class NewCustomerViewController: UIViewController, UITextFieldDelegate, NVActivi
     @IBAction func addressFieldEditingChanged(_ sender: Any) {
         setSaveButtonIsEnabled()
     }
-    
+
     @IBAction func emailFieldEditingChanged(_ sender: Any) {
         setSaveButtonIsEnabled()
     }
-    
+
     @IBAction func phoneNumberFieldEditingChanged(_ sender: Any) {
         setSaveButtonIsEnabled()
     }
-    
+
     @IBAction func saveClicked(_ sender: Any) {
         self.dismissKeyboard()
         startAnimating()
