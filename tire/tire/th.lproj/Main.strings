@@ -1,0 +1,126 @@
+
+/* Class = "UILabel"; text = "License plate number : %s"; ObjectID = "1Mb-86-4AX"; */
+"1Mb-86-4AX.text" = "License plate number : %s";
+
+/* Class = "UILabel"; text = "First name"; ObjectID = "3f4-v5-VUj"; */
+"3f4-v5-VUj.text" = "First name";
+
+/* Class = "UITextField"; placeholder = "Surname"; ObjectID = "3qM-1Z-7x3"; */
+"3qM-1Z-7x3.placeholder" = "Surname";
+
+/* Class = "UITextField"; placeholder = "name"; ObjectID = "92r-F7-Jsx"; */
+"92r-F7-Jsx.placeholder" = "name";
+
+/* Class = "UILabel"; text = "TireShop"; ObjectID = "EYq-fM-7US"; */
+"EYq-fM-7US.text" = "TireShop";
+
+/* Class = "UITextField"; placeholder = "Last name"; ObjectID = "GYi-HO-fiH"; */
+"GYi-HO-fiH.placeholder" = "Last name";
+
+/* Class = "UINavigationItem"; title = "TireShop"; ObjectID = "Gac-GB-BLq"; */
+"Gac-GB-BLq.title" = "TireShop";
+
+/* Class = "UITextField"; placeholder = "Province"; ObjectID = "KNv-2n-lQ3"; */
+"KNv-2n-lQ3.placeholder" = "Province";
+
+/* Class = "UIButton"; normalTitle = "NEW CUSTOMER"; ObjectID = "Kd4-5U-WzJ"; */
+"Kd4-5U-WzJ.normalTitle" = "NEW CUSTOMER";
+
+/* Class = "UITextField"; placeholder = "License plate"; ObjectID = "LIS-FE-f2m"; */
+"LIS-FE-f2m.placeholder" = "License plate";
+
+/* Class = "UIButton"; normalTitle = "ยกเลิก"; ObjectID = "NJi-Y6-FWn"; */
+"NJi-Y6-FWn.normalTitle" = "ยกเลิก";
+
+/* Class = "UILabel"; text = "Surname"; ObjectID = "O13-6m-jqW"; */
+"O13-6m-jqW.text" = "Surname";
+
+/* Class = "UILabel"; text = "Address : %s"; ObjectID = "R6C-hk-yNI"; */
+"R6C-hk-yNI.text" = "Address : %s";
+
+/* Class = "UITextField"; placeholder = "Phone number"; ObjectID = "WBn-yi-iYk"; */
+"WBn-yi-iYk.placeholder" = "Phone number";
+
+/* Class = "UILabel"; text = "Customer search"; ObjectID = "WVH-oN-37j"; */
+"WVH-oN-37j.text" = "Customer search";
+
+/* Class = "UILabel"; text = "Name"; ObjectID = "WcY-61-wcb"; */
+"WcY-61-wcb.text" = "Name";
+
+/* Class = "UITextField"; placeholder = "Car brand"; ObjectID = "XJY-nc-NYq"; */
+"XJY-nc-NYq.placeholder" = "Car brand";
+
+/* Class = "UILabel"; text = "Menu"; ObjectID = "YY8-3C-lRn"; */
+"YY8-3C-lRn.text" = "Menu";
+
+/* Class = "UILabel"; text = "Car brand"; ObjectID = "aVR-M5-azV"; */
+"aVR-M5-azV.text" = "Car brand";
+
+/* Class = "UILabel"; text = "Phone number"; ObjectID = "bCr-Td-Jgr"; */
+"bCr-Td-Jgr.text" = "Phone number";
+
+/* Class = "UITextField"; placeholder = "Address"; ObjectID = "bDM-vq-3Kr"; */
+"bDM-vq-3Kr.placeholder" = "Address";
+
+/* Class = "UILabel"; text = "Please fill in the blank"; ObjectID = "cIZ-lK-gX0"; */
+"cIZ-lK-gX0.text" = "Please fill in the blank";
+
+/* Class = "UILabel"; text = "Province : %s"; ObjectID = "dco-16-WQV"; */
+"dco-16-WQV.text" = "Province : %s";
+
+/* Class = "UINavigationItem"; title = "TireShop"; ObjectID = "dwq-5u-uFx"; */
+"dwq-5u-uFx.title" = "TireShop";
+
+/* Class = "UIButton"; normalTitle = "SEARCH CUSTOMER"; ObjectID = "gFZ-th-H8B"; */
+"gFZ-th-H8B.normalTitle" = "SEARCH CUSTOMER";
+
+/* Class = "UILabel"; text = "Name : %s"; ObjectID = "gTh-nW-av4"; */
+"gTh-nW-av4.text" = "Name : %s";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "gzd-GS-dAj"; */
+"gzd-GS-dAj.placeholder" = "Password";
+
+/* Class = "UIButton"; normalTitle = "SEARCH"; ObjectID = "hCh-q3-eej"; */
+"hCh-q3-eej.normalTitle" = "SEARCH";
+
+/* Class = "UIButton"; normalTitle = "LOGIN"; ObjectID = "jr3-Hy-BH8"; */
+"jr3-Hy-BH8.normalTitle" = "LOGIN";
+
+/* Class = "UILabel"; text = "Email : %s"; ObjectID = "jwN-bh-jLz"; */
+"jwN-bh-jLz.text" = "Email : %s";
+
+/* Class = "UILabel"; text = "License plate"; ObjectID = "mpk-Y5-Tqc"; */
+"mpk-Y5-Tqc.text" = "License plate";
+
+/* Class = "UILabel"; text = "Phone number : %s"; ObjectID = "ned-NH-71K"; */
+"ned-NH-71K.text" = "Phone number : %s";
+
+/* Class = "UILabel"; text = "Province"; ObjectID = "oHc-Ol-OkB"; */
+"oHc-Ol-OkB.text" = "Province";
+
+/* Class = "UILabel"; text = "Email"; ObjectID = "oIh-sW-yoa"; */
+"oIh-sW-yoa.text" = "Email";
+
+/* Class = "UITextField"; placeholder = "Email"; ObjectID = "obh-md-fKQ"; */
+"obh-md-fKQ.placeholder" = "Email";
+
+/* Class = "UILabel"; text = "Last name"; ObjectID = "odC-O3-JSz"; */
+"odC-O3-JSz.text" = "Last name";
+
+/* Class = "UITextField"; placeholder = "Username"; ObjectID = "uMV-xQ-uhn"; */
+"uMV-xQ-uhn.placeholder" = "Username";
+
+/* Class = "UILabel"; text = "Address"; ObjectID = "wcG-qq-ljp"; */
+"wcG-qq-ljp.text" = "Address";
+
+/* Class = "UILabel"; text = "Customer information"; ObjectID = "x51-0R-2D1"; */
+"x51-0R-2D1.text" = "Customer information";
+
+/* Class = "UILabel"; text = "Surname : %s"; ObjectID = "x8W-yn-DNd"; */
+"x8W-yn-DNd.text" = "Surname : %s";
+
+/* Class = "UITextField"; placeholder = "First name"; ObjectID = "xKh-RZ-IYJ"; */
+"xKh-RZ-IYJ.placeholder" = "First name";
+
+/* Class = "UILabel"; text = "Car brand : %s"; ObjectID = "zL0-fA-WNL"; */
+"zL0-fA-WNL.text" = "Car brand : %s";
