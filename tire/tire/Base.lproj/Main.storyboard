@@ -637,6 +637,7 @@
                                                                         <fontDescription key="fontDescription" type="system" weight="thin" pointSize="16"/>
                                                                         <textInputTraits key="textInputTraits" returnKeyType="next"/>
                                                                         <connections>
+                                                                            <action selector="firstNameFieldEditingChanged:" destination="60h-aY-wSi" eventType="editingChanged" id="Ygd-a2-7yJ"/>
                                                                             <action selector="usernameFieldEditingChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="fRH-SY-daW"/>
                                                                         </connections>
                                                                     </textField>
@@ -681,6 +682,7 @@
                                                                         <fontDescription key="fontDescription" type="system" weight="thin" pointSize="16"/>
                                                                         <textInputTraits key="textInputTraits" returnKeyType="next"/>
                                                                         <connections>
+                                                                            <action selector="lastNameFieldEditingChanged:" destination="60h-aY-wSi" eventType="editingChanged" id="Tqq-wr-k5r"/>
                                                                             <action selector="usernameFieldEditingChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="nyg-J1-8Rt"/>
                                                                         </connections>
                                                                     </textField>
@@ -725,6 +727,7 @@
                                                                         <fontDescription key="fontDescription" type="system" weight="thin" pointSize="16"/>
                                                                         <textInputTraits key="textInputTraits" returnKeyType="next"/>
                                                                         <connections>
+                                                                            <action selector="carBrandFieldEditingChanged:" destination="60h-aY-wSi" eventType="editingChanged" id="9IF-9h-7cn"/>
                                                                             <action selector="usernameFieldEditingChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="ks4-l7-jib"/>
                                                                         </connections>
                                                                     </textField>
@@ -769,6 +772,7 @@
                                                                         <fontDescription key="fontDescription" type="system" weight="thin" pointSize="16"/>
                                                                         <textInputTraits key="textInputTraits" returnKeyType="next"/>
                                                                         <connections>
+                                                                            <action selector="licensePlateFieldEditingChanged:" destination="60h-aY-wSi" eventType="editingChanged" id="WNf-6Z-Hia"/>
                                                                             <action selector="usernameFieldEditingChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="8LA-VA-kep"/>
                                                                         </connections>
                                                                     </textField>
@@ -813,6 +817,7 @@
                                                                         <fontDescription key="fontDescription" type="system" weight="thin" pointSize="16"/>
                                                                         <textInputTraits key="textInputTraits" returnKeyType="next"/>
                                                                         <connections>
+                                                                            <action selector="provinceFieldEditingChanged:" destination="60h-aY-wSi" eventType="editingChanged" id="OBI-Q1-88c"/>
                                                                             <action selector="usernameFieldEditingChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="Oal-eS-S1a"/>
                                                                         </connections>
                                                                     </textField>
@@ -857,6 +862,7 @@
                                                                         <fontDescription key="fontDescription" type="system" weight="thin" pointSize="16"/>
                                                                         <textInputTraits key="textInputTraits" returnKeyType="next"/>
                                                                         <connections>
+                                                                            <action selector="addressFieldEditingChanged:" destination="60h-aY-wSi" eventType="editingChanged" id="IEa-hx-THb"/>
                                                                             <action selector="usernameFieldEditingChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="Gbs-kk-OcY"/>
                                                                         </connections>
                                                                     </textField>
@@ -901,6 +907,7 @@
                                                                         <fontDescription key="fontDescription" type="system" weight="thin" pointSize="16"/>
                                                                         <textInputTraits key="textInputTraits" returnKeyType="next"/>
                                                                         <connections>
+                                                                            <action selector="emailFieldEditingChanged:" destination="60h-aY-wSi" eventType="editingChanged" id="7pN-vw-3iM"/>
                                                                             <action selector="usernameFieldEditingChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="Zsa-AD-EaR"/>
                                                                         </connections>
                                                                     </textField>
@@ -945,6 +952,7 @@
                                                                         <fontDescription key="fontDescription" type="system" weight="thin" pointSize="16"/>
                                                                         <textInputTraits key="textInputTraits" returnKeyType="next"/>
                                                                         <connections>
+                                                                            <action selector="phoneNumberFieldEditingChanged:" destination="60h-aY-wSi" eventType="editingChanged" id="w6D-62-CGJ"/>
                                                                             <action selector="usernameFieldEditingChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="VIc-Yy-luN"/>
                                                                         </connections>
                                                                     </textField>
@@ -1074,9 +1082,23 @@ layer.masksToBounds</string>
                     <navigationItem key="navigationItem" id="faT-im-I8X">
                         <barButtonItem key="rightBarButtonItem" image="ic_done_white" id="yW8-xI-NJI">
                             <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="saveClicked:" destination="60h-aY-wSi" id="dnv-4U-582"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <size key="freeformSize" width="320" height="700"/>
+                    <connections>
+                        <outlet property="addressTextField" destination="bDM-vq-3Kr" id="e0w-bt-7im"/>
+                        <outlet property="carBrandTextField" destination="XJY-nc-NYq" id="rYf-OQ-ZAv"/>
+                        <outlet property="emailTextField" destination="obh-md-fKQ" id="Tgo-fy-VAg"/>
+                        <outlet property="firstNameTextField" destination="xKh-RZ-IYJ" id="gzs-64-Js2"/>
+                        <outlet property="lastNameTextField" destination="GYi-HO-fiH" id="Agz-bb-lD1"/>
+                        <outlet property="licensePlateTextField" destination="LIS-FE-f2m" id="w6x-aP-8yO"/>
+                        <outlet property="phoneNumberTextField" destination="WBn-yi-iYk" id="LAZ-gJ-f4m"/>
+                        <outlet property="provinceTextField" destination="KNv-2n-lQ3" id="M8K-7j-4Ha"/>
+                        <outlet property="saveButton" destination="yW8-xI-NJI" id="Qss-V5-coe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cb2-FR-hef" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
