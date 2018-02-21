@@ -17,8 +17,8 @@ typealias CustomerResourceOnFailure = (ErrorResource) -> Void
 typealias PostCustomerOnSuccess = (CustomerResource) -> Void
 typealias PostCustomerOnFailure = (ErrorResource) -> Void
 
-class ProfileManager: NSObject {
-    func getProfile(onSuccess: @escaping CustomerResourceOnSuccess, onFailure: @escaping CustomerResourceOnFailure) {
+class CustomerManager: NSObject {
+    func getCustomer(onSuccess: @escaping CustomerResourceOnSuccess, onFailure: @escaping CustomerResourceOnFailure) {
         BaseManager().get(path: customerPath, onSuccess: { (response: CustomerResource) in
             onSuccess(response)
         }, onFailure: { errorResource in
@@ -26,9 +26,10 @@ class ProfileManager: NSObject {
         })
     }
 
-    func postProfile(firstName: String, lastName: String, carBrand: String, licensePlate: String,
-                     province: String, address: String, email: String, phoneNumber: String,
-                     onSuccess: @escaping PostCustomerOnSuccess, onFailure: @escaping PostCustomerOnFailure) {
+    func postCustomer(firstName: String, lastName: String, carBrand: String,
+                      licensePlate: String, province: String, address: String,
+                      email: String, phoneNumber: String, onSuccess: @escaping PostCustomerOnSuccess,
+                      onFailure: @escaping PostCustomerOnFailure) {
         let params = ["firstName": firstName, "lastName": lastName, "carBrand": carBrand,
                       "licensePlate": licensePlate, "province": province, "address": address,
                       "email": email, "phoneNumber": phoneNumber]

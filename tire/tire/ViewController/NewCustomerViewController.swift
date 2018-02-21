@@ -21,6 +21,8 @@ class NewCustomerViewController: UIViewController, UITextFieldDelegate, NVActivi
     @IBOutlet var phoneNumberTextField: UITextField!
     @IBOutlet var saveButton: UIBarButtonItem!
 
+    var customerResource = CustomerResource()
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -119,6 +121,21 @@ class NewCustomerViewController: UIViewController, UITextFieldDelegate, NVActivi
     @IBAction func saveClicked(_ sender: Any) {
         self.dismissKeyboard()
         startAnimating()
-    }
+        let firstName = firstNameTextField.text!
+        let lastName = lastNameTextField.text!
+        let carBrand = carBrandTextField.text!
+        let licensePlate = licensePlateTextField.text!
+        let province = provinceTextField.text!
+        let address = addressTextField.text!
+        let email = emailTextField.text!
+        let phoneNumber = phoneNumberTextField.text!
 
+        CustomerManager().postCustomer(firstName: firstName, lastName: lastName, carBrand: carBrand, licensePlate: licensePlate, province: province, address: address, email: email, phoneNumber: phoneNumber, onSuccess: { (resource) in
+            self.stopAnimating()
+            self.customerResource = resource
+        }, onFailure: { errorResource in
+            self.stopAnimating()
+            ErrorResult().showError(errorResource: errorResource, vc: self)
+        })
+    }
 }
