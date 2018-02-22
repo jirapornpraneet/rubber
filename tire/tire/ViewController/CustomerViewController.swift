@@ -21,7 +21,14 @@ class CustomerViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        firstNameLabel.text = R.string.localizable.name("")
+        lastNameLabel.text = R.string.localizable.surname("")
+        carBrandLabel.text = R.string.localizable.carBrand("")
+        licensePlateLabel.text = R.string.localizable.licensePlateNumber("")
+        provinceLabel.text = R.string.localizable.province("")
+        addressLabel.text = R.string.localizable.address("")
+        emailLabel.text = R.string.localizable.email("")
+        phoneNumberLabel.text = R.string.localizable.phoneNumber("")
         // Do any additional setup after loading the view.
     }
 

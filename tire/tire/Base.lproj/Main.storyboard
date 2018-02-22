@@ -297,6 +297,9 @@
                                         <state key="normal" title="SEARCH">
                                             <color key="titleColor" red="1" green="0.1857388616" blue="0.57339501380000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="Kbg-8y-yiK" kind="push" id="Jkq-co-ibr"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NJi-Y6-FWn">
                                         <rect key="frame" x="174" y="217.5" width="46" height="30"/>
@@ -342,9 +345,6 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="xrq-he-3YO"/>
                     </view>
-                    <connections>
-                        <segue destination="Kbg-8y-yiK" kind="push" id="cCa-Gz-buU"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yaI-VI-Tk1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
