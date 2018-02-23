@@ -9,7 +9,8 @@
 import UIKit
 import Alamofire
 
-let customerPath = "/api/v1/me/profile"
+let getCustomerPath = "/api/v1/me/profile"
+let getSearchCustomerPath = ""
 
 typealias CustomerResourceOnSuccess = (CustomerResource) -> Void
 typealias CustomerResourceOnFailure = (ErrorResource) -> Void
@@ -19,7 +20,7 @@ typealias PostCustomerOnFailure = (ErrorResource) -> Void
 
 class CustomerManager: NSObject {
     func getCustomer(onSuccess: @escaping CustomerResourceOnSuccess, onFailure: @escaping CustomerResourceOnFailure) {
-        BaseManager().get(path: customerPath, onSuccess: { (response: CustomerResource) in
+        BaseManager().get(path: getCustomerPath, onSuccess: { (response: CustomerResource) in
             onSuccess(response)
         }, onFailure: { errorResource in
             onFailure(errorResource)
@@ -33,11 +34,31 @@ class CustomerManager: NSObject {
         let params = ["firstName": firstName, "lastName": lastName, "carBrand": carBrand,
                       "licensePlate": licensePlate, "province": province, "address": address,
                       "email": email, "phoneNumber": phoneNumber]
-        BaseManager().post(path: customerPath, params: params, onSuccess: { (response: CustomerResource) in
+        BaseManager().post(path: getCustomerPath, params: params, onSuccess: { (response: CustomerResource) in
             onSuccess(response)
         }, onFailure: { errorResource in
             onFailure(errorResource)
         })
+    }
+
+    func getSearchCustomer(firstName: String, lastName: String, onSuccess: @escaping CustomerResourceOnSuccess, onFailure: @escaping CustomerResourceOnFailure) {
+
+        var params = [String: String]()
+
+        if !firstName.isEmpty {
+            params["fitstName"] = firstName
+        }
+
+        if !lastName.isEmpty {
+            params["lastName"] = lastName
+        }
+
+        BaseManager().get(path: getSearchCustomerPath, params: params, onSuccess: { (response: CustomerResource) in
+            onSuccess(response)
+        }, onFailure: { errorResource in
+            onFailure(errorResource)
+        })
+
     }
 
 }

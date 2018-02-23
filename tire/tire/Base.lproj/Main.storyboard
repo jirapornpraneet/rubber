@@ -181,10 +181,10 @@
             </objects>
             <point key="canvasLocation" x="866" y="136"/>
         </scene>
-        <!--View Controller-->
+        <!--Search Customer View Controller-->
         <scene sceneID="vj0-Ex-y1M">
             <objects>
-                <viewController id="xMi-7R-ret" sceneMemberID="viewController">
+                <viewController id="xMi-7R-ret" customClass="SearchCustomerViewController" customModule="tire" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="g5I-cO-JJn">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -224,6 +224,7 @@
                                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits" returnKeyType="next"/>
                                                 <connections>
+                                                    <action selector="firstNameFieldEditingChanged:" destination="xMi-7R-ret" eventType="editingChanged" id="ih0-1J-XOo"/>
                                                     <action selector="usernameFieldEditingChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="Zh8-l4-3Vy"/>
                                                 </connections>
                                             </textField>
@@ -267,6 +268,7 @@
                                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits" returnKeyType="next"/>
                                                 <connections>
+                                                    <action selector="lastNameFieldEditingChanged:" destination="xMi-7R-ret" eventType="editingChanged" id="sHO-Ps-uEf"/>
                                                     <action selector="usernameFieldEditingChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="55f-Oc-kB7"/>
                                                 </connections>
                                             </textField>
@@ -288,7 +290,7 @@
                                             <constraint firstItem="3qM-1Z-7x3" firstAttribute="top" secondItem="Qwt-r3-Kfx" secondAttribute="top" id="tce-YY-Gny"/>
                                         </constraints>
                                     </view>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hCh-q3-eej">
+                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hCh-q3-eej">
                                         <rect key="frame" x="240" y="213" width="85" height="39"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="85" id="N6j-Y4-W0t"/>
@@ -298,6 +300,8 @@
                                             <color key="titleColor" red="1" green="0.1857388616" blue="0.57339501380000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
+                                            <action selector="searchClicked:" destination="xMi-7R-ret" eventType="touchUpInside" id="6cf-jk-wG7"/>
+                                            <action selector="searchClicked:" destination="gZ8-38-M9g" eventType="touchUpInside" id="Nrz-WX-YpT"/>
                                             <segue destination="Kbg-8y-yiK" kind="push" id="Jkq-co-ibr"/>
                                         </connections>
                                     </button>
@@ -311,6 +315,10 @@
                                         <state key="normal" title="ยกเลิก">
                                             <color key="titleColor" red="1" green="0.1857388616" blue="0.57339501380000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="cancelClicked:" destination="gZ8-38-M9g" eventType="touchUpInside" id="4Fc-Fc-5RV"/>
+                                            <action selector="cancelClicked:" destination="xMi-7R-ret" eventType="touchUpInside" id="Gcc-Zt-6uJ"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -345,8 +353,14 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="xrq-he-3YO"/>
                     </view>
+                    <connections>
+                        <outlet property="firstNameTextField" destination="92r-F7-Jsx" id="jJ3-ep-esS"/>
+                        <outlet property="lastNameTextField" destination="3qM-1Z-7x3" id="rC5-6G-hHh"/>
+                        <outlet property="searchButton" destination="hCh-q3-eej" id="65s-GF-NK3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yaI-VI-Tk1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="gZ8-38-M9g" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2413.5999999999999" y="-341.37931034482762"/>
         </scene>

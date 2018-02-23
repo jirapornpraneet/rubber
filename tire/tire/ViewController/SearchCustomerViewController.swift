@@ -7,17 +7,71 @@
 //
 
 import UIKit
+import NVActivityIndicatorView
 
-class SearchCustomerViewController: UIViewController {
+class SearchCustomerViewController: UIViewController, UITextFieldDelegate, NVActivityIndicatorViewable {
+
+    @IBOutlet var firstNameTextField: UITextField!
+    @IBOutlet var lastNameTextField: UITextField!
+    @IBOutlet var searchButton: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        firstNameTextField.delegate = self
+        lastNameTextField.delegate = self
 
-        // Do any additional setup after loading the view.
+        let tapGestureRecognizerKeyboard: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
+        view.addGestureRecognizer(tapGestureRecognizerKeyboard)
+    }
+
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
+    }
+
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        if textField == firstNameTextField {
+            lastNameTextField.becomeFirstResponder()
+        } else if textField == lastNameTextField {
+            searchClicked(self)
+        }
+        return true
+    }
+
+    func setSearchButtonIsEnabled() {
+        let editTexts = [firstNameTextField, lastNameTextField]
+        let emptyCount = editTexts
+            .filter { (textField) -> Bool in
+                textField?.text == "" }
+            .count
+        searchButton.isEnabled = emptyCount == 0
+    }
+
+    @IBAction func firstNameFieldEditingChanged(_ sender: Any) {
+        setSearchButtonIsEnabled()
+    }
+
+    @IBAction func lastNameFieldEditingChanged(_ sender: Any) {
+        setSearchButtonIsEnabled()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+
+    @IBAction func searchClicked(_ sender: Any) {
+        startAnimating()
+        CustomerManager().getSearchCustomer(firstName: firstNameTextField.text!, lastName: lastNameTextField.text!, onSuccess: { (resource) in
+            self.stopAnimating()
+//            self.lprResources = resources.items
+        }, onFailure: { errorResource in
+            self.stopAnimating()
+            ErrorResult().showError(errorResource: errorResource, vc: self)
+        })
+    }
+
+    @IBAction func cancelClicked(_ sender: Any) {
+        firstNameTextField.text = ""
+        lastNameTextField.text = ""
     }
 }
