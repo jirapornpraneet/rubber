@@ -10,13 +10,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "tire/ViewController/LoginViewController.swift"
-            timestampString = "542197619.6215301"
+            timestampString = "542199749.410677"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "38"
             endingLineNumber = "38"
-            landmarkName = "textFieldShouldReturn(_:)"
-            landmarkType = "7">
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -26,13 +26,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "tire/ViewController/LoginViewController.swift"
-            timestampString = "542197619.622117"
+            timestampString = "542199749.411249"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "66"
             endingLineNumber = "66"
-            landmarkName = "loginClicked(_:)"
-            landmarkType = "7">
+            landmarkName = "unknown"
+            landmarkType = "0">
             <Locations>
                <Location
                   shouldBeEnabled = "Yes"
@@ -42,7 +42,7 @@
                   moduleName = "tire"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/jirapornpraneet/rubber-ios/tire/tire/ViewController/LoginViewController.swift"
-                  timestampString = "542197620.1421911"
+                  timestampString = "542199749.781836"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "66"
@@ -57,7 +57,71 @@
                   moduleName = "tire"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/jirapornpraneet/rubber-ios/tire/tire/ViewController/LoginViewController.swift"
-                  timestampString = "542197620.144263"
+                  timestampString = "542199749.784936"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "67"
+                  endingLineNumber = "67"
+                  offsetFromSymbolStart = "24">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "tire/ViewController/SearchCustomerViewController.swift"
+            timestampString = "542199749.411549"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "69"
+            endingLineNumber = "69"
+            landmarkName = "searchClicked(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "tire/ViewController/SearchCustomerViewController.swift"
+            timestampString = "542199749.411867"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "66"
+            endingLineNumber = "66"
+            landmarkName = "searchClicked(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "tire.SearchCustomerViewController.searchClicked(Any) -&gt; ()"
+                  moduleName = "tire"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jirapornpraneet/rubber-ios/tire/tire/ViewController/SearchCustomerViewController.swift"
+                  timestampString = "542199749.798071"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "66"
+                  endingLineNumber = "66"
+                  offsetFromSymbolStart = "476">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (tire.CustomerResource) -&gt; () in tire.SearchCustomerViewController.searchClicked(Any) -&gt; ()"
+                  moduleName = "tire"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jirapornpraneet/rubber-ios/tire/tire/ViewController/SearchCustomerViewController.swift"
+                  timestampString = "542199749.80114"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "67"
