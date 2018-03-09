@@ -10,7 +10,7 @@ import UIKit
 import Alamofire
 
 let getCustomerPath = "/web/api-customer/create"
-let getSearchCustomerPath = "/web/api-customer/search?"
+let getSearchCustomerPath = "/web/api-customer/search"
 
 typealias CustomerResourceOnSuccess = (CustomerResource) -> Void
 typealias CustomerResourceOnFailure = (ErrorResource) -> Void
