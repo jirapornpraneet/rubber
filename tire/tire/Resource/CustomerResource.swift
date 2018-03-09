@@ -10,11 +10,15 @@ import Foundation
 import EVReflection
 
 public class CustomerResource: EVObject {
+    var id: Int = 0
     var firstName: String = ""
     var lastName: String = ""
-    var carBrand: String = ""
-    var licensePlate: String = ""
-    var province: String = ""
     var address: String = ""
     var email: String = ""
+    var carBrand: String = ""
+    var prefixLicense: String = ""
+    var suffixLicense: String = ""
+    var province: String = ""
+    var createdAt: String = ""
+    var updatedAt: String = ""
 }
