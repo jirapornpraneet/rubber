@@ -43,15 +43,7 @@ class CustomerManager: NSObject {
 
     func getSearchCustomer(firstName: String, lastName: String, onSuccess: @escaping CustomerResourceOnSuccess, onFailure: @escaping CustomerResourceOnFailure) {
 
-        var params = [String: String]()
-
-        if !firstName.isEmpty {
-            params["fitstName"] = firstName
-        }
-
-        if !lastName.isEmpty {
-            params["lastName"] = lastName
-        }
+        let params = ["firstName": firstName, "lastName": lastName]
 
         BaseManager().get(path: getSearchCustomerPath, params: params, onSuccess: { (response: CustomerResource) in
             onSuccess(response)
