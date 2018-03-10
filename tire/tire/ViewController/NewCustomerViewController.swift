@@ -98,7 +98,11 @@ class NewCustomerViewController: UIViewController, UITextFieldDelegate, NVActivi
         setSaveButtonIsEnabled()
     }
 
-    @IBAction func licensePlateFieldEditingChanged(_ sender: Any) {
+    @IBAction func prefixLicenseFieldEditingChanged(_ sender: Any) {
+        setSaveButtonIsEnabled()
+    }
+
+    @IBAction func suffixLicenseFieldEditingChanged(_ sender: Any) {
         setSaveButtonIsEnabled()
     }
 
@@ -111,10 +115,6 @@ class NewCustomerViewController: UIViewController, UITextFieldDelegate, NVActivi
     }
 
     @IBAction func emailFieldEditingChanged(_ sender: Any) {
-        setSaveButtonIsEnabled()
-    }
-
-    @IBAction func phoneNumberFieldEditingChanged(_ sender: Any) {
         setSaveButtonIsEnabled()
     }
 

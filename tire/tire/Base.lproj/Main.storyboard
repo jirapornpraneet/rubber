@@ -658,7 +658,7 @@
                                                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="16"/>
                                                                 <textInputTraits key="textInputTraits" returnKeyType="next"/>
                                                                 <connections>
-                                                                    <action selector="firstNameFieldEditingChanged:" destination="60h-aY-wSi" eventType="editingChanged" id="Ygd-a2-7yJ"/>
+                                                                    <action selector="firstNameFieldEditingChanged:" destination="60h-aY-wSi" eventType="editingChanged" id="hTK-vo-Ciw"/>
                                                                     <action selector="usernameFieldEditingChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="fRH-SY-daW"/>
                                                                 </connections>
                                                             </textField>
@@ -703,7 +703,7 @@
                                                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="16"/>
                                                                 <textInputTraits key="textInputTraits" returnKeyType="next"/>
                                                                 <connections>
-                                                                    <action selector="lastNameFieldEditingChanged:" destination="60h-aY-wSi" eventType="editingChanged" id="Tqq-wr-k5r"/>
+                                                                    <action selector="lastNameFieldEditingChanged:" destination="60h-aY-wSi" eventType="editingChanged" id="GBi-x8-XFa"/>
                                                                     <action selector="usernameFieldEditingChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="nyg-J1-8Rt"/>
                                                                 </connections>
                                                             </textField>
@@ -748,7 +748,7 @@
                                                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="16"/>
                                                                 <textInputTraits key="textInputTraits" returnKeyType="next"/>
                                                                 <connections>
-                                                                    <action selector="carBrandFieldEditingChanged:" destination="60h-aY-wSi" eventType="editingChanged" id="9IF-9h-7cn"/>
+                                                                    <action selector="carBrandFieldEditingChanged:" destination="60h-aY-wSi" eventType="editingChanged" id="1mr-Q8-FB2"/>
                                                                     <action selector="usernameFieldEditingChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="ks4-l7-jib"/>
                                                                 </connections>
                                                             </textField>
@@ -771,7 +771,7 @@
                                                             <constraint firstItem="XJY-nc-NYq" firstAttribute="top" secondItem="tV8-ku-xcL" secondAttribute="top" id="nLJ-Nr-gUj"/>
                                                         </constraints>
                                                     </view>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="License plate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mpk-Y5-Tqc">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Prefix License" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mpk-Y5-Tqc">
                                                         <rect key="frame" x="10" y="217" width="85" height="21"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="21" id="CVD-Ol-R4M"/>
@@ -793,7 +793,7 @@
                                                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="16"/>
                                                                 <textInputTraits key="textInputTraits" returnKeyType="next"/>
                                                                 <connections>
-                                                                    <action selector="licensePlateFieldEditingChanged:" destination="60h-aY-wSi" eventType="editingChanged" id="WNf-6Z-Hia"/>
+                                                                    <action selector="prefixLicenseFieldEditingChanged:" destination="60h-aY-wSi" eventType="editingChanged" id="vvS-NL-m1G"/>
                                                                     <action selector="usernameFieldEditingChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="8LA-VA-kep"/>
                                                                 </connections>
                                                             </textField>
@@ -816,11 +816,11 @@
                                                             <constraint firstAttribute="trailing" secondItem="LIS-FE-f2m" secondAttribute="trailing" constant="8" id="ypj-9h-Zhm"/>
                                                         </constraints>
                                                     </view>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Province" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oHc-Ol-OkB">
-                                                        <rect key="frame" x="10" y="278" width="85" height="21"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Suffix License" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oHc-Ol-OkB">
+                                                        <rect key="frame" x="10" y="278" width="95" height="21"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="21" id="RhT-eB-ulR"/>
-                                                            <constraint firstAttribute="width" constant="85" id="uGh-fw-9Uf"/>
+                                                            <constraint firstAttribute="width" constant="95" id="uGh-fw-9Uf"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                         <nil key="textColor"/>
@@ -838,7 +838,7 @@
                                                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="16"/>
                                                                 <textInputTraits key="textInputTraits" returnKeyType="next"/>
                                                                 <connections>
-                                                                    <action selector="provinceFieldEditingChanged:" destination="60h-aY-wSi" eventType="editingChanged" id="OBI-Q1-88c"/>
+                                                                    <action selector="suffixLicenseFieldEditingChanged:" destination="60h-aY-wSi" eventType="editingChanged" id="Geb-Fb-0vv"/>
                                                                     <action selector="usernameFieldEditingChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="Oal-eS-S1a"/>
                                                                 </connections>
                                                             </textField>
@@ -861,7 +861,7 @@
                                                             <constraint firstAttribute="bottom" secondItem="CJl-L8-CdR" secondAttribute="bottom" id="sf2-8n-kzT"/>
                                                         </constraints>
                                                     </view>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wcG-qq-ljp">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Province" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wcG-qq-ljp">
                                                         <rect key="frame" x="10" y="339" width="85" height="21"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="21" id="ESa-hU-P1a"/>
@@ -872,23 +872,23 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GTn-5a-0Qm">
-                                                        <rect key="frame" x="4" y="360" width="292" height="60"/>
+                                                        <rect key="frame" x="4" y="360" width="292" height="35"/>
                                                         <subviews>
                                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Address" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="bDM-vq-3Kr">
-                                                                <rect key="frame" x="8" y="0.0" width="276" height="60"/>
+                                                                <rect key="frame" x="8" y="0.0" width="276" height="35"/>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="height" constant="60" id="9sP-zK-9ir"/>
+                                                                    <constraint firstAttribute="height" constant="35" id="9sP-zK-9ir"/>
                                                                 </constraints>
                                                                 <nil key="textColor"/>
                                                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="16"/>
                                                                 <textInputTraits key="textInputTraits" returnKeyType="next"/>
                                                                 <connections>
-                                                                    <action selector="addressFieldEditingChanged:" destination="60h-aY-wSi" eventType="editingChanged" id="IEa-hx-THb"/>
+                                                                    <action selector="provinceFieldEditingChanged:" destination="60h-aY-wSi" eventType="editingChanged" id="ytZ-Lg-k9S"/>
                                                                     <action selector="usernameFieldEditingChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="Gbs-kk-OcY"/>
                                                                 </connections>
                                                             </textField>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="si1-Hp-ugC">
-                                                                <rect key="frame" x="8" y="59" width="276" height="1"/>
+                                                                <rect key="frame" x="8" y="34" width="276" height="1"/>
                                                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="1" id="Mtf-FU-KfU"/>
@@ -898,7 +898,7 @@
                                                         <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
                                                             <constraint firstItem="bDM-vq-3Kr" firstAttribute="leading" secondItem="GTn-5a-0Qm" secondAttribute="leading" constant="8" id="1eZ-S9-k83"/>
-                                                            <constraint firstAttribute="height" constant="60" id="3oL-98-R4f"/>
+                                                            <constraint firstAttribute="height" constant="35" id="3oL-98-R4f"/>
                                                             <constraint firstAttribute="bottom" secondItem="si1-Hp-ugC" secondAttribute="bottom" id="AMK-4f-bwH"/>
                                                             <constraint firstItem="si1-Hp-ugC" firstAttribute="leading" secondItem="GTn-5a-0Qm" secondAttribute="leading" constant="8" id="Fmq-kX-AK7"/>
                                                             <constraint firstAttribute="trailing" secondItem="si1-Hp-ugC" secondAttribute="trailing" constant="8" id="FpR-pc-Lih"/>
@@ -906,8 +906,8 @@
                                                             <constraint firstAttribute="trailing" secondItem="bDM-vq-3Kr" secondAttribute="trailing" constant="8" id="fGF-HG-OAP"/>
                                                         </constraints>
                                                     </view>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oIh-sW-yoa">
-                                                        <rect key="frame" x="10" y="425" width="85" height="21"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oIh-sW-yoa">
+                                                        <rect key="frame" x="10" y="400" width="85" height="21"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="21" id="dqV-mX-pPn"/>
                                                             <constraint firstAttribute="width" constant="85" id="qxh-Xa-X3O"/>
@@ -917,7 +917,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IOZ-PO-9xJ">
-                                                        <rect key="frame" x="4" y="446" width="292" height="35"/>
+                                                        <rect key="frame" x="4" y="421" width="292" height="35"/>
                                                         <subviews>
                                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="obh-md-fKQ">
                                                                 <rect key="frame" x="8" y="0.0" width="276" height="35"/>
@@ -928,7 +928,7 @@
                                                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="16"/>
                                                                 <textInputTraits key="textInputTraits" returnKeyType="next"/>
                                                                 <connections>
-                                                                    <action selector="emailFieldEditingChanged:" destination="60h-aY-wSi" eventType="editingChanged" id="7pN-vw-3iM"/>
+                                                                    <action selector="addressFieldEditingChanged:" destination="60h-aY-wSi" eventType="editingChanged" id="gFp-Eh-FcA"/>
                                                                     <action selector="usernameFieldEditingChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="Zsa-AD-EaR"/>
                                                                 </connections>
                                                             </textField>
@@ -951,8 +951,8 @@
                                                             <constraint firstAttribute="trailing" secondItem="jtQ-Qv-J1t" secondAttribute="trailing" constant="8" id="twg-As-Wz9"/>
                                                         </constraints>
                                                     </view>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bCr-Td-Jgr">
-                                                        <rect key="frame" x="10" y="486" width="95" height="21"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bCr-Td-Jgr">
+                                                        <rect key="frame" x="10" y="461" width="95" height="21"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="95" id="1i7-Uh-kpZ"/>
                                                             <constraint firstAttribute="height" constant="21" id="84F-gO-fSV"/>
@@ -962,7 +962,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5fW-gp-aAU">
-                                                        <rect key="frame" x="4" y="507" width="292" height="35"/>
+                                                        <rect key="frame" x="4" y="482" width="292" height="35"/>
                                                         <subviews>
                                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Phone number" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="WBn-yi-iYk">
                                                                 <rect key="frame" x="8" y="0.0" width="276" height="35"/>
@@ -973,7 +973,7 @@
                                                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="16"/>
                                                                 <textInputTraits key="textInputTraits" returnKeyType="next"/>
                                                                 <connections>
-                                                                    <action selector="phoneNumberFieldEditingChanged:" destination="60h-aY-wSi" eventType="editingChanged" id="w6D-62-CGJ"/>
+                                                                    <action selector="emailFieldEditingChanged:" destination="60h-aY-wSi" eventType="editingChanged" id="Mss-LM-zow"/>
                                                                     <action selector="usernameFieldEditingChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="VIc-Yy-luN"/>
                                                                 </connections>
                                                             </textField>
@@ -1087,15 +1087,15 @@
                     </navigationItem>
                     <size key="freeformSize" width="320" height="700"/>
                     <connections>
-                        <outlet property="addressTextField" destination="bDM-vq-3Kr" id="e0w-bt-7im"/>
-                        <outlet property="carBrandTextField" destination="XJY-nc-NYq" id="rYf-OQ-ZAv"/>
-                        <outlet property="emailTextField" destination="obh-md-fKQ" id="Tgo-fy-VAg"/>
-                        <outlet property="firstNameTextField" destination="xKh-RZ-IYJ" id="gzs-64-Js2"/>
-                        <outlet property="lastNameTextField" destination="GYi-HO-fiH" id="Agz-bb-lD1"/>
-                        <outlet property="licensePlateTextField" destination="LIS-FE-f2m" id="w6x-aP-8yO"/>
-                        <outlet property="phoneNumberTextField" destination="WBn-yi-iYk" id="LAZ-gJ-f4m"/>
-                        <outlet property="provinceTextField" destination="KNv-2n-lQ3" id="M8K-7j-4Ha"/>
+                        <outlet property="addressTextField" destination="obh-md-fKQ" id="ckm-Ck-ctU"/>
+                        <outlet property="carBrandTextField" destination="XJY-nc-NYq" id="0e2-k3-CD0"/>
+                        <outlet property="emailTextField" destination="WBn-yi-iYk" id="Zg0-nV-aMW"/>
+                        <outlet property="firstNameTextField" destination="xKh-RZ-IYJ" id="0ca-Xc-feo"/>
+                        <outlet property="lastNameTextField" destination="GYi-HO-fiH" id="JTr-Tp-Qe4"/>
+                        <outlet property="prefixLicenseTextField" destination="LIS-FE-f2m" id="aZO-Yp-foD"/>
+                        <outlet property="provinceTextField" destination="bDM-vq-3Kr" id="i8O-kL-Ran"/>
                         <outlet property="saveButton" destination="yW8-xI-NJI" id="Qss-V5-coe"/>
+                        <outlet property="suffixLicenseTextField" destination="KNv-2n-lQ3" id="jN2-MO-OZm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cb2-FR-hef" userLabel="First Responder" sceneMemberID="firstResponder"/>
