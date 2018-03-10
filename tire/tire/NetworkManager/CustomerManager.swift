@@ -19,14 +19,6 @@ typealias PostCustomerOnSuccess = (CustomerResource) -> Void
 typealias PostCustomerOnFailure = (ErrorResource) -> Void
 
 class CustomerManager: NSObject {
-    func getCustomer(onSuccess: @escaping CustomerResourceOnSuccess, onFailure: @escaping CustomerResourceOnFailure) {
-        BaseManager().get(path: postCustomerPath, onSuccess: { (response: CustomerResource) in
-            onSuccess(response)
-        }, onFailure: { errorResource in
-            onFailure(errorResource)
-        })
-    }
-
     func postCustomer(firstName: String, lastName: String, address: String,
                       email: String, carBrand: String, prefixLicense: String,
                       suffixLicense: String, province: String,
