@@ -300,9 +300,7 @@
                                             <color key="titleColor" red="1" green="0.1857388616" blue="0.57339501380000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-                                            <action selector="searchClicked:" destination="xMi-7R-ret" eventType="touchUpInside" id="6cf-jk-wG7"/>
-                                            <action selector="searchClicked:" destination="gZ8-38-M9g" eventType="touchUpInside" id="Nrz-WX-YpT"/>
-                                            <segue destination="Kbg-8y-yiK" kind="push" id="Jkq-co-ibr"/>
+                                            <action selector="searchClicked:" destination="xMi-7R-ret" eventType="touchUpInside" id="79C-gl-rBl"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NJi-Y6-FWn">
@@ -356,7 +354,8 @@
                     <connections>
                         <outlet property="firstNameTextField" destination="92r-F7-Jsx" id="jJ3-ep-esS"/>
                         <outlet property="lastNameTextField" destination="3qM-1Z-7x3" id="rC5-6G-hHh"/>
-                        <outlet property="searchButton" destination="hCh-q3-eej" id="65s-GF-NK3"/>
+                        <outlet property="searchButton" destination="hCh-q3-eej" id="ixr-9O-vB4"/>
+                        <segue destination="Kbg-8y-yiK" kind="push" identifier="toDataCustomer" id="T3r-Td-2xI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yaI-VI-Tk1" userLabel="First Responder" sceneMemberID="firstResponder"/>

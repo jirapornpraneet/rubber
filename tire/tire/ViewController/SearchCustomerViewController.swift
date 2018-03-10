@@ -66,11 +66,20 @@ class SearchCustomerViewController: UIViewController, UITextFieldDelegate, NVAct
         CustomerManager().getSearchCustomer(firstName: firstNameTextField.text!, lastName: lastNameTextField.text!, onSuccess: { (resource) in
             self.stopAnimating()
             self.customerResource = resource
-            print("Customer", self.customerResource)
+            self.performSegue(withIdentifier: R.segue.searchCustomerViewController.toDataCustomer, sender: self)
         }, onFailure: { errorResource in
             self.stopAnimating()
             ErrorResult().showError(errorResource: errorResource, vc: self)
         })
+    }
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let typedInfo = R.segue.searchCustomerViewController.toDataCustomer(segue: segue) {
+        }
+//        if let typedInfo = R.segue.lprViewController.toLPRDetail(segue: segue) {
+//            typedInfo.destination.lprResource = lprResources[indexRow]
+//            typedInfo.destination.isFromCameraHubSelected = false
+//        }
     }
 
     @IBAction func cancelClicked(_ sender: Any) {
