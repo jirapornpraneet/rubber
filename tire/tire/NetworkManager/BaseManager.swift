@@ -23,13 +23,17 @@ class BaseManager: NSObject {
             .request(Constants.apiUrl + path, parameters: params, headers: headers)
             .validate(statusCode: 200..<300)
             .validate(contentType: ["application/json"])
-            .responseObject {(response: DataResponse<T>) in
+            .responseArray {(response: DataResponse<[T]>) in
                 UIApplication.shared.isNetworkActivityIndicatorVisible = false
-                if response.result.isSuccess {
-                    onSuccess(response.value!)
-                    return
+                let forecastArray = response.result.value
+                if let forecastArray = forecastArray {
+                    for forecast in forecastArray {
+                        onSuccess(forecast)
+                        return
+                    }
                 }
-                onFailure(self.handleError(response: response))
+                print("Error", response)
+//                onFailure(self.handleErrorArray(response: response))
         }
     }
 
