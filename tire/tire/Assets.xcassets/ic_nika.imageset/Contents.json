@@ -2,15 +2,17 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "icApple.png",
+      "filename" : "ic_nika.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
+      "filename" : "ic_nika@2x.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
+      "filename" : "ic_nika@3x.png",
       "scale" : "3x"
     }
   ],
