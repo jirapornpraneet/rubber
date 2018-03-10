@@ -20,6 +20,8 @@ class NewCustomerViewController: UIViewController, UITextFieldDelegate, NVActivi
     @IBOutlet var addressTextField: UITextField!
     @IBOutlet var emailTextField: UITextField!
     @IBOutlet var saveButton: UIBarButtonItem!
+    
+    @IBOutlet var provinceView: UIView!
 
     var customerResource = CustomerResource()
 
@@ -35,8 +37,23 @@ class NewCustomerViewController: UIViewController, UITextFieldDelegate, NVActivi
         addressTextField.delegate = self
         emailTextField.delegate = self
 
+        provinceTextField.text = "กรุงเทพมหานคร"
+
         let tapGestureRecognizerKeyboard: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
         view.addGestureRecognizer(tapGestureRecognizerKeyboard)
+
+        let tapGestureRecognizerProvinceView = UITapGestureRecognizer(target: self, action: #selector(provinceViewAction))
+        provinceView.isUserInteractionEnabled = true
+        provinceView.addGestureRecognizer(tapGestureRecognizerProvinceView)
+    }
+
+    func receiveDataFromProvinceView(province: String) {
+        provinceTextField.text = province
+    }
+
+    @objc func provinceViewAction() {
+        self.view.endEditing(true)
+        self.performSegue(withIdentifier: R.segue.newCustomerViewController.toSelectProvince, sender: self)
     }
 
     @objc func dismissKeyboard() {
@@ -151,5 +168,11 @@ class NewCustomerViewController: UIViewController, UITextFieldDelegate, NVActivi
         }
         alertController.addAction(okAction)
         self.present(alertController, animated: true, completion: nil)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let typedInfo = R.segue.newCustomerViewController.toSelectProvince(segue: segue) {
+            typedInfo.destination.delegate = self
+        }
     }
 }

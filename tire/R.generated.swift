@@ -72,12 +72,15 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
-  /// This `R.reuseIdentifier` struct is generated, and contains static references to 0 reuse identifiers.
+  /// This `R.reuseIdentifier` struct is generated, and contains static references to 1 reuse identifiers.
   struct reuseIdentifier {
+    /// Reuse identifier `provinceCells`.
+    static let provinceCells: Rswift.ReuseIdentifier<UIKit.UITableViewCell> = Rswift.ReuseIdentifier(identifier: "provinceCells")
+    
     fileprivate init() {}
   }
   
-  /// This `R.segue` struct is generated, and contains static references to 2 view controllers.
+  /// This `R.segue` struct is generated, and contains static references to 3 view controllers.
   struct segue {
     /// This struct is generated for `LoginViewController`, and contains static references to 1 segues.
     struct loginViewController {
@@ -89,6 +92,21 @@ struct R: Rswift.Validatable {
       /// For use inside `prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)`.
       static func toMainView(segue: UIKit.UIStoryboardSegue) -> Rswift.TypedStoryboardSegueInfo<UIKit.UIStoryboardSegue, LoginViewController, UIKit.UINavigationController>? {
         return Rswift.TypedStoryboardSegueInfo(segueIdentifier: R.segue.loginViewController.toMainView, segue: segue)
+      }
+      
+      fileprivate init() {}
+    }
+    
+    /// This struct is generated for `NewCustomerViewController`, and contains static references to 1 segues.
+    struct newCustomerViewController {
+      /// Segue identifier `toSelectProvince`.
+      static let toSelectProvince: Rswift.StoryboardSegueIdentifier<UIKit.UIStoryboardSegue, NewCustomerViewController, ProvinceTableViewController> = Rswift.StoryboardSegueIdentifier(identifier: "toSelectProvince")
+      
+      /// Optionally returns a typed version of segue `toSelectProvince`.
+      /// Returns nil if either the segue identifier, the source, destination, or segue types don't match.
+      /// For use inside `prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)`.
+      static func toSelectProvince(segue: UIKit.UIStoryboardSegue) -> Rswift.TypedStoryboardSegueInfo<UIKit.UIStoryboardSegue, NewCustomerViewController, ProvinceTableViewController>? {
+        return Rswift.TypedStoryboardSegueInfo(segueIdentifier: R.segue.newCustomerViewController.toSelectProvince, segue: segue)
       }
       
       fileprivate init() {}

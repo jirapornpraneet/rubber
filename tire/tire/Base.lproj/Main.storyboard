@@ -793,7 +793,7 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wpa-vC-qir">
                                                         <rect key="frame" x="4" y="238" width="292" height="35"/>
                                                         <subviews>
-                                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="License plate" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="LIS-FE-f2m">
+                                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="LIS-FE-f2m">
                                                                 <rect key="frame" x="8" y="0.0" width="276" height="35"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="35" id="plo-K4-ABQ"/>
@@ -838,7 +838,7 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kwd-mw-xpm">
                                                         <rect key="frame" x="4" y="299" width="292" height="35"/>
                                                         <subviews>
-                                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Province" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="KNv-2n-lQ3">
+                                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="KNv-2n-lQ3">
                                                                 <rect key="frame" x="8" y="0.0" width="276" height="35"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="35" id="Hlv-9k-0wW"/>
@@ -928,7 +928,7 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IOZ-PO-9xJ">
                                                         <rect key="frame" x="4" y="421" width="292" height="35"/>
                                                         <subviews>
-                                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="obh-md-fKQ">
+                                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Address" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="obh-md-fKQ">
                                                                 <rect key="frame" x="8" y="0.0" width="276" height="35"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="35" id="fQu-S5-z62"/>
@@ -973,7 +973,7 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5fW-gp-aAU">
                                                         <rect key="frame" x="4" y="482" width="292" height="35"/>
                                                         <subviews>
-                                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Phone number" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="WBn-yi-iYk">
+                                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="WBn-yi-iYk">
                                                                 <rect key="frame" x="8" y="0.0" width="276" height="35"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="35" id="mTi-uy-p4w"/>
@@ -1103,13 +1103,44 @@
                         <outlet property="lastNameTextField" destination="GYi-HO-fiH" id="JTr-Tp-Qe4"/>
                         <outlet property="prefixLicenseTextField" destination="LIS-FE-f2m" id="aZO-Yp-foD"/>
                         <outlet property="provinceTextField" destination="bDM-vq-3Kr" id="i8O-kL-Ran"/>
+                        <outlet property="provinceView" destination="bDM-vq-3Kr" id="k7c-5H-Ebx"/>
                         <outlet property="saveButton" destination="yW8-xI-NJI" id="Qss-V5-coe"/>
                         <outlet property="suffixLicenseTextField" destination="KNv-2n-lQ3" id="jN2-MO-OZm"/>
+                        <segue destination="OcV-vW-Th2" kind="push" identifier="toSelectProvince" id="UHc-Uu-nih"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cb2-FR-hef" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2412.8000000000002" y="382.3088455772114"/>
+        </scene>
+        <!--Province Table View Controller-->
+        <scene sceneID="4Ll-5a-lVe">
+            <objects>
+                <tableViewController id="OcV-vW-Th2" customClass="ProvinceTableViewController" customModule="tire" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="OSH-Q4-pWy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="provinceCells" id="8Jt-G6-tR7">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8Jt-G6-tR7" id="nEU-7R-dtp">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="OcV-vW-Th2" id="hSD-oy-MEh"/>
+                            <outlet property="delegate" destination="OcV-vW-Th2" id="Ilp-1K-JD4"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="Qeh-n1-q5F"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L3G-ED-VK5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3121" y="360"/>
         </scene>
     </scenes>
     <resources>
