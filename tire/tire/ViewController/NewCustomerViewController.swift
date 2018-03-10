@@ -130,12 +130,26 @@ class NewCustomerViewController: UIViewController, UITextFieldDelegate, NVActivi
         let address = addressTextField.text!
         let email = emailTextField.text!
 
-        CustomerManager().postCustomer(firstName: firstName, lastName: lastName, address: address, email: email, carBrand: carBrand, prefixLicense: prefixLicense, suffixLicense: suffixLicense, province: province, onSuccess: { (resource) in
+        CustomerManager().postCustomer(firstName: firstName, lastName: lastName,
+                                       address: address, email: email, carBrand: carBrand,
+                                       prefixLicense: prefixLicense, suffixLicense: suffixLicense,
+                                       province: province, onSuccess: { (resource) in
             self.stopAnimating()
-            self.customerResource = resource
+            self.showAlertSuccess()
         }, onFailure: { errorResource in
             self.stopAnimating()
             ErrorResult().showError(errorResource: errorResource, vc: self)
         })
+    }
+
+    func showAlertSuccess() {
+        let alertController = UIAlertController(title: "บันทึก",
+                                                message: "บันทึกข้อมูลเรียบร้อย",
+                                                preferredStyle: UIAlertControllerStyle.alert)
+
+        let okAction = UIAlertAction(title: "Ok", style: UIAlertActionStyle.default) { (_: UIAlertAction) -> Void in
+        }
+        alertController.addAction(okAction)
+        self.present(alertController, animated: true, completion: nil)
     }
 }
