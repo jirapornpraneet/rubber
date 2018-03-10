@@ -15,7 +15,7 @@ class SearchCustomerViewController: UIViewController, UITextFieldDelegate, NVAct
     @IBOutlet var lastNameTextField: UITextField!
     @IBOutlet var searchButton: UIButton!
 
-    var customerResource = CustomerResource()
+    var customerResources = CustomerResource()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -65,8 +65,7 @@ class SearchCustomerViewController: UIViewController, UITextFieldDelegate, NVAct
         startAnimating()
         CustomerManager().getSearchCustomer(firstName: firstNameTextField.text!, lastName: lastNameTextField.text!, onSuccess: { (resource) in
             self.stopAnimating()
-            self.customerResource = resource
-            print("CustomerResource", self.customerResource)
+            self.customerResources = resource
             self.performSegue(withIdentifier: R.segue.searchCustomerViewController.toDataCustomer, sender: self)
         }, onFailure: { errorResource in
             self.stopAnimating()
@@ -76,11 +75,8 @@ class SearchCustomerViewController: UIViewController, UITextFieldDelegate, NVAct
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let typedInfo = R.segue.searchCustomerViewController.toDataCustomer(segue: segue) {
+            typedInfo.destination.customerResource = customerResources
         }
-//        if let typedInfo = R.segue.lprViewController.toLPRDetail(segue: segue) {
-//            typedInfo.destination.lprResource = lprResources[indexRow]
-//            typedInfo.destination.isFromCameraHubSelected = false
-//        }
     }
 
     @IBAction func cancelClicked(_ sender: Any) {

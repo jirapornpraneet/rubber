@@ -19,15 +19,18 @@ class CustomerViewController: UIViewController {
     @IBOutlet var emailLabel: UILabel!
     @IBOutlet var phoneNumberLabel: UILabel!
 
+    var customerResource: CustomerResource!
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        firstNameLabel.text = R.string.localizable.name("")
-        lastNameLabel.text = R.string.localizable.surname("")
-        carBrandLabel.text = R.string.localizable.carBrand("")
-        licensePlateLabel.text = R.string.localizable.licensePlateNumber("")
-        provinceLabel.text = R.string.localizable.province("")
-        addressLabel.text = R.string.localizable.address("")
-        emailLabel.text = R.string.localizable.email("")
+        firstNameLabel.text = R.string.localizable.name(customerResource.firstName)
+        lastNameLabel.text = R.string.localizable.surname(customerResource.lastName)
+        carBrandLabel.text = R.string.localizable.carBrand(customerResource.carBrand)
+        let licensePlate = customerResource.prefixLicense + customerResource.suffixLicense
+        licensePlateLabel.text = R.string.localizable.licensePlateNumber(licensePlate)
+        provinceLabel.text = R.string.localizable.province(customerResource.province)
+        addressLabel.text = R.string.localizable.address(customerResource.address)
+        emailLabel.text = R.string.localizable.email(customerResource.email)
         phoneNumberLabel.text = R.string.localizable.phoneNumber("")
         // Do any additional setup after loading the view.
     }
