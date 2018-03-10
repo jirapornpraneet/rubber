@@ -20,7 +20,6 @@ class NewCustomerViewController: UIViewController, UITextFieldDelegate, NVActivi
     @IBOutlet var addressTextField: UITextField!
     @IBOutlet var emailTextField: UITextField!
     @IBOutlet var saveButton: UIBarButtonItem!
-    
     @IBOutlet var provinceView: UIView!
 
     var customerResource = CustomerResource()
@@ -169,7 +168,7 @@ class NewCustomerViewController: UIViewController, UITextFieldDelegate, NVActivi
         alertController.addAction(okAction)
         self.present(alertController, animated: true, completion: nil)
     }
-    
+
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let typedInfo = R.segue.newCustomerViewController.toSelectProvince(segue: segue) {
             typedInfo.destination.delegate = self

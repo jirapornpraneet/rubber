@@ -9,8 +9,6 @@
 import Foundation
 import EVReflection
 
-
-
 public class CustomerResource: EVObject {
     var id: Int = 0
     var firstName: String = ""
