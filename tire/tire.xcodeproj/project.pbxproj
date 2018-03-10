@@ -23,6 +23,7 @@
 		AB6B4B552035D13000BC895A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6B4B542035D13000BC895A /* Constants.swift */; };
 		AB6B4B572035D1BA00BC895A /* UserDefault+Tire.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6B4B562035D1BA00BC895A /* UserDefault+Tire.swift */; };
 		AB6B4B592035D7C700BC895A /* FunctionHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6B4B582035D7C700BC895A /* FunctionHelper.swift */; };
+		AB7C8681204E39DF003406DB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AB7C8680204E39DF003406DB /* GoogleService-Info.plist */; };
 		ABCF56F4203D2554002CCBAB /* CustomerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCF56F3203D2554002CCBAB /* CustomerManager.swift */; };
 		ABCF56F6203D9073002CCBAB /* CustomerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCF56F5203D9073002CCBAB /* CustomerViewController.swift */; };
 		ABCF56FB203D923D002CCBAB /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = ABCF56FD203D923D002CCBAB /* Localizable.strings */; };
@@ -50,6 +51,7 @@
 		AB6B4B542035D13000BC895A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		AB6B4B562035D1BA00BC895A /* UserDefault+Tire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefault+Tire.swift"; sourceTree = "<group>"; };
 		AB6B4B582035D7C700BC895A /* FunctionHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionHelper.swift; sourceTree = "<group>"; };
+		AB7C8680204E39DF003406DB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		ABCF56F3203D2554002CCBAB /* CustomerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerManager.swift; sourceTree = "<group>"; };
 		ABCF56F5203D9073002CCBAB /* CustomerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerViewController.swift; sourceTree = "<group>"; };
 		ABCF56F7203D91A6002CCBAB /* th */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = th; path = th.lproj/Main.strings; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 				ABD8553B20332C5E00B50E4C /* Resource */,
 				ABD8553820332C5E00B50E4C /* ViewController */,
 				AB59E4CE2032C99500C0631C /* AppDelegate.swift */,
+				AB7C8680204E39DF003406DB /* GoogleService-Info.plist */,
 				AB59E4D22032C99500C0631C /* Main.storyboard */,
 				AB59E4D52032C99500C0631C /* Assets.xcassets */,
 				AB59E4D72032C99500C0631C /* LaunchScreen.storyboard */,
@@ -238,6 +241,7 @@
 			files = (
 				AB59E4D92032C99500C0631C /* LaunchScreen.storyboard in Resources */,
 				ABCF56FB203D923D002CCBAB /* Localizable.strings in Resources */,
+				AB7C8681204E39DF003406DB /* GoogleService-Info.plist in Resources */,
 				AB59E4D62032C99500C0631C /* Assets.xcassets in Resources */,
 				AB59E4D42032C99500C0631C /* Main.storyboard in Resources */,
 			);

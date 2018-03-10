@@ -10,7 +10,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "tire/NetworkManager/ErrorResult.swift"
-            timestampString = "542366484.442588"
+            timestampString = "542368048.4693559"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "36"
@@ -26,77 +26,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "tire/NetworkManager/ErrorResult.swift"
-            timestampString = "542366484.442675"
+            timestampString = "542368048.4694639"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "72"
             endingLineNumber = "72"
             landmarkName = "showError(errorResource:vc:)"
             landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "tire/NetworkManager/CustomerManager.swift"
-            timestampString = "542361309.061186"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "37"
-            endingLineNumber = "37"
-            landmarkName = "getSearchCustomer(firstName:lastName:onSuccess:onFailure:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "tire/NetworkManager/CustomerManager.swift"
-            timestampString = "542361310.208557"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "41"
-            endingLineNumber = "41"
-            landmarkName = "getSearchCustomer(firstName:lastName:onSuccess:onFailure:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "tire.CustomerManager.getSearchCustomer(firstName: Swift.String, lastName: Swift.String, onSuccess: (tire.CustomerResource) -&gt; (), onFailure: (tire.ErrorResource) -&gt; ()) -&gt; ()"
-                  moduleName = "tire"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jirapornpraneet/rubber-ios/tire/tire/NetworkManager/CustomerManager.swift"
-                  timestampString = "542366484.609699"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "41"
-                  endingLineNumber = "41"
-                  offsetFromSymbolStart = "465">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (tire.CustomerResource) -&gt; () in tire.CustomerManager.getSearchCustomer(firstName: Swift.String, lastName: Swift.String, onSuccess: (tire.CustomerResource) -&gt; (), onFailure: (tire.ErrorResource) -&gt; ()) -&gt; ()"
-                  moduleName = "tire"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jirapornpraneet/rubber-ios/tire/tire/NetworkManager/CustomerManager.swift"
-                  timestampString = "542366484.613151"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "42"
-                  endingLineNumber = "42"
-                  offsetFromSymbolStart = "22">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

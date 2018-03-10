@@ -11,15 +11,18 @@ import IQKeyboardManagerSwift
 import NVActivityIndicatorView
 import UserNotifications
 import EVReflection
+import Firebase
+import FirebaseMessaging
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate, MessagingDelegate {
 
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-
+        FirebaseApp.configure()
         IQKeyboardManager.sharedManager().enable = true
+        Messaging.messaging().delegate = self
         NVActivityIndicatorView.DEFAULT_TYPE = .ballClipRotateMultiple
         PrintOptions.Active = [.UnknownKeypath,
                                .ShouldExtendNSObject,
@@ -74,6 +77,28 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
 
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+    }
+
+    func messaging(_ messaging: Messaging, didRefreshRegistrationToken fcmToken: String) {
+        print("Firebase registration token: \(fcmToken)")
+    }
+
+    func messaging(_ messaging: Messaging, didReceive remoteMessage: MessagingRemoteMessage) {
+        print(remoteMessage)
+    }
+
+    func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
+        Messaging.messaging().apnsToken = deviceToken as Data
+    }
+
+    public func application(received remoteMessage: MessagingRemoteMessage) {
+        print(remoteMessage)
+    }
+
+    func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable: Any]) {
+        // Print full message.
+        print("userInfo: \(userInfo)")
+        print(userInfo)
     }
 
     @objc func presentLoginView() {
