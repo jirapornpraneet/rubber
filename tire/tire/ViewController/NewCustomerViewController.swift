@@ -14,11 +14,11 @@ class NewCustomerViewController: UIViewController, UITextFieldDelegate, NVActivi
     @IBOutlet var firstNameTextField: UITextField!
     @IBOutlet var lastNameTextField: UITextField!
     @IBOutlet var carBrandTextField: UITextField!
-    @IBOutlet var licensePlateTextField: UITextField!
+    @IBOutlet var prefixLicenseTextField: UITextField!
+    @IBOutlet var suffixLicenseTextField: UITextField!
     @IBOutlet var provinceTextField: UITextField!
     @IBOutlet var addressTextField: UITextField!
     @IBOutlet var emailTextField: UITextField!
-    @IBOutlet var phoneNumberTextField: UITextField!
     @IBOutlet var saveButton: UIBarButtonItem!
 
     var customerResource = CustomerResource()
@@ -29,11 +29,11 @@ class NewCustomerViewController: UIViewController, UITextFieldDelegate, NVActivi
         firstNameTextField.delegate = self
         lastNameTextField.delegate = self
         carBrandTextField.delegate = self
-        licensePlateTextField.delegate = self
+        prefixLicenseTextField.delegate = self
+        suffixLicenseTextField.delegate = self
         provinceTextField.delegate = self
         addressTextField.delegate = self
         emailTextField.delegate = self
-        phoneNumberTextField.delegate = self
 
         let tapGestureRecognizerKeyboard: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
         view.addGestureRecognizer(tapGestureRecognizerKeyboard)
@@ -49,16 +49,16 @@ class NewCustomerViewController: UIViewController, UITextFieldDelegate, NVActivi
         } else if textField == lastNameTextField {
             carBrandTextField.becomeFirstResponder()
         } else if textField == carBrandTextField {
-            licensePlateTextField.becomeFirstResponder()
-        } else if textField == licensePlateTextField {
+            prefixLicenseTextField.becomeFirstResponder()
+        } else if textField == prefixLicenseTextField {
+            suffixLicenseTextField.becomeFirstResponder()
+        } else if textField == suffixLicenseTextField {
             provinceTextField.becomeFirstResponder()
         } else if textField == provinceTextField {
             addressTextField.becomeFirstResponder()
         } else if textField == addressTextField {
             emailTextField.becomeFirstResponder()
         } else if textField == emailTextField {
-            phoneNumberTextField.becomeFirstResponder()
-        } else if textField == phoneNumberTextField {
             saveClicked(self)
         }
 
@@ -74,11 +74,11 @@ class NewCustomerViewController: UIViewController, UITextFieldDelegate, NVActivi
         let editTexts = [firstNameTextField,
                          lastNameTextField,
                          carBrandTextField,
-                         licensePlateTextField,
+                         prefixLicenseTextField,
+                         suffixLicenseTextField,
                          provinceTextField,
                          addressTextField,
-                         emailTextField,
-                         phoneNumberTextField]
+                         emailTextField]
         let emptyCount = editTexts
             .filter { (textField) -> Bool in
                 textField?.text == "" }
@@ -124,13 +124,13 @@ class NewCustomerViewController: UIViewController, UITextFieldDelegate, NVActivi
         let firstName = firstNameTextField.text!
         let lastName = lastNameTextField.text!
         let carBrand = carBrandTextField.text!
-        let licensePlate = licensePlateTextField.text!
+        let prefixLicense = prefixLicenseTextField.text!
+        let suffixLicense = suffixLicenseTextField.text!
         let province = provinceTextField.text!
         let address = addressTextField.text!
         let email = emailTextField.text!
-        let phoneNumber = phoneNumberTextField.text!
 
-        CustomerManager().postCustomer(firstName: firstName, lastName: lastName, carBrand: carBrand, licensePlate: licensePlate, province: province, address: address, email: email, phoneNumber: phoneNumber, onSuccess: { (resource) in
+        CustomerManager().postCustomer(firstName: firstName, lastName: lastName, address: address, email: email, carBrand: carBrand, prefixLicense: prefixLicense, suffixLicense: suffixLicense, province: province, onSuccess: { (resource) in
             self.stopAnimating()
             self.customerResource = resource
         }, onFailure: { errorResource in
