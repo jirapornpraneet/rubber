@@ -20,4 +20,16 @@ class MainViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    @IBAction func logout(_ sender: UIBarButtonItem) {
+        let alert = UIAlertController(title: nil, message: "คุณต้องการออกจากระบบ", preferredStyle: UIAlertControllerStyle.alert)
+        
+        let okAction = UIAlertAction(title: "ยืนยัน", style: UIAlertActionStyle.destructive) { _ in
+            NotificationCenter.default.post(name: NSNotification.Name(rawValue: notificationNamePresentLoginView), object: nil)
+        }
+        
+        alert.addAction(okAction)
+        alert.addAction(UIAlertAction(title: "ยกเลิก", style: UIAlertActionStyle.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+    }
 }

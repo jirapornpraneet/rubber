@@ -596,7 +596,14 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="qtv-VT-EOx"/>
                     </view>
-                    <navigationItem key="navigationItem" title="TireShop" id="dwq-5u-uFx"/>
+                    <navigationItem key="navigationItem" title="TireShop" id="dwq-5u-uFx">
+                        <barButtonItem key="rightBarButtonItem" image="ic_exit_to_app_white_36pt" id="NFN-I6-0oO">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="logout:" destination="sTP-jU-bPH" id="aR0-y7-z4K"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mwx-aC-D1B" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1105,5 +1112,6 @@
     <resources>
         <image name="icApple" width="302" height="302"/>
         <image name="ic_done_white" width="24" height="24"/>
+        <image name="ic_exit_to_app_white_36pt" width="36" height="36"/>
     </resources>
 </document>
