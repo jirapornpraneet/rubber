@@ -42,12 +42,17 @@ struct R: Rswift.Validatable {
   
   /// This `R.image` struct is generated, and contains static references to 3 images.
   struct image {
+    /// Image `ic_app_nika`.
+    static let ic_app_nika = Rswift.ImageResource(bundle: R.hostingBundle, name: "ic_app_nika")
     /// Image `ic_done_white`.
     static let ic_done_white = Rswift.ImageResource(bundle: R.hostingBundle, name: "ic_done_white")
     /// Image `ic_exit_to_app_white_36pt`.
     static let ic_exit_to_app_white_36pt = Rswift.ImageResource(bundle: R.hostingBundle, name: "ic_exit_to_app_white_36pt")
-    /// Image `ic_nika`.
-    static let ic_nika = Rswift.ImageResource(bundle: R.hostingBundle, name: "ic_nika")
+    
+    /// `UIImage(named: "ic_app_nika", bundle: ..., traitCollection: ...)`
+    static func ic_app_nika(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.ic_app_nika, compatibleWith: traitCollection)
+    }
     
     /// `UIImage(named: "ic_done_white", bundle: ..., traitCollection: ...)`
     static func ic_done_white(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
@@ -57,11 +62,6 @@ struct R: Rswift.Validatable {
     /// `UIImage(named: "ic_exit_to_app_white_36pt", bundle: ..., traitCollection: ...)`
     static func ic_exit_to_app_white_36pt(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
       return UIKit.UIImage(resource: R.image.ic_exit_to_app_white_36pt, compatibleWith: traitCollection)
-    }
-    
-    /// `UIImage(named: "ic_nika", bundle: ..., traitCollection: ...)`
-    static func ic_nika(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
-      return UIKit.UIImage(resource: R.image.ic_nika, compatibleWith: traitCollection)
     }
     
     fileprivate init() {}
@@ -775,9 +775,9 @@ struct _R: Rswift.Validatable {
       }
       
       static func validate() throws {
-        if UIKit.UIImage(named: "ic_exit_to_app_white_36pt") == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'ic_exit_to_app_white_36pt' is used in storyboard 'Main', but couldn't be loaded.") }
-        if UIKit.UIImage(named: "ic_nika") == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'ic_nika' is used in storyboard 'Main', but couldn't be loaded.") }
         if UIKit.UIImage(named: "ic_done_white") == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'ic_done_white' is used in storyboard 'Main', but couldn't be loaded.") }
+        if UIKit.UIImage(named: "ic_exit_to_app_white_36pt") == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'ic_exit_to_app_white_36pt' is used in storyboard 'Main', but couldn't be loaded.") }
+        if UIKit.UIImage(named: "ic_app_nika") == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'ic_app_nika' is used in storyboard 'Main', but couldn't be loaded.") }
         if _R.storyboard.main().login() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'login' could not be loaded from storyboard 'Main' as 'LoginViewController'.") }
         if _R.storyboard.main().mainNavigation() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'mainNavigation' could not be loaded from storyboard 'Main' as 'UIKit.UINavigationController'.") }
       }

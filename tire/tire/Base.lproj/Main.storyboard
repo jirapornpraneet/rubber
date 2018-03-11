@@ -123,7 +123,7 @@
                                     <action selector="loginClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="s5W-Dv-dVX"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_nika" translatesAutoresizingMaskIntoConstraints="NO" id="zSW-PA-6Wq">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_app_nika" translatesAutoresizingMaskIntoConstraints="NO" id="zSW-PA-6Wq">
                                 <rect key="frame" x="124" y="51" width="127" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="127" id="Mi5-NE-hCM"/>
@@ -1144,8 +1144,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="ic_app_nika" width="1024" height="1024"/>
         <image name="ic_done_white" width="24" height="24"/>
         <image name="ic_exit_to_app_white_36pt" width="36" height="36"/>
-        <image name="ic_nika" width="256" height="256"/>
     </resources>
 </document>
