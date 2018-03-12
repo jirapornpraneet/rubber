@@ -18,22 +18,35 @@ class BaseManager: NSObject {
     public func get<T: EVObject>(path: String, params: Parameters? = nil, onSuccess: @escaping (T) -> Void, onFailure: @escaping OnFailure) {
         let headers = ["Authorization": "Bearer " + UserDefaults.loadAccessToken()]
         UIApplication.shared.isNetworkActivityIndicatorVisible = true
-
         Alamofire
             .request(Constants.apiUrl + path, parameters: params, headers: headers)
             .validate(statusCode: 200..<300)
             .validate(contentType: ["application/json"])
             .responseArray {(response: DataResponse<[T]>) in
                 UIApplication.shared.isNetworkActivityIndicatorVisible = false
-                let forecastArray = response.result.value
-                if let forecastArray = forecastArray {
+                switch response.result {
+                case .success:
+                    let forecastArray = response.result.value ?? []
                     for forecast in forecastArray {
+                        print("forecast", forecast)
                         onSuccess(forecast)
                         return
                     }
+                case .failure(let error):
+                    if !(error is AFError) {
+                        let errorResource = ErrorResource()
+                        errorResource.status = httpStatusNetworkError
+                        errorResource.message = (response.error?.localizedDescription)!
+                        onFailure(errorResource)
+                    }
+                    let errorString = String(data: response.data!, encoding: String.Encoding.utf8)!
+                    let errorResource = ErrorResource(json: errorString)
+                    let error = error as! AFError
+                    errorResource.status = errorResource.status == 0 ? error.responseCode ?? httpStatusInternalServerError : errorResource.status
+                    errorResource.message = errorResource.message == "" ? "Internal Server Error. Please try again." : errorResource.message
+                    print("error", error)
+                    onFailure(errorResource)
                 }
-                print("Error", response)
-//                onFailure(self.handleErrorArray(response: response))
         }
     }
 
