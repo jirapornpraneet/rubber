@@ -178,11 +178,14 @@ class NewCustomerViewController: UIViewController, UITextFieldDelegate, NVActivi
         let address = addressTextField.text!
         let email = emailTextField.text!
         let phoneNumber = phoneNumberTextField.text!
+        let productId = 3
 
         CustomerManager().postCustomer(firstName: firstName, lastName: lastName,
                                        address: address, email: email, carBrand: carBrand,
                                        prefixLicense: prefixLicense, suffixLicense: suffixLicense,
-                                       province: province, phoneNumber: phoneNumber, onSuccess: { (resource) in
+                                       province: province, phoneNumber: phoneNumber,
+                                       productId: productId,
+                                       onSuccess: { (resource) in
             self.stopAnimating()
             self.showAlertSuccess()
         }, onFailure: { errorResource in
