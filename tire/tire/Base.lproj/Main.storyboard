@@ -873,7 +873,7 @@
                                                                 </constraints>
                                                                 <nil key="textColor"/>
                                                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="16"/>
-                                                                <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                                                <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="next" textContentType="tel"/>
                                                                 <connections>
                                                                     <action selector="phoneNumberEditingChanged:" destination="60h-aY-wSi" eventType="editingChanged" id="5U2-sf-AkN"/>
                                                                     <action selector="usernameFieldEditingChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="Oal-eS-S1a"/>
