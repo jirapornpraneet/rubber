@@ -10,13 +10,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "tire/NetworkManager/ErrorResult.swift"
-            timestampString = "542605415.3128541"
+            timestampString = "542606689.143011"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "36"
             endingLineNumber = "36"
-            landmarkName = "parseApiError(error:)"
-            landmarkType = "7">
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -26,13 +26,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "tire/NetworkManager/ErrorResult.swift"
-            timestampString = "542605415.313412"
+            timestampString = "542606689.1434439"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "72"
             endingLineNumber = "72"
-            landmarkName = "showError(errorResource:vc:)"
-            landmarkType = "7">
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -58,12 +58,12 @@
                   moduleName = "tire"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/jirapornpraneet/rubber-ios/tire/tire/ViewController/SearchCustomerViewController.swift"
-                  timestampString = "542605415.4556431"
+                  timestampString = "542606690.002869"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "70"
                   endingLineNumber = "70"
-                  offsetFromSymbolStart = "274">
+                  offsetFromSymbolStart = "268">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -73,12 +73,12 @@
                   moduleName = "tire"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/jirapornpraneet/rubber-ios/tire/tire/ViewController/SearchCustomerViewController.swift"
-                  timestampString = "542605415.4588211"
+                  timestampString = "542606690.004944"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "71"
                   endingLineNumber = "71"
-                  offsetFromSymbolStart = "18">
+                  offsetFromSymbolStart = "24">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -106,12 +106,12 @@
                   moduleName = "tire"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/jirapornpraneet/rubber-ios/tire/tire/ViewController/SearchCustomerViewController.swift"
-                  timestampString = "542605415.465874"
+                  timestampString = "542606690.009654"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "66"
                   endingLineNumber = "66"
-                  offsetFromSymbolStart = "675">
+                  offsetFromSymbolStart = "476">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -121,12 +121,12 @@
                   moduleName = "tire"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/jirapornpraneet/rubber-ios/tire/tire/ViewController/SearchCustomerViewController.swift"
-                  timestampString = "542605415.469249"
+                  timestampString = "542606690.012255"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "67"
                   endingLineNumber = "67"
-                  offsetFromSymbolStart = "21">
+                  offsetFromSymbolStart = "24">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -218,12 +218,12 @@
                   moduleName = "tire"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/jirapornpraneet/rubber-ios/tire/tire/NetworkManager/BaseManager.swift"
-                  timestampString = "542605415.515756"
+                  timestampString = "542606690.032776"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "29"
                   endingLineNumber = "29"
-                  offsetFromSymbolStart = "581">
+                  offsetFromSymbolStart = "444">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -233,12 +233,12 @@
                   moduleName = "tire"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/jirapornpraneet/rubber-ios/tire/tire/NetworkManager/BaseManager.swift"
-                  timestampString = "542605415.522333"
+                  timestampString = "542606690.0356489"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "29"
                   endingLineNumber = "29"
-                  offsetFromSymbolStart = "65">
+                  offsetFromSymbolStart = "68">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -266,12 +266,12 @@
                   moduleName = "tire"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/jirapornpraneet/rubber-ios/tire/tire/NetworkManager/BaseManager.swift"
-                  timestampString = "542605415.532534"
+                  timestampString = "542606690.040385"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "37"
                   endingLineNumber = "37"
-                  offsetFromSymbolStart = "2438">
+                  offsetFromSymbolStart = "1728">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -281,12 +281,12 @@
                   moduleName = "tire"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/jirapornpraneet/rubber-ios/tire/tire/NetworkManager/BaseManager.swift"
-                  timestampString = "542605415.536593"
+                  timestampString = "542606690.042425"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "37"
                   endingLineNumber = "37"
-                  offsetFromSymbolStart = "2499">
+                  offsetFromSymbolStart = "1776">
                </Location>
             </Locations>
          </BreakpointContent>

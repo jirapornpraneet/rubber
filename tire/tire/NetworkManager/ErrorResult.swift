@@ -88,6 +88,20 @@ public class ErrorResult {
             return
         }
 
+        if errorResource.status == 0 {
+            let alert =
+                UIAlertController(
+                    title: "Something wrong!",
+                    message: String(format: "Result not found", errorResource.status, errorResource.message),
+                    preferredStyle: UIAlertControllerStyle.alert)
+            alert
+                .addAction(UIAlertAction(
+                    title: "Ok",
+                    style: UIAlertActionStyle.default,
+                    handler: nil))
+            vc.present(alert, animated: true, completion: nil)
+        }
+
         let alert =
             UIAlertController(
                 title: "Something wrong!",
