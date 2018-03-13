@@ -1177,11 +1177,14 @@
                         <outlet property="lastNameTextField" destination="L9o-VZ-stf" id="cUL-YE-XN5"/>
                         <outlet property="phoneNumberTextField" destination="zYT-sr-HOT" id="jN1-2Z-63w"/>
                         <outlet property="prefixLicenseTextField" destination="71o-RJ-PzY" id="BZS-t9-JEu"/>
+                        <outlet property="productTextField" destination="zPW-Iv-ofn" id="ax2-ve-zeB"/>
+                        <outlet property="productView" destination="zPW-Iv-ofn" id="iqY-hq-eOy"/>
                         <outlet property="provinceTextField" destination="adL-O9-1lW" id="Li2-Cj-qrd"/>
                         <outlet property="provinceView" destination="adL-O9-1lW" id="ol9-o6-WEM"/>
                         <outlet property="saveButton" destination="lkb-lZ-kov" id="SRj-GE-GGM"/>
                         <outlet property="suffixLicenseTextField" destination="ZC5-kf-4Ch" id="avl-5T-oS9"/>
                         <segue destination="OcV-vW-Th2" kind="push" identifier="toSelectProvince" id="LnS-8T-HAB"/>
+                        <segue destination="5Ld-Fe-tJa" kind="push" identifier="toSelectProduct" id="BaF-as-8SV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mJE-04-bZe" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1215,7 +1218,36 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L3G-ED-VK5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3121" y="360"/>
+            <point key="canvasLocation" x="3170" y="313"/>
+        </scene>
+        <!--Product Table View Controller-->
+        <scene sceneID="jG4-EO-Hoo">
+            <objects>
+                <tableViewController id="5Ld-Fe-tJa" customClass="ProductTableViewController" customModule="tire" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="bXC-og-k41">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="productCells" id="ipj-S7-yPd">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ipj-S7-yPd" id="mQS-Nz-dVs">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="5Ld-Fe-tJa" id="e0a-2o-gZw"/>
+                            <outlet property="delegate" destination="5Ld-Fe-tJa" id="ErZ-Bq-mUd"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="cTq-ap-C73"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q25-8v-epf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3223" y="994"/>
         </scene>
     </scenes>
     <resources>

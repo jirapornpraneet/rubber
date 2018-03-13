@@ -22,9 +22,11 @@ class NewCustomerViewController: UIViewController, UITextFieldDelegate, NVActivi
     @IBOutlet var phoneNumberTextField: UITextField!
     @IBOutlet var saveButton: UIBarButtonItem!
     @IBOutlet var provinceView: UIView!
+    @IBOutlet var productView: UIView!
+    @IBOutlet var productTextField: UITextField!
 
-    var customerResource = CustomerResource()
     var productResource: ProductResource!
+    var customerResource = CustomerResource()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,7 +40,7 @@ class NewCustomerViewController: UIViewController, UITextFieldDelegate, NVActivi
         addressTextField.delegate = self
         emailTextField.delegate = self
         phoneNumberTextField.delegate = self
-
+        productTextField.delegate = self
         provinceTextField.text = "กรุงเทพมหานคร"
 
         let tapGestureRecognizerKeyboard: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
@@ -48,9 +50,13 @@ class NewCustomerViewController: UIViewController, UITextFieldDelegate, NVActivi
         provinceView.isUserInteractionEnabled = true
         provinceView.addGestureRecognizer(tapGestureRecognizerProvinceView)
 
+        let tapGestureRecognizerProductView = UITapGestureRecognizer(target: self, action: #selector(productViewAction))
+        productView.isUserInteractionEnabled = true
+        productView.addGestureRecognizer(tapGestureRecognizerProductView)
+
         CustomerManager().getProduct(onSuccess: { (resource) in
             self.productResource = resource
-            print("product", self.productResource)
+            print("product", self.productResource.name)
         }, onFailure: { errorResource in
             ErrorResult().showError(errorResource: errorResource, vc: self)
         })
@@ -63,6 +69,15 @@ class NewCustomerViewController: UIViewController, UITextFieldDelegate, NVActivi
     @objc func provinceViewAction() {
         self.view.endEditing(true)
         self.performSegue(withIdentifier: R.segue.newCustomerViewController.toSelectProvince, sender: self)
+    }
+
+    @objc func productViewAction() {
+        self.view.endEditing(true)
+        self.performSegue(withIdentifier: R.segue.newCustomerViewController.toSelectProduct, sender: self)
+    }
+
+    func receiveDataFromProductView(product: String) {
+        productTextField.text = product
     }
 
     @objc func dismissKeyboard() {
@@ -146,7 +161,7 @@ class NewCustomerViewController: UIViewController, UITextFieldDelegate, NVActivi
     @IBAction func emailFieldEditingChanged(_ sender: Any) {
         setSaveButtonIsEnabled()
     }
-    
+
     @IBAction func phoneNumberEditingChanged(_ sender: Any) {
         setSaveButtonIsEnabled()
     }
@@ -189,6 +204,9 @@ class NewCustomerViewController: UIViewController, UITextFieldDelegate, NVActivi
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let typedInfo = R.segue.newCustomerViewController.toSelectProvince(segue: segue) {
+            typedInfo.destination.delegate = self
+        } else if let typedInfo = R.segue.newCustomerViewController.toSelectProduct(segue: segue){
+            typedInfo.destination.productResource = productResource
             typedInfo.destination.delegate = self
         }
     }

@@ -72,8 +72,10 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
-  /// This `R.reuseIdentifier` struct is generated, and contains static references to 1 reuse identifiers.
+  /// This `R.reuseIdentifier` struct is generated, and contains static references to 2 reuse identifiers.
   struct reuseIdentifier {
+    /// Reuse identifier `productCells`.
+    static let productCells: Rswift.ReuseIdentifier<UIKit.UITableViewCell> = Rswift.ReuseIdentifier(identifier: "productCells")
     /// Reuse identifier `provinceCells`.
     static let provinceCells: Rswift.ReuseIdentifier<UIKit.UITableViewCell> = Rswift.ReuseIdentifier(identifier: "provinceCells")
     
@@ -97,10 +99,19 @@ struct R: Rswift.Validatable {
       fileprivate init() {}
     }
     
-    /// This struct is generated for `NewCustomerViewController`, and contains static references to 1 segues.
+    /// This struct is generated for `NewCustomerViewController`, and contains static references to 2 segues.
     struct newCustomerViewController {
+      /// Segue identifier `toSelectProduct`.
+      static let toSelectProduct: Rswift.StoryboardSegueIdentifier<UIKit.UIStoryboardSegue, NewCustomerViewController, ProductTableViewController> = Rswift.StoryboardSegueIdentifier(identifier: "toSelectProduct")
       /// Segue identifier `toSelectProvince`.
       static let toSelectProvince: Rswift.StoryboardSegueIdentifier<UIKit.UIStoryboardSegue, NewCustomerViewController, ProvinceTableViewController> = Rswift.StoryboardSegueIdentifier(identifier: "toSelectProvince")
+      
+      /// Optionally returns a typed version of segue `toSelectProduct`.
+      /// Returns nil if either the segue identifier, the source, destination, or segue types don't match.
+      /// For use inside `prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)`.
+      static func toSelectProduct(segue: UIKit.UIStoryboardSegue) -> Rswift.TypedStoryboardSegueInfo<UIKit.UIStoryboardSegue, NewCustomerViewController, ProductTableViewController>? {
+        return Rswift.TypedStoryboardSegueInfo(segueIdentifier: R.segue.newCustomerViewController.toSelectProduct, segue: segue)
+      }
       
       /// Optionally returns a typed version of segue `toSelectProvince`.
       /// Returns nil if either the segue identifier, the source, destination, or segue types don't match.
