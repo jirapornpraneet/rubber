@@ -27,6 +27,7 @@ class BaseManager: NSObject {
                 switch response.result {
                 case .success:
                     let forecastArray = response.result.value ?? []
+                    print("ForeArray", forecastArray)
                     for forecast in forecastArray {
                         print("forecast", forecast)
                         onSuccess(forecast)

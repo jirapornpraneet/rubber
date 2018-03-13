@@ -11,9 +11,13 @@ import Alamofire
 
 let postCustomerPath = "/web/api-customer/create"
 let getSearchCustomerPath = "/web/api-customer/search"
+let getProductPath = "/web/api-product/get-product"
 
 typealias CustomerResourceOnSuccess = (CustomerResource) -> Void
 typealias CustomerResourceOnFailure = (ErrorResource) -> Void
+
+typealias ProductResourceOnSuccess = (ProductResource) -> Void
+typealias ProductResourceOnFailure = (ErrorResource) -> Void
 
 typealias PostCustomerOnSuccess = (CustomerResource) -> Void
 typealias PostCustomerOnFailure = (ErrorResource) -> Void
@@ -28,6 +32,15 @@ class CustomerManager: NSObject {
                       "email": email, "carBrand": carBrand, "prefixLicense": prefixLicense,
                       "suffixLicense": suffixLicense, "province": province, "phoneNumber": phoneNumber]
         BaseManager().post(path: postCustomerPath, params: params, onSuccess: { (response: CustomerResource) in
+            onSuccess(response)
+        }, onFailure: { errorResource in
+            onFailure(errorResource)
+        })
+    }
+
+    func getProduct(onSuccess: @escaping ProductResourceOnSuccess, onFailure: @escaping ProductResourceOnFailure) {
+
+        BaseManager().get(path: getProductPath, onSuccess: { (response: ProductResource) in
             onSuccess(response)
         }, onFailure: { errorResource in
             onFailure(errorResource)

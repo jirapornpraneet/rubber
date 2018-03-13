@@ -24,6 +24,8 @@
 		AB6B4B572035D1BA00BC895A /* UserDefault+Tire.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6B4B562035D1BA00BC895A /* UserDefault+Tire.swift */; };
 		AB6B4B592035D7C700BC895A /* FunctionHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6B4B582035D7C700BC895A /* FunctionHelper.swift */; };
 		AB7C8681204E39DF003406DB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AB7C8680204E39DF003406DB /* GoogleService-Info.plist */; };
+		AB82B78F205811D500714E73 /* ProductResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB82B78E205811D500714E73 /* ProductResource.swift */; };
+		AB82B7912058180200714E73 /* ProductTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB82B7902058180200714E73 /* ProductTableViewController.swift */; };
 		AB9A59EF2053E5D40044B0F9 /* ProvinceTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9A59EE2053E5D40044B0F9 /* ProvinceTableViewController.swift */; };
 		ABCF56F4203D2554002CCBAB /* CustomerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCF56F3203D2554002CCBAB /* CustomerManager.swift */; };
 		ABCF56F6203D9073002CCBAB /* CustomerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCF56F5203D9073002CCBAB /* CustomerViewController.swift */; };
@@ -53,6 +55,8 @@
 		AB6B4B562035D1BA00BC895A /* UserDefault+Tire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefault+Tire.swift"; sourceTree = "<group>"; };
 		AB6B4B582035D7C700BC895A /* FunctionHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionHelper.swift; sourceTree = "<group>"; };
 		AB7C8680204E39DF003406DB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		AB82B78E205811D500714E73 /* ProductResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductResource.swift; sourceTree = "<group>"; };
+		AB82B7902058180200714E73 /* ProductTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableViewController.swift; sourceTree = "<group>"; };
 		AB9A59EE2053E5D40044B0F9 /* ProvinceTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProvinceTableViewController.swift; sourceTree = "<group>"; };
 		ABCF56F3203D2554002CCBAB /* CustomerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerManager.swift; sourceTree = "<group>"; };
 		ABCF56F5203D9073002CCBAB /* CustomerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerViewController.swift; sourceTree = "<group>"; };
@@ -134,6 +138,7 @@
 				AB4888FB203C781700ED2779 /* SearchCustomerViewController.swift */,
 				ABCF56F5203D9073002CCBAB /* CustomerViewController.swift */,
 				AB9A59EE2053E5D40044B0F9 /* ProvinceTableViewController.swift */,
+				AB82B7902058180200714E73 /* ProductTableViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -165,6 +170,7 @@
 				AB2496D02036B00D00F2658F /* LoginResource.swift */,
 				AB2496CC2036AD7E00F2658F /* CustomerResource.swift */,
 				AB2496D22036B04A00F2658F /* ErrorResource.swift */,
+				AB82B78E205811D500714E73 /* ProductResource.swift */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -383,7 +389,9 @@
 				ABD8553D20332CE100B50E4C /* LoginViewController.swift in Sources */,
 				AB62AB1D203C6E3F009F8055 /* NewCustomerViewController.swift in Sources */,
 				AB2496CF2036AF8300F2658F /* LoginManager.swift in Sources */,
+				AB82B78F205811D500714E73 /* ProductResource.swift in Sources */,
 				AB2496D32036B04A00F2658F /* ErrorResource.swift in Sources */,
+				AB82B7912058180200714E73 /* ProductTableViewController.swift in Sources */,
 				AB59E4CF2032C99500C0631C /* AppDelegate.swift in Sources */,
 				AB2496D52036B08E00F2658F /* ErrorResult.swift in Sources */,
 				ABCF56F4203D2554002CCBAB /* CustomerManager.swift in Sources */,

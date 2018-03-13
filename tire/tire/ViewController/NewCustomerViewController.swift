@@ -24,6 +24,7 @@ class NewCustomerViewController: UIViewController, UITextFieldDelegate, NVActivi
     @IBOutlet var provinceView: UIView!
 
     var customerResource = CustomerResource()
+    var productResource: ProductResource!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,6 +47,13 @@ class NewCustomerViewController: UIViewController, UITextFieldDelegate, NVActivi
         let tapGestureRecognizerProvinceView = UITapGestureRecognizer(target: self, action: #selector(provinceViewAction))
         provinceView.isUserInteractionEnabled = true
         provinceView.addGestureRecognizer(tapGestureRecognizerProvinceView)
+
+        CustomerManager().getProduct(onSuccess: { (resource) in
+            self.productResource = resource
+            print("product", self.productResource)
+        }, onFailure: { errorResource in
+            ErrorResult().showError(errorResource: errorResource, vc: self)
+        })
     }
 
     func receiveDataFromProvinceView(province: String) {
