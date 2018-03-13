@@ -781,10 +781,10 @@
                                                         </constraints>
                                                     </view>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="License plate number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mpk-Y5-Tqc">
-                                                        <rect key="frame" x="10" y="217" width="85" height="21"/>
+                                                        <rect key="frame" x="10" y="217" width="139" height="21"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="21" id="CVD-Ol-R4M"/>
-                                                            <constraint firstAttribute="width" constant="85" id="b4p-iQ-5G9"/>
+                                                            <constraint firstAttribute="width" constant="139" id="b4p-iQ-5G9"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                         <nil key="textColor"/>

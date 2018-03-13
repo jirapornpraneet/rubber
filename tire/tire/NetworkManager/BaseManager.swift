@@ -32,6 +32,10 @@ class BaseManager: NSObject {
                         onSuccess(forecast)
                         return
                     }
+                    let errorString = String(data: response.data!, encoding: String.Encoding.utf8)!
+                    let errorResource = ErrorResource(json: errorString)
+                    onFailure(errorResource)
+
                 case .failure(let error):
                     if !(error is AFError) {
                         let errorResource = ErrorResource()
