@@ -780,7 +780,7 @@
                                                             <constraint firstItem="XJY-nc-NYq" firstAttribute="top" secondItem="tV8-ku-xcL" secondAttribute="top" id="nLJ-Nr-gUj"/>
                                                         </constraints>
                                                     </view>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Prefix License" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mpk-Y5-Tqc">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="License plate number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mpk-Y5-Tqc">
                                                         <rect key="frame" x="10" y="217" width="85" height="21"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="21" id="CVD-Ol-R4M"/>
@@ -793,9 +793,10 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wpa-vC-qir">
                                                         <rect key="frame" x="4" y="238" width="292" height="35"/>
                                                         <subviews>
-                                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="LIS-FE-f2m">
-                                                                <rect key="frame" x="8" y="0.0" width="276" height="35"/>
+                                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="2กพ" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="LIS-FE-f2m">
+                                                                <rect key="frame" x="8" y="0.0" width="82" height="35"/>
                                                                 <constraints>
+                                                                    <constraint firstAttribute="width" constant="82" id="8SM-PJ-xop"/>
                                                                     <constraint firstAttribute="height" constant="35" id="plo-K4-ABQ"/>
                                                                 </constraints>
                                                                 <nil key="textColor"/>
@@ -813,19 +814,46 @@
                                                                     <constraint firstAttribute="height" constant="1" id="PxW-vo-CNP"/>
                                                                 </constraints>
                                                             </view>
+                                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder=" 3456" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="fJs-1p-mnv">
+                                                                <rect key="frame" x="123" y="0.0" width="82" height="35"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="82" id="c9k-iT-RfE"/>
+                                                                    <constraint firstAttribute="height" constant="35" id="d6Z-52-1SI"/>
+                                                                </constraints>
+                                                                <nil key="textColor"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="16"/>
+                                                                <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                                                <connections>
+                                                                    <action selector="prefixLicenseFieldEditingChanged:" destination="60h-aY-wSi" eventType="editingChanged" id="BCx-Rz-OQQ"/>
+                                                                    <action selector="suffixLicenseFieldEditingChanged:" destination="60h-aY-wSi" eventType="editingChanged" id="6Ru-W8-7XT"/>
+                                                                    <action selector="usernameFieldEditingChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="zLL-sz-jfY"/>
+                                                                </connections>
+                                                            </textField>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qrf-A6-esR">
+                                                                <rect key="frame" x="100" y="5" width="13" height="21"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="21" id="KHN-pa-rPV"/>
+                                                                    <constraint firstAttribute="width" constant="13" id="clw-7M-7G9"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
                                                         </subviews>
-                                                        <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
                                                             <constraint firstItem="LIS-FE-f2m" firstAttribute="top" secondItem="wpa-vC-qir" secondAttribute="top" id="4jd-f0-dZp"/>
                                                             <constraint firstAttribute="trailing" secondItem="9ni-SM-BWS" secondAttribute="trailing" constant="8" id="AVe-Qb-pdR"/>
                                                             <constraint firstAttribute="bottom" secondItem="9ni-SM-BWS" secondAttribute="bottom" id="G2O-3A-RSc"/>
+                                                            <constraint firstItem="fJs-1p-mnv" firstAttribute="top" secondItem="wpa-vC-qir" secondAttribute="top" id="JK8-31-HMi"/>
                                                             <constraint firstAttribute="height" constant="35" id="PYt-mO-0Lq"/>
+                                                            <constraint firstItem="fJs-1p-mnv" firstAttribute="leading" secondItem="Qrf-A6-esR" secondAttribute="trailing" constant="10" id="Pe8-d9-gqF"/>
+                                                            <constraint firstItem="Qrf-A6-esR" firstAttribute="top" secondItem="wpa-vC-qir" secondAttribute="top" constant="5" id="V4f-hL-rTZ"/>
+                                                            <constraint firstItem="Qrf-A6-esR" firstAttribute="leading" secondItem="LIS-FE-f2m" secondAttribute="trailing" constant="10" id="W77-O7-0Jj"/>
                                                             <constraint firstItem="9ni-SM-BWS" firstAttribute="leading" secondItem="wpa-vC-qir" secondAttribute="leading" constant="8" id="mkc-rq-I3K"/>
                                                             <constraint firstItem="LIS-FE-f2m" firstAttribute="leading" secondItem="wpa-vC-qir" secondAttribute="leading" constant="8" id="rrq-0h-zQH"/>
-                                                            <constraint firstAttribute="trailing" secondItem="LIS-FE-f2m" secondAttribute="trailing" constant="8" id="ypj-9h-Zhm"/>
                                                         </constraints>
                                                     </view>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Suffix License" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oHc-Ol-OkB">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oHc-Ol-OkB">
                                                         <rect key="frame" x="10" y="278" width="95" height="21"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="21" id="RhT-eB-ulR"/>
@@ -847,7 +875,7 @@
                                                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="16"/>
                                                                 <textInputTraits key="textInputTraits" returnKeyType="next"/>
                                                                 <connections>
-                                                                    <action selector="suffixLicenseFieldEditingChanged:" destination="60h-aY-wSi" eventType="editingChanged" id="Geb-Fb-0vv"/>
+                                                                    <action selector="phoneNumberEditingChanged:" destination="60h-aY-wSi" eventType="editingChanged" id="5U2-sf-AkN"/>
                                                                     <action selector="usernameFieldEditingChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="Oal-eS-S1a"/>
                                                                 </connections>
                                                             </textField>
@@ -1101,11 +1129,12 @@
                         <outlet property="emailTextField" destination="WBn-yi-iYk" id="Zg0-nV-aMW"/>
                         <outlet property="firstNameTextField" destination="xKh-RZ-IYJ" id="0ca-Xc-feo"/>
                         <outlet property="lastNameTextField" destination="GYi-HO-fiH" id="JTr-Tp-Qe4"/>
+                        <outlet property="phoneNumberTextField" destination="KNv-2n-lQ3" id="NAw-gk-dTC"/>
                         <outlet property="prefixLicenseTextField" destination="LIS-FE-f2m" id="aZO-Yp-foD"/>
                         <outlet property="provinceTextField" destination="bDM-vq-3Kr" id="i8O-kL-Ran"/>
                         <outlet property="provinceView" destination="bDM-vq-3Kr" id="k7c-5H-Ebx"/>
                         <outlet property="saveButton" destination="yW8-xI-NJI" id="Qss-V5-coe"/>
-                        <outlet property="suffixLicenseTextField" destination="KNv-2n-lQ3" id="jN2-MO-OZm"/>
+                        <outlet property="suffixLicenseTextField" destination="fJs-1p-mnv" id="Zkz-BH-yNS"/>
                         <segue destination="OcV-vW-Th2" kind="push" identifier="toSelectProvince" id="UHc-Uu-nih"/>
                     </connections>
                 </viewController>

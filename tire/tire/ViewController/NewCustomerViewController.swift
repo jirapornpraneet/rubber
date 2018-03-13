@@ -19,6 +19,7 @@ class NewCustomerViewController: UIViewController, UITextFieldDelegate, NVActivi
     @IBOutlet var provinceTextField: UITextField!
     @IBOutlet var addressTextField: UITextField!
     @IBOutlet var emailTextField: UITextField!
+    @IBOutlet var phoneNumberTextField: UITextField!
     @IBOutlet var saveButton: UIBarButtonItem!
     @IBOutlet var provinceView: UIView!
 
@@ -35,6 +36,7 @@ class NewCustomerViewController: UIViewController, UITextFieldDelegate, NVActivi
         provinceTextField.delegate = self
         addressTextField.delegate = self
         emailTextField.delegate = self
+        phoneNumberTextField.delegate = self
 
         provinceTextField.text = "กรุงเทพมหานคร"
 
@@ -75,7 +77,9 @@ class NewCustomerViewController: UIViewController, UITextFieldDelegate, NVActivi
         } else if textField == addressTextField {
             emailTextField.becomeFirstResponder()
         } else if textField == emailTextField {
-            saveClicked(self)
+            phoneNumberTextField.becomeFirstResponder()
+        } else if textField == phoneNumberTextField {
+           saveClicked(self)
         }
 
         return true
@@ -94,7 +98,8 @@ class NewCustomerViewController: UIViewController, UITextFieldDelegate, NVActivi
                          suffixLicenseTextField,
                          provinceTextField,
                          addressTextField,
-                         emailTextField]
+                         emailTextField,
+                         phoneNumberTextField]
         let emptyCount = editTexts
             .filter { (textField) -> Bool in
                 textField?.text == "" }
@@ -133,6 +138,10 @@ class NewCustomerViewController: UIViewController, UITextFieldDelegate, NVActivi
     @IBAction func emailFieldEditingChanged(_ sender: Any) {
         setSaveButtonIsEnabled()
     }
+    
+    @IBAction func phoneNumberEditingChanged(_ sender: Any) {
+        setSaveButtonIsEnabled()
+    }
 
     @IBAction func saveClicked(_ sender: Any) {
         self.dismissKeyboard()
@@ -145,11 +154,12 @@ class NewCustomerViewController: UIViewController, UITextFieldDelegate, NVActivi
         let province = provinceTextField.text!
         let address = addressTextField.text!
         let email = emailTextField.text!
+        let phoneNumber = phoneNumberTextField.text!
 
         CustomerManager().postCustomer(firstName: firstName, lastName: lastName,
                                        address: address, email: email, carBrand: carBrand,
                                        prefixLicense: prefixLicense, suffixLicense: suffixLicense,
-                                       province: province, onSuccess: { (resource) in
+                                       province: province, phoneNumber: phoneNumber, onSuccess: { (resource) in
             self.stopAnimating()
             self.showAlertSuccess()
         }, onFailure: { errorResource in

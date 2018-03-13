@@ -21,4 +21,6 @@ public class CustomerResource: EVObject {
     var province: String = ""
     var createdAt: String = ""
     var updatedAt: String = ""
+    var phoneNumber: String = ""
+    var productId: Int = 0
 }

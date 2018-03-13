@@ -21,12 +21,12 @@ typealias PostCustomerOnFailure = (ErrorResource) -> Void
 class CustomerManager: NSObject {
     func postCustomer(firstName: String, lastName: String, address: String,
                       email: String, carBrand: String, prefixLicense: String,
-                      suffixLicense: String, province: String,
+                      suffixLicense: String, province: String, phoneNumber : String,
                       onSuccess: @escaping PostCustomerOnSuccess,
                       onFailure: @escaping PostCustomerOnFailure) {
         let params = ["firstName": firstName, "lastName": lastName, "address": address,
                       "email": email, "carBrand": carBrand, "prefixLicense": prefixLicense,
-                      "suffixLicense": suffixLicense, "province": province]
+                      "suffixLicense": suffixLicense, "province": province, "phoneNumber": phoneNumber]
         BaseManager().post(path: postCustomerPath, params: params, onSuccess: { (response: CustomerResource) in
             onSuccess(response)
         }, onFailure: { errorResource in
