@@ -168,7 +168,7 @@ struct R: Rswift.Validatable {
       fileprivate init() {}
     }
     
-    /// This `R.string.localizable` struct is generated, and contains static references to 8 localization keys.
+    /// This `R.string.localizable` struct is generated, and contains static references to 10 localization keys.
     struct localizable {
       /// en translation: Address : %@
       /// 
@@ -194,10 +194,18 @@ struct R: Rswift.Validatable {
       /// 
       /// Locales: en
       static let phoneNumber = Rswift.StringResource(key: "Phone number : %@", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Product : %@
+      /// 
+      /// Locales: en
+      static let product = Rswift.StringResource(key: "Product : %@", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
       /// en translation: Province : %@
       /// 
       /// Locales: en
       static let province = Rswift.StringResource(key: "Province : %@", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Since : %@
+      /// 
+      /// Locales: en
+      static let since = Rswift.StringResource(key: "Since : %@", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
       /// en translation: Surname : %@
       /// 
       /// Locales: en
@@ -245,11 +253,25 @@ struct R: Rswift.Validatable {
         return String(format: NSLocalizedString("Phone number : %@", bundle: R.hostingBundle, comment: ""), locale: R.applicationLocale, value1)
       }
       
+      /// en translation: Product : %@
+      /// 
+      /// Locales: en
+      static func product(_ value1: String) -> String {
+        return String(format: NSLocalizedString("Product : %@", bundle: R.hostingBundle, comment: ""), locale: R.applicationLocale, value1)
+      }
+      
       /// en translation: Province : %@
       /// 
       /// Locales: en
       static func province(_ value1: String) -> String {
         return String(format: NSLocalizedString("Province : %@", bundle: R.hostingBundle, comment: ""), locale: R.applicationLocale, value1)
+      }
+      
+      /// en translation: Since : %@
+      /// 
+      /// Locales: en
+      static func since(_ value1: String) -> String {
+        return String(format: NSLocalizedString("Since : %@", bundle: R.hostingBundle, comment: ""), locale: R.applicationLocale, value1)
       }
       
       /// en translation: Surname : %@

@@ -23,4 +23,5 @@ public class CustomerResource: EVObject {
     var updatedAt: String = ""
     var phoneNumber: String = ""
     var productId: Int = 0
+    var productName: String = ""
 }

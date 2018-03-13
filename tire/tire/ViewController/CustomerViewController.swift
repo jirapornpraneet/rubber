@@ -18,6 +18,8 @@ class CustomerViewController: UIViewController {
     @IBOutlet var addressLabel: UILabel!
     @IBOutlet var emailLabel: UILabel!
     @IBOutlet var phoneNumberLabel: UILabel!
+    @IBOutlet var productLabel: UILabel!
+    @IBOutlet var productSinceLabel: UILabel!
 
     var customerResource: CustomerResource!
 
@@ -31,7 +33,10 @@ class CustomerViewController: UIViewController {
         provinceLabel.text = R.string.localizable.province(customerResource.province)
         addressLabel.text = R.string.localizable.address(customerResource.address)
         emailLabel.text = R.string.localizable.email(customerResource.email)
-        phoneNumberLabel.text = R.string.localizable.phoneNumber("")
+        phoneNumberLabel.text = R.string.localizable.phoneNumber(customerResource.phoneNumber)
+        productLabel.text = R.string.localizable.product(customerResource.productName)
+        productSinceLabel.text = R.string.localizable.since(customerResource.createdAt)
+//        productSinceLabel.text = R.string.localizable.p
         // Do any additional setup after loading the view.
     }
 
