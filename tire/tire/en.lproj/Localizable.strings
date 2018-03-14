@@ -15,6 +15,7 @@
 "Car brand : %@" = "Car brand : %@";
 "Product : %@" = "Product : %@";
 "Since : %@" = "Since : %@";
+"Result not found" = "Result not found";
 
 "Search Customer" = "Search Customer";
 "New Customer" = "New Customer";
