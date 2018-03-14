@@ -917,7 +917,7 @@
                                                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="16"/>
                                                                 <textInputTraits key="textInputTraits" returnKeyType="next"/>
                                                                 <connections>
-                                                                    <action selector="firstNameFieldEditingChanged:" destination="aS3-AV-6Dy" eventType="editingChanged" id="3Rg-9f-e16"/>
+                                                                    <action selector="firstNameFieldEditingChanged:" destination="aS3-AV-6Dy" eventType="editingChanged" id="bUK-3M-NA7"/>
                                                                 </connections>
                                                             </textField>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="slf-GL-mlo">
@@ -961,7 +961,7 @@
                                                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="16"/>
                                                                 <textInputTraits key="textInputTraits" returnKeyType="next"/>
                                                                 <connections>
-                                                                    <action selector="lastNameFieldEditingChanged:" destination="aS3-AV-6Dy" eventType="editingChanged" id="JYi-ha-Fke"/>
+                                                                    <action selector="lastNameFieldEditingChanged:" destination="aS3-AV-6Dy" eventType="editingChanged" id="IkM-XJ-fVb"/>
                                                                 </connections>
                                                             </textField>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r4D-lv-04w">
@@ -1005,7 +1005,7 @@
                                                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="16"/>
                                                                 <textInputTraits key="textInputTraits" returnKeyType="next"/>
                                                                 <connections>
-                                                                    <action selector="carBrandFieldEditingChanged:" destination="aS3-AV-6Dy" eventType="editingChanged" id="Ckc-hP-oCf"/>
+                                                                    <action selector="carBrandFieldEditingChanged:" destination="aS3-AV-6Dy" eventType="editingChanged" id="VPO-gr-CnA"/>
                                                                 </connections>
                                                             </textField>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YH8-KR-cCI">
@@ -1049,7 +1049,7 @@
                                                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="16"/>
                                                                 <textInputTraits key="textInputTraits" returnKeyType="next"/>
                                                                 <connections>
-                                                                    <action selector="prefixLicenseFieldEditingChanged:" destination="aS3-AV-6Dy" eventType="editingChanged" id="RO7-fF-fkV"/>
+                                                                    <action selector="prefixLicenseFieldEditingChanged:" destination="aS3-AV-6Dy" eventType="editingChanged" id="9rd-Vu-VEx"/>
                                                                     <action selector="usernameFieldEditingChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="Ksg-3l-r3o"/>
                                                                 </connections>
                                                             </textField>
@@ -1068,9 +1068,9 @@
                                                                 </constraints>
                                                                 <nil key="textColor"/>
                                                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="16"/>
-                                                                <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                                                <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="next"/>
                                                                 <connections>
-                                                                    <action selector="suffixLicenseFieldEditingChanged:" destination="aS3-AV-6Dy" eventType="editingChanged" id="tCu-g4-eEt"/>
+                                                                    <action selector="suffixLicenseFieldEditingChanged:" destination="aS3-AV-6Dy" eventType="editingChanged" id="rpR-Az-50I"/>
                                                                 </connections>
                                                             </textField>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N7w-Sj-Gjh">
@@ -1119,7 +1119,7 @@
                                                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="16"/>
                                                                 <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="next" textContentType="tel"/>
                                                                 <connections>
-                                                                    <action selector="provinceFieldEditingChanged:" destination="aS3-AV-6Dy" eventType="editingChanged" id="aOe-kk-OQq"/>
+                                                                    <action selector="provinceFieldEditingChanged:" destination="aS3-AV-6Dy" eventType="editingChanged" id="IwX-b2-rHT"/>
                                                                 </connections>
                                                             </textField>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6LW-gi-jkd">
@@ -1163,7 +1163,7 @@
                                                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="16"/>
                                                                 <textInputTraits key="textInputTraits" returnKeyType="next"/>
                                                                 <connections>
-                                                                    <action selector="addressFieldEditingChanged:" destination="aS3-AV-6Dy" eventType="editingChanged" id="Are-Qh-0hC"/>
+                                                                    <action selector="addressFieldEditingChanged:" destination="aS3-AV-6Dy" eventType="editingChanged" id="Ffh-kb-3ji"/>
                                                                 </connections>
                                                             </textField>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EaS-jq-yXi">
@@ -1207,7 +1207,7 @@
                                                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="16"/>
                                                                 <textInputTraits key="textInputTraits" returnKeyType="next"/>
                                                                 <connections>
-                                                                    <action selector="emailFieldEditingChanged:" destination="aS3-AV-6Dy" eventType="editingChanged" id="8n8-jb-svx"/>
+                                                                    <action selector="emailFieldEditingChanged:" destination="aS3-AV-6Dy" eventType="editingChanged" id="a75-ZB-ZlA"/>
                                                                 </connections>
                                                             </textField>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tip-71-F1d">
@@ -1249,9 +1249,9 @@
                                                                 </constraints>
                                                                 <nil key="textColor"/>
                                                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="16"/>
-                                                                <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                                                <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="next"/>
                                                                 <connections>
-                                                                    <action selector="phoneNumberEditingChanged:" destination="aS3-AV-6Dy" eventType="editingChanged" id="75M-tb-xsC"/>
+                                                                    <action selector="phoneNumberEditingChanged:" destination="aS3-AV-6Dy" eventType="editingChanged" id="S2f-8p-vOs"/>
                                                                 </connections>
                                                             </textField>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WGO-3Q-1b1">
@@ -1402,25 +1402,25 @@
                         <barButtonItem key="rightBarButtonItem" title="Item" image="ic_done_white" id="lkb-lZ-kov">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
-                                <action selector="saveClicked:" destination="aS3-AV-6Dy" id="AGI-sM-BMx"/>
+                                <action selector="saveClicked:" destination="aS3-AV-6Dy" id="3KC-o6-Pes"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <size key="freeformSize" width="375" height="800"/>
                     <connections>
-                        <outlet property="addressTextField" destination="adL-O9-1lW" id="ulK-2q-zcP"/>
-                        <outlet property="carBrandTextField" destination="BG9-DM-uly" id="K8k-nN-qmt"/>
-                        <outlet property="emailTextField" destination="spe-J8-vaE" id="48a-iN-jm8"/>
-                        <outlet property="firstNameTextField" destination="Hcs-bj-uQN" id="m64-5u-d7b"/>
-                        <outlet property="lastNameTextField" destination="L9o-VZ-stf" id="KH3-Lk-Wwb"/>
-                        <outlet property="phoneNumberTextField" destination="Nok-Nd-T4I" id="BU4-5N-MIZ"/>
-                        <outlet property="prefixLicenseTextField" destination="71o-RJ-PzY" id="HYj-X7-Wct"/>
-                        <outlet property="productTextField" destination="zPW-Iv-ofn" id="zTd-A7-iLZ"/>
-                        <outlet property="productView" destination="CoN-2r-sGB" id="aHY-9z-e3E"/>
-                        <outlet property="provinceTextField" destination="zYT-sr-HOT" id="6KR-dp-8wT"/>
-                        <outlet property="provinceView" destination="abM-cC-SY1" id="s5e-nV-OLz"/>
-                        <outlet property="saveButton" destination="lkb-lZ-kov" id="SRj-GE-GGM"/>
-                        <outlet property="suffixLicenseTextField" destination="ZC5-kf-4Ch" id="Qg6-mW-2NL"/>
+                        <outlet property="addressTextField" destination="adL-O9-1lW" id="pK2-8n-ZUX"/>
+                        <outlet property="carBrandTextField" destination="BG9-DM-uly" id="Fbk-EQ-Qmi"/>
+                        <outlet property="emailTextField" destination="spe-J8-vaE" id="BCX-eU-gk8"/>
+                        <outlet property="firstNameTextField" destination="Hcs-bj-uQN" id="MNr-za-eoi"/>
+                        <outlet property="lastNameTextField" destination="L9o-VZ-stf" id="duO-ld-zXm"/>
+                        <outlet property="phoneNumberTextField" destination="Nok-Nd-T4I" id="thY-kX-Pox"/>
+                        <outlet property="prefixLicenseTextField" destination="71o-RJ-PzY" id="uRI-J1-tUe"/>
+                        <outlet property="productTextField" destination="zPW-Iv-ofn" id="3sj-LM-ElO"/>
+                        <outlet property="productView" destination="zPW-Iv-ofn" id="scz-we-7yo"/>
+                        <outlet property="provinceTextField" destination="zYT-sr-HOT" id="kOn-0f-UBx"/>
+                        <outlet property="provinceView" destination="zYT-sr-HOT" id="Xno-7h-FiL"/>
+                        <outlet property="saveButton" destination="lkb-lZ-kov" id="A8O-4S-XCI"/>
+                        <outlet property="suffixLicenseTextField" destination="ZC5-kf-4Ch" id="Vyw-9g-bi1"/>
                         <segue destination="OcV-vW-Th2" kind="push" identifier="toSelectProvince" id="LnS-8T-HAB"/>
                         <segue destination="5Ld-Fe-tJa" kind="push" identifier="toSelectProduct" id="BaF-as-8SV"/>
                     </connections>
