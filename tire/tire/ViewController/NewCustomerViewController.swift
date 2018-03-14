@@ -208,10 +208,9 @@ class NewCustomerViewController: UIViewController, UITextFieldDelegate, NVActivi
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let typedInfo = R.segue.newCustomerViewController.toSelectProvince(segue: segue) {
             typedInfo.destination.delegate = self
+        } else if let typedInfo = R.segue.newCustomerViewController.toSelectProduct(segue: segue){
+            typedInfo.destination.productResource = productResource
+            typedInfo.destination.delegate = self
         }
-//        } else if let typedInfo = R.segue.newCustomerViewController.toSelectProduct(segue: segue){
-//            typedInfo.destination.productResource = productResource
-//            typedInfo.destination.delegate = self
-//        }
     }
 }

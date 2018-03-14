@@ -11,7 +11,7 @@ import UIKit
 class ProductTableViewController: UITableViewController {
 
     weak var delegate: NewCustomerViewController! = nil
-    var productResource: ProductResource!
+    var productResource = [ProductResource]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,19 +26,21 @@ class ProductTableViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return productResource.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: R.reuseIdentifier.productCells, for: indexPath as IndexPath)!
-        cell.textLabel?.text = productResource.name
+        let productResourceName = productResource[indexPath.row]
+        cell.textLabel?.text = productResourceName.name
         cell.layoutIfNeeded()
         return cell
     }
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath as IndexPath, animated: true)
-        delegate.receiveDataFromProductView(product: productResource.name)
+        let productResourceName = productResource[indexPath.row]
+        delegate.receiveDataFromProductView(product: productResourceName.name)
         _ = self.navigationController? .popViewController(animated: true)
     }
 }
