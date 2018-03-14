@@ -17,7 +17,6 @@ class MainViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         let tapGestureRecognizerSearchCustomerView = UITapGestureRecognizer(target: self, action: #selector(searchCustomerViewAction))
         searchCustomerView.isUserInteractionEnabled = true
         searchCustomerView.addGestureRecognizer(tapGestureRecognizerSearchCustomerView)
@@ -30,6 +29,11 @@ class MainViewController: UIViewController {
 
         searchCustomerLabel.text = R.string.localizable.searchCustomer()
         newCustomerLabel.text = R.string.localizable.newCustomer()
+    }
+
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
+        self.navigationController?.navigationBar.topItem?.title = "NIKA Shop"
     }
 
     @objc func searchCustomerViewAction() {

@@ -734,7 +734,7 @@
             </objects>
             <point key="canvasLocation" x="3133.5999999999999" y="-341.37931034482762"/>
         </scene>
-        <!--NIKA Shop-->
+        <!--Main View Controller-->
         <scene sceneID="g8A-b4-qyv">
             <objects>
                 <viewController id="sTP-jU-bPH" customClass="MainViewController" customModule="tire" customModuleProvider="target" sceneMemberID="viewController">
@@ -842,7 +842,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="qtv-VT-EOx"/>
                     </view>
-                    <navigationItem key="navigationItem" title="NIKA Shop" id="dwq-5u-uFx">
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="always" id="dwq-5u-uFx">
                         <barButtonItem key="rightBarButtonItem" image="ic_exit_to_app_white_36pt" id="NFN-I6-0oO">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
@@ -855,8 +855,8 @@
                         <outlet property="newCustomerView" destination="ibR-y8-Yrg" id="F06-Z0-0wJ"/>
                         <outlet property="searchCustomerLabel" destination="ul7-Kd-ZKx" id="90Z-Ec-0KT"/>
                         <outlet property="searchCustomerView" destination="2tX-SB-uVq" id="Rm5-SM-2ef"/>
-                        <segue destination="xMi-7R-ret" kind="push" identifier="toSearch" id="5Cb-bB-noC"/>
-                        <segue destination="aS3-AV-6Dy" kind="push" identifier="toAdd" id="8rs-oF-RyS"/>
+                        <segue destination="xMi-7R-ret" kind="push" identifier="toSearch" id="79c-yP-kMT"/>
+                        <segue destination="aS3-AV-6Dy" kind="push" identifier="toAdd" id="4O8-Iu-gFc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mwx-aC-D1B" userLabel="First Responder" sceneMemberID="firstResponder"/>
