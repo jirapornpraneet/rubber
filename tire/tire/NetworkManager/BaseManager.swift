@@ -27,9 +27,14 @@ class BaseManager: NSObject {
                 switch response.result {
                 case .success:
                     let forecastArray = response.result.value ?? []
-                    print("ForeArray", forecastArray)
-                    onSuccess(forecastArray)
-
+                    if forecastArray != [] {
+                        print("ForeArray", forecastArray)
+                        onSuccess(forecastArray)
+                        return
+                    }
+                    let errorString = String(data: response.data!, encoding: String.Encoding.utf8)!
+                    let errorResource = ErrorResource(json: errorString)
+                    onFailure(errorResource)
                 case .failure(let error):
                     if !(error is AFError) {
                         let errorResource = ErrorResource()
