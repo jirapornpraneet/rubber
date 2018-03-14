@@ -10,10 +10,29 @@ import UIKit
 
 class MainViewController: UIViewController {
 
+    @IBOutlet var searchCustomerView: UIView!
+    @IBOutlet var newCustomerView: UIView!
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        let tapGestureRecognizerSearchCustomerView = UITapGestureRecognizer(target: self, action: #selector(searchCustomerViewAction))
+        searchCustomerView.isUserInteractionEnabled = true
+        searchCustomerView.addGestureRecognizer(tapGestureRecognizerSearchCustomerView)
+
+        let tapGestureRecognizerNewCustomerView = UITapGestureRecognizer(target: self, action: #selector(newCustomerViewAction))
+        newCustomerView.isUserInteractionEnabled = true
+        newCustomerView.addGestureRecognizer(tapGestureRecognizerNewCustomerView)
+    }
+    
+    @objc func searchCustomerViewAction() {
+        self.view.endEditing(true)
+        self.performSegue(withIdentifier: R.segue.mainViewController.toSearch, sender: self)
+    }
+
+    @objc func newCustomerViewAction() {
+        self.view.endEditing(true)
+        self.performSegue(withIdentifier: R.segue.mainViewController.toAdd, sender: self)
     }
 
     override func didReceiveMemoryWarning() {

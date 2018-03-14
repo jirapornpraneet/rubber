@@ -40,8 +40,10 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
-  /// This `R.image` struct is generated, and contains static references to 4 images.
+  /// This `R.image` struct is generated, and contains static references to 6 images.
   struct image {
+    /// Image `add-user`.
+    static let addUser = Rswift.ImageResource(bundle: R.hostingBundle, name: "add-user")
     /// Image `ic_app_nika`.
     static let ic_app_nika = Rswift.ImageResource(bundle: R.hostingBundle, name: "ic_app_nika")
     /// Image `ic_done_white`.
@@ -50,6 +52,13 @@ struct R: Rswift.Validatable {
     static let ic_exit_to_app_white_36pt = Rswift.ImageResource(bundle: R.hostingBundle, name: "ic_exit_to_app_white_36pt")
     /// Image `ic_remove_red_eye`.
     static let ic_remove_red_eye = Rswift.ImageResource(bundle: R.hostingBundle, name: "ic_remove_red_eye")
+    /// Image `search`.
+    static let search = Rswift.ImageResource(bundle: R.hostingBundle, name: "search")
+    
+    /// `UIImage(named: "add-user", bundle: ..., traitCollection: ...)`
+    static func addUser(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.addUser, compatibleWith: traitCollection)
+    }
     
     /// `UIImage(named: "ic_app_nika", bundle: ..., traitCollection: ...)`
     static func ic_app_nika(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
@@ -69,6 +78,11 @@ struct R: Rswift.Validatable {
     /// `UIImage(named: "ic_remove_red_eye", bundle: ..., traitCollection: ...)`
     static func ic_remove_red_eye(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
       return UIKit.UIImage(resource: R.image.ic_remove_red_eye, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "search", bundle: ..., traitCollection: ...)`
+    static func search(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.search, compatibleWith: traitCollection)
     }
     
     fileprivate init() {}
@@ -91,7 +105,7 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
-  /// This `R.segue` struct is generated, and contains static references to 4 view controllers.
+  /// This `R.segue` struct is generated, and contains static references to 5 view controllers.
   struct segue {
     /// This struct is generated for `CustomerTableViewController`, and contains static references to 1 segues.
     struct customerTableViewController {
@@ -118,6 +132,30 @@ struct R: Rswift.Validatable {
       /// For use inside `prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)`.
       static func toMainView(segue: UIKit.UIStoryboardSegue) -> Rswift.TypedStoryboardSegueInfo<UIKit.UIStoryboardSegue, LoginViewController, UIKit.UINavigationController>? {
         return Rswift.TypedStoryboardSegueInfo(segueIdentifier: R.segue.loginViewController.toMainView, segue: segue)
+      }
+      
+      fileprivate init() {}
+    }
+    
+    /// This struct is generated for `MainViewController`, and contains static references to 2 segues.
+    struct mainViewController {
+      /// Segue identifier `toAdd`.
+      static let toAdd: Rswift.StoryboardSegueIdentifier<UIKit.UIStoryboardSegue, MainViewController, NewCustomerViewController> = Rswift.StoryboardSegueIdentifier(identifier: "toAdd")
+      /// Segue identifier `toSearch`.
+      static let toSearch: Rswift.StoryboardSegueIdentifier<UIKit.UIStoryboardSegue, MainViewController, SearchCustomerViewController> = Rswift.StoryboardSegueIdentifier(identifier: "toSearch")
+      
+      /// Optionally returns a typed version of segue `toAdd`.
+      /// Returns nil if either the segue identifier, the source, destination, or segue types don't match.
+      /// For use inside `prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)`.
+      static func toAdd(segue: UIKit.UIStoryboardSegue) -> Rswift.TypedStoryboardSegueInfo<UIKit.UIStoryboardSegue, MainViewController, NewCustomerViewController>? {
+        return Rswift.TypedStoryboardSegueInfo(segueIdentifier: R.segue.mainViewController.toAdd, segue: segue)
+      }
+      
+      /// Optionally returns a typed version of segue `toSearch`.
+      /// Returns nil if either the segue identifier, the source, destination, or segue types don't match.
+      /// For use inside `prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)`.
+      static func toSearch(segue: UIKit.UIStoryboardSegue) -> Rswift.TypedStoryboardSegueInfo<UIKit.UIStoryboardSegue, MainViewController, SearchCustomerViewController>? {
+        return Rswift.TypedStoryboardSegueInfo(segueIdentifier: R.segue.mainViewController.toSearch, segue: segue)
       }
       
       fileprivate init() {}
@@ -832,10 +870,12 @@ struct _R: Rswift.Validatable {
       }
       
       static func validate() throws {
-        if UIKit.UIImage(named: "ic_done_white") == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'ic_done_white' is used in storyboard 'Main', but couldn't be loaded.") }
-        if UIKit.UIImage(named: "ic_app_nika") == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'ic_app_nika' is used in storyboard 'Main', but couldn't be loaded.") }
-        if UIKit.UIImage(named: "ic_remove_red_eye") == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'ic_remove_red_eye' is used in storyboard 'Main', but couldn't be loaded.") }
         if UIKit.UIImage(named: "ic_exit_to_app_white_36pt") == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'ic_exit_to_app_white_36pt' is used in storyboard 'Main', but couldn't be loaded.") }
+        if UIKit.UIImage(named: "ic_app_nika") == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'ic_app_nika' is used in storyboard 'Main', but couldn't be loaded.") }
+        if UIKit.UIImage(named: "ic_done_white") == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'ic_done_white' is used in storyboard 'Main', but couldn't be loaded.") }
+        if UIKit.UIImage(named: "ic_remove_red_eye") == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'ic_remove_red_eye' is used in storyboard 'Main', but couldn't be loaded.") }
+        if UIKit.UIImage(named: "search") == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'search' is used in storyboard 'Main', but couldn't be loaded.") }
+        if UIKit.UIImage(named: "add-user") == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'add-user' is used in storyboard 'Main', but couldn't be loaded.") }
         if _R.storyboard.main().login() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'login' could not be loaded from storyboard 'Main' as 'LoginViewController'.") }
         if _R.storyboard.main().mainNavigation() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'mainNavigation' could not be loaded from storyboard 'Main' as 'UIKit.UINavigationController'.") }
       }
