@@ -5,3 +5,17 @@
   Created by Jiraporn Praneet on 21/2/2561 BE.
   Copyright © 2561 Jiraporn Praneet. All rights reserved.
 */
+"Name : %@" = "ชื่อ : %@";
+"Surname : %@" = "นามสกุล : %@";
+"Address : %@" = "ที่อยู่ : %@";
+"Phone number : %@" = "เบอร์โทรศัพท์ : %@";
+"Email : %@" = "อีเมล : %@";
+"License plate number : %@" = "ป้ายทะเบียนรถยนต์ : %@";
+"Province : %@" = "จังหวัด : %@";
+"Car brand : %@" = "ยี่ห้อรถยนต์ : %@";
+"Product : %@" = "สินค้า : %@";
+"Since : %@" = "เป็นลูกค้าตั้งแต่ : %@";
+
+"Search Customer" = "ค้นหาลูกค้าเดิม";
+"New Customer" = "เพิ่มลูกค้าใหม่";
+"Product information" = "ข้อมูลสินค้า";

@@ -6,10 +6,10 @@
 "3f4-v5-VUj.text" = "First name";
 
 /* Class = "UITextField"; placeholder = "Surname"; ObjectID = "3qM-1Z-7x3"; */
-"3qM-1Z-7x3.placeholder" = "Surname";
+"3qM-1Z-7x3.placeholder" = "นามสกุล";
 
 /* Class = "UITextField"; placeholder = "name"; ObjectID = "92r-F7-Jsx"; */
-"92r-F7-Jsx.placeholder" = "name";
+"92r-F7-Jsx.placeholder" = "ชื่อ";
 
 /* Class = "UILabel"; text = "TireShop"; ObjectID = "EYq-fM-7US"; */
 "EYq-fM-7US.text" = "TireShop";
@@ -33,7 +33,7 @@
 "NJi-Y6-FWn.normalTitle" = "ยกเลิก";
 
 /* Class = "UILabel"; text = "Surname"; ObjectID = "O13-6m-jqW"; */
-"O13-6m-jqW.text" = "Surname";
+"O13-6m-jqW.text" = "นามสกุล";
 
 /* Class = "UILabel"; text = "Address : %s"; ObjectID = "R6C-hk-yNI"; */
 "R6C-hk-yNI.text" = "Address : %s";
@@ -42,16 +42,16 @@
 "WBn-yi-iYk.placeholder" = "Phone number";
 
 /* Class = "UILabel"; text = "Customer search"; ObjectID = "WVH-oN-37j"; */
-"WVH-oN-37j.text" = "Customer search";
+"WVH-oN-37j.text" = "ค้นหาลูกค้าเดิม";
 
 /* Class = "UILabel"; text = "Name"; ObjectID = "WcY-61-wcb"; */
-"WcY-61-wcb.text" = "Name";
+"WcY-61-wcb.text" = "ชื่อ";
 
 /* Class = "UITextField"; placeholder = "Car brand"; ObjectID = "XJY-nc-NYq"; */
 "XJY-nc-NYq.placeholder" = "Car brand";
 
 /* Class = "UILabel"; text = "Menu"; ObjectID = "YY8-3C-lRn"; */
-"YY8-3C-lRn.text" = "Menu";
+"YY8-3C-lRn.text" = "เมนูการใช้งาน";
 
 /* Class = "UILabel"; text = "Car brand"; ObjectID = "aVR-M5-azV"; */
 "aVR-M5-azV.text" = "Car brand";
@@ -78,13 +78,16 @@
 "gTh-nW-av4.text" = "Name : %s";
 
 /* Class = "UITextField"; placeholder = "Password"; ObjectID = "gzd-GS-dAj"; */
-"gzd-GS-dAj.placeholder" = "Password";
+"gzd-GS-dAj.placeholder" = "รหัสผ่าน";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "gzd-GS-dAj"; */
+"zPW-Iv-ofn.placeholder" = "เลือกสินค้า";
 
 /* Class = "UIButton"; normalTitle = "SEARCH"; ObjectID = "hCh-q3-eej"; */
-"hCh-q3-eej.normalTitle" = "SEARCH";
+"hCh-q3-eej.normalTitle" = "ค้นหา";
 
 /* Class = "UIButton"; normalTitle = "LOGIN"; ObjectID = "jr3-Hy-BH8"; */
-"jr3-Hy-BH8.normalTitle" = "LOGIN";
+"jr3-Hy-BH8.normalTitle" = "เข้าสู่ระบบ";
 
 /* Class = "UILabel"; text = "Email : %s"; ObjectID = "jwN-bh-jLz"; */
 "jwN-bh-jLz.text" = "Email : %s";
@@ -108,13 +111,13 @@
 "odC-O3-JSz.text" = "Last name";
 
 /* Class = "UITextField"; placeholder = "Username"; ObjectID = "uMV-xQ-uhn"; */
-"uMV-xQ-uhn.placeholder" = "Username";
+"uMV-xQ-uhn.placeholder" = "ชื่อผู้ใช้";
 
 /* Class = "UILabel"; text = "Address"; ObjectID = "wcG-qq-ljp"; */
 "wcG-qq-ljp.text" = "Address";
 
 /* Class = "UILabel"; text = "Customer information"; ObjectID = "x51-0R-2D1"; */
-"x51-0R-2D1.text" = "Customer information";
+"x51-0R-2D1.text" = "ข้อมูลลูกค้า";
 
 /* Class = "UILabel"; text = "Surname : %s"; ObjectID = "x8W-yn-DNd"; */
 "x8W-yn-DNd.text" = "Surname : %s";
@@ -124,3 +127,21 @@
 
 /* Class = "UILabel"; text = "Car brand : %s"; ObjectID = "zL0-fA-WNL"; */
 "zL0-fA-WNL.text" = "Car brand : %s";
+// หน้าเพิ่มข้อมูลผู้ใช้งานใหม่
+"GSk-SW-qWS.text" = "กรุณากรอกข้อมูลในช่องว่างให้ครบถ้วน";
+"GoZ-kW-Qzk.text" = "ชื่อ";
+"uUG-k8-uYc.text" = "นามสกุล";
+"pLa-Cf-zRA.text" = "ยี่ห้อรถยนต์";
+"pLa-Cf-zRA.text" = "ยี่ห้อรถยนต์";
+"c1p-RE-snj.text" = "ป้ายทะเบียนรถยนต์";
+"71o-RJ-PzY.placeholder" = "หมวดอักษร";
+"ZC5-kf-4Ch.placeholder" = "เลขทะเบียน";
+"LIx-gy-UHe.text" = "จังหวัด";
+"hRm-Fz-2cI.text" = "ที่อยู่";
+"MH0-Zs-BRc.text" = "อีเมล";
+"WVD-2e-Rsy.text" = "เบอร์โทรศัพท์";
+"ToI-RZ-8iX.text" = "สินค้า";
+"Hcs-bj-uQN.placeholder" = "ชื่อ";
+"L9o-VZ-stf.placeholder" = "นามสกุล";
+"BG9-DM-uly.placeholder" = "ยี่ห้อรถยนต์";
+"adL-O9-1lW.placeholder" = "ที่อยู่";

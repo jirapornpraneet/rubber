@@ -15,3 +15,7 @@
 "Car brand : %@" = "Car brand : %@";
 "Product : %@" = "Product : %@";
 "Since : %@" = "Since : %@";
+
+"Search Customer" = "Search Customer";
+"New Customer" = "New Customer";
+"Product information" = "Product information";

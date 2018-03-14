@@ -230,115 +230,148 @@ struct R: Rswift.Validatable {
       fileprivate init() {}
     }
     
-    /// This `R.string.localizable` struct is generated, and contains static references to 10 localization keys.
+    /// This `R.string.localizable` struct is generated, and contains static references to 13 localization keys.
     struct localizable {
       /// en translation: Address : %@
       /// 
-      /// Locales: en
-      static let address = Rswift.StringResource(key: "Address : %@", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// Locales: en, th
+      static let address = Rswift.StringResource(key: "Address : %@", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "th"], comment: nil)
       /// en translation: Car brand : %@
       /// 
-      /// Locales: en
-      static let carBrand = Rswift.StringResource(key: "Car brand : %@", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// Locales: en, th
+      static let carBrand = Rswift.StringResource(key: "Car brand : %@", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "th"], comment: nil)
       /// en translation: Email : %@
       /// 
-      /// Locales: en
-      static let email = Rswift.StringResource(key: "Email : %@", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// Locales: en, th
+      static let email = Rswift.StringResource(key: "Email : %@", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "th"], comment: nil)
       /// en translation: License plate number : %@
       /// 
-      /// Locales: en
-      static let licensePlateNumber = Rswift.StringResource(key: "License plate number : %@", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// Locales: en, th
+      static let licensePlateNumber = Rswift.StringResource(key: "License plate number : %@", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "th"], comment: nil)
       /// en translation: Name : %@
       /// 
-      /// Locales: en
-      static let name = Rswift.StringResource(key: "Name : %@", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// Locales: en, th
+      static let name = Rswift.StringResource(key: "Name : %@", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "th"], comment: nil)
+      /// en translation: New Customer
+      /// 
+      /// Locales: en, th
+      static let newCustomer = Rswift.StringResource(key: "New Customer", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "th"], comment: nil)
       /// en translation: Phone number : %@
       /// 
-      /// Locales: en
-      static let phoneNumber = Rswift.StringResource(key: "Phone number : %@", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// Locales: en, th
+      static let phoneNumber = Rswift.StringResource(key: "Phone number : %@", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "th"], comment: nil)
       /// en translation: Product : %@
       /// 
-      /// Locales: en
-      static let product = Rswift.StringResource(key: "Product : %@", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// Locales: en, th
+      static let product = Rswift.StringResource(key: "Product : %@", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "th"], comment: nil)
+      /// en translation: Product information
+      /// 
+      /// Locales: en, th
+      static let productInformation = Rswift.StringResource(key: "Product information", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "th"], comment: nil)
       /// en translation: Province : %@
       /// 
-      /// Locales: en
-      static let province = Rswift.StringResource(key: "Province : %@", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// Locales: en, th
+      static let province = Rswift.StringResource(key: "Province : %@", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "th"], comment: nil)
+      /// en translation: Search Customer
+      /// 
+      /// Locales: en, th
+      static let searchCustomer = Rswift.StringResource(key: "Search Customer", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "th"], comment: nil)
       /// en translation: Since : %@
       /// 
-      /// Locales: en
-      static let since = Rswift.StringResource(key: "Since : %@", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// Locales: en, th
+      static let since = Rswift.StringResource(key: "Since : %@", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "th"], comment: nil)
       /// en translation: Surname : %@
       /// 
-      /// Locales: en
-      static let surname = Rswift.StringResource(key: "Surname : %@", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// Locales: en, th
+      static let surname = Rswift.StringResource(key: "Surname : %@", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "th"], comment: nil)
       
       /// en translation: Address : %@
       /// 
-      /// Locales: en
+      /// Locales: en, th
       static func address(_ value1: String) -> String {
         return String(format: NSLocalizedString("Address : %@", bundle: R.hostingBundle, comment: ""), locale: R.applicationLocale, value1)
       }
       
       /// en translation: Car brand : %@
       /// 
-      /// Locales: en
+      /// Locales: en, th
       static func carBrand(_ value1: String) -> String {
         return String(format: NSLocalizedString("Car brand : %@", bundle: R.hostingBundle, comment: ""), locale: R.applicationLocale, value1)
       }
       
       /// en translation: Email : %@
       /// 
-      /// Locales: en
+      /// Locales: en, th
       static func email(_ value1: String) -> String {
         return String(format: NSLocalizedString("Email : %@", bundle: R.hostingBundle, comment: ""), locale: R.applicationLocale, value1)
       }
       
       /// en translation: License plate number : %@
       /// 
-      /// Locales: en
+      /// Locales: en, th
       static func licensePlateNumber(_ value1: String) -> String {
         return String(format: NSLocalizedString("License plate number : %@", bundle: R.hostingBundle, comment: ""), locale: R.applicationLocale, value1)
       }
       
       /// en translation: Name : %@
       /// 
-      /// Locales: en
+      /// Locales: en, th
       static func name(_ value1: String) -> String {
         return String(format: NSLocalizedString("Name : %@", bundle: R.hostingBundle, comment: ""), locale: R.applicationLocale, value1)
       }
       
+      /// en translation: New Customer
+      /// 
+      /// Locales: en, th
+      static func newCustomer(_: Void = ()) -> String {
+        return NSLocalizedString("New Customer", bundle: R.hostingBundle, comment: "")
+      }
+      
       /// en translation: Phone number : %@
       /// 
-      /// Locales: en
+      /// Locales: en, th
       static func phoneNumber(_ value1: String) -> String {
         return String(format: NSLocalizedString("Phone number : %@", bundle: R.hostingBundle, comment: ""), locale: R.applicationLocale, value1)
       }
       
       /// en translation: Product : %@
       /// 
-      /// Locales: en
+      /// Locales: en, th
       static func product(_ value1: String) -> String {
         return String(format: NSLocalizedString("Product : %@", bundle: R.hostingBundle, comment: ""), locale: R.applicationLocale, value1)
       }
       
+      /// en translation: Product information
+      /// 
+      /// Locales: en, th
+      static func productInformation(_: Void = ()) -> String {
+        return NSLocalizedString("Product information", bundle: R.hostingBundle, comment: "")
+      }
+      
       /// en translation: Province : %@
       /// 
-      /// Locales: en
+      /// Locales: en, th
       static func province(_ value1: String) -> String {
         return String(format: NSLocalizedString("Province : %@", bundle: R.hostingBundle, comment: ""), locale: R.applicationLocale, value1)
       }
       
+      /// en translation: Search Customer
+      /// 
+      /// Locales: en, th
+      static func searchCustomer(_: Void = ()) -> String {
+        return NSLocalizedString("Search Customer", bundle: R.hostingBundle, comment: "")
+      }
+      
       /// en translation: Since : %@
       /// 
-      /// Locales: en
+      /// Locales: en, th
       static func since(_ value1: String) -> String {
         return String(format: NSLocalizedString("Since : %@", bundle: R.hostingBundle, comment: ""), locale: R.applicationLocale, value1)
       }
       
       /// en translation: Surname : %@
       /// 
-      /// Locales: en
+      /// Locales: en, th
       static func surname(_ value1: String) -> String {
         return String(format: NSLocalizedString("Surname : %@", bundle: R.hostingBundle, comment: ""), locale: R.applicationLocale, value1)
       }
@@ -346,7 +379,7 @@ struct R: Rswift.Validatable {
       fileprivate init() {}
     }
     
-    /// This `R.string.main` struct is generated, and contains static references to 42 localization keys.
+    /// This `R.string.main` struct is generated, and contains static references to 59 localization keys.
     struct main {
       /// th translation: Address
       /// 
@@ -372,14 +405,6 @@ struct R: Rswift.Validatable {
       /// 
       /// Locales: th
       static let zL0FAWNLText = Rswift.StringResource(key: "zL0-fA-WNL.text", tableName: "Main", bundle: R.hostingBundle, locales: ["th"], comment: nil)
-      /// th translation: Customer information
-      /// 
-      /// Locales: th
-      static let x510R2D1Text = Rswift.StringResource(key: "x51-0R-2D1.text", tableName: "Main", bundle: R.hostingBundle, locales: ["th"], comment: nil)
-      /// th translation: Customer search
-      /// 
-      /// Locales: th
-      static let wvhon37jText = Rswift.StringResource(key: "WVH-oN-37j.text", tableName: "Main", bundle: R.hostingBundle, locales: ["th"], comment: nil)
       /// th translation: Email
       /// 
       /// Locales: th
@@ -400,10 +425,6 @@ struct R: Rswift.Validatable {
       /// 
       /// Locales: th
       static let xKhRZIYJPlaceholder = Rswift.StringResource(key: "xKh-RZ-IYJ.placeholder", tableName: "Main", bundle: R.hostingBundle, locales: ["th"], comment: nil)
-      /// th translation: LOGIN
-      /// 
-      /// Locales: th
-      static let jr3HyBH8NormalTitle = Rswift.StringResource(key: "jr3-Hy-BH8.normalTitle", tableName: "Main", bundle: R.hostingBundle, locales: ["th"], comment: nil)
       /// th translation: Last name
       /// 
       /// Locales: th
@@ -424,26 +445,14 @@ struct R: Rswift.Validatable {
       /// 
       /// Locales: th
       static let mb864AXText = Rswift.StringResource(key: "1Mb-86-4AX.text", tableName: "Main", bundle: R.hostingBundle, locales: ["th"], comment: nil)
-      /// th translation: Menu
-      /// 
-      /// Locales: th
-      static let yy83CLRnText = Rswift.StringResource(key: "YY8-3C-lRn.text", tableName: "Main", bundle: R.hostingBundle, locales: ["th"], comment: nil)
       /// th translation: NEW CUSTOMER
       /// 
       /// Locales: th
       static let kd45UWzJNormalTitle = Rswift.StringResource(key: "Kd4-5U-WzJ.normalTitle", tableName: "Main", bundle: R.hostingBundle, locales: ["th"], comment: nil)
-      /// th translation: Name
-      /// 
-      /// Locales: th
-      static let wcY61WcbText = Rswift.StringResource(key: "WcY-61-wcb.text", tableName: "Main", bundle: R.hostingBundle, locales: ["th"], comment: nil)
       /// th translation: Name : %s
       /// 
       /// Locales: th
       static let gThNWAv4Text = Rswift.StringResource(key: "gTh-nW-av4.text", tableName: "Main", bundle: R.hostingBundle, locales: ["th"], comment: nil)
-      /// th translation: Password
-      /// 
-      /// Locales: th
-      static let gzdGSDAjPlaceholder = Rswift.StringResource(key: "gzd-GS-dAj.placeholder", tableName: "Main", bundle: R.hostingBundle, locales: ["th"], comment: nil)
       /// th translation: Phone number
       /// 
       /// Locales: th
@@ -472,22 +481,10 @@ struct R: Rswift.Validatable {
       /// 
       /// Locales: th
       static let dco16WQVText = Rswift.StringResource(key: "dco-16-WQV.text", tableName: "Main", bundle: R.hostingBundle, locales: ["th"], comment: nil)
-      /// th translation: SEARCH
-      /// 
-      /// Locales: th
-      static let hChQ3EejNormalTitle = Rswift.StringResource(key: "hCh-q3-eej.normalTitle", tableName: "Main", bundle: R.hostingBundle, locales: ["th"], comment: nil)
       /// th translation: SEARCH CUSTOMER
       /// 
       /// Locales: th
       static let gFZThH8BNormalTitle = Rswift.StringResource(key: "gFZ-th-H8B.normalTitle", tableName: "Main", bundle: R.hostingBundle, locales: ["th"], comment: nil)
-      /// th translation: Surname
-      /// 
-      /// Locales: th
-      static let o136mJqWText = Rswift.StringResource(key: "O13-6m-jqW.text", tableName: "Main", bundle: R.hostingBundle, locales: ["th"], comment: nil)
-      /// th translation: Surname
-      /// 
-      /// Locales: th
-      static let qM1Z7x3Placeholder = Rswift.StringResource(key: "3qM-1Z-7x3.placeholder", tableName: "Main", bundle: R.hostingBundle, locales: ["th"], comment: nil)
       /// th translation: Surname : %s
       /// 
       /// Locales: th
@@ -504,18 +501,122 @@ struct R: Rswift.Validatable {
       /// 
       /// Locales: th
       static let gacGBBLqTitle = Rswift.StringResource(key: "Gac-GB-BLq.title", tableName: "Main", bundle: R.hostingBundle, locales: ["th"], comment: nil)
-      /// th translation: Username
+      /// th translation: กรุณากรอกข้อมูลในช่องว่างให้ครบถ้วน
       /// 
       /// Locales: th
-      static let uMVXQUhnPlaceholder = Rswift.StringResource(key: "uMV-xQ-uhn.placeholder", tableName: "Main", bundle: R.hostingBundle, locales: ["th"], comment: nil)
-      /// th translation: name
+      static let gSkSWQWSText = Rswift.StringResource(key: "GSk-SW-qWS.text", tableName: "Main", bundle: R.hostingBundle, locales: ["th"], comment: nil)
+      /// th translation: ข้อมูลลูกค้า
+      /// 
+      /// Locales: th
+      static let x510R2D1Text = Rswift.StringResource(key: "x51-0R-2D1.text", tableName: "Main", bundle: R.hostingBundle, locales: ["th"], comment: nil)
+      /// th translation: ค้นหา
+      /// 
+      /// Locales: th
+      static let hChQ3EejNormalTitle = Rswift.StringResource(key: "hCh-q3-eej.normalTitle", tableName: "Main", bundle: R.hostingBundle, locales: ["th"], comment: nil)
+      /// th translation: ค้นหาลูกค้าเดิม
+      /// 
+      /// Locales: th
+      static let wvhon37jText = Rswift.StringResource(key: "WVH-oN-37j.text", tableName: "Main", bundle: R.hostingBundle, locales: ["th"], comment: nil)
+      /// th translation: จังหวัด
+      /// 
+      /// Locales: th
+      static let lIxGyUHeText = Rswift.StringResource(key: "LIx-gy-UHe.text", tableName: "Main", bundle: R.hostingBundle, locales: ["th"], comment: nil)
+      /// th translation: ชื่อ
+      /// 
+      /// Locales: th
+      static let goZKWQzkText = Rswift.StringResource(key: "GoZ-kW-Qzk.text", tableName: "Main", bundle: R.hostingBundle, locales: ["th"], comment: nil)
+      /// th translation: ชื่อ
+      /// 
+      /// Locales: th
+      static let hcsBjUQNPlaceholder = Rswift.StringResource(key: "Hcs-bj-uQN.placeholder", tableName: "Main", bundle: R.hostingBundle, locales: ["th"], comment: nil)
+      /// th translation: ชื่อ
       /// 
       /// Locales: th
       static let rF7JsxPlaceholder = Rswift.StringResource(key: "92r-F7-Jsx.placeholder", tableName: "Main", bundle: R.hostingBundle, locales: ["th"], comment: nil)
+      /// th translation: ชื่อ
+      /// 
+      /// Locales: th
+      static let wcY61WcbText = Rswift.StringResource(key: "WcY-61-wcb.text", tableName: "Main", bundle: R.hostingBundle, locales: ["th"], comment: nil)
+      /// th translation: ชื่อผู้ใช้
+      /// 
+      /// Locales: th
+      static let uMVXQUhnPlaceholder = Rswift.StringResource(key: "uMV-xQ-uhn.placeholder", tableName: "Main", bundle: R.hostingBundle, locales: ["th"], comment: nil)
+      /// th translation: ที่อยู่
+      /// 
+      /// Locales: th
+      static let adLO91lWPlaceholder = Rswift.StringResource(key: "adL-O9-1lW.placeholder", tableName: "Main", bundle: R.hostingBundle, locales: ["th"], comment: nil)
+      /// th translation: ที่อยู่
+      /// 
+      /// Locales: th
+      static let hRmFz2cIText = Rswift.StringResource(key: "hRm-Fz-2cI.text", tableName: "Main", bundle: R.hostingBundle, locales: ["th"], comment: nil)
+      /// th translation: นามสกุล
+      /// 
+      /// Locales: th
+      static let l9oVZStfPlaceholder = Rswift.StringResource(key: "L9o-VZ-stf.placeholder", tableName: "Main", bundle: R.hostingBundle, locales: ["th"], comment: nil)
+      /// th translation: นามสกุล
+      /// 
+      /// Locales: th
+      static let o136mJqWText = Rswift.StringResource(key: "O13-6m-jqW.text", tableName: "Main", bundle: R.hostingBundle, locales: ["th"], comment: nil)
+      /// th translation: นามสกุล
+      /// 
+      /// Locales: th
+      static let qM1Z7x3Placeholder = Rswift.StringResource(key: "3qM-1Z-7x3.placeholder", tableName: "Main", bundle: R.hostingBundle, locales: ["th"], comment: nil)
+      /// th translation: นามสกุล
+      /// 
+      /// Locales: th
+      static let uUGK8UYcText = Rswift.StringResource(key: "uUG-k8-uYc.text", tableName: "Main", bundle: R.hostingBundle, locales: ["th"], comment: nil)
+      /// th translation: ป้ายทะเบียนรถยนต์
+      /// 
+      /// Locales: th
+      static let c1pRESnjText = Rswift.StringResource(key: "c1p-RE-snj.text", tableName: "Main", bundle: R.hostingBundle, locales: ["th"], comment: nil)
       /// th translation: ยกเลิก
       /// 
       /// Locales: th
       static let nJiY6FWnNormalTitle = Rswift.StringResource(key: "NJi-Y6-FWn.normalTitle", tableName: "Main", bundle: R.hostingBundle, locales: ["th"], comment: nil)
+      /// th translation: ยี่ห้อรถยนต์
+      /// 
+      /// Locales: th
+      static let bg9DMUlyPlaceholder = Rswift.StringResource(key: "BG9-DM-uly.placeholder", tableName: "Main", bundle: R.hostingBundle, locales: ["th"], comment: nil)
+      /// th translation: ยี่ห้อรถยนต์
+      /// 
+      /// Locales: th
+      static let pLaCfZRAText = Rswift.StringResource(key: "pLa-Cf-zRA.text", tableName: "Main", bundle: R.hostingBundle, locales: ["th"], comment: nil)
+      /// th translation: รหัสผ่าน
+      /// 
+      /// Locales: th
+      static let gzdGSDAjPlaceholder = Rswift.StringResource(key: "gzd-GS-dAj.placeholder", tableName: "Main", bundle: R.hostingBundle, locales: ["th"], comment: nil)
+      /// th translation: สินค้า
+      /// 
+      /// Locales: th
+      static let toIRZ8iXText = Rswift.StringResource(key: "ToI-RZ-8iX.text", tableName: "Main", bundle: R.hostingBundle, locales: ["th"], comment: nil)
+      /// th translation: หมวดอักษร
+      /// 
+      /// Locales: th
+      static let oRJPzYPlaceholder = Rswift.StringResource(key: "71o-RJ-PzY.placeholder", tableName: "Main", bundle: R.hostingBundle, locales: ["th"], comment: nil)
+      /// th translation: อีเมล
+      /// 
+      /// Locales: th
+      static let mh0ZsBRcText = Rswift.StringResource(key: "MH0-Zs-BRc.text", tableName: "Main", bundle: R.hostingBundle, locales: ["th"], comment: nil)
+      /// th translation: เข้าสู่ระบบ
+      /// 
+      /// Locales: th
+      static let jr3HyBH8NormalTitle = Rswift.StringResource(key: "jr3-Hy-BH8.normalTitle", tableName: "Main", bundle: R.hostingBundle, locales: ["th"], comment: nil)
+      /// th translation: เบอร์โทรศัพท์
+      /// 
+      /// Locales: th
+      static let wvd2eRsyText = Rswift.StringResource(key: "WVD-2e-Rsy.text", tableName: "Main", bundle: R.hostingBundle, locales: ["th"], comment: nil)
+      /// th translation: เมนูการใช้งาน
+      /// 
+      /// Locales: th
+      static let yy83CLRnText = Rswift.StringResource(key: "YY8-3C-lRn.text", tableName: "Main", bundle: R.hostingBundle, locales: ["th"], comment: nil)
+      /// th translation: เลขทะเบียน
+      /// 
+      /// Locales: th
+      static let zc5Kf4ChPlaceholder = Rswift.StringResource(key: "ZC5-kf-4Ch.placeholder", tableName: "Main", bundle: R.hostingBundle, locales: ["th"], comment: nil)
+      /// th translation: เลือกสินค้า
+      /// 
+      /// Locales: th
+      static let zPWIvOfnPlaceholder = Rswift.StringResource(key: "zPW-Iv-ofn.placeholder", tableName: "Main", bundle: R.hostingBundle, locales: ["th"], comment: nil)
       
       /// th translation: Address
       /// 
@@ -559,20 +660,6 @@ struct R: Rswift.Validatable {
         return String(format: NSLocalizedString("zL0-fA-WNL.text", tableName: "Main", bundle: R.hostingBundle, comment: ""), locale: R.applicationLocale, value1)
       }
       
-      /// th translation: Customer information
-      /// 
-      /// Locales: th
-      static func x510R2D1Text(_: Void = ()) -> String {
-        return NSLocalizedString("x51-0R-2D1.text", tableName: "Main", bundle: R.hostingBundle, comment: "")
-      }
-      
-      /// th translation: Customer search
-      /// 
-      /// Locales: th
-      static func wvhon37jText(_: Void = ()) -> String {
-        return NSLocalizedString("WVH-oN-37j.text", tableName: "Main", bundle: R.hostingBundle, comment: "")
-      }
-      
       /// th translation: Email
       /// 
       /// Locales: th
@@ -606,13 +693,6 @@ struct R: Rswift.Validatable {
       /// Locales: th
       static func xKhRZIYJPlaceholder(_: Void = ()) -> String {
         return NSLocalizedString("xKh-RZ-IYJ.placeholder", tableName: "Main", bundle: R.hostingBundle, comment: "")
-      }
-      
-      /// th translation: LOGIN
-      /// 
-      /// Locales: th
-      static func jr3HyBH8NormalTitle(_: Void = ()) -> String {
-        return NSLocalizedString("jr3-Hy-BH8.normalTitle", tableName: "Main", bundle: R.hostingBundle, comment: "")
       }
       
       /// th translation: Last name
@@ -650,13 +730,6 @@ struct R: Rswift.Validatable {
         return String(format: NSLocalizedString("1Mb-86-4AX.text", tableName: "Main", bundle: R.hostingBundle, comment: ""), locale: R.applicationLocale, value1)
       }
       
-      /// th translation: Menu
-      /// 
-      /// Locales: th
-      static func yy83CLRnText(_: Void = ()) -> String {
-        return NSLocalizedString("YY8-3C-lRn.text", tableName: "Main", bundle: R.hostingBundle, comment: "")
-      }
-      
       /// th translation: NEW CUSTOMER
       /// 
       /// Locales: th
@@ -664,25 +737,11 @@ struct R: Rswift.Validatable {
         return NSLocalizedString("Kd4-5U-WzJ.normalTitle", tableName: "Main", bundle: R.hostingBundle, comment: "")
       }
       
-      /// th translation: Name
-      /// 
-      /// Locales: th
-      static func wcY61WcbText(_: Void = ()) -> String {
-        return NSLocalizedString("WcY-61-wcb.text", tableName: "Main", bundle: R.hostingBundle, comment: "")
-      }
-      
       /// th translation: Name : %s
       /// 
       /// Locales: th
       static func gThNWAv4Text(_ value1: UnsafePointer<unichar>) -> String {
         return String(format: NSLocalizedString("gTh-nW-av4.text", tableName: "Main", bundle: R.hostingBundle, comment: ""), locale: R.applicationLocale, value1)
-      }
-      
-      /// th translation: Password
-      /// 
-      /// Locales: th
-      static func gzdGSDAjPlaceholder(_: Void = ()) -> String {
-        return NSLocalizedString("gzd-GS-dAj.placeholder", tableName: "Main", bundle: R.hostingBundle, comment: "")
       }
       
       /// th translation: Phone number
@@ -734,32 +793,11 @@ struct R: Rswift.Validatable {
         return String(format: NSLocalizedString("dco-16-WQV.text", tableName: "Main", bundle: R.hostingBundle, comment: ""), locale: R.applicationLocale, value1)
       }
       
-      /// th translation: SEARCH
-      /// 
-      /// Locales: th
-      static func hChQ3EejNormalTitle(_: Void = ()) -> String {
-        return NSLocalizedString("hCh-q3-eej.normalTitle", tableName: "Main", bundle: R.hostingBundle, comment: "")
-      }
-      
       /// th translation: SEARCH CUSTOMER
       /// 
       /// Locales: th
       static func gFZThH8BNormalTitle(_: Void = ()) -> String {
         return NSLocalizedString("gFZ-th-H8B.normalTitle", tableName: "Main", bundle: R.hostingBundle, comment: "")
-      }
-      
-      /// th translation: Surname
-      /// 
-      /// Locales: th
-      static func o136mJqWText(_: Void = ()) -> String {
-        return NSLocalizedString("O13-6m-jqW.text", tableName: "Main", bundle: R.hostingBundle, comment: "")
-      }
-      
-      /// th translation: Surname
-      /// 
-      /// Locales: th
-      static func qM1Z7x3Placeholder(_: Void = ()) -> String {
-        return NSLocalizedString("3qM-1Z-7x3.placeholder", tableName: "Main", bundle: R.hostingBundle, comment: "")
       }
       
       /// th translation: Surname : %s
@@ -790,18 +828,123 @@ struct R: Rswift.Validatable {
         return NSLocalizedString("Gac-GB-BLq.title", tableName: "Main", bundle: R.hostingBundle, comment: "")
       }
       
-      /// th translation: Username
+      /// th translation: กรุณากรอกข้อมูลในช่องว่างให้ครบถ้วน
+      /// 
+      /// Locales: th
+      static func gSkSWQWSText(_: Void = ()) -> String {
+        return NSLocalizedString("GSk-SW-qWS.text", tableName: "Main", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// th translation: ข้อมูลลูกค้า
+      /// 
+      /// Locales: th
+      static func x510R2D1Text(_: Void = ()) -> String {
+        return NSLocalizedString("x51-0R-2D1.text", tableName: "Main", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// th translation: ค้นหา
+      /// 
+      /// Locales: th
+      static func hChQ3EejNormalTitle(_: Void = ()) -> String {
+        return NSLocalizedString("hCh-q3-eej.normalTitle", tableName: "Main", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// th translation: ค้นหาลูกค้าเดิม
+      /// 
+      /// Locales: th
+      static func wvhon37jText(_: Void = ()) -> String {
+        return NSLocalizedString("WVH-oN-37j.text", tableName: "Main", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// th translation: จังหวัด
+      /// 
+      /// Locales: th
+      static func lIxGyUHeText(_: Void = ()) -> String {
+        return NSLocalizedString("LIx-gy-UHe.text", tableName: "Main", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// th translation: ชื่อ
+      /// 
+      /// Locales: th
+      static func goZKWQzkText(_: Void = ()) -> String {
+        return NSLocalizedString("GoZ-kW-Qzk.text", tableName: "Main", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// th translation: ชื่อ
+      /// 
+      /// Locales: th
+      static func hcsBjUQNPlaceholder(_: Void = ()) -> String {
+        return NSLocalizedString("Hcs-bj-uQN.placeholder", tableName: "Main", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// th translation: ชื่อ
+      /// 
+      /// Locales: th
+      static func rF7JsxPlaceholder(_: Void = ()) -> String {
+        return NSLocalizedString("92r-F7-Jsx.placeholder", tableName: "Main", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// th translation: ชื่อ
+      /// 
+      /// Locales: th
+      static func wcY61WcbText(_: Void = ()) -> String {
+        return NSLocalizedString("WcY-61-wcb.text", tableName: "Main", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// th translation: ชื่อผู้ใช้
       /// 
       /// Locales: th
       static func uMVXQUhnPlaceholder(_: Void = ()) -> String {
         return NSLocalizedString("uMV-xQ-uhn.placeholder", tableName: "Main", bundle: R.hostingBundle, comment: "")
       }
       
-      /// th translation: name
+      /// th translation: ที่อยู่
       /// 
       /// Locales: th
-      static func rF7JsxPlaceholder(_: Void = ()) -> String {
-        return NSLocalizedString("92r-F7-Jsx.placeholder", tableName: "Main", bundle: R.hostingBundle, comment: "")
+      static func adLO91lWPlaceholder(_: Void = ()) -> String {
+        return NSLocalizedString("adL-O9-1lW.placeholder", tableName: "Main", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// th translation: ที่อยู่
+      /// 
+      /// Locales: th
+      static func hRmFz2cIText(_: Void = ()) -> String {
+        return NSLocalizedString("hRm-Fz-2cI.text", tableName: "Main", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// th translation: นามสกุล
+      /// 
+      /// Locales: th
+      static func l9oVZStfPlaceholder(_: Void = ()) -> String {
+        return NSLocalizedString("L9o-VZ-stf.placeholder", tableName: "Main", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// th translation: นามสกุล
+      /// 
+      /// Locales: th
+      static func o136mJqWText(_: Void = ()) -> String {
+        return NSLocalizedString("O13-6m-jqW.text", tableName: "Main", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// th translation: นามสกุล
+      /// 
+      /// Locales: th
+      static func qM1Z7x3Placeholder(_: Void = ()) -> String {
+        return NSLocalizedString("3qM-1Z-7x3.placeholder", tableName: "Main", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// th translation: นามสกุล
+      /// 
+      /// Locales: th
+      static func uUGK8UYcText(_: Void = ()) -> String {
+        return NSLocalizedString("uUG-k8-uYc.text", tableName: "Main", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// th translation: ป้ายทะเบียนรถยนต์
+      /// 
+      /// Locales: th
+      static func c1pRESnjText(_: Void = ()) -> String {
+        return NSLocalizedString("c1p-RE-snj.text", tableName: "Main", bundle: R.hostingBundle, comment: "")
       }
       
       /// th translation: ยกเลิก
@@ -809,6 +952,83 @@ struct R: Rswift.Validatable {
       /// Locales: th
       static func nJiY6FWnNormalTitle(_: Void = ()) -> String {
         return NSLocalizedString("NJi-Y6-FWn.normalTitle", tableName: "Main", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// th translation: ยี่ห้อรถยนต์
+      /// 
+      /// Locales: th
+      static func bg9DMUlyPlaceholder(_: Void = ()) -> String {
+        return NSLocalizedString("BG9-DM-uly.placeholder", tableName: "Main", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// th translation: ยี่ห้อรถยนต์
+      /// 
+      /// Locales: th
+      static func pLaCfZRAText(_: Void = ()) -> String {
+        return NSLocalizedString("pLa-Cf-zRA.text", tableName: "Main", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// th translation: รหัสผ่าน
+      /// 
+      /// Locales: th
+      static func gzdGSDAjPlaceholder(_: Void = ()) -> String {
+        return NSLocalizedString("gzd-GS-dAj.placeholder", tableName: "Main", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// th translation: สินค้า
+      /// 
+      /// Locales: th
+      static func toIRZ8iXText(_: Void = ()) -> String {
+        return NSLocalizedString("ToI-RZ-8iX.text", tableName: "Main", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// th translation: หมวดอักษร
+      /// 
+      /// Locales: th
+      static func oRJPzYPlaceholder(_: Void = ()) -> String {
+        return NSLocalizedString("71o-RJ-PzY.placeholder", tableName: "Main", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// th translation: อีเมล
+      /// 
+      /// Locales: th
+      static func mh0ZsBRcText(_: Void = ()) -> String {
+        return NSLocalizedString("MH0-Zs-BRc.text", tableName: "Main", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// th translation: เข้าสู่ระบบ
+      /// 
+      /// Locales: th
+      static func jr3HyBH8NormalTitle(_: Void = ()) -> String {
+        return NSLocalizedString("jr3-Hy-BH8.normalTitle", tableName: "Main", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// th translation: เบอร์โทรศัพท์
+      /// 
+      /// Locales: th
+      static func wvd2eRsyText(_: Void = ()) -> String {
+        return NSLocalizedString("WVD-2e-Rsy.text", tableName: "Main", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// th translation: เมนูการใช้งาน
+      /// 
+      /// Locales: th
+      static func yy83CLRnText(_: Void = ()) -> String {
+        return NSLocalizedString("YY8-3C-lRn.text", tableName: "Main", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// th translation: เลขทะเบียน
+      /// 
+      /// Locales: th
+      static func zc5Kf4ChPlaceholder(_: Void = ()) -> String {
+        return NSLocalizedString("ZC5-kf-4Ch.placeholder", tableName: "Main", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// th translation: เลือกสินค้า
+      /// 
+      /// Locales: th
+      static func zPWIvOfnPlaceholder(_: Void = ()) -> String {
+        return NSLocalizedString("zPW-Iv-ofn.placeholder", tableName: "Main", bundle: R.hostingBundle, comment: "")
       }
       
       fileprivate init() {}

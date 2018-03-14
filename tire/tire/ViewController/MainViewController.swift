@@ -12,6 +12,8 @@ class MainViewController: UIViewController {
 
     @IBOutlet var searchCustomerView: UIView!
     @IBOutlet var newCustomerView: UIView!
+    @IBOutlet var searchCustomerLabel: UILabel!
+    @IBOutlet var newCustomerLabel: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,6 +27,9 @@ class MainViewController: UIViewController {
         newCustomerView.addGestureRecognizer(tapGestureRecognizerNewCustomerView)
 
         UIApplication.shared.statusBarView?.backgroundColor = UIColor(red: 69/255, green: 90/255, blue: 100/255, alpha: 1.0)
+
+        searchCustomerLabel.text = R.string.localizable.searchCustomer()
+        newCustomerLabel.text = R.string.localizable.newCustomer()
     }
 
     @objc func searchCustomerViewAction() {

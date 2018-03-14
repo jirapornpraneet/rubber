@@ -29,16 +29,14 @@
                                             <constraint firstAttribute="height" constant="150" id="tzM-xu-8hy"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NIKA Shop" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EYq-fM-7US">
-                                        <rect key="frame" x="83" y="190" width="169" height="45"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NIKA Shop" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zlO-wV-WV5">
+                                        <rect key="frame" x="92" y="200" width="151" height="35"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="45" id="GES-DW-ORQ"/>
-                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="169" id="Xix-ql-70h"/>
-                                            <constraint firstAttribute="height" constant="45" id="Xpe-Lh-xwg"/>
-                                            <constraint firstAttribute="width" constant="169" id="vbS-on-xo7"/>
+                                            <constraint firstAttribute="height" constant="35" id="aaa-h7-ZCm"/>
+                                            <constraint firstAttribute="width" constant="151" id="cqa-7z-nvE"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="27"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="28"/>
+                                        <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tnH-Vu-ThW">
@@ -152,12 +150,12 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="tnH-Vu-ThW" secondAttribute="trailing" constant="10" id="7Sn-lI-rkQ"/>
-                                    <constraint firstItem="EYq-fM-7US" firstAttribute="centerX" secondItem="KrF-9b-SfP" secondAttribute="centerX" id="CUG-8b-JCV"/>
-                                    <constraint firstItem="EYq-fM-7US" firstAttribute="top" secondItem="zSW-PA-6Wq" secondAttribute="bottom" constant="10" id="CrB-yH-OKG"/>
+                                    <constraint firstItem="tnH-Vu-ThW" firstAttribute="top" secondItem="zlO-wV-WV5" secondAttribute="bottom" constant="5" id="Mn8-ns-wDv"/>
                                     <constraint firstItem="jr3-Hy-BH8" firstAttribute="top" secondItem="tnH-Vu-ThW" secondAttribute="bottom" constant="20" id="V8q-Li-l7s"/>
                                     <constraint firstItem="zSW-PA-6Wq" firstAttribute="centerX" secondItem="KrF-9b-SfP" secondAttribute="centerX" id="dFC-UB-nwn"/>
+                                    <constraint firstItem="zlO-wV-WV5" firstAttribute="top" secondItem="zSW-PA-6Wq" secondAttribute="bottom" constant="20" id="hdP-wT-q9i"/>
+                                    <constraint firstItem="zlO-wV-WV5" firstAttribute="centerX" secondItem="KrF-9b-SfP" secondAttribute="centerX" id="lMs-jt-1kl"/>
                                     <constraint firstItem="zSW-PA-6Wq" firstAttribute="top" secondItem="KrF-9b-SfP" secondAttribute="top" constant="30" id="mCQ-gc-awr"/>
-                                    <constraint firstItem="tnH-Vu-ThW" firstAttribute="top" secondItem="EYq-fM-7US" secondAttribute="bottom" constant="5" id="mLr-ob-zGQ"/>
                                     <constraint firstItem="tnH-Vu-ThW" firstAttribute="leading" secondItem="KrF-9b-SfP" secondAttribute="leading" constant="10" id="pYw-E9-w53"/>
                                     <constraint firstAttribute="trailing" secondItem="jr3-Hy-BH8" secondAttribute="trailing" constant="10" id="qUW-NG-Aeo"/>
                                     <constraint firstAttribute="height" constant="467" id="rHO-Uw-PO3"/>
@@ -346,7 +344,7 @@
                                             <constraint firstAttribute="width" constant="46" id="xM1-pX-qrt"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                        <state key="normal" title="ยกเลิก">
+                                        <state key="normal" title="cancel">
                                             <color key="titleColor" red="1" green="0.1857388616" blue="0.57339501380000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
@@ -400,7 +398,7 @@
             </objects>
             <point key="canvasLocation" x="2413.5999999999999" y="-341.37931034482762"/>
         </scene>
-        <!--TireShop-->
+        <!--NIKA Shop-->
         <scene sceneID="yPH-65-zfS">
             <objects>
                 <viewController id="Kbg-8y-yiK" customClass="CustomerViewController" customModule="tire" customModuleProvider="target" sceneMemberID="viewController">
@@ -590,7 +588,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="wov-lJ-aYX"/>
                     </view>
-                    <navigationItem key="navigationItem" title="TireShop" id="Gac-GB-BLq"/>
+                    <navigationItem key="navigationItem" title="NIKA Shop" id="Gac-GB-BLq"/>
                     <connections>
                         <outlet property="addressLabel" destination="1Mb-86-4AX" id="rUI-xo-yxC"/>
                         <outlet property="carBrandLabel" destination="R6C-hk-yNI" id="uvw-N5-1Zw"/>
@@ -599,6 +597,7 @@
                         <outlet property="lastNameLabel" destination="x8W-yn-DNd" id="q7V-nf-xvR"/>
                         <outlet property="licensePlateLabel" destination="ned-NH-71K" id="xhw-5K-jOz"/>
                         <outlet property="phoneNumberLabel" destination="zL0-fA-WNL" id="XjL-KI-6xi"/>
+                        <outlet property="productInformationLabel" destination="IN6-cH-7vu" id="QlZ-xH-Cw3"/>
                         <outlet property="productLabel" destination="9IP-ir-MRp" id="Y4m-lr-jcQ"/>
                         <outlet property="productSinceLabel" destination="m6E-gE-fWO" id="Vs6-yL-dzK"/>
                         <outlet property="provinceLabel" destination="jwN-bh-jLz" id="NKw-F9-S9w"/>
@@ -626,10 +625,9 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bX7-ZJ-LcQ">
-                                            <rect key="frame" x="152" y="11" width="207" height="15"/>
+                                            <rect key="frame" x="26" y="11" width="333" height="15"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="15" id="Y4w-i8-cmq"/>
-                                                <constraint firstAttribute="width" constant="207" id="rQs-PW-YRg"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <nil key="textColor"/>
@@ -708,6 +706,7 @@
                                         <constraint firstItem="bX7-ZJ-LcQ" firstAttribute="trailing" secondItem="eaN-lP-2IU" secondAttribute="trailingMargin" id="rzs-fz-gos"/>
                                         <constraint firstAttribute="trailing" secondItem="b0i-uf-1wj" secondAttribute="trailing" constant="15" id="txR-08-IDC"/>
                                         <constraint firstAttribute="trailing" secondItem="DBq-ln-JE8" secondAttribute="trailing" constant="15" id="u3N-o0-Vi4"/>
+                                        <constraint firstItem="bX7-ZJ-LcQ" firstAttribute="leading" secondItem="eaN-lP-2IU" secondAttribute="leadingMargin" constant="10" id="zV2-md-cSY"/>
                                         <constraint firstItem="kAG-u2-sUd" firstAttribute="top" secondItem="b0i-uf-1wj" secondAttribute="bottom" constant="5" id="zus-f4-W9f"/>
                                     </constraints>
                                 </tableViewCellContentView>
@@ -735,7 +734,7 @@
             </objects>
             <point key="canvasLocation" x="3133.5999999999999" y="-341.37931034482762"/>
         </scene>
-        <!--TireShop-->
+        <!--NIKA Shop-->
         <scene sceneID="g8A-b4-qyv">
             <objects>
                 <viewController id="sTP-jU-bPH" customClass="MainViewController" customModule="tire" customModuleProvider="target" sceneMemberID="viewController">
@@ -746,11 +745,10 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9rN-Ib-UO7">
                                 <rect key="frame" x="20" y="203.5" width="335" height="260"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Menu" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YY8-3C-lRn">
-                                        <rect key="frame" x="125" y="15" width="84" height="34"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Menu" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YY8-3C-lRn">
+                                        <rect key="frame" x="20" y="15" width="295" height="34"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="34" id="AeE-OP-tXg"/>
-                                            <constraint firstAttribute="width" constant="84" id="ffX-Yo-pOD"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                         <nil key="textColor"/>
@@ -825,7 +823,9 @@
                                     <constraint firstItem="2tX-SB-uVq" firstAttribute="top" secondItem="YY8-3C-lRn" secondAttribute="bottom" constant="21" id="7jy-7Y-eh2"/>
                                     <constraint firstItem="ibR-y8-Yrg" firstAttribute="top" secondItem="2tX-SB-uVq" secondAttribute="bottom" constant="20" id="AYt-54-itu"/>
                                     <constraint firstItem="YY8-3C-lRn" firstAttribute="centerX" secondItem="9rN-Ib-UO7" secondAttribute="centerX" id="MQr-sB-ypo"/>
+                                    <constraint firstAttribute="trailing" secondItem="YY8-3C-lRn" secondAttribute="trailing" constant="20" id="Mau-05-04D"/>
                                     <constraint firstAttribute="trailing" secondItem="ibR-y8-Yrg" secondAttribute="trailing" constant="15" id="QdX-Yb-GzN"/>
+                                    <constraint firstItem="YY8-3C-lRn" firstAttribute="leading" secondItem="9rN-Ib-UO7" secondAttribute="leading" constant="20" id="Ua9-Pm-Ayn"/>
                                     <constraint firstItem="ibR-y8-Yrg" firstAttribute="leading" secondItem="9rN-Ib-UO7" secondAttribute="leading" constant="15" id="Vbl-FQ-LgA"/>
                                     <constraint firstAttribute="trailing" secondItem="2tX-SB-uVq" secondAttribute="trailing" constant="15" id="tNU-AS-Ytx"/>
                                     <constraint firstItem="YY8-3C-lRn" firstAttribute="top" secondItem="9rN-Ib-UO7" secondAttribute="top" constant="15" id="wf0-0s-bSc"/>
@@ -842,7 +842,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="qtv-VT-EOx"/>
                     </view>
-                    <navigationItem key="navigationItem" title="TireShop" id="dwq-5u-uFx">
+                    <navigationItem key="navigationItem" title="NIKA Shop" id="dwq-5u-uFx">
                         <barButtonItem key="rightBarButtonItem" image="ic_exit_to_app_white_36pt" id="NFN-I6-0oO">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
@@ -851,7 +851,9 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="newCustomerLabel" destination="4Xu-bp-tf3" id="yoI-zH-zaq"/>
                         <outlet property="newCustomerView" destination="ibR-y8-Yrg" id="F06-Z0-0wJ"/>
+                        <outlet property="searchCustomerLabel" destination="ul7-Kd-ZKx" id="90Z-Ec-0KT"/>
                         <outlet property="searchCustomerView" destination="2tX-SB-uVq" id="Rm5-SM-2ef"/>
                         <segue destination="xMi-7R-ret" kind="push" identifier="toSearch" id="5Cb-bB-noC"/>
                         <segue destination="aS3-AV-6Dy" kind="push" identifier="toAdd" id="8rs-oF-RyS"/>
@@ -861,7 +863,7 @@
             </objects>
             <point key="canvasLocation" x="1624.8" y="134.48275862068968"/>
         </scene>
-        <!--New Customer View Controller-->
+        <!--เพิ่มข้อมูลลูกค้าใหม่-->
         <scene sceneID="pcm-SK-RCA">
             <objects>
                 <viewController id="aS3-AV-6Dy" customClass="NewCustomerViewController" customModule="tire" customModuleProvider="target" sceneMemberID="viewController">
@@ -916,7 +918,6 @@
                                                                 <textInputTraits key="textInputTraits" returnKeyType="next"/>
                                                                 <connections>
                                                                     <action selector="firstNameFieldEditingChanged:" destination="aS3-AV-6Dy" eventType="editingChanged" id="3Rg-9f-e16"/>
-                                                                    <action selector="usernameFieldEditingChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="el8-q4-NEl"/>
                                                                 </connections>
                                                             </textField>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="slf-GL-mlo">
@@ -961,7 +962,6 @@
                                                                 <textInputTraits key="textInputTraits" returnKeyType="next"/>
                                                                 <connections>
                                                                     <action selector="lastNameFieldEditingChanged:" destination="aS3-AV-6Dy" eventType="editingChanged" id="JYi-ha-Fke"/>
-                                                                    <action selector="usernameFieldEditingChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="UBu-CY-cXj"/>
                                                                 </connections>
                                                             </textField>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r4D-lv-04w">
@@ -1006,7 +1006,6 @@
                                                                 <textInputTraits key="textInputTraits" returnKeyType="next"/>
                                                                 <connections>
                                                                     <action selector="carBrandFieldEditingChanged:" destination="aS3-AV-6Dy" eventType="editingChanged" id="Ckc-hP-oCf"/>
-                                                                    <action selector="usernameFieldEditingChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="bEC-3G-rfU"/>
                                                                 </connections>
                                                             </textField>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YH8-KR-cCI">
@@ -1072,7 +1071,6 @@
                                                                 <textInputTraits key="textInputTraits" returnKeyType="next"/>
                                                                 <connections>
                                                                     <action selector="suffixLicenseFieldEditingChanged:" destination="aS3-AV-6Dy" eventType="editingChanged" id="tCu-g4-eEt"/>
-                                                                    <action selector="usernameFieldEditingChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="SvX-FM-TFZ"/>
                                                                 </connections>
                                                             </textField>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N7w-Sj-Gjh">
@@ -1122,7 +1120,6 @@
                                                                 <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="next" textContentType="tel"/>
                                                                 <connections>
                                                                     <action selector="provinceFieldEditingChanged:" destination="aS3-AV-6Dy" eventType="editingChanged" id="aOe-kk-OQq"/>
-                                                                    <action selector="usernameFieldEditingChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="kev-ZT-1wC"/>
                                                                 </connections>
                                                             </textField>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6LW-gi-jkd">
@@ -1167,7 +1164,6 @@
                                                                 <textInputTraits key="textInputTraits" returnKeyType="next"/>
                                                                 <connections>
                                                                     <action selector="addressFieldEditingChanged:" destination="aS3-AV-6Dy" eventType="editingChanged" id="Are-Qh-0hC"/>
-                                                                    <action selector="usernameFieldEditingChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="WBJ-wk-2e0"/>
                                                                 </connections>
                                                             </textField>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EaS-jq-yXi">
@@ -1202,7 +1198,7 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cjY-ut-Bt6">
                                                         <rect key="frame" x="4" y="421" width="347" height="35"/>
                                                         <subviews>
-                                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="spe-J8-vaE">
+                                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="mail@mail.com" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="spe-J8-vaE">
                                                                 <rect key="frame" x="8" y="0.0" width="331" height="35"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="35" id="6Lr-UT-dUg"/>
@@ -1212,7 +1208,6 @@
                                                                 <textInputTraits key="textInputTraits" returnKeyType="next"/>
                                                                 <connections>
                                                                     <action selector="emailFieldEditingChanged:" destination="aS3-AV-6Dy" eventType="editingChanged" id="8n8-jb-svx"/>
-                                                                    <action selector="usernameFieldEditingChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="eUV-bE-yHU"/>
                                                                 </connections>
                                                             </textField>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tip-71-F1d">
@@ -1257,7 +1252,6 @@
                                                                 <textInputTraits key="textInputTraits" returnKeyType="next"/>
                                                                 <connections>
                                                                     <action selector="phoneNumberEditingChanged:" destination="aS3-AV-6Dy" eventType="editingChanged" id="75M-tb-xsC"/>
-                                                                    <action selector="usernameFieldEditingChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="jPr-N7-oNO"/>
                                                                 </connections>
                                                             </textField>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WGO-3Q-1b1">
@@ -1298,9 +1292,6 @@
                                                                 <nil key="textColor"/>
                                                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="16"/>
                                                                 <textInputTraits key="textInputTraits" returnKeyType="next"/>
-                                                                <connections>
-                                                                    <action selector="usernameFieldEditingChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="5dg-bX-90q"/>
-                                                                </connections>
                                                             </textField>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x2C-ke-YuE">
                                                                 <rect key="frame" x="8" y="34" width="331" height="1"/>
@@ -1378,7 +1369,7 @@
                                                 </constraints>
                                             </view>
                                         </subviews>
-                                        <color key="backgroundColor" red="0.62352941179999999" green="0.69803921570000005" blue="0.72549019609999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstItem="Z2U-30-VUC" firstAttribute="leading" secondItem="WLk-Yr-skr" secondAttribute="leading" constant="10" id="BvE-gK-qEK"/>
                                             <constraint firstItem="Z2U-30-VUC" firstAttribute="top" secondItem="WLk-Yr-skr" secondAttribute="top" constant="10" id="HNi-z2-0cP"/>
@@ -1407,7 +1398,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Kre-GG-yqo"/>
                     </view>
-                    <navigationItem key="navigationItem" id="lSV-vt-6jf">
+                    <navigationItem key="navigationItem" title="เพิ่มข้อมูลลูกค้าใหม่" id="lSV-vt-6jf">
                         <barButtonItem key="rightBarButtonItem" title="Item" image="ic_done_white" id="lkb-lZ-kov">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
@@ -1417,19 +1408,19 @@
                     </navigationItem>
                     <size key="freeformSize" width="375" height="800"/>
                     <connections>
-                        <outlet property="addressTextField" destination="adL-O9-1lW" id="QUk-xp-pwe"/>
-                        <outlet property="carBrandTextField" destination="BG9-DM-uly" id="FKp-Ut-KKU"/>
-                        <outlet property="emailTextField" destination="spe-J8-vaE" id="it0-fZ-zUl"/>
-                        <outlet property="firstNameTextField" destination="Hcs-bj-uQN" id="2vy-DX-Hfz"/>
-                        <outlet property="lastNameTextField" destination="L9o-VZ-stf" id="iFO-8l-WyI"/>
-                        <outlet property="phoneNumberTextField" destination="Nok-Nd-T4I" id="Tyj-cb-Vbc"/>
-                        <outlet property="prefixLicenseTextField" destination="71o-RJ-PzY" id="hOV-vB-VT9"/>
-                        <outlet property="productTextField" destination="zPW-Iv-ofn" id="72Q-Ur-c3w"/>
-                        <outlet property="productView" destination="zPW-Iv-ofn" id="y1r-0I-u9e"/>
-                        <outlet property="provinceTextField" destination="zYT-sr-HOT" id="7IN-7g-SVt"/>
-                        <outlet property="provinceView" destination="zYT-sr-HOT" id="3qx-y1-eaV"/>
+                        <outlet property="addressTextField" destination="adL-O9-1lW" id="ulK-2q-zcP"/>
+                        <outlet property="carBrandTextField" destination="BG9-DM-uly" id="K8k-nN-qmt"/>
+                        <outlet property="emailTextField" destination="spe-J8-vaE" id="48a-iN-jm8"/>
+                        <outlet property="firstNameTextField" destination="Hcs-bj-uQN" id="m64-5u-d7b"/>
+                        <outlet property="lastNameTextField" destination="L9o-VZ-stf" id="KH3-Lk-Wwb"/>
+                        <outlet property="phoneNumberTextField" destination="Nok-Nd-T4I" id="BU4-5N-MIZ"/>
+                        <outlet property="prefixLicenseTextField" destination="71o-RJ-PzY" id="HYj-X7-Wct"/>
+                        <outlet property="productTextField" destination="zPW-Iv-ofn" id="zTd-A7-iLZ"/>
+                        <outlet property="productView" destination="CoN-2r-sGB" id="aHY-9z-e3E"/>
+                        <outlet property="provinceTextField" destination="zYT-sr-HOT" id="6KR-dp-8wT"/>
+                        <outlet property="provinceView" destination="abM-cC-SY1" id="s5e-nV-OLz"/>
                         <outlet property="saveButton" destination="lkb-lZ-kov" id="SRj-GE-GGM"/>
-                        <outlet property="suffixLicenseTextField" destination="ZC5-kf-4Ch" id="cuJ-Nm-xgw"/>
+                        <outlet property="suffixLicenseTextField" destination="ZC5-kf-4Ch" id="Qg6-mW-2NL"/>
                         <segue destination="OcV-vW-Th2" kind="push" identifier="toSelectProvince" id="LnS-8T-HAB"/>
                         <segue destination="5Ld-Fe-tJa" kind="push" identifier="toSelectProduct" id="BaF-as-8SV"/>
                     </connections>

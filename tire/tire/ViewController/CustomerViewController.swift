@@ -20,6 +20,7 @@ class CustomerViewController: UIViewController {
     @IBOutlet var phoneNumberLabel: UILabel!
     @IBOutlet var productLabel: UILabel!
     @IBOutlet var productSinceLabel: UILabel!
+    @IBOutlet var productInformationLabel: UILabel!
 
     var customerResource: CustomerResource!
 
@@ -38,6 +39,7 @@ class CustomerViewController: UIViewController {
         phoneNumberLabel.text = R.string.localizable.phoneNumber(customerResource.phoneNumber)
         productLabel.text = R.string.localizable.product(customerResource.productName)
         productSinceLabel.text = R.string.localizable.since((customerResource.createdAt?.toLongString())!)
+        productInformationLabel.text = R.string.localizable.productInformation()
         // Do any additional setup after loading the view.
     }
 
