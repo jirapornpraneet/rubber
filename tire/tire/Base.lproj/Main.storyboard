@@ -60,7 +60,7 @@
                                         <rect key="frame" x="4" y="79" width="327" height="51"/>
                                         <subviews>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="gzd-GS-dAj">
-                                                <rect key="frame" x="8" y="4" width="311" height="47"/>
+                                                <rect key="frame" x="8" y="4" width="263" height="47"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits" returnKeyType="go" secureTextEntry="YES"/>
@@ -75,15 +75,28 @@
                                                     <constraint firstAttribute="height" constant="1" id="waf-Ii-BOz"/>
                                                 </constraints>
                                             </view>
+                                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i2L-BN-IT1">
+                                                <rect key="frame" x="272" y="0.0" width="47" height="46"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="47" id="ALV-Np-vLy"/>
+                                                </constraints>
+                                                <state key="normal" image="ic_remove_red_eye"/>
+                                                <connections>
+                                                    <action selector="showPasswordClicked" destination="BYZ-38-t0r" eventType="touchUpInside" id="Kdr-EB-PHN"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="gzd-GS-dAj" secondAttribute="trailing" constant="8" id="4W9-Ga-2nh"/>
+                                            <constraint firstItem="nkz-N2-wIi" firstAttribute="top" secondItem="i2L-BN-IT1" secondAttribute="bottom" constant="4" id="7oo-Hl-lLB"/>
                                             <constraint firstAttribute="height" constant="51" id="9UJ-W9-2bG"/>
                                             <constraint firstAttribute="bottom" secondItem="gzd-GS-dAj" secondAttribute="bottom" id="AUb-X8-mzX"/>
+                                            <constraint firstItem="i2L-BN-IT1" firstAttribute="leading" secondItem="gzd-GS-dAj" secondAttribute="trailing" constant="1" id="Mhd-t6-ZuX"/>
                                             <constraint firstAttribute="trailing" secondItem="nkz-N2-wIi" secondAttribute="trailing" constant="8" id="QqR-Oe-Fbs"/>
+                                            <constraint firstAttribute="trailing" secondItem="i2L-BN-IT1" secondAttribute="trailing" constant="8" id="asx-D6-Ips"/>
                                             <constraint firstItem="nkz-N2-wIi" firstAttribute="leading" secondItem="oaT-sS-5hX" secondAttribute="leading" constant="8" id="cqe-Es-XIg"/>
                                             <constraint firstAttribute="bottom" secondItem="nkz-N2-wIi" secondAttribute="bottom" id="eOX-iv-FUU"/>
+                                            <constraint firstItem="i2L-BN-IT1" firstAttribute="top" secondItem="oaT-sS-5hX" secondAttribute="top" id="p7M-J5-GP4"/>
                                             <constraint firstItem="gzd-GS-dAj" firstAttribute="leading" secondItem="oaT-sS-5hX" secondAttribute="leading" constant="8" id="sKn-Tf-erV"/>
                                             <constraint firstItem="gzd-GS-dAj" firstAttribute="top" secondItem="oaT-sS-5hX" secondAttribute="top" constant="4" id="yPm-h5-Qg9"/>
                                         </constraints>
@@ -151,6 +164,7 @@
                     <connections>
                         <outlet property="loginButton" destination="jr3-Hy-BH8" id="m5A-UY-6WN"/>
                         <outlet property="passwordTextField" destination="gzd-GS-dAj" id="tvw-q5-WUU"/>
+                        <outlet property="showPasswordButton" destination="i2L-BN-IT1" id="zGQ-Ak-qk6"/>
                         <outlet property="usernameTextField" destination="uMV-xQ-uhn" id="A8j-O4-Yow"/>
                         <segue destination="38W-Pa-jZN" kind="show" identifier="toMainView" id="JDz-A5-S8B"/>
                     </connections>
@@ -1429,5 +1443,6 @@
         <image name="ic_app_nika" width="1024" height="1024"/>
         <image name="ic_done_white" width="24" height="24"/>
         <image name="ic_exit_to_app_white_36pt" width="36" height="36"/>
+        <image name="ic_remove_red_eye" width="24" height="24"/>
     </resources>
 </document>

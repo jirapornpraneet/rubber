@@ -14,6 +14,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate, NVActivityIndi
     @IBOutlet var usernameTextField: UITextField!
     @IBOutlet var passwordTextField: UITextField!
     @IBOutlet var loginButton: UIButton!
+    @IBOutlet var showPasswordButton: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -58,6 +59,20 @@ class LoginViewController: UIViewController, UITextFieldDelegate, NVActivityIndi
 
     @IBAction func passwordFieldEditingChanged(_ sender: Any) {
         setLoginButtonIsEnabled()
+    }
+
+    @IBAction func showPasswordClicked() {
+        let origImage = R.image.ic_remove_red_eye()
+        let tintedImage = origImage?.withRenderingMode(UIImageRenderingMode.alwaysTemplate)
+        showPasswordButton.setImage(tintedImage, for: .normal)
+
+        if passwordTextField.isSecureTextEntry {
+            passwordTextField.isSecureTextEntry = false
+            showPasswordButton.tintColor = UIColor.red
+        } else {
+            passwordTextField.isSecureTextEntry = true
+            showPasswordButton.tintColor = UIColor.black
+        }
     }
 
     @IBAction func loginClicked(_ sender: Any) {
