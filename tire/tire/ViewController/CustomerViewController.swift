@@ -21,22 +21,21 @@ class CustomerViewController: UIViewController {
     @IBOutlet var productLabel: UILabel!
     @IBOutlet var productSinceLabel: UILabel!
 
-    var customerResource = [CustomerResource]()
+    var customerResource: CustomerResource!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let customerResources = customerResource[0]
-        firstNameLabel.text = R.string.localizable.name(customerResources.firstName)
-        lastNameLabel.text = R.string.localizable.surname(customerResources.lastName)
-        carBrandLabel.text = R.string.localizable.carBrand(customerResources.carBrand)
-        let licensePlate = customerResources.prefixLicense + customerResources.suffixLicense
+        firstNameLabel.text = R.string.localizable.name(customerResource.firstName)
+        lastNameLabel.text = R.string.localizable.surname(customerResource.lastName)
+        carBrandLabel.text = R.string.localizable.carBrand(customerResource.carBrand)
+        let licensePlate = customerResource.prefixLicense + customerResource.suffixLicense
         licensePlateLabel.text = R.string.localizable.licensePlateNumber(licensePlate)
-        provinceLabel.text = R.string.localizable.province(customerResources.province)
-        addressLabel.text = R.string.localizable.address(customerResources.address)
-        emailLabel.text = R.string.localizable.email(customerResources.email)
-        phoneNumberLabel.text = R.string.localizable.phoneNumber(customerResources.phoneNumber)
-        productLabel.text = R.string.localizable.product(customerResources.productName)
-        productSinceLabel.text = R.string.localizable.since((customerResources.createdAt?.toLongString())!)
+        provinceLabel.text = R.string.localizable.province(customerResource.province)
+        addressLabel.text = R.string.localizable.address(customerResource.address)
+        emailLabel.text = R.string.localizable.email(customerResource.email)
+        phoneNumberLabel.text = R.string.localizable.phoneNumber(customerResource.phoneNumber)
+        productLabel.text = R.string.localizable.product(customerResource.productName)
+        productSinceLabel.text = R.string.localizable.since((customerResource.createdAt?.toLongString())!)
         // Do any additional setup after loading the view.
     }
 

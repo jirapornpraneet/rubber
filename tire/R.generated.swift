@@ -72,8 +72,10 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
-  /// This `R.reuseIdentifier` struct is generated, and contains static references to 2 reuse identifiers.
+  /// This `R.reuseIdentifier` struct is generated, and contains static references to 3 reuse identifiers.
   struct reuseIdentifier {
+    /// Reuse identifier `customerCells`.
+    static let customerCells: Rswift.ReuseIdentifier<CustomerTableViewCell> = Rswift.ReuseIdentifier(identifier: "customerCells")
     /// Reuse identifier `productCells`.
     static let productCells: Rswift.ReuseIdentifier<UIKit.UITableViewCell> = Rswift.ReuseIdentifier(identifier: "productCells")
     /// Reuse identifier `provinceCells`.
@@ -82,8 +84,23 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
-  /// This `R.segue` struct is generated, and contains static references to 3 view controllers.
+  /// This `R.segue` struct is generated, and contains static references to 4 view controllers.
   struct segue {
+    /// This struct is generated for `CustomerTableViewController`, and contains static references to 1 segues.
+    struct customerTableViewController {
+      /// Segue identifier `toDetailCustomer`.
+      static let toDetailCustomer: Rswift.StoryboardSegueIdentifier<UIKit.UIStoryboardSegue, CustomerTableViewController, CustomerViewController> = Rswift.StoryboardSegueIdentifier(identifier: "toDetailCustomer")
+      
+      /// Optionally returns a typed version of segue `toDetailCustomer`.
+      /// Returns nil if either the segue identifier, the source, destination, or segue types don't match.
+      /// For use inside `prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)`.
+      static func toDetailCustomer(segue: UIKit.UIStoryboardSegue) -> Rswift.TypedStoryboardSegueInfo<UIKit.UIStoryboardSegue, CustomerTableViewController, CustomerViewController>? {
+        return Rswift.TypedStoryboardSegueInfo(segueIdentifier: R.segue.customerTableViewController.toDetailCustomer, segue: segue)
+      }
+      
+      fileprivate init() {}
+    }
+    
     /// This struct is generated for `LoginViewController`, and contains static references to 1 segues.
     struct loginViewController {
       /// Segue identifier `toMainView`.
@@ -126,12 +143,12 @@ struct R: Rswift.Validatable {
     /// This struct is generated for `SearchCustomerViewController`, and contains static references to 1 segues.
     struct searchCustomerViewController {
       /// Segue identifier `toDataCustomer`.
-      static let toDataCustomer: Rswift.StoryboardSegueIdentifier<UIKit.UIStoryboardSegue, SearchCustomerViewController, CustomerViewController> = Rswift.StoryboardSegueIdentifier(identifier: "toDataCustomer")
+      static let toDataCustomer: Rswift.StoryboardSegueIdentifier<UIKit.UIStoryboardSegue, SearchCustomerViewController, CustomerTableViewController> = Rswift.StoryboardSegueIdentifier(identifier: "toDataCustomer")
       
       /// Optionally returns a typed version of segue `toDataCustomer`.
       /// Returns nil if either the segue identifier, the source, destination, or segue types don't match.
       /// For use inside `prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)`.
-      static func toDataCustomer(segue: UIKit.UIStoryboardSegue) -> Rswift.TypedStoryboardSegueInfo<UIKit.UIStoryboardSegue, SearchCustomerViewController, CustomerViewController>? {
+      static func toDataCustomer(segue: UIKit.UIStoryboardSegue) -> Rswift.TypedStoryboardSegueInfo<UIKit.UIStoryboardSegue, SearchCustomerViewController, CustomerTableViewController>? {
         return Rswift.TypedStoryboardSegueInfo(segueIdentifier: R.segue.searchCustomerViewController.toDataCustomer, segue: segue)
       }
       

@@ -15,7 +15,6 @@ class SearchCustomerViewController: UIViewController, UITextFieldDelegate, NVAct
     @IBOutlet var lastNameTextField: UITextField!
     @IBOutlet var searchButton: UIButton!
 
-//    var productResource = [ProductResource]()
     var customerResources = [CustomerResource]()
 
     override func viewDidLoad() {
@@ -77,7 +76,7 @@ class SearchCustomerViewController: UIViewController, UITextFieldDelegate, NVAct
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let typedInfo = R.segue.searchCustomerViewController.toDataCustomer(segue: segue) {
-            typedInfo.destination.customerResource = customerResources
+            typedInfo.destination.customerResources = customerResources
         }
     }
 
