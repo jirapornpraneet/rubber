@@ -27,6 +27,7 @@ class NewCustomerViewController: UIViewController, UITextFieldDelegate, NVActivi
 
     var productResource = [ProductResource]()
     var customerResource = CustomerResource()
+    var getProductId: Int?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -64,6 +65,10 @@ class NewCustomerViewController: UIViewController, UITextFieldDelegate, NVActivi
 
     func receiveDataFromProvinceView(province: String) {
         provinceTextField.text = province
+    }
+
+    func receiveProductIdFromProductView(productId: Int) {
+        getProductId = productId
     }
 
     @objc func provinceViewAction() {
@@ -178,7 +183,8 @@ class NewCustomerViewController: UIViewController, UITextFieldDelegate, NVActivi
         let address = addressTextField.text!
         let email = emailTextField.text!
         let phoneNumber = phoneNumberTextField.text!
-        let productId = 3
+        let productId = getProductId!
+        print("getProductId", getProductId)
 
         CustomerManager().postCustomer(firstName: firstName, lastName: lastName,
                                        address: address, email: email, carBrand: carBrand,

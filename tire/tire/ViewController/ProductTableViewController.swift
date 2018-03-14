@@ -31,16 +31,17 @@ class ProductTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: R.reuseIdentifier.productCells, for: indexPath as IndexPath)!
-        let productResourceName = productResource[indexPath.row]
-        cell.textLabel?.text = productResourceName.name
+        let productResources = productResource[indexPath.row]
+        cell.textLabel?.text = productResources.name
         cell.layoutIfNeeded()
         return cell
     }
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath as IndexPath, animated: true)
-        let productResourceName = productResource[indexPath.row]
-        delegate.receiveDataFromProductView(product: productResourceName.name)
+        let productResources = productResource[indexPath.row]
+        delegate.receiveDataFromProductView(product: productResources.name)
+        delegate.receiveProductIdFromProductView(productId: productResources.id)
         _ = self.navigationController? .popViewController(animated: true)
     }
 }
