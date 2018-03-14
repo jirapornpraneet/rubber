@@ -28,7 +28,7 @@ class CustomerViewController: UIViewController {
         firstNameLabel.text = R.string.localizable.name(customerResource.firstName)
         lastNameLabel.text = R.string.localizable.surname(customerResource.lastName)
         carBrandLabel.text = R.string.localizable.carBrand(customerResource.carBrand)
-        let licensePlate = customerResource.prefixLicense + customerResource.suffixLicense
+        let licensePlate = customerResource.prefixLicense + " - " + customerResource.suffixLicense
         licensePlateLabel.text = R.string.localizable.licensePlateNumber(licensePlate)
         provinceLabel.text = R.string.localizable.province(customerResource.province)
         addressLabel.text = R.string.localizable.address(customerResource.address)
