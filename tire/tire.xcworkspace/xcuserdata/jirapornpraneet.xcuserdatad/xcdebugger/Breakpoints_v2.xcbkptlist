@@ -42,7 +42,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "tire/ViewController/SearchCustomerViewController.swift"
-            timestampString = "542647925.6511281"
+            timestampString = "542693965.453866"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "70"
@@ -54,16 +54,16 @@
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (tire.CustomerResource) -&gt; () in tire.SearchCustomerViewController.searchClicked(Any) -&gt; ()"
+                  symbolName = "closure #1 (Swift.Array&lt;tire.CustomerResource&gt;) -&gt; () in tire.SearchCustomerViewController.searchClicked(Any) -&gt; ()"
                   moduleName = "tire"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/jirapornpraneet/rubber-ios/tire/tire/ViewController/SearchCustomerViewController.swift"
-                  timestampString = "542650058.8331161"
+                  timestampString = "542693965.611881"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "70"
                   endingLineNumber = "70"
-                  offsetFromSymbolStart = "274">
+                  offsetFromSymbolStart = "204">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -73,7 +73,7 @@
                   moduleName = "tire"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/jirapornpraneet/rubber-ios/tire/tire/ViewController/SearchCustomerViewController.swift"
-                  timestampString = "542650058.836953"
+                  timestampString = "542693965.614584"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "71"
@@ -90,7 +90,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "tire/ViewController/SearchCustomerViewController.swift"
-            timestampString = "542647925.65121"
+            timestampString = "542693965.454006"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "66"
@@ -106,7 +106,7 @@
                   moduleName = "tire"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/jirapornpraneet/rubber-ios/tire/tire/ViewController/SearchCustomerViewController.swift"
-                  timestampString = "542650058.844185"
+                  timestampString = "542693965.621394"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "66"
@@ -117,11 +117,11 @@
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (tire.CustomerResource) -&gt; () in tire.SearchCustomerViewController.searchClicked(Any) -&gt; ()"
+                  symbolName = "closure #1 (Swift.Array&lt;tire.CustomerResource&gt;) -&gt; () in tire.SearchCustomerViewController.searchClicked(Any) -&gt; ()"
                   moduleName = "tire"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/jirapornpraneet/rubber-ios/tire/tire/ViewController/SearchCustomerViewController.swift"
-                  timestampString = "542650058.847218"
+                  timestampString = "542693965.624342"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "67"
@@ -137,13 +137,45 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "tire/NetworkManager/BaseManager.swift"
-            timestampString = "542650999.3799061"
+            filePath = "tire/NetworkManager/CustomerManager.swift"
+            timestampString = "542693965.454079"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "28"
-            endingLineNumber = "28"
-            landmarkName = "get(path:params:onSuccess:onFailure:)"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "getProduct(onSuccess:onFailure:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "tire/ViewController/NewCustomerViewController.swift"
+            timestampString = "542693965.454157"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "78"
+            endingLineNumber = "78"
+            landmarkName = "productViewAction()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "tire/ViewController/NewCustomerViewController.swift"
+            timestampString = "542693965.454658"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "211"
+            endingLineNumber = "211"
+            landmarkName = "prepare(for:sender:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -154,23 +186,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "tire/NetworkManager/BaseManager.swift"
-            timestampString = "542650999.380036"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "52"
-            endingLineNumber = "52"
-            landmarkName = "get(path:params:onSuccess:onFailure:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "tire/NetworkManager/BaseManager.swift"
-            timestampString = "542650999.380134"
+            timestampString = "542693965.455026"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "21"
@@ -186,11 +202,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "tire/NetworkManager/BaseManager.swift"
-            timestampString = "542650999.380227"
+            timestampString = "542693965.4551001"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "32"
-            endingLineNumber = "32"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
             landmarkName = "get(path:params:onSuccess:onFailure:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -202,7 +218,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "tire/NetworkManager/BaseManager.swift"
-            timestampString = "542650999.380336"
+            timestampString = "542693965.455155"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "29"
@@ -214,11 +230,11 @@
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Alamofire.DataResponse&lt;Swift.Array&lt;A&gt;&gt;) -&gt; () in tire.BaseManager.get&lt;A where A: EVReflection.EVObject&gt;(path: Swift.String, params: Swift.Optional&lt;Swift.Dictionary&lt;Swift.String, Any&gt;&gt;, onSuccess: (A) -&gt; (), onFailure: (tire.ErrorResource) -&gt; ()) -&gt; ()"
+                  symbolName = "closure #1 (Alamofire.DataResponse&lt;Swift.Array&lt;A&gt;&gt;) -&gt; () in tire.BaseManager.get&lt;A where A: EVReflection.EVObject&gt;(path: Swift.String, params: Swift.Optional&lt;Swift.Dictionary&lt;Swift.String, Any&gt;&gt;, onSuccess: (Swift.Array&lt;A&gt;) -&gt; (), onFailure: (tire.ErrorResource) -&gt; ()) -&gt; ()"
                   moduleName = "tire"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/jirapornpraneet/rubber-ios/tire/tire/NetworkManager/BaseManager.swift"
-                  timestampString = "542650058.876424"
+                  timestampString = "542693965.658532"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "29"
@@ -229,11 +245,11 @@
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "implicit closure #1 : @autoclosure () throws -&gt; Swift.Array&lt;A&gt; in closure #1 (Alamofire.DataResponse&lt;Swift.Array&lt;A&gt;&gt;) -&gt; () in tire.BaseManager.get&lt;A where A: EVReflection.EVObject&gt;(path: Swift.String, params: Swift.Optional&lt;Swift.Dictionary&lt;Swift.String, Any&gt;&gt;, onSuccess: (A) -&gt; (), onFailure: (tire.ErrorResource) -&gt; ()) -&gt; ()"
+                  symbolName = "implicit closure #1 : @autoclosure () throws -&gt; Swift.Array&lt;A&gt; in closure #1 (Alamofire.DataResponse&lt;Swift.Array&lt;A&gt;&gt;) -&gt; () in tire.BaseManager.get&lt;A where A: EVReflection.EVObject&gt;(path: Swift.String, params: Swift.Optional&lt;Swift.Dictionary&lt;Swift.String, Any&gt;&gt;, onSuccess: (Swift.Array&lt;A&gt;) -&gt; (), onFailure: (tire.ErrorResource) -&gt; ()) -&gt; ()"
                   moduleName = "tire"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/jirapornpraneet/rubber-ios/tire/tire/NetworkManager/BaseManager.swift"
-                  timestampString = "542650058.879326"
+                  timestampString = "542693965.6612591"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "29"
@@ -249,60 +265,12 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "tire/NetworkManager/BaseManager.swift"
-            timestampString = "542650999.38042"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "38"
-            endingLineNumber = "38"
-            landmarkName = "get(path:params:onSuccess:onFailure:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Alamofire.DataResponse&lt;Swift.Array&lt;A&gt;&gt;) -&gt; () in tire.BaseManager.get&lt;A where A: EVReflection.EVObject&gt;(path: Swift.String, params: Swift.Optional&lt;Swift.Dictionary&lt;Swift.String, Any&gt;&gt;, onSuccess: (A) -&gt; (), onFailure: (tire.ErrorResource) -&gt; ()) -&gt; ()"
-                  moduleName = "tire"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jirapornpraneet/rubber-ios/tire/tire/NetworkManager/BaseManager.swift"
-                  timestampString = "542650058.8867919"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "38"
-                  endingLineNumber = "38"
-                  offsetFromSymbolStart = "2717">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Alamofire.DataResponse&lt;Swift.Array&lt;A&gt;&gt;) -&gt; () in tire.BaseManager.get&lt;A where A: EVReflection.EVObject&gt;(path: Swift.String, params: Swift.Optional&lt;Swift.Dictionary&lt;Swift.String, Any&gt;&gt;, onSuccess: (A) -&gt; (), onFailure: (tire.ErrorResource) -&gt; ()) -&gt; ()"
-                  moduleName = "tire"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jirapornpraneet/rubber-ios/tire/tire/NetworkManager/BaseManager.swift"
-                  timestampString = "542650058.889932"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "38"
-                  endingLineNumber = "38"
-                  offsetFromSymbolStart = "2778">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "tire/NetworkManager/CustomerManager.swift"
-            timestampString = "542650999.380541"
+            timestampString = "542693965.455205"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "42"
-            endingLineNumber = "42"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
             landmarkName = "getProduct(onSuccess:onFailure:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -313,61 +281,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "tire/NetworkManager/CustomerManager.swift"
-            timestampString = "542650999.380625"
+            filePath = "tire/ViewController/NewCustomerViewController.swift"
+            timestampString = "542693965.455253"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "44"
-            endingLineNumber = "44"
-            landmarkName = "getProduct(onSuccess:onFailure:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "tire.CustomerManager.getProduct(onSuccess: (tire.ProductResource) -&gt; (), onFailure: (tire.ErrorResource) -&gt; ()) -&gt; ()"
-                  moduleName = "tire"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jirapornpraneet/rubber-ios/tire/tire/NetworkManager/CustomerManager.swift"
-                  timestampString = "542650058.901673"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "44"
-                  endingLineNumber = "44"
-                  offsetFromSymbolStart = "33">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (tire.ProductResource) -&gt; () in tire.CustomerManager.getProduct(onSuccess: (tire.ProductResource) -&gt; (), onFailure: (tire.ErrorResource) -&gt; ()) -&gt; ()"
-                  moduleName = "tire"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jirapornpraneet/rubber-ios/tire/tire/NetworkManager/CustomerManager.swift"
-                  timestampString = "542650058.90435"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "45"
-                  endingLineNumber = "45"
-                  offsetFromSymbolStart = "22">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "tire/NetworkManager/BaseManager.swift"
-            timestampString = "542650999.380686"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "30"
-            endingLineNumber = "30"
-            landmarkName = "get(path:params:onSuccess:onFailure:)"
+            startingLineNumber = "59"
+            endingLineNumber = "59"
+            landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -378,39 +298,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "tire/ViewController/NewCustomerViewController.swift"
-            timestampString = "542650999.3807631"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "76"
-            endingLineNumber = "76"
-            landmarkName = "productViewAction()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "tire/ViewController/NewCustomerViewController.swift"
-            timestampString = "542650999.380828"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "209"
-            endingLineNumber = "209"
-            landmarkName = "prepare(for:sender:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "tire/ViewController/NewCustomerViewController.swift"
-            timestampString = "542650999.38088"
+            timestampString = "542693965.455525"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "57"
@@ -426,7 +314,7 @@
                   moduleName = "tire"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/jirapornpraneet/rubber-ios/tire/tire/ViewController/NewCustomerViewController.swift"
-                  timestampString = "542650058.92827"
+                  timestampString = "542693965.676914"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "57"
@@ -437,16 +325,16 @@
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (tire.ProductResource) -&gt; () in tire.NewCustomerViewController.viewDidLoad() -&gt; ()"
+                  symbolName = "closure #1 (Swift.Array&lt;tire.ProductResource&gt;) -&gt; () in tire.NewCustomerViewController.viewDidLoad() -&gt; ()"
                   moduleName = "tire"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/jirapornpraneet/rubber-ios/tire/tire/ViewController/NewCustomerViewController.swift"
-                  timestampString = "542650058.931589"
+                  timestampString = "542693965.679858"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "58"
                   endingLineNumber = "58"
-                  offsetFromSymbolStart = "21">
+                  offsetFromSymbolStart = "18">
                </Location>
             </Locations>
          </BreakpointContent>

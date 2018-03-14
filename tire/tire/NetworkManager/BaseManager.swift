@@ -15,7 +15,7 @@ typealias OnFailure = (ErrorResource) -> Void
 
 class BaseManager: NSObject {
 
-    public func get<T: EVObject>(path: String, params: Parameters? = nil, onSuccess: @escaping (T) -> Void, onFailure: @escaping OnFailure) {
+    public func get<T: EVObject>(path: String, params: Parameters? = nil, onSuccess: @escaping ([T]) -> Void, onFailure: @escaping OnFailure) {
         let headers = ["Authorization": "Bearer " + UserDefaults.loadAccessToken()]
         UIApplication.shared.isNetworkActivityIndicatorVisible = true
         Alamofire
@@ -28,14 +28,7 @@ class BaseManager: NSObject {
                 case .success:
                     let forecastArray = response.result.value ?? []
                     print("ForeArray", forecastArray)
-                    for forecast in forecastArray {
-                        print("forecast", forecast)
-                        onSuccess(forecast)
-                        return
-                    }
-                    let errorString = String(data: response.data!, encoding: String.Encoding.utf8)!
-                    let errorResource = ErrorResource(json: errorString)
-                    onFailure(errorResource)
+                    onSuccess(forecastArray)
 
                 case .failure(let error):
                     if !(error is AFError) {

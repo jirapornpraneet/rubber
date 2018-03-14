@@ -65,7 +65,7 @@ class SearchCustomerViewController: UIViewController, UITextFieldDelegate, NVAct
         startAnimating()
         CustomerManager().getSearchCustomer(firstName: firstNameTextField.text!, lastName: lastNameTextField.text!, onSuccess: { (resource) in
             self.stopAnimating()
-            self.customerResources = resource
+//            self.customerResources = resource
             self.performSegue(withIdentifier: R.segue.searchCustomerViewController.toDataCustomer, sender: self)
         }, onFailure: { errorResource in
             self.stopAnimating()

@@ -25,7 +25,7 @@ class NewCustomerViewController: UIViewController, UITextFieldDelegate, NVActivi
     @IBOutlet var productView: UIView!
     @IBOutlet var productTextField: UITextField!
 
-    var productResource: ProductResource!
+    var productResource = [ProductResource]()
     var customerResource = CustomerResource()
 
     override func viewDidLoad() {
@@ -56,7 +56,7 @@ class NewCustomerViewController: UIViewController, UITextFieldDelegate, NVActivi
 
         CustomerManager().getProduct(onSuccess: { (resource) in
             self.productResource = resource
-            print("product", self.productResource.name)
+            print("ProductNaJa", self.productResource)
         }, onFailure: { errorResource in
             ErrorResult().showError(errorResource: errorResource, vc: self)
         })
@@ -208,9 +208,10 @@ class NewCustomerViewController: UIViewController, UITextFieldDelegate, NVActivi
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let typedInfo = R.segue.newCustomerViewController.toSelectProvince(segue: segue) {
             typedInfo.destination.delegate = self
-        } else if let typedInfo = R.segue.newCustomerViewController.toSelectProduct(segue: segue){
-            typedInfo.destination.productResource = productResource
-            typedInfo.destination.delegate = self
         }
+//        } else if let typedInfo = R.segue.newCustomerViewController.toSelectProduct(segue: segue){
+//            typedInfo.destination.productResource = productResource
+//            typedInfo.destination.delegate = self
+//        }
     }
 }
