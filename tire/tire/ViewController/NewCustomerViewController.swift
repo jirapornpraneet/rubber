@@ -184,7 +184,6 @@ class NewCustomerViewController: UIViewController, UITextFieldDelegate, NVActivi
         let email = emailTextField.text!
         let phoneNumber = phoneNumberTextField.text!
         let productId = getProductId!
-        print("getProductId", getProductId)
 
         CustomerManager().postCustomer(firstName: firstName, lastName: lastName,
                                        address: address, email: email, carBrand: carBrand,
@@ -214,7 +213,7 @@ class NewCustomerViewController: UIViewController, UITextFieldDelegate, NVActivi
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let typedInfo = R.segue.newCustomerViewController.toSelectProvince(segue: segue) {
             typedInfo.destination.delegate = self
-        } else if let typedInfo = R.segue.newCustomerViewController.toSelectProduct(segue: segue){
+        } else if let typedInfo = R.segue.newCustomerViewController.toSelectProduct(segue: segue) {
             typedInfo.destination.productResource = productResource
             typedInfo.destination.delegate = self
         }

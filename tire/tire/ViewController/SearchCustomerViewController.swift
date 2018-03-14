@@ -15,7 +15,8 @@ class SearchCustomerViewController: UIViewController, UITextFieldDelegate, NVAct
     @IBOutlet var lastNameTextField: UITextField!
     @IBOutlet var searchButton: UIButton!
 
-    var customerResources = CustomerResource()
+//    var productResource = [ProductResource]()
+    var customerResources = [CustomerResource]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -65,7 +66,8 @@ class SearchCustomerViewController: UIViewController, UITextFieldDelegate, NVAct
         startAnimating()
         CustomerManager().getSearchCustomer(firstName: firstNameTextField.text!, lastName: lastNameTextField.text!, onSuccess: { (resource) in
             self.stopAnimating()
-//            self.customerResources = resource
+            self.customerResources = resource
+            print("CustomerResource", self.customerResources)
             self.performSegue(withIdentifier: R.segue.searchCustomerViewController.toDataCustomer, sender: self)
         }, onFailure: { errorResource in
             self.stopAnimating()
