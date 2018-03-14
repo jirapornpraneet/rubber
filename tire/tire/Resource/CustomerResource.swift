@@ -19,9 +19,22 @@ public class CustomerResource: EVObject {
     var prefixLicense: String = ""
     var suffixLicense: String = ""
     var province: String = ""
-    var createdAt: String = ""
-    var updatedAt: String = ""
+    var createdAt: Date?
+    var updatedAt: Date?
     var phoneNumber: String = ""
     var productId: Int = 0
     var productName: String = ""
+
+    override public func decodePropertyValue(value: Any, key: String) -> Any? {
+        let keys = ["updatedAt", "createdAt"]
+        if keys.contains(key) {
+            let dateFormatter = DateFormatter()
+            dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+            dateFormatter.timeZone = TimeZone(secondsFromGMT: 7)
+            dateFormatter.locale = Locale(identifier: "en_US_POSIX")
+            let date = dateFormatter.date(from: value as! String)
+            return date
+        }
+        return value
+    }
 }

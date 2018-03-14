@@ -36,7 +36,7 @@ class CustomerViewController: UIViewController {
         emailLabel.text = R.string.localizable.email(customerResources.email)
         phoneNumberLabel.text = R.string.localizable.phoneNumber(customerResources.phoneNumber)
         productLabel.text = R.string.localizable.product(customerResources.productName)
-        productSinceLabel.text = R.string.localizable.since(customerResources.createdAt)
+        productSinceLabel.text = R.string.localizable.since((customerResources.createdAt?.toLongString())!)
         // Do any additional setup after loading the view.
     }
 
