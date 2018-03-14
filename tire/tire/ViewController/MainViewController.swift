@@ -23,8 +23,10 @@ class MainViewController: UIViewController {
         let tapGestureRecognizerNewCustomerView = UITapGestureRecognizer(target: self, action: #selector(newCustomerViewAction))
         newCustomerView.isUserInteractionEnabled = true
         newCustomerView.addGestureRecognizer(tapGestureRecognizerNewCustomerView)
+
+        UIApplication.shared.statusBarView?.backgroundColor = UIColor(red: 69/255, green: 90/255, blue: 100/255, alpha: 1.0)
     }
-    
+
     @objc func searchCustomerViewAction() {
         self.view.endEditing(true)
         self.performSegue(withIdentifier: R.segue.mainViewController.toSearch, sender: self)

@@ -21,3 +21,9 @@ extension Date {
         return formatter.string(from: self)
     }
 }
+
+extension UIApplication {
+    var statusBarView: UIView? {
+        return value(forKey: "statusBar") as? UIView
+    }
+}

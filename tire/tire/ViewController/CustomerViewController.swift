@@ -25,6 +25,8 @@ class CustomerViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        UIApplication.shared.statusBarView?.backgroundColor = UIColor(red: 69/255, green: 90/255, blue: 100/255, alpha: 1.0)
+
         firstNameLabel.text = R.string.localizable.name(customerResource.firstName)
         lastNameLabel.text = R.string.localizable.surname(customerResource.lastName)
         carBrandLabel.text = R.string.localizable.carBrand(customerResource.carBrand)

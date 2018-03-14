@@ -31,6 +31,7 @@ class NewCustomerViewController: UIViewController, UITextFieldDelegate, NVActivi
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        UIApplication.shared.statusBarView?.backgroundColor = UIColor(red: 69/255, green: 90/255, blue: 100/255, alpha: 1.0)
 
         firstNameTextField.delegate = self
         lastNameTextField.delegate = self
