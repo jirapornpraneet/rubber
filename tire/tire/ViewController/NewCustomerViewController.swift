@@ -27,7 +27,7 @@ class NewCustomerViewController: UIViewController, UITextFieldDelegate, NVActivi
 
     var productResource = [ProductResource]()
     var customerResource = CustomerResource()
-    var getProductId: Int?
+    var getProductId: Int = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -184,7 +184,7 @@ class NewCustomerViewController: UIViewController, UITextFieldDelegate, NVActivi
         let address = addressTextField.text!
         let email = emailTextField.text!
         let phoneNumber = phoneNumberTextField.text!
-        let productId = getProductId!
+        let productId = getProductId
 
         CustomerManager().postCustomer(firstName: firstName, lastName: lastName,
                                        address: address, email: email, carBrand: carBrand,
