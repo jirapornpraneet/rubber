@@ -125,10 +125,7 @@ class NewCustomerViewController: UIViewController, UITextFieldDelegate, NVActivi
                          carBrandTextField,
                          prefixLicenseTextField,
                          suffixLicenseTextField,
-                         provinceTextField,
-                         addressTextField,
-                         emailTextField,
-                         phoneNumberTextField]
+                         provinceTextField]
         let emptyCount = editTexts
             .filter { (textField) -> Bool in
                 textField?.text == "" }
@@ -157,18 +154,6 @@ class NewCustomerViewController: UIViewController, UITextFieldDelegate, NVActivi
     }
 
     @IBAction func provinceFieldEditingChanged(_ sender: Any) {
-        setSaveButtonIsEnabled()
-    }
-
-    @IBAction func addressFieldEditingChanged(_ sender: Any) {
-        setSaveButtonIsEnabled()
-    }
-
-    @IBAction func emailFieldEditingChanged(_ sender: Any) {
-        setSaveButtonIsEnabled()
-    }
-
-    @IBAction func phoneNumberEditingChanged(_ sender: Any) {
         setSaveButtonIsEnabled()
     }
 

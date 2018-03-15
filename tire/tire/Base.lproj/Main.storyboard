@@ -1162,9 +1162,6 @@
                                                                 <nil key="textColor"/>
                                                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="16"/>
                                                                 <textInputTraits key="textInputTraits" returnKeyType="next"/>
-                                                                <connections>
-                                                                    <action selector="addressFieldEditingChanged:" destination="aS3-AV-6Dy" eventType="editingChanged" id="Ffh-kb-3ji"/>
-                                                                </connections>
                                                             </textField>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EaS-jq-yXi">
                                                                 <rect key="frame" x="8" y="34" width="331" height="1"/>
@@ -1206,9 +1203,6 @@
                                                                 <nil key="textColor"/>
                                                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="16"/>
                                                                 <textInputTraits key="textInputTraits" returnKeyType="next"/>
-                                                                <connections>
-                                                                    <action selector="emailFieldEditingChanged:" destination="aS3-AV-6Dy" eventType="editingChanged" id="a75-ZB-ZlA"/>
-                                                                </connections>
                                                             </textField>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tip-71-F1d">
                                                                 <rect key="frame" x="8" y="34" width="331" height="1"/>
@@ -1250,9 +1244,6 @@
                                                                 <nil key="textColor"/>
                                                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="16"/>
                                                                 <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="next"/>
-                                                                <connections>
-                                                                    <action selector="phoneNumberEditingChanged:" destination="aS3-AV-6Dy" eventType="editingChanged" id="S2f-8p-vOs"/>
-                                                                </connections>
                                                             </textField>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WGO-3Q-1b1">
                                                                 <rect key="frame" x="8" y="34" width="331" height="1"/>
