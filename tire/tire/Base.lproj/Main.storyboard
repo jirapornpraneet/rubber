@@ -398,7 +398,7 @@
             </objects>
             <point key="canvasLocation" x="2413.5999999999999" y="-341.37931034482762"/>
         </scene>
-        <!--NIKA Shop-->
+        <!--Customer View Controller-->
         <scene sceneID="yPH-65-zfS">
             <objects>
                 <viewController id="Kbg-8y-yiK" customClass="CustomerViewController" customModule="tire" customModuleProvider="target" sceneMemberID="viewController">
@@ -588,7 +588,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="wov-lJ-aYX"/>
                     </view>
-                    <navigationItem key="navigationItem" title="NIKA Shop" id="Gac-GB-BLq"/>
+                    <navigationItem key="navigationItem" id="Gac-GB-BLq"/>
                     <connections>
                         <outlet property="addressLabel" destination="1Mb-86-4AX" id="rUI-xo-yxC"/>
                         <outlet property="carBrandLabel" destination="R6C-hk-yNI" id="uvw-N5-1Zw"/>
