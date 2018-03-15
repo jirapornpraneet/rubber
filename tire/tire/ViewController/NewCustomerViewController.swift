@@ -156,6 +156,10 @@ class NewCustomerViewController: UIViewController, UITextFieldDelegate, NVActivi
     @IBAction func provinceFieldEditingChanged(_ sender: Any) {
         setSaveButtonIsEnabled()
     }
+    
+    @IBAction func dismissView(_ sender: UIBarButtonItem) {
+        self.navigationController?.dismiss(animated: true, completion: nil)
+    }
 
     @IBAction func saveClicked(_ sender: Any) {
         self.dismissKeyboard()
@@ -191,6 +195,7 @@ class NewCustomerViewController: UIViewController, UITextFieldDelegate, NVActivi
                                                 preferredStyle: UIAlertControllerStyle.alert)
 
         let okAction = UIAlertAction(title: "Ok", style: UIAlertActionStyle.default) { (_: UIAlertAction) -> Void in
+            self.dismiss(animated: true, completion: nil)
         }
         alertController.addAction(okAction)
         self.present(alertController, animated: true, completion: nil)

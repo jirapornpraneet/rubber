@@ -737,7 +737,7 @@
         <!--Main View Controller-->
         <scene sceneID="g8A-b4-qyv">
             <objects>
-                <viewController id="sTP-jU-bPH" customClass="MainViewController" customModule="tire" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainViewController" id="sTP-jU-bPH" customClass="MainViewController" customModule="tire" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="r55-Go-m6N">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -856,12 +856,41 @@
                         <outlet property="searchCustomerLabel" destination="ul7-Kd-ZKx" id="90Z-Ec-0KT"/>
                         <outlet property="searchCustomerView" destination="2tX-SB-uVq" id="Rm5-SM-2ef"/>
                         <segue destination="xMi-7R-ret" kind="push" identifier="toSearch" id="79c-yP-kMT"/>
-                        <segue destination="aS3-AV-6Dy" kind="push" identifier="toAdd" id="4O8-Iu-gFc"/>
+                        <segue destination="oMU-de-dbw" kind="presentation" identifier="toAdd" id="Uvu-uI-CQy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mwx-aC-D1B" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1624.8" y="134.48275862068968"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="6cg-vN-ZYy">
+            <objects>
+                <navigationController id="oMU-de-dbw" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Tig-GG-OIK">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" red="0.37647058820000001" green="0.49019607840000001" blue="0.5450980392" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="dividerColor">
+                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="aS3-AV-6Dy" kind="relationship" relationship="rootViewController" id="ceB-2x-BzM"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Iwj-2f-fWm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2505" y="403"/>
         </scene>
         <!--เพิ่มข้อมูลลูกค้าใหม่-->
         <scene sceneID="pcm-SK-RCA">
@@ -1390,6 +1419,11 @@
                         <viewLayoutGuide key="safeArea" id="Kre-GG-yqo"/>
                     </view>
                     <navigationItem key="navigationItem" title="เพิ่มข้อมูลลูกค้าใหม่" id="lSV-vt-6jf">
+                        <barButtonItem key="leftBarButtonItem" systemItem="stop" id="mdv-Kn-EB8">
+                            <connections>
+                                <action selector="dismissView:" destination="aS3-AV-6Dy" id="ZLc-zX-jtQ"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Item" image="ic_done_white" id="lkb-lZ-kov">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
@@ -1418,7 +1452,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mJE-04-bZe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2413.5999999999999" y="418.29085457271367"/>
+            <point key="canvasLocation" x="3287" y="447"/>
         </scene>
         <!--Province Table View Controller-->
         <scene sceneID="4Ll-5a-lVe">
@@ -1448,7 +1482,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L3G-ED-VK5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3170" y="313"/>
+            <point key="canvasLocation" x="4095" y="316"/>
         </scene>
         <!--Product Table View Controller-->
         <scene sceneID="jG4-EO-Hoo">
@@ -1477,7 +1511,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q25-8v-epf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3223" y="994"/>
+            <point key="canvasLocation" x="4094" y="985"/>
         </scene>
     </scenes>
     <resources>

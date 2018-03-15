@@ -140,14 +140,14 @@ struct R: Rswift.Validatable {
     /// This struct is generated for `MainViewController`, and contains static references to 2 segues.
     struct mainViewController {
       /// Segue identifier `toAdd`.
-      static let toAdd: Rswift.StoryboardSegueIdentifier<UIKit.UIStoryboardSegue, MainViewController, NewCustomerViewController> = Rswift.StoryboardSegueIdentifier(identifier: "toAdd")
+      static let toAdd: Rswift.StoryboardSegueIdentifier<UIKit.UIStoryboardSegue, MainViewController, UIKit.UINavigationController> = Rswift.StoryboardSegueIdentifier(identifier: "toAdd")
       /// Segue identifier `toSearch`.
       static let toSearch: Rswift.StoryboardSegueIdentifier<UIKit.UIStoryboardSegue, MainViewController, SearchCustomerViewController> = Rswift.StoryboardSegueIdentifier(identifier: "toSearch")
       
       /// Optionally returns a typed version of segue `toAdd`.
       /// Returns nil if either the segue identifier, the source, destination, or segue types don't match.
       /// For use inside `prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)`.
-      static func toAdd(segue: UIKit.UIStoryboardSegue) -> Rswift.TypedStoryboardSegueInfo<UIKit.UIStoryboardSegue, MainViewController, NewCustomerViewController>? {
+      static func toAdd(segue: UIKit.UIStoryboardSegue) -> Rswift.TypedStoryboardSegueInfo<UIKit.UIStoryboardSegue, MainViewController, UIKit.UINavigationController>? {
         return Rswift.TypedStoryboardSegueInfo(segueIdentifier: R.segue.mainViewController.toAdd, segue: segue)
       }
       
@@ -1090,6 +1090,7 @@ struct _R: Rswift.Validatable {
       let bundle = R.hostingBundle
       let login = StoryboardViewControllerResource<LoginViewController>(identifier: "Login")
       let mainNavigation = StoryboardViewControllerResource<UIKit.UINavigationController>(identifier: "MainNavigation")
+      let mainViewController = StoryboardViewControllerResource<MainViewController>(identifier: "MainViewController")
       let name = "Main"
       
       func login(_: Void = ()) -> LoginViewController? {
@@ -1100,6 +1101,10 @@ struct _R: Rswift.Validatable {
         return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: mainNavigation)
       }
       
+      func mainViewController(_: Void = ()) -> MainViewController? {
+        return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: mainViewController)
+      }
+      
       static func validate() throws {
         if UIKit.UIImage(named: "ic_exit_to_app_white_36pt") == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'ic_exit_to_app_white_36pt' is used in storyboard 'Main', but couldn't be loaded.") }
         if UIKit.UIImage(named: "ic_app_nika") == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'ic_app_nika' is used in storyboard 'Main', but couldn't be loaded.") }
@@ -1108,6 +1113,7 @@ struct _R: Rswift.Validatable {
         if UIKit.UIImage(named: "search") == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'search' is used in storyboard 'Main', but couldn't be loaded.") }
         if UIKit.UIImage(named: "add-user") == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'add-user' is used in storyboard 'Main', but couldn't be loaded.") }
         if _R.storyboard.main().login() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'login' could not be loaded from storyboard 'Main' as 'LoginViewController'.") }
+        if _R.storyboard.main().mainViewController() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'mainViewController' could not be loaded from storyboard 'Main' as 'MainViewController'.") }
         if _R.storyboard.main().mainNavigation() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'mainNavigation' could not be loaded from storyboard 'Main' as 'UIKit.UINavigationController'.") }
       }
       
