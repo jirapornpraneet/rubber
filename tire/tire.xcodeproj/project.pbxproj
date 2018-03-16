@@ -554,6 +554,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3266WF6C2V;
 				INFOPLIST_FILE = tire/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jiraporn.ios.tire.tire;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -570,6 +571,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3266WF6C2V;
 				INFOPLIST_FILE = tire/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jiraporn.ios.tire.tire;
 				PRODUCT_NAME = "$(TARGET_NAME)";
