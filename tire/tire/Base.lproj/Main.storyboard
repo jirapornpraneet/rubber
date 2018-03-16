@@ -765,22 +765,22 @@
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search Customer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ul7-Kd-ZKx">
-                                                <rect key="frame" x="84" y="24" width="212" height="21"/>
+                                                <rect key="frame" x="69" y="24" width="227" height="21"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="21" id="2EZ-3e-588"/>
-                                                    <constraint firstAttribute="width" constant="212" id="oF2-xk-667"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                         <color key="backgroundColor" red="0.1960784314" green="0.70588235290000001" blue="0.8980392157" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
-                                            <constraint firstItem="ul7-Kd-ZKx" firstAttribute="leading" secondItem="rNT-re-ke7" secondAttribute="trailing" constant="15" id="7jo-LZ-Zk1"/>
+                                            <constraint firstItem="ul7-Kd-ZKx" firstAttribute="leading" secondItem="rNT-re-ke7" secondAttribute="trailing" id="7jo-LZ-Zk1"/>
                                             <constraint firstItem="ul7-Kd-ZKx" firstAttribute="top" secondItem="2tX-SB-uVq" secondAttribute="top" constant="24" id="a8d-3b-5ts"/>
                                             <constraint firstItem="rNT-re-ke7" firstAttribute="top" secondItem="2tX-SB-uVq" secondAttribute="top" constant="8" id="a9L-Jz-TVu"/>
                                             <constraint firstAttribute="height" constant="70" id="edk-cV-STx"/>
+                                            <constraint firstAttribute="trailing" secondItem="ul7-Kd-ZKx" secondAttribute="trailing" constant="9" id="gBL-vf-2B7"/>
                                             <constraint firstAttribute="bottom" secondItem="rNT-re-ke7" secondAttribute="bottom" constant="8" id="iP9-jD-ztf"/>
                                             <constraint firstItem="rNT-re-ke7" firstAttribute="leading" secondItem="2tX-SB-uVq" secondAttribute="leading" constant="15" id="sGt-I3-sQl"/>
                                         </constraints>
@@ -796,12 +796,11 @@
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New Customer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Xu-bp-tf3">
-                                                <rect key="frame" x="84" y="24" width="212" height="21"/>
+                                                <rect key="frame" x="69" y="24" width="227" height="21"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="212" id="4l9-RJ-iQm"/>
                                                     <constraint firstAttribute="height" constant="21" id="nrm-Y0-zaw"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -810,9 +809,10 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="70" id="6Mg-vj-EoZ"/>
                                             <constraint firstAttribute="bottom" secondItem="jhJ-tO-vjT" secondAttribute="bottom" constant="8" id="7ku-6k-cWw"/>
+                                            <constraint firstAttribute="trailing" secondItem="4Xu-bp-tf3" secondAttribute="trailing" constant="9" id="8vx-ly-EyS"/>
                                             <constraint firstItem="jhJ-tO-vjT" firstAttribute="leading" secondItem="ibR-y8-Yrg" secondAttribute="leading" constant="15" id="SQ8-a4-lEY"/>
                                             <constraint firstItem="4Xu-bp-tf3" firstAttribute="top" secondItem="ibR-y8-Yrg" secondAttribute="top" constant="24" id="acD-vN-S8I"/>
-                                            <constraint firstItem="4Xu-bp-tf3" firstAttribute="leading" secondItem="jhJ-tO-vjT" secondAttribute="trailing" constant="15" id="rjM-Oa-TqE"/>
+                                            <constraint firstItem="4Xu-bp-tf3" firstAttribute="leading" secondItem="jhJ-tO-vjT" secondAttribute="trailing" id="bKg-II-qVw"/>
                                             <constraint firstItem="jhJ-tO-vjT" firstAttribute="top" secondItem="ibR-y8-Yrg" secondAttribute="top" constant="8" id="teh-kw-Hun"/>
                                         </constraints>
                                     </view>
@@ -901,7 +901,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ozk-7f-APM">
-                                <rect key="frame" x="0.0" y="64" width="375" height="736"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="800"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WLk-Yr-skr">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="736"/>
@@ -1411,7 +1411,7 @@
                         </subviews>
                         <color key="backgroundColor" red="0.62352941179999999" green="0.69803921570000005" blue="0.72549019609999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="ozk-7f-APM" firstAttribute="top" secondItem="Kre-GG-yqo" secondAttribute="top" id="CV8-ir-Q8m"/>
+                            <constraint firstItem="ozk-7f-APM" firstAttribute="top" secondItem="Kre-GG-yqo" secondAttribute="top" constant="-64" id="CV8-ir-Q8m"/>
                             <constraint firstItem="ozk-7f-APM" firstAttribute="bottom" secondItem="Kre-GG-yqo" secondAttribute="bottom" id="j5f-UC-RKj"/>
                             <constraint firstItem="ozk-7f-APM" firstAttribute="leading" secondItem="Kre-GG-yqo" secondAttribute="leading" id="nrp-AI-MSu"/>
                             <constraint firstItem="ozk-7f-APM" firstAttribute="trailing" secondItem="Kre-GG-yqo" secondAttribute="trailing" id="uAj-Mh-WJ9"/>
@@ -1452,7 +1452,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mJE-04-bZe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3287" y="447"/>
+            <point key="canvasLocation" x="3285.5999999999999" y="446.17691154422795"/>
         </scene>
         <!--Province Table View Controller-->
         <scene sceneID="4Ll-5a-lVe">
