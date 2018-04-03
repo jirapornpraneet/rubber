@@ -16,14 +16,14 @@ class NewCustomerViewController: UIViewController, UITextFieldDelegate, NVActivi
     @IBOutlet var carBrandTextField: UITextField!
     @IBOutlet var prefixLicenseTextField: UITextField!
     @IBOutlet var suffixLicenseTextField: UITextField!
-    @IBOutlet var provinceTextField: UITextField!
+    @IBOutlet var provinceLabel: UILabel!
     @IBOutlet var addressTextField: UITextField!
     @IBOutlet var emailTextField: UITextField!
     @IBOutlet var phoneNumberTextField: UITextField!
     @IBOutlet var saveButton: UIBarButtonItem!
     @IBOutlet var provinceView: UIView!
     @IBOutlet var productView: UIView!
-    @IBOutlet var productTextField: UITextField!
+    @IBOutlet var productLabel: UILabel!
 
     var productResource = [ProductResource]()
     var customerResource = CustomerResource()
@@ -38,12 +38,11 @@ class NewCustomerViewController: UIViewController, UITextFieldDelegate, NVActivi
         carBrandTextField.delegate = self
         prefixLicenseTextField.delegate = self
         suffixLicenseTextField.delegate = self
-        provinceTextField.delegate = self
         addressTextField.delegate = self
         emailTextField.delegate = self
         phoneNumberTextField.delegate = self
-        productTextField.delegate = self
-        provinceTextField.text = "กรุงเทพมหานคร"
+        provinceLabel.text = "กรุงเทพมหานคร"
+        productLabel.text = "เลือกสินค้า"
 
         let tapGestureRecognizerKeyboard: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
         view.addGestureRecognizer(tapGestureRecognizerKeyboard)
@@ -65,7 +64,7 @@ class NewCustomerViewController: UIViewController, UITextFieldDelegate, NVActivi
     }
 
     func receiveDataFromProvinceView(province: String) {
-        provinceTextField.text = province
+        provinceLabel.text = province
     }
 
     func receiveProductIdFromProductView(productId: Int) {
@@ -83,7 +82,7 @@ class NewCustomerViewController: UIViewController, UITextFieldDelegate, NVActivi
     }
 
     func receiveDataFromProductView(product: String) {
-        productTextField.text = product
+        productLabel.text = product
     }
 
     @objc func dismissKeyboard() {
@@ -100,8 +99,6 @@ class NewCustomerViewController: UIViewController, UITextFieldDelegate, NVActivi
         } else if textField == prefixLicenseTextField {
             suffixLicenseTextField.becomeFirstResponder()
         } else if textField == suffixLicenseTextField {
-            provinceTextField.becomeFirstResponder()
-        } else if textField == provinceTextField {
             addressTextField.becomeFirstResponder()
         } else if textField == addressTextField {
             emailTextField.becomeFirstResponder()
@@ -124,8 +121,7 @@ class NewCustomerViewController: UIViewController, UITextFieldDelegate, NVActivi
                          lastNameTextField,
                          carBrandTextField,
                          prefixLicenseTextField,
-                         suffixLicenseTextField,
-                         provinceTextField]
+                         suffixLicenseTextField]
         let emptyCount = editTexts
             .filter { (textField) -> Bool in
                 textField?.text == "" }
@@ -153,10 +149,6 @@ class NewCustomerViewController: UIViewController, UITextFieldDelegate, NVActivi
         setSaveButtonIsEnabled()
     }
 
-    @IBAction func provinceFieldEditingChanged(_ sender: Any) {
-        setSaveButtonIsEnabled()
-    }
-    
     @IBAction func dismissView(_ sender: UIBarButtonItem) {
         self.navigationController?.dismiss(animated: true, completion: nil)
     }
@@ -169,7 +161,7 @@ class NewCustomerViewController: UIViewController, UITextFieldDelegate, NVActivi
         let carBrand = carBrandTextField.text!
         let prefixLicense = prefixLicenseTextField.text!
         let suffixLicense = suffixLicenseTextField.text!
-        let province = provinceTextField.text!
+        let province = provinceLabel.text!
         let address = addressTextField.text!
         let email = emailTextField.text!
         let phoneNumber = phoneNumberTextField.text!
