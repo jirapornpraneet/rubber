@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3F9CE93CC5848479496BDB2D /* Pods_tire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0695F2EE99C913961CDC9B4 /* Pods_tire.framework */; };
+		AB0FFDAC20732B11001C792F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AB0FFDAB20732B11001C792F /* GoogleService-Info.plist */; };
 		AB14F5FF205908B9003E5C8D /* CustomerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB14F5FE205908B9003E5C8D /* CustomerTableViewController.swift */; };
 		AB2496CD2036AD7E00F2658F /* CustomerResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2496CC2036AD7E00F2658F /* CustomerResource.swift */; };
 		AB2496CF2036AF8300F2658F /* LoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2496CE2036AF8300F2658F /* LoginManager.swift */; };
@@ -24,7 +25,6 @@
 		AB6B4B552035D13000BC895A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6B4B542035D13000BC895A /* Constants.swift */; };
 		AB6B4B572035D1BA00BC895A /* UserDefault+Tire.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6B4B562035D1BA00BC895A /* UserDefault+Tire.swift */; };
 		AB6B4B592035D7C700BC895A /* FunctionHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6B4B582035D7C700BC895A /* FunctionHelper.swift */; };
-		AB7C8681204E39DF003406DB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AB7C8680204E39DF003406DB /* GoogleService-Info.plist */; };
 		AB82B78F205811D500714E73 /* ProductResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB82B78E205811D500714E73 /* ProductResource.swift */; };
 		AB82B7912058180200714E73 /* ProductTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB82B7902058180200714E73 /* ProductTableViewController.swift */; };
 		AB9A59EF2053E5D40044B0F9 /* ProvinceTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9A59EE2053E5D40044B0F9 /* ProvinceTableViewController.swift */; };
@@ -38,6 +38,7 @@
 
 /* Begin PBXFileReference section */
 		01B3E5692DA6663D2D1B744A /* Pods-tire.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tire.release.xcconfig"; path = "Pods/Target Support Files/Pods-tire/Pods-tire.release.xcconfig"; sourceTree = "<group>"; };
+		AB0FFDAB20732B11001C792F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		AB14F5FE205908B9003E5C8D /* CustomerTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerTableViewController.swift; sourceTree = "<group>"; };
 		AB2496CC2036AD7E00F2658F /* CustomerResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerResource.swift; sourceTree = "<group>"; };
 		AB2496CE2036AF8300F2658F /* LoginManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginManager.swift; sourceTree = "<group>"; };
@@ -56,7 +57,6 @@
 		AB6B4B542035D13000BC895A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		AB6B4B562035D1BA00BC895A /* UserDefault+Tire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefault+Tire.swift"; sourceTree = "<group>"; };
 		AB6B4B582035D7C700BC895A /* FunctionHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionHelper.swift; sourceTree = "<group>"; };
-		AB7C8680204E39DF003406DB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		AB82B78E205811D500714E73 /* ProductResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductResource.swift; sourceTree = "<group>"; };
 		AB82B7902058180200714E73 /* ProductTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableViewController.swift; sourceTree = "<group>"; };
 		AB9A59EE2053E5D40044B0F9 /* ProvinceTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProvinceTableViewController.swift; sourceTree = "<group>"; };
@@ -121,10 +121,10 @@
 				ABD8553B20332C5E00B50E4C /* Resource */,
 				ABD8553820332C5E00B50E4C /* ViewController */,
 				AB59E4CE2032C99500C0631C /* AppDelegate.swift */,
-				AB7C8680204E39DF003406DB /* GoogleService-Info.plist */,
 				AB59E4D22032C99500C0631C /* Main.storyboard */,
 				AB59E4D52032C99500C0631C /* Assets.xcassets */,
 				AB59E4D72032C99500C0631C /* LaunchScreen.storyboard */,
+				AB0FFDAB20732B11001C792F /* GoogleService-Info.plist */,
 				AB59E4DA2032C99500C0631C /* Info.plist */,
 				ABCF56FD203D923D002CCBAB /* Localizable.strings */,
 			);
@@ -253,7 +253,7 @@
 			files = (
 				AB59E4D92032C99500C0631C /* LaunchScreen.storyboard in Resources */,
 				ABCF56FB203D923D002CCBAB /* Localizable.strings in Resources */,
-				AB7C8681204E39DF003406DB /* GoogleService-Info.plist in Resources */,
+				AB0FFDAC20732B11001C792F /* GoogleService-Info.plist in Resources */,
 				AB59E4D62032C99500C0631C /* Assets.xcassets in Resources */,
 				AB59E4D42032C99500C0631C /* Main.storyboard in Resources */,
 			);
