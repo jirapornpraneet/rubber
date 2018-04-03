@@ -224,10 +224,9 @@
                                 <rect key="frame" x="15" y="203.5" width="345" height="260"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Customer search" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WVH-oN-37j">
-                                        <rect key="frame" x="15" y="10" width="181" height="21"/>
+                                        <rect key="frame" x="15" y="10" width="320" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="t9Y-mR-dMX"/>
-                                            <constraint firstAttribute="width" constant="181" id="toS-A5-rcy"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="23"/>
                                         <nil key="textColor"/>
@@ -363,6 +362,7 @@
                                     <constraint firstAttribute="bottom" secondItem="hCh-q3-eej" secondAttribute="bottom" constant="8" id="NHo-TX-FzX"/>
                                     <constraint firstItem="hCh-q3-eej" firstAttribute="top" secondItem="Qwt-r3-Kfx" secondAttribute="bottom" constant="30" id="Pd4-AZ-CO4"/>
                                     <constraint firstItem="O13-6m-jqW" firstAttribute="leading" secondItem="KRz-mh-sZJ" secondAttribute="leading" constant="20" id="QET-AC-E9o"/>
+                                    <constraint firstAttribute="trailing" secondItem="WVH-oN-37j" secondAttribute="trailing" constant="10" id="R5J-am-fmi"/>
                                     <constraint firstItem="Qwt-r3-Kfx" firstAttribute="top" secondItem="O13-6m-jqW" secondAttribute="bottom" id="SrG-n0-T9m"/>
                                     <constraint firstItem="NJi-Y6-FWn" firstAttribute="baseline" secondItem="hCh-q3-eej" secondAttribute="baseline" id="TJL-ID-NNL"/>
                                     <constraint firstAttribute="height" constant="260" id="Vgs-m7-TGR"/>
