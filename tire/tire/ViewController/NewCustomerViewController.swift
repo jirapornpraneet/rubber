@@ -46,8 +46,8 @@ class NewCustomerViewController: UIViewController, UITextFieldDelegate, NVActivi
         emailTextField.delegate = self
         phoneNumberTextField.delegate = self
         provinceLabel.text = "กรุงเทพมหานคร"
-        productLabel.text = "เลือกสินค้า"
-        storeLabel.text = "เลือกร้าน"
+        productLabel.text = R.string.localizable.selectProduct()
+        storeLabel.text = R.string.localizable.selectStore()
 
         let tapGestureRecognizerKeyboard: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
         view.addGestureRecognizer(tapGestureRecognizerKeyboard)
