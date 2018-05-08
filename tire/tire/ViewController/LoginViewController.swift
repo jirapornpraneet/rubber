@@ -77,12 +77,6 @@ class LoginViewController: UIViewController, UITextFieldDelegate, NVActivityIndi
         }
     }
 
-    @IBAction func registerClicked(_ sender: Any) {
-        let vc = RegisterViewController()
-        self.present(vc, animated: true, completion: nil)
-//        self.performSegue(withIdentifier: R.segue.loginViewController.toRegister, sender: nil)
-    }
-
     @IBAction func loginClicked(_ sender: Any) {
         self.dismissKeyboard()
         startAnimating()
