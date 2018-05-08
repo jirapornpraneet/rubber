@@ -42,124 +42,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "tire/NetworkManager/CustomerManager.swift"
-            timestampString = "547455116.798161"
+            timestampString = "547458357.1872751"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "42"
             endingLineNumber = "42"
             landmarkName = "postCustomer(firstName:lastName:address:email:carBrand:prefixLicense:suffixLicense:province:phoneNumber:productId:storeId:onSuccess:onFailure:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "tire/NetworkManager/BaseManager.swift"
-            timestampString = "542805547.7857291"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "21"
-            endingLineNumber = "21"
-            landmarkName = "get(path:params:onSuccess:onFailure:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "tire/NetworkManager/BaseManager.swift"
-            timestampString = "542805547.785841"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "30"
-            endingLineNumber = "30"
-            landmarkName = "get(path:params:onSuccess:onFailure:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "tire/NetworkManager/BaseManager.swift"
-            timestampString = "542805547.785908"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "27"
-            endingLineNumber = "27"
-            landmarkName = "get(path:params:onSuccess:onFailure:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "tire/NetworkManager/BaseManager.swift"
-            timestampString = "542805547.785966"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "28"
-            endingLineNumber = "28"
-            landmarkName = "get(path:params:onSuccess:onFailure:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Alamofire.DataResponse&lt;Swift.Array&lt;A&gt;&gt;) -&gt; () in tire.BaseManager.get&lt;A where A: EVReflection.EVObject&gt;(path: Swift.String, params: Swift.Optional&lt;Swift.Dictionary&lt;Swift.String, Any&gt;&gt;, onSuccess: (Swift.Array&lt;A&gt;) -&gt; (), onFailure: (tire.ErrorResource) -&gt; ()) -&gt; ()"
-                  moduleName = "tire"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jirapornpraneet/rubber-ios/tire/tire/NetworkManager/BaseManager.swift"
-                  timestampString = "547454552.015843"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "28"
-                  endingLineNumber = "28"
-                  offsetFromSymbolStart = "200">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Alamofire.DataResponse&lt;Swift.Array&lt;A&gt;&gt;) -&gt; () in tire.BaseManager.get&lt;A where A: EVReflection.EVObject&gt;(path: Swift.String, params: Swift.Optional&lt;Swift.Dictionary&lt;Swift.String, Any&gt;&gt;, onSuccess: (Swift.Array&lt;A&gt;) -&gt; (), onFailure: (tire.ErrorResource) -&gt; ()) -&gt; ()"
-                  moduleName = "tire"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jirapornpraneet/rubber-ios/tire/tire/NetworkManager/BaseManager.swift"
-                  timestampString = "547454552.018315"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "28"
-                  endingLineNumber = "28"
-                  offsetFromSymbolStart = "232">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "tire/NetworkManager/BaseManager.swift"
-            timestampString = "542805547.786021"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "35"
-            endingLineNumber = "35"
-            landmarkName = "get(path:params:onSuccess:onFailure:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -186,7 +74,7 @@
                   moduleName = "tire"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/jirapornpraneet/rubber-ios/tire/tire/ViewController/SearchCustomerViewController.swift"
-                  timestampString = "547454552.030162"
+                  timestampString = "547458357.722417"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "68"
@@ -201,7 +89,7 @@
                   moduleName = "tire"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/jirapornpraneet/rubber-ios/tire/tire/ViewController/SearchCustomerViewController.swift"
-                  timestampString = "547454552.033056"
+                  timestampString = "547458357.72435"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "69"
@@ -240,22 +128,6 @@
             startingLineNumber = "32"
             endingLineNumber = "32"
             landmarkName = "viewDidLoad()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "tire/NetworkManager/BaseManager.swift"
-            timestampString = "542805547.786136"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "32"
-            endingLineNumber = "32"
-            landmarkName = "get(path:params:onSuccess:onFailure:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

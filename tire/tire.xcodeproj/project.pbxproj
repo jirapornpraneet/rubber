@@ -10,6 +10,8 @@
 		3F9CE93CC5848479496BDB2D /* Pods_tire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0695F2EE99C913961CDC9B4 /* Pods_tire.framework */; };
 		AB00D69C20A15C2800C85BF8 /* StoreTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB00D69B20A15C2800C85BF8 /* StoreTableViewController.swift */; };
 		AB00D69E20A1684C00C85BF8 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB00D69D20A1684C00C85BF8 /* RegisterViewController.swift */; };
+		AB00D6A020A187AD00C85BF8 /* RegisterManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB00D69F20A187AD00C85BF8 /* RegisterManager.swift */; };
+		AB00D6A220A1881400C85BF8 /* RegisterResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB00D6A120A1881400C85BF8 /* RegisterResource.swift */; };
 		AB14F5FF205908B9003E5C8D /* CustomerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB14F5FE205908B9003E5C8D /* CustomerTableViewController.swift */; };
 		AB2496CD2036AD7E00F2658F /* CustomerResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2496CC2036AD7E00F2658F /* CustomerResource.swift */; };
 		AB2496CF2036AF8300F2658F /* LoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2496CE2036AF8300F2658F /* LoginManager.swift */; };
@@ -43,6 +45,8 @@
 		01B3E5692DA6663D2D1B744A /* Pods-tire.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tire.release.xcconfig"; path = "Pods/Target Support Files/Pods-tire/Pods-tire.release.xcconfig"; sourceTree = "<group>"; };
 		AB00D69B20A15C2800C85BF8 /* StoreTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreTableViewController.swift; sourceTree = "<group>"; };
 		AB00D69D20A1684C00C85BF8 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		AB00D69F20A187AD00C85BF8 /* RegisterManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterManager.swift; sourceTree = "<group>"; };
+		AB00D6A120A1881400C85BF8 /* RegisterResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterResource.swift; sourceTree = "<group>"; };
 		AB14F5FE205908B9003E5C8D /* CustomerTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerTableViewController.swift; sourceTree = "<group>"; };
 		AB2496CC2036AD7E00F2658F /* CustomerResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerResource.swift; sourceTree = "<group>"; };
 		AB2496CE2036AF8300F2658F /* LoginManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginManager.swift; sourceTree = "<group>"; };
@@ -171,6 +175,7 @@
 				AB2496CE2036AF8300F2658F /* LoginManager.swift */,
 				AB2496D42036B08E00F2658F /* ErrorResult.swift */,
 				ABCF56F3203D2554002CCBAB /* CustomerManager.swift */,
+				AB00D69F20A187AD00C85BF8 /* RegisterManager.swift */,
 			);
 			path = NetworkManager;
 			sourceTree = "<group>";
@@ -183,6 +188,7 @@
 				AB2496D22036B04A00F2658F /* ErrorResource.swift */,
 				AB82B78E205811D500714E73 /* ProductResource.swift */,
 				AB621EF220A153B700C9D147 /* StoreResource.swift */,
+				AB00D6A120A1881400C85BF8 /* RegisterResource.swift */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -405,10 +411,12 @@
 				ABD8553D20332CE100B50E4C /* LoginViewController.swift in Sources */,
 				AB62AB1D203C6E3F009F8055 /* NewCustomerViewController.swift in Sources */,
 				AB2496CF2036AF8300F2658F /* LoginManager.swift in Sources */,
+				AB00D6A220A1881400C85BF8 /* RegisterResource.swift in Sources */,
 				AB82B78F205811D500714E73 /* ProductResource.swift in Sources */,
 				AB2496D32036B04A00F2658F /* ErrorResource.swift in Sources */,
 				AB82B7912058180200714E73 /* ProductTableViewController.swift in Sources */,
 				AB59E4CF2032C99500C0631C /* AppDelegate.swift in Sources */,
+				AB00D6A020A187AD00C85BF8 /* RegisterManager.swift in Sources */,
 				AB2496D52036B08E00F2658F /* ErrorResult.swift in Sources */,
 				ABCF56F4203D2554002CCBAB /* CustomerManager.swift in Sources */,
 				AB6B4B592035D7C700BC895A /* FunctionHelper.swift in Sources */,

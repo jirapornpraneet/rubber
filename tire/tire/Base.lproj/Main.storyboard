@@ -1620,9 +1620,15 @@
                                     <navigationItem title="Register" id="l5w-GS-Xfl">
                                         <barButtonItem key="leftBarButtonItem" systemItem="stop" id="gRF-AU-ANv">
                                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <connections>
+                                                <action selector="dismissView:" destination="2qy-y9-5uK" id="Eby-E7-baJ"/>
+                                            </connections>
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" image="ic_done_white" id="JY4-KN-wLb">
                                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <connections>
+                                                <action selector="saveClicked:" destination="2qy-y9-5uK" id="XsP-AH-Z33"/>
+                                            </connections>
                                         </barButtonItem>
                                     </navigationItem>
                                 </items>
@@ -2023,6 +2029,15 @@
                         </barButtonItem>
                     </navigationItem>
                     <size key="freeformSize" width="375" height="800"/>
+                    <connections>
+                        <outlet property="addressTextField" destination="SHs-TS-EkT" id="98a-zW-eH8"/>
+                        <outlet property="emailTextField" destination="1Ig-Kj-adX" id="0de-fg-s09"/>
+                        <outlet property="firstNameTextField" destination="Pc2-gy-b0x" id="Unt-U5-LEo"/>
+                        <outlet property="lastNameTextField" destination="cdJ-zE-BPL" id="Pb6-5e-Z6p"/>
+                        <outlet property="passwordTextField" destination="h1r-Bf-DhF" id="35B-rN-XSX"/>
+                        <outlet property="phoneNumberTextField" destination="rRb-DE-Zfp" id="8Of-Di-0c3"/>
+                        <outlet property="usernameTextField" destination="wEE-g0-mxl" id="r6w-gg-kh5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ice-Vi-ByB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
