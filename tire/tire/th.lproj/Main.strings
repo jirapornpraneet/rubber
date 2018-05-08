@@ -127,22 +127,22 @@
 
 /* Class = "UILabel"; text = "Car brand : %s"; ObjectID = "zL0-fA-WNL"; */
 "zL0-fA-WNL.text" = "Car brand : %s";
+
 // หน้าเพิ่มข้อมูลผู้ใช้งานใหม่
-"GSk-SW-qWS.text" = "กรุณากรอกข้อมูลในช่องว่างให้ครบถ้วน";
-"GoZ-kW-Qzk.text" = "ชื่อ";
-"uUG-k8-uYc.text" = "นามสกุล";
-"pLa-Cf-zRA.text" = "ยี่ห้อรถยนต์";
-"pLa-Cf-zRA.text" = "ยี่ห้อรถยนต์";
-"c1p-RE-snj.text" = "ป้ายทะเบียนรถยนต์";
-"71o-RJ-PzY.placeholder" = "หมวดอักษร";
-"ZC5-kf-4Ch.placeholder" = "เลขทะเบียน";
-"LIx-gy-UHe.text" = "จังหวัด";
-"hRm-Fz-2cI.text" = "ที่อยู่";
-"MH0-Zs-BRc.text" = "อีเมล";
-"WVD-2e-Rsy.text" = "เบอร์โทรศัพท์";
-"ToI-RZ-8iX.text" = "สินค้า";
+"fQ3-9a-SUx.text" = "กรุณากรอกข้อมูลในช่องว่างให้ครบถ้วน";
+"18n-nJ-d6o.text" = "ชื่อ";
+"LYX-0R-bc9.text" = "นามสกุล";
+"xMf-qv-7Jh.text" = "ยี่ห้อรถยนต์";
+"v6m-2B-FS6.text" = "ป้ายทะเบียนรถยนต์";
+"ULE-vw-hkR.placeholder" = "หมวดอักษร";
+"lmT-4r-ORL.placeholder" = "เลขทะเบียน";
+"2pO-0J-xTI.text" = "จังหวัด";
+"pxb-y7-NPU.text" = "ที่อยู่";
+"hA1-0M-9er.text" = "อีเมล";
+"koa-GQ-Bxu.text" = "เบอร์โทรศัพท์";
+"Vbh-pT-gF0.text" = "สินค้า";
 "bOo-vy-XF0.text" = "ร้าน";
-"Hcs-bj-uQN.placeholder" = "ชื่อ";
-"L9o-VZ-stf.placeholder" = "นามสกุล";
-"BG9-DM-uly.placeholder" = "ยี่ห้อรถยนต์";
-"adL-O9-1lW.placeholder" = "ที่อยู่";
+"Y7Z-Jl-5w8.placeholder" = "ชื่อ";
+"6St-23-6hF.placeholder" = "นามสกุล";
+"A0b-C9-7Ga.placeholder" = "ยี่ห้อรถยนต์";
+"YyB-e0-xLX.placeholder" = "ที่อยู่";
