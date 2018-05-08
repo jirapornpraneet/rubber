@@ -93,7 +93,7 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
-  /// This `R.reuseIdentifier` struct is generated, and contains static references to 3 reuse identifiers.
+  /// This `R.reuseIdentifier` struct is generated, and contains static references to 4 reuse identifiers.
   struct reuseIdentifier {
     /// Reuse identifier `customerCells`.
     static let customerCells: Rswift.ReuseIdentifier<CustomerTableViewCell> = Rswift.ReuseIdentifier(identifier: "customerCells")
@@ -101,6 +101,8 @@ struct R: Rswift.Validatable {
     static let productCells: Rswift.ReuseIdentifier<UIKit.UITableViewCell> = Rswift.ReuseIdentifier(identifier: "productCells")
     /// Reuse identifier `provinceCells`.
     static let provinceCells: Rswift.ReuseIdentifier<UIKit.UITableViewCell> = Rswift.ReuseIdentifier(identifier: "provinceCells")
+    /// Reuse identifier `storeCells`.
+    static let storeCells: Rswift.ReuseIdentifier<UIKit.UITableViewCell> = Rswift.ReuseIdentifier(identifier: "storeCells")
     
     fileprivate init() {}
   }
@@ -161,12 +163,14 @@ struct R: Rswift.Validatable {
       fileprivate init() {}
     }
     
-    /// This struct is generated for `NewCustomerViewController`, and contains static references to 2 segues.
+    /// This struct is generated for `NewCustomerViewController`, and contains static references to 3 segues.
     struct newCustomerViewController {
       /// Segue identifier `toSelectProduct`.
       static let toSelectProduct: Rswift.StoryboardSegueIdentifier<UIKit.UIStoryboardSegue, NewCustomerViewController, ProductTableViewController> = Rswift.StoryboardSegueIdentifier(identifier: "toSelectProduct")
       /// Segue identifier `toSelectProvince`.
       static let toSelectProvince: Rswift.StoryboardSegueIdentifier<UIKit.UIStoryboardSegue, NewCustomerViewController, ProvinceTableViewController> = Rswift.StoryboardSegueIdentifier(identifier: "toSelectProvince")
+      /// Segue identifier `toSelectStore`.
+      static let toSelectStore: Rswift.StoryboardSegueIdentifier<UIKit.UIStoryboardSegue, NewCustomerViewController, StoreTableViewController> = Rswift.StoryboardSegueIdentifier(identifier: "toSelectStore")
       
       /// Optionally returns a typed version of segue `toSelectProduct`.
       /// Returns nil if either the segue identifier, the source, destination, or segue types don't match.
@@ -180,6 +184,13 @@ struct R: Rswift.Validatable {
       /// For use inside `prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)`.
       static func toSelectProvince(segue: UIKit.UIStoryboardSegue) -> Rswift.TypedStoryboardSegueInfo<UIKit.UIStoryboardSegue, NewCustomerViewController, ProvinceTableViewController>? {
         return Rswift.TypedStoryboardSegueInfo(segueIdentifier: R.segue.newCustomerViewController.toSelectProvince, segue: segue)
+      }
+      
+      /// Optionally returns a typed version of segue `toSelectStore`.
+      /// Returns nil if either the segue identifier, the source, destination, or segue types don't match.
+      /// For use inside `prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)`.
+      static func toSelectStore(segue: UIKit.UIStoryboardSegue) -> Rswift.TypedStoryboardSegueInfo<UIKit.UIStoryboardSegue, NewCustomerViewController, StoreTableViewController>? {
+        return Rswift.TypedStoryboardSegueInfo(segueIdentifier: R.segue.newCustomerViewController.toSelectStore, segue: segue)
       }
       
       fileprivate init() {}

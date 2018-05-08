@@ -24,10 +24,14 @@ class NewCustomerViewController: UIViewController, UITextFieldDelegate, NVActivi
     @IBOutlet var provinceView: UIView!
     @IBOutlet var productView: UIView!
     @IBOutlet var productLabel: UILabel!
+    @IBOutlet var storeView: UIView!
+    @IBOutlet var storeLabel: UILabel!
 
     var productResource = [ProductResource]()
+    var storeResource = [StoreResource]()
     var customerResource = CustomerResource()
     var getProductId: Int = 0
+    var getStoreId: Int = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,6 +47,7 @@ class NewCustomerViewController: UIViewController, UITextFieldDelegate, NVActivi
         phoneNumberTextField.delegate = self
         provinceLabel.text = "กรุงเทพมหานคร"
         productLabel.text = "เลือกสินค้า"
+        storeLabel.text = "เลือกร้าน"
 
         let tapGestureRecognizerKeyboard: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
         view.addGestureRecognizer(tapGestureRecognizerKeyboard)
@@ -55,9 +60,18 @@ class NewCustomerViewController: UIViewController, UITextFieldDelegate, NVActivi
         productView.isUserInteractionEnabled = true
         productView.addGestureRecognizer(tapGestureRecognizerProductView)
 
+        let tapGestureRecognizerStoreView = UITapGestureRecognizer(target: self, action: #selector(storeViewAction))
+        storeView.isUserInteractionEnabled = true
+        storeView.addGestureRecognizer(tapGestureRecognizerStoreView)
+
         CustomerManager().getProduct(onSuccess: { (resource) in
             self.productResource = resource
-            print("ProductNaJa", self.productResource)
+        }, onFailure: { errorResource in
+            ErrorResult().showError(errorResource: errorResource, vc: self)
+        })
+
+        CustomerManager().getStore(onSuccess: { (resource) in
+            self.storeResource = resource
         }, onFailure: { errorResource in
             ErrorResult().showError(errorResource: errorResource, vc: self)
         })
@@ -71,6 +85,10 @@ class NewCustomerViewController: UIViewController, UITextFieldDelegate, NVActivi
         getProductId = productId
     }
 
+    func receiveStoreIdFromStoreView(storeId: Int) {
+        getStoreId = storeId
+    }
+
     @objc func provinceViewAction() {
         self.view.endEditing(true)
         self.performSegue(withIdentifier: R.segue.newCustomerViewController.toSelectProvince, sender: self)
@@ -81,8 +99,17 @@ class NewCustomerViewController: UIViewController, UITextFieldDelegate, NVActivi
         self.performSegue(withIdentifier: R.segue.newCustomerViewController.toSelectProduct, sender: self)
     }
 
+    @objc func storeViewAction() {
+        self.view.endEditing(true)
+        self.performSegue(withIdentifier: R.segue.newCustomerViewController.toSelectStore, sender: self)
+    }
+
     func receiveDataFromProductView(product: String) {
         productLabel.text = product
+    }
+
+    func receiveDataFromStoreView(store: String) {
+        storeLabel.text = store
     }
 
     @objc func dismissKeyboard() {
@@ -166,13 +193,14 @@ class NewCustomerViewController: UIViewController, UITextFieldDelegate, NVActivi
         let email = emailTextField.text!
         let phoneNumber = phoneNumberTextField.text!
         let productId = getProductId
+        let storeId = getStoreId
 
         CustomerManager().postCustomer(firstName: firstName, lastName: lastName,
                                        address: address, email: email, carBrand: carBrand,
                                        prefixLicense: prefixLicense, suffixLicense: suffixLicense,
                                        province: province, phoneNumber: phoneNumber,
-                                       productId: productId,
-                                       onSuccess: { (resource) in
+                                       productId: productId, storeId: storeId,
+                                       onSuccess: { (resource)  in
             self.stopAnimating()
             self.showAlertSuccess()
         }, onFailure: { errorResource in
@@ -198,6 +226,9 @@ class NewCustomerViewController: UIViewController, UITextFieldDelegate, NVActivi
             typedInfo.destination.delegate = self
         } else if let typedInfo = R.segue.newCustomerViewController.toSelectProduct(segue: segue) {
             typedInfo.destination.productResource = productResource
+            typedInfo.destination.delegate = self
+        } else if let typedInfo = R.segue.newCustomerViewController.toSelectStore(segue: segue) {
+            typedInfo.destination.storeResource = storeResource
             typedInfo.destination.delegate = self
         }
     }

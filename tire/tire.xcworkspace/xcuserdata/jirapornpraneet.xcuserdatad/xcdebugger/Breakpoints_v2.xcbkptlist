@@ -42,13 +42,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "tire/NetworkManager/CustomerManager.swift"
-            timestampString = "542696896.098395"
+            timestampString = "547446600.409302"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "42"
             endingLineNumber = "42"
-            landmarkName = "CustomerManager"
-            landmarkType = "3">
+            landmarkName = "postCustomer(firstName:lastName:address:email:carBrand:prefixLicense:suffixLicense:province:phoneNumber:productId:storeId:onSuccess:onFailure:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy

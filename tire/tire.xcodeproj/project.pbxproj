@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3F9CE93CC5848479496BDB2D /* Pods_tire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0695F2EE99C913961CDC9B4 /* Pods_tire.framework */; };
+		AB00D69C20A15C2800C85BF8 /* StoreTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB00D69B20A15C2800C85BF8 /* StoreTableViewController.swift */; };
 		AB14F5FF205908B9003E5C8D /* CustomerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB14F5FE205908B9003E5C8D /* CustomerTableViewController.swift */; };
 		AB2496CD2036AD7E00F2658F /* CustomerResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2496CC2036AD7E00F2658F /* CustomerResource.swift */; };
 		AB2496CF2036AF8300F2658F /* LoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2496CE2036AF8300F2658F /* LoginManager.swift */; };
@@ -39,6 +40,7 @@
 
 /* Begin PBXFileReference section */
 		01B3E5692DA6663D2D1B744A /* Pods-tire.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tire.release.xcconfig"; path = "Pods/Target Support Files/Pods-tire/Pods-tire.release.xcconfig"; sourceTree = "<group>"; };
+		AB00D69B20A15C2800C85BF8 /* StoreTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreTableViewController.swift; sourceTree = "<group>"; };
 		AB14F5FE205908B9003E5C8D /* CustomerTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerTableViewController.swift; sourceTree = "<group>"; };
 		AB2496CC2036AD7E00F2658F /* CustomerResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerResource.swift; sourceTree = "<group>"; };
 		AB2496CE2036AF8300F2658F /* LoginManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginManager.swift; sourceTree = "<group>"; };
@@ -144,6 +146,7 @@
 				AB9A59EE2053E5D40044B0F9 /* ProvinceTableViewController.swift */,
 				AB82B7902058180200714E73 /* ProductTableViewController.swift */,
 				AB14F5FE205908B9003E5C8D /* CustomerTableViewController.swift */,
+				AB00D69B20A15C2800C85BF8 /* StoreTableViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -390,6 +393,7 @@
 				ABCF56F6203D9073002CCBAB /* CustomerViewController.swift in Sources */,
 				AB62AB1B203C6E2D009F8055 /* MainViewController.swift in Sources */,
 				AB4888FC203C781700ED2779 /* SearchCustomerViewController.swift in Sources */,
+				AB00D69C20A15C2800C85BF8 /* StoreTableViewController.swift in Sources */,
 				AB2496D12036B00D00F2658F /* LoginResource.swift in Sources */,
 				AB6B4B552035D13000BC895A /* Constants.swift in Sources */,
 				ABD8553F20332D4D00B50E4C /* BaseManager.swift in Sources */,
