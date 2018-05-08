@@ -20,6 +20,7 @@
 		AB59E4D42032C99500C0631C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB59E4D22032C99500C0631C /* Main.storyboard */; };
 		AB59E4D62032C99500C0631C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB59E4D52032C99500C0631C /* Assets.xcassets */; };
 		AB59E4D92032C99500C0631C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB59E4D72032C99500C0631C /* LaunchScreen.storyboard */; };
+		AB621EF320A153B700C9D147 /* StoreResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB621EF220A153B700C9D147 /* StoreResource.swift */; };
 		AB62AB1B203C6E2D009F8055 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB62AB1A203C6E2D009F8055 /* MainViewController.swift */; };
 		AB62AB1D203C6E3F009F8055 /* NewCustomerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB62AB1C203C6E3F009F8055 /* NewCustomerViewController.swift */; };
 		AB6B4B552035D13000BC895A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6B4B542035D13000BC895A /* Constants.swift */; };
@@ -52,6 +53,7 @@
 		AB59E4D52032C99500C0631C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AB59E4D82032C99500C0631C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AB59E4DA2032C99500C0631C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB621EF220A153B700C9D147 /* StoreResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreResource.swift; sourceTree = "<group>"; };
 		AB62AB1A203C6E2D009F8055 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		AB62AB1C203C6E3F009F8055 /* NewCustomerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCustomerViewController.swift; sourceTree = "<group>"; };
 		AB6B4B542035D13000BC895A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -174,6 +176,7 @@
 				AB2496CC2036AD7E00F2658F /* CustomerResource.swift */,
 				AB2496D22036B04A00F2658F /* ErrorResource.swift */,
 				AB82B78E205811D500714E73 /* ProductResource.swift */,
+				AB621EF220A153B700C9D147 /* StoreResource.swift */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -381,6 +384,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB6B4B572035D1BA00BC895A /* UserDefault+Tire.swift in Sources */,
+				AB621EF320A153B700C9D147 /* StoreResource.swift in Sources */,
 				AB9A59EF2053E5D40044B0F9 /* ProvinceTableViewController.swift in Sources */,
 				AB14F5FF205908B9003E5C8D /* CustomerTableViewController.swift in Sources */,
 				ABCF56F6203D9073002CCBAB /* CustomerViewController.swift in Sources */,

@@ -74,8 +74,8 @@ class BaseManager: NSObject {
 
         Alamofire
             .upload(multipartFormData: { multipartFormData in
-                if let _image = image {
-                    let newImageData = UIImageJPEGRepresentation(self.resizeImage(image: _image), 0.8)
+                if let imageData = image {
+                    let newImageData = UIImageJPEGRepresentation(self.resizeImage(image: imageData), 0.8)
                     multipartFormData.append(newImageData!, withName: "imageFile", fileName: "faceImage.jpg", mimeType: "image/jpeg")
                 }
             }, usingThreshold: UInt64.init(),
