@@ -15,10 +15,12 @@ class RegisterViewController: UIViewController, UITextFieldDelegate, NVActivityI
     @IBOutlet var lastNameTextField: UITextField!
     @IBOutlet var usernameTextField: UITextField!
     @IBOutlet var passwordTextField: UITextField!
+    @IBOutlet var confirmPasswordTextField: UITextField!
     @IBOutlet var addressTextField: UITextField!
     @IBOutlet var emailTextField: UITextField!
     @IBOutlet var phoneNumberTextField: UITextField!
-
+    @IBOutlet var saveButton: UIBarButtonItem!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         UIApplication.shared.statusBarView?.backgroundColor = UIColor(red: 69/255, green: 90/255, blue: 100/255, alpha: 1.0)
@@ -27,6 +29,7 @@ class RegisterViewController: UIViewController, UITextFieldDelegate, NVActivityI
         lastNameTextField.delegate = self
         usernameTextField.delegate = self
         passwordTextField.delegate = self
+        confirmPasswordTextField.delegate = self
         addressTextField.delegate = self
         emailTextField.delegate = self
         phoneNumberTextField.delegate = self
@@ -37,23 +40,47 @@ class RegisterViewController: UIViewController, UITextFieldDelegate, NVActivityI
     }
 
     @IBAction func dismissView(_ sender: UIBarButtonItem) {
-        self.navigationController?.dismiss(animated: true, completion: nil)
+        self.presentingViewController?.dismiss(animated: true, completion: nil)
+    }
+
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        if textField == firstNameTextField {
+            lastNameTextField.becomeFirstResponder()
+        } else if textField == lastNameTextField {
+            usernameTextField.becomeFirstResponder()
+        } else if textField == usernameTextField {
+            passwordTextField.becomeFirstResponder()
+        } else if textField == passwordTextField {
+            confirmPasswordTextField.becomeFirstResponder()
+        } else if textField == confirmPasswordTextField {
+            addressTextField.becomeFirstResponder()
+        } else if textField == addressTextField {
+            emailTextField.becomeFirstResponder()
+        } else if textField == emailTextField {
+            phoneNumberTextField.becomeFirstResponder()
+        } else if textField == phoneNumberTextField {
+            saveClicked(self)
+        }
+
+        return true
     }
 
     @IBAction func saveClicked(_ sender: Any) {
         self.dismissKeyboard()
         startAnimating()
-        let firstName = firstNameTextField.text!
-        let lastName = lastNameTextField.text!
-        let userName = usernameTextField.text!
-        let password = passwordTextField.text!
-        let address = addressTextField.text!
-        let email = emailTextField.text!
-        let phoneNumber = phoneNumberTextField.text!
 
-        RegisterManager().postRegister(firstName: firstName, lastName: lastName,
-                                       address: address, username: userName, password: password,
-                                       email: email, phoneNumber: phoneNumber,
+        if passwordTextField.text != confirmPasswordTextField.text {
+            showNotMatchPassword()
+        } else {
+            showConfirmSuccess()
+        }
+        self.stopAnimating()
+    }
+
+    func saveDataToApi() {
+        RegisterManager().postRegister(firstName: firstNameTextField.text!, lastName: lastNameTextField.text!,
+                                       address: addressTextField.text!, username: usernameTextField.text!, password: passwordTextField.text!,
+                                       email: emailTextField.text!, phoneNumber: phoneNumberTextField.text!,
                                        onSuccess: { (resource) in
                                         self.stopAnimating()
                                         self.showAlertSuccess()
@@ -63,13 +90,37 @@ class RegisterViewController: UIViewController, UITextFieldDelegate, NVActivityI
         })
     }
 
+    func showConfirmSuccess() {
+        let alertController = UIAlertController(title: R.string.localizable.confirmToCreate(),
+                                                message: "",
+                                                preferredStyle: UIAlertControllerStyle.alert)
+        alertController.addAction(UIAlertAction(title: R.string.localizable.oK(), style: .default, handler: { (action: UIAlertAction) in
+            self.saveDataToApi()
+        }))
+
+        alertController.addAction(UIAlertAction(title: R.string.localizable.canceL(), style: .cancel, handler: { (action: UIAlertAction) in
+        }))
+        self.present(alertController, animated: true, completion: nil)
+    }
+
     func showAlertSuccess() {
-        let alertController = UIAlertController(title: "บันทึก",
-                                                message: "บันทึกข้อมูลเรียบร้อย",
+        let alertController = UIAlertController(title: R.string.localizable.success(),
+                                                message: "",
+                                                preferredStyle: UIAlertControllerStyle.alert)
+        let okAction = UIAlertAction(title: R.string.localizable.oK(), style: UIAlertActionStyle.default) { (_: UIAlertAction) -> Void in
+            self.dismiss(animated: true, completion: nil)
+        }
+        alertController.addAction(okAction)
+
+        self.present(alertController, animated: true, completion: nil)
+    }
+
+    func showNotMatchPassword() {
+        let alertController = UIAlertController(title: R.string.localizable.passwordNotMatchPleaseTryAgain(),
+                                                message: "",
                                                 preferredStyle: UIAlertControllerStyle.alert)
 
-        let okAction = UIAlertAction(title: "Ok", style: UIAlertActionStyle.default) { (_: UIAlertAction) -> Void in
-            self.dismiss(animated: true, completion: nil)
+        let okAction = UIAlertAction(title: R.string.localizable.oK(), style: UIAlertActionStyle.default) { (_: UIAlertAction) -> Void in
         }
         alertController.addAction(okAction)
         self.present(alertController, animated: true, completion: nil)

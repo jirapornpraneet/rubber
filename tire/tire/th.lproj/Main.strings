@@ -146,3 +146,26 @@
 "6St-23-6hF.placeholder" = "นามสกุล";
 "A0b-C9-7Ga.placeholder" = "ยี่ห้อรถยนต์";
 "YyB-e0-xLX.placeholder" = "ที่อยู่";
+
+/* Class = "UIButton"; normalTitle = "New Customer"; ObjectID = "8uD-gK-Loi"; */
+"8uD-gK-Loi.normalTitle" = "ลงทะเบียนลูกค้าใหม่ ?";
+
+//หน้า Register
+"l5w-GS-Xfl.title" = "เพิ่มข้อมูลลูกค้าใหม่";
+"QnR-e2-iio.text" = "กรุณากรอกข้อมูลในช่องว่างให้ครบถ้วน";
+"V2J-i5-Tpj.text" = "ชื่อ";
+"y0e-sF-AxY.text" = "นามสกุล";
+"Yqr-d8-NDY.text" = "ชื่อผู้ใช้";
+"sTL-Vv-vjg.text" = "รหัสผ่าน";
+"apU-cB-izM.text" = "ยืนยันรหัสผ่าน";
+"7hZ-V4-N9O.text" = "ที่อยู่";
+"l9t-cu-HZQ.text" = "อีเมล";
+"OKb-bh-Htk.text" = "เบอร์โทรศัพท์";
+"Pc2-gy-b0x.placeholder" = "ชื่อ";
+"cdJ-zE-BPL.placeholder" = "นามสกุล";
+"SHs-TS-EkT.placeholder" = "ชื่อผู้ใช้";
+"wEE-g0-mxl.placeholder" = "รหัสผ่าน";
+"h1r-Bf-DhF.placeholder" = "ยืนยันรหัสผ่าน";
+"1Ig-Kj-adX.placeholder" = "ที่อยู่";
+
+

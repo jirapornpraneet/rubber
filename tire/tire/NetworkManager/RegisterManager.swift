@@ -9,7 +9,7 @@
 import UIKit
 import Alamofire
 
-let registerPath = "/web/api-register/create"
+let registerPath = "/web/api-user/register"
 
 typealias PostRegisterOnSuccess = (RegisterResource) -> Void
 typealias PostRegisterOnFailure = (ErrorResource) -> Void

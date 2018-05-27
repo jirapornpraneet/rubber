@@ -22,4 +22,11 @@
 "Product information" = "Product information";
 "Select Product" = "Select Product";
 "Select Store" = "Select Store";
+//Register
+"Confirm" = "Confirm";
+"Confirm to create?" = "Confirm to create?";
+"OK" = "OK";
+"CANCEL" = "CANCEL";
+"Success" = "Success";
+"Password not match, Please try again." = "Password not match, Please try again.";
 

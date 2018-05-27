@@ -22,3 +22,10 @@
 "Product information" = "ข้อมูลสินค้า";
 "Select Product" = "เลือกสินค้า";
 "Select Store" = "เลือกร้าน";
+//Register
+"Confirm" = "ยืนยัน";
+"Confirm to create?" = "ยืนยันเพิ่มข้อมูลหรือไม่";
+"OK" = "ตกลง";
+"CANCEL" = "ยกเลิก";
+"Success" = "เสร็จสิ้น";
+"Password not match, Please try again." = "รหัสผ่านไม่ตรงกัน กรุณาลองอีกครั้ง";
