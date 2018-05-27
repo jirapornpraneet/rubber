@@ -905,7 +905,7 @@
                         <outlet property="newCustomerView" destination="ibR-y8-Yrg" id="F06-Z0-0wJ"/>
                         <outlet property="searchCustomerView" destination="2tX-SB-uVq" id="Rm5-SM-2ef"/>
                         <segue destination="xMi-7R-ret" kind="push" identifier="toSearch" id="79c-yP-kMT"/>
-                        <segue destination="oMU-de-dbw" kind="presentation" identifier="toAdd" id="Uvu-uI-CQy"/>
+                        <segue destination="2qy-y9-5uK" kind="presentation" identifier="toAdd" id="SHb-bj-dKK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mwx-aC-D1B" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -2136,4 +2136,7 @@
         <image name="ic_remove_red_eye" width="24" height="24"/>
         <image name="search" width="512" height="512"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="SHb-bj-dKK"/>
+    </inferredMetricsTieBreakers>
 </document>

@@ -149,14 +149,14 @@ struct R: Rswift.Validatable {
     /// This struct is generated for `MainViewController`, and contains static references to 2 segues.
     struct mainViewController {
       /// Segue identifier `toAdd`.
-      static let toAdd: Rswift.StoryboardSegueIdentifier<UIKit.UIStoryboardSegue, MainViewController, UIKit.UINavigationController> = Rswift.StoryboardSegueIdentifier(identifier: "toAdd")
+      static let toAdd: Rswift.StoryboardSegueIdentifier<UIKit.UIStoryboardSegue, MainViewController, RegisterViewController> = Rswift.StoryboardSegueIdentifier(identifier: "toAdd")
       /// Segue identifier `toSearch`.
       static let toSearch: Rswift.StoryboardSegueIdentifier<UIKit.UIStoryboardSegue, MainViewController, SearchCustomerViewController> = Rswift.StoryboardSegueIdentifier(identifier: "toSearch")
       
       /// Optionally returns a typed version of segue `toAdd`.
       /// Returns nil if either the segue identifier, the source, destination, or segue types don't match.
       /// For use inside `prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)`.
-      static func toAdd(segue: UIKit.UIStoryboardSegue) -> Rswift.TypedStoryboardSegueInfo<UIKit.UIStoryboardSegue, MainViewController, UIKit.UINavigationController>? {
+      static func toAdd(segue: UIKit.UIStoryboardSegue) -> Rswift.TypedStoryboardSegueInfo<UIKit.UIStoryboardSegue, MainViewController, RegisterViewController>? {
         return Rswift.TypedStoryboardSegueInfo(segueIdentifier: R.segue.mainViewController.toAdd, segue: segue)
       }
       
