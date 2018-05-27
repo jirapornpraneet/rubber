@@ -29,4 +29,6 @@
 "CANCEL" = "CANCEL";
 "Success" = "Success";
 "Password not match, Please try again." = "Password not match, Please try again.";
+//Main
+"Logout?" = "Logout?";
 

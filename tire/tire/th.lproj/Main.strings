@@ -44,6 +44,7 @@
 /* Class = "UILabel"; text = "Customer search"; ObjectID = "WVH-oN-37j"; */
 "WVH-oN-37j.text" = "ค้นหาลูกค้าเดิม";
 
+
 /* Class = "UILabel"; text = "Name"; ObjectID = "WcY-61-wcb"; */
 "WcY-61-wcb.text" = "ชื่อ";
 
@@ -168,4 +169,8 @@
 "h1r-Bf-DhF.placeholder" = "ยืนยันรหัสผ่าน";
 "1Ig-Kj-adX.placeholder" = "ที่อยู่";
 
+//main
+"MuS-TY-fij.text" = "รายชื่อลูกค้า";
+"ul7-Kd-ZKx.text" = "ค้นหาลูกค้า";
+"4Xu-bp-tf3.text" = "เพิ่มลูกค้าใหม่";
 

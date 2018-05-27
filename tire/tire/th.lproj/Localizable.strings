@@ -29,3 +29,5 @@
 "CANCEL" = "ยกเลิก";
 "Success" = "เสร็จสิ้น";
 "Password not match, Please try again." = "รหัสผ่านไม่ตรงกัน กรุณาลองอีกครั้ง";
+//Main
+"Logout?" = "ออกจากระบบหรือไม่ ?";

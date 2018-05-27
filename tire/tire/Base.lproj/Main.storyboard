@@ -902,9 +902,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="newCustomerLabel" destination="4Xu-bp-tf3" id="yoI-zH-zaq"/>
                         <outlet property="newCustomerView" destination="ibR-y8-Yrg" id="F06-Z0-0wJ"/>
-                        <outlet property="searchCustomerLabel" destination="ul7-Kd-ZKx" id="90Z-Ec-0KT"/>
                         <outlet property="searchCustomerView" destination="2tX-SB-uVq" id="Rm5-SM-2ef"/>
                         <segue destination="xMi-7R-ret" kind="push" identifier="toSearch" id="79c-yP-kMT"/>
                         <segue destination="oMU-de-dbw" kind="presentation" identifier="toAdd" id="Uvu-uI-CQy"/>

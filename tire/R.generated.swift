@@ -40,10 +40,12 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
-  /// This `R.image` struct is generated, and contains static references to 6 images.
+  /// This `R.image` struct is generated, and contains static references to 7 images.
   struct image {
     /// Image `add-user`.
     static let addUser = Rswift.ImageResource(bundle: R.hostingBundle, name: "add-user")
+    /// Image `all-customer`.
+    static let allCustomer = Rswift.ImageResource(bundle: R.hostingBundle, name: "all-customer")
     /// Image `ic_app_nika`.
     static let ic_app_nika = Rswift.ImageResource(bundle: R.hostingBundle, name: "ic_app_nika")
     /// Image `ic_done_white`.
@@ -58,6 +60,11 @@ struct R: Rswift.Validatable {
     /// `UIImage(named: "add-user", bundle: ..., traitCollection: ...)`
     static func addUser(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
       return UIKit.UIImage(resource: R.image.addUser, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "all-customer", bundle: ..., traitCollection: ...)`
+    static func allCustomer(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.allCustomer, compatibleWith: traitCollection)
     }
     
     /// `UIImage(named: "ic_app_nika", bundle: ..., traitCollection: ...)`
@@ -241,7 +248,7 @@ struct R: Rswift.Validatable {
       fileprivate init() {}
     }
     
-    /// This `R.string.localizable` struct is generated, and contains static references to 22 localization keys.
+    /// This `R.string.localizable` struct is generated, and contains static references to 23 localization keys.
     struct localizable {
       /// en translation: Address : %@
       /// 
@@ -271,6 +278,10 @@ struct R: Rswift.Validatable {
       /// 
       /// Locales: en, th
       static let licensePlateNumber = Rswift.StringResource(key: "License plate number : %@", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "th"], comment: nil)
+      /// en translation: Logout?
+      /// 
+      /// Locales: en, th
+      static let logout = Rswift.StringResource(key: "Logout?", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "th"], comment: nil)
       /// en translation: Name : %@
       /// 
       /// Locales: en, th
@@ -381,6 +392,13 @@ struct R: Rswift.Validatable {
         return String(format: NSLocalizedString("License plate number : %@", bundle: R.hostingBundle, comment: ""), locale: R.applicationLocale, value1)
       }
       
+      /// en translation: Logout?
+      /// 
+      /// Locales: en, th
+      static func logout(_: Void = ()) -> String {
+        return NSLocalizedString("Logout?", bundle: R.hostingBundle, comment: "")
+      }
+      
       /// en translation: Name : %@
       /// 
       /// Locales: en, th
@@ -489,7 +507,7 @@ struct R: Rswift.Validatable {
       fileprivate init() {}
     }
     
-    /// This `R.string.main` struct is generated, and contains static references to 77 localization keys.
+    /// This `R.string.main` struct is generated, and contains static references to 80 localization keys.
     struct main {
       /// th translation: Address
       /// 
@@ -627,6 +645,10 @@ struct R: Rswift.Validatable {
       /// 
       /// Locales: th
       static let hChQ3EejNormalTitle = Rswift.StringResource(key: "hCh-q3-eej.normalTitle", tableName: "Main", bundle: R.hostingBundle, locales: ["th"], comment: nil)
+      /// th translation: ค้นหาลูกค้า
+      /// 
+      /// Locales: th
+      static let ul7KdZKxText = Rswift.StringResource(key: "ul7-Kd-ZKx.text", tableName: "Main", bundle: R.hostingBundle, locales: ["th"], comment: nil)
       /// th translation: ค้นหาลูกค้าเดิม
       /// 
       /// Locales: th
@@ -747,6 +769,10 @@ struct R: Rswift.Validatable {
       /// 
       /// Locales: th
       static let wEEG0MxlPlaceholder = Rswift.StringResource(key: "wEE-g0-mxl.placeholder", tableName: "Main", bundle: R.hostingBundle, locales: ["th"], comment: nil)
+      /// th translation: รายชื่อลูกค้า
+      /// 
+      /// Locales: th
+      static let muSTYFijText = Rswift.StringResource(key: "MuS-TY-fij.text", tableName: "Main", bundle: R.hostingBundle, locales: ["th"], comment: nil)
       /// th translation: ร้าน
       /// 
       /// Locales: th
@@ -787,6 +813,10 @@ struct R: Rswift.Validatable {
       /// 
       /// Locales: th
       static let l5wGSXflTitle = Rswift.StringResource(key: "l5w-GS-Xfl.title", tableName: "Main", bundle: R.hostingBundle, locales: ["th"], comment: nil)
+      /// th translation: เพิ่มลูกค้าใหม่
+      /// 
+      /// Locales: th
+      static let xuBpTf3Text = Rswift.StringResource(key: "4Xu-bp-tf3.text", tableName: "Main", bundle: R.hostingBundle, locales: ["th"], comment: nil)
       /// th translation: เมนูการใช้งาน
       /// 
       /// Locales: th
@@ -1038,6 +1068,13 @@ struct R: Rswift.Validatable {
         return NSLocalizedString("hCh-q3-eej.normalTitle", tableName: "Main", bundle: R.hostingBundle, comment: "")
       }
       
+      /// th translation: ค้นหาลูกค้า
+      /// 
+      /// Locales: th
+      static func ul7KdZKxText(_: Void = ()) -> String {
+        return NSLocalizedString("ul7-Kd-ZKx.text", tableName: "Main", bundle: R.hostingBundle, comment: "")
+      }
+      
       /// th translation: ค้นหาลูกค้าเดิม
       /// 
       /// Locales: th
@@ -1248,6 +1285,13 @@ struct R: Rswift.Validatable {
         return NSLocalizedString("wEE-g0-mxl.placeholder", tableName: "Main", bundle: R.hostingBundle, comment: "")
       }
       
+      /// th translation: รายชื่อลูกค้า
+      /// 
+      /// Locales: th
+      static func muSTYFijText(_: Void = ()) -> String {
+        return NSLocalizedString("MuS-TY-fij.text", tableName: "Main", bundle: R.hostingBundle, comment: "")
+      }
+      
       /// th translation: ร้าน
       /// 
       /// Locales: th
@@ -1316,6 +1360,13 @@ struct R: Rswift.Validatable {
       /// Locales: th
       static func l5wGSXflTitle(_: Void = ()) -> String {
         return NSLocalizedString("l5w-GS-Xfl.title", tableName: "Main", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// th translation: เพิ่มลูกค้าใหม่
+      /// 
+      /// Locales: th
+      static func xuBpTf3Text(_: Void = ()) -> String {
+        return NSLocalizedString("4Xu-bp-tf3.text", tableName: "Main", bundle: R.hostingBundle, comment: "")
       }
       
       /// th translation: เมนูการใช้งาน
@@ -1403,12 +1454,13 @@ struct _R: Rswift.Validatable {
       }
       
       static func validate() throws {
-        if UIKit.UIImage(named: "ic_exit_to_app_white_36pt") == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'ic_exit_to_app_white_36pt' is used in storyboard 'Main', but couldn't be loaded.") }
+        if UIKit.UIImage(named: "all-customer") == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'all-customer' is used in storyboard 'Main', but couldn't be loaded.") }
         if UIKit.UIImage(named: "ic_app_nika") == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'ic_app_nika' is used in storyboard 'Main', but couldn't be loaded.") }
-        if UIKit.UIImage(named: "ic_done_white") == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'ic_done_white' is used in storyboard 'Main', but couldn't be loaded.") }
-        if UIKit.UIImage(named: "ic_remove_red_eye") == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'ic_remove_red_eye' is used in storyboard 'Main', but couldn't be loaded.") }
         if UIKit.UIImage(named: "search") == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'search' is used in storyboard 'Main', but couldn't be loaded.") }
         if UIKit.UIImage(named: "add-user") == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'add-user' is used in storyboard 'Main', but couldn't be loaded.") }
+        if UIKit.UIImage(named: "ic_done_white") == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'ic_done_white' is used in storyboard 'Main', but couldn't be loaded.") }
+        if UIKit.UIImage(named: "ic_remove_red_eye") == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'ic_remove_red_eye' is used in storyboard 'Main', but couldn't be loaded.") }
+        if UIKit.UIImage(named: "ic_exit_to_app_white_36pt") == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'ic_exit_to_app_white_36pt' is used in storyboard 'Main', but couldn't be loaded.") }
         if _R.storyboard.main().login() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'login' could not be loaded from storyboard 'Main' as 'LoginViewController'.") }
         if _R.storyboard.main().mainViewController() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'mainViewController' could not be loaded from storyboard 'Main' as 'MainViewController'.") }
         if _R.storyboard.main().mainNavigation() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'mainNavigation' could not be loaded from storyboard 'Main' as 'UIKit.UINavigationController'.") }

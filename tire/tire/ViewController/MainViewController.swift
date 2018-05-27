@@ -12,8 +12,6 @@ class MainViewController: UIViewController {
 
     @IBOutlet var searchCustomerView: UIView!
     @IBOutlet var newCustomerView: UIView!
-    @IBOutlet var searchCustomerLabel: UILabel!
-    @IBOutlet var newCustomerLabel: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,14 +24,11 @@ class MainViewController: UIViewController {
         newCustomerView.addGestureRecognizer(tapGestureRecognizerNewCustomerView)
 
         UIApplication.shared.statusBarView?.backgroundColor = UIColor(red: 69/255, green: 90/255, blue: 100/255, alpha: 1.0)
-
-        searchCustomerLabel.text = R.string.localizable.searchCustomer()
-        newCustomerLabel.text = R.string.localizable.newCustomer()
     }
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(true)
-        self.navigationController?.navigationBar.topItem?.title = "NIKA Shop"
+        self.navigationController?.navigationBar.topItem?.title = "K2K warranty"
     }
 
     @objc func searchCustomerViewAction() {
@@ -52,14 +47,14 @@ class MainViewController: UIViewController {
     }
 
     @IBAction func logout(_ sender: UIBarButtonItem) {
-        let alert = UIAlertController(title: nil, message: "คุณต้องการออกจากระบบ", preferredStyle: UIAlertControllerStyle.alert)
+        let alert = UIAlertController(title: nil, message: R.string.localizable.logout(), preferredStyle: UIAlertControllerStyle.alert)
 
-        let okAction = UIAlertAction(title: "ยืนยัน", style: UIAlertActionStyle.destructive) { _ in
+        let okAction = UIAlertAction(title: R.string.localizable.oK(), style: UIAlertActionStyle.destructive) { _ in
             NotificationCenter.default.post(name: NSNotification.Name(rawValue: notificationNamePresentLoginView), object: nil)
         }
 
         alert.addAction(okAction)
-        alert.addAction(UIAlertAction(title: "ยกเลิก", style: UIAlertActionStyle.default, handler: nil))
+        alert.addAction(UIAlertAction(title: R.string.localizable.canceL(), style: UIAlertActionStyle.default, handler: nil))
         self.present(alert, animated: true, completion: nil)
     }
 }
