@@ -586,7 +586,7 @@ struct R: Rswift.Validatable {
       fileprivate init() {}
     }
     
-    /// This `R.string.main` struct is generated, and contains static references to 84 localization keys.
+    /// This `R.string.main` struct is generated, and contains static references to 85 localization keys.
     struct main {
       /// th translation: Address
       /// 
@@ -816,6 +816,10 @@ struct R: Rswift.Validatable {
       /// 
       /// Locales: th
       static let y0eSFAxYText = Rswift.StringResource(key: "y0e-sF-AxY.text", tableName: "Main", bundle: R.hostingBundle, locales: ["th"], comment: nil)
+      /// th translation: บันทึก
+      /// 
+      /// Locales: th
+      static let g3K4BCvUNormalTitle = Rswift.StringResource(key: "G3K-4B-cvU.normalTitle", tableName: "Main", bundle: R.hostingBundle, locales: ["th"], comment: nil)
       /// th translation: ป้ายทะเบียนรถยนต์
       /// 
       /// Locales: th
@@ -1322,6 +1326,13 @@ struct R: Rswift.Validatable {
       /// Locales: th
       static func y0eSFAxYText(_: Void = ()) -> String {
         return NSLocalizedString("y0e-sF-AxY.text", tableName: "Main", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// th translation: บันทึก
+      /// 
+      /// Locales: th
+      static func g3K4BCvUNormalTitle(_: Void = ()) -> String {
+        return NSLocalizedString("G3K-4B-cvU.normalTitle", tableName: "Main", bundle: R.hostingBundle, comment: "")
       }
       
       /// th translation: ป้ายทะเบียนรถยนต์
