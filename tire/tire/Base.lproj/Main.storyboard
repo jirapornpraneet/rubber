@@ -979,7 +979,7 @@
         <!--Add product-->
         <scene sceneID="eCQ-sf-KdA">
             <objects>
-                <viewController id="gQu-1m-m6a" customClass="NewCustomerViewController" customModule="tire" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="gQu-1m-m6a" customClass="AddProductViewController" customModule="tire" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WIV-JS-dfz">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="800"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1306,12 +1306,13 @@
                         <outlet property="productView" destination="a21-s5-Etn" id="wUb-fh-IwV"/>
                         <outlet property="provinceLabel" destination="1b4-8o-Ndl" id="jmo-mb-vec"/>
                         <outlet property="provinceView" destination="eTJ-Md-OTO" id="BeI-lh-P67"/>
+                        <outlet property="saveButton" destination="G3K-4B-cvU" id="Oi1-kO-Poy"/>
                         <outlet property="storeLabel" destination="CbJ-Jl-hfj" id="3bT-lP-vUC"/>
                         <outlet property="storeView" destination="ynE-mK-POa" id="UVv-8y-RBW"/>
                         <outlet property="suffixLicenseTextField" destination="lmT-4r-ORL" id="xAv-fx-trU"/>
-                        <segue destination="OcV-vW-Th2" kind="push" identifier="toSelectProvince" id="PUt-Mr-pjr"/>
-                        <segue destination="5Ld-Fe-tJa" kind="push" identifier="toSelectProduct" id="NW2-pC-3Vf"/>
-                        <segue destination="i2X-PX-6Ry" kind="push" identifier="toSelectStore" id="5gQ-fc-bU7"/>
+                        <segue destination="OcV-vW-Th2" kind="push" identifier="toSelectProvince" id="xEN-cL-P0k"/>
+                        <segue destination="5Ld-Fe-tJa" kind="push" identifier="toSelectProduct" id="AyO-gn-ig8"/>
+                        <segue destination="i2X-PX-6Ry" kind="push" identifier="toSelectStore" id="Y4u-Pt-BZ4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F4F-Vg-g2H" userLabel="First Responder" sceneMemberID="firstResponder"/>

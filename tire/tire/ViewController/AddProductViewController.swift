@@ -1,31 +1,26 @@
 //
-//  NewCustomerViewController.swift
+//  AddProductViewController.swift
 //  tire
 //
-//  Created by Jiraporn Praneet on 20/2/2561 BE.
+//  Created by Jiraporn Praneet on 28/5/2561 BE.
 //  Copyright © 2561 Jiraporn Praneet. All rights reserved.
 //
 
 import UIKit
 import NVActivityIndicatorView
 
-class NewCustomerViewController: UIViewController, UITextFieldDelegate, NVActivityIndicatorViewable {
+class AddProductViewController: UIViewController, UITextFieldDelegate, NVActivityIndicatorViewable {
 
-    @IBOutlet var firstNameTextField: UITextField!
-    @IBOutlet var lastNameTextField: UITextField!
-    @IBOutlet var carBrandTextField: UITextField!
-    @IBOutlet var prefixLicenseTextField: UITextField!
-    @IBOutlet var suffixLicenseTextField: UITextField!
-    @IBOutlet var provinceLabel: UILabel!
-    @IBOutlet var addressTextField: UITextField!
-    @IBOutlet var emailTextField: UITextField!
-    @IBOutlet var phoneNumberTextField: UITextField!
-    @IBOutlet var saveButton: UIBarButtonItem!
     @IBOutlet var provinceView: UIView!
     @IBOutlet var productView: UIView!
     @IBOutlet var productLabel: UILabel!
     @IBOutlet var storeView: UIView!
     @IBOutlet var storeLabel: UILabel!
+    @IBOutlet var prefixLicenseTextField: UITextField!
+    @IBOutlet var suffixLicenseTextField: UITextField!
+    @IBOutlet var provinceLabel: UILabel!
+    @IBOutlet var carBrandTextField: UITextField!
+    @IBOutlet var saveButton: UIButton!
 
     var productResource = [ProductResource]()
     var storeResource = [StoreResource]()
@@ -37,14 +32,9 @@ class NewCustomerViewController: UIViewController, UITextFieldDelegate, NVActivi
         super.viewDidLoad()
         UIApplication.shared.statusBarView?.backgroundColor = UIColor(red: 69/255, green: 90/255, blue: 100/255, alpha: 1.0)
 
-        firstNameTextField.delegate = self
-        lastNameTextField.delegate = self
         carBrandTextField.delegate = self
         prefixLicenseTextField.delegate = self
         suffixLicenseTextField.delegate = self
-        addressTextField.delegate = self
-        emailTextField.delegate = self
-        phoneNumberTextField.delegate = self
         provinceLabel.text = "กรุงเทพมหานคร"
         productLabel.text = R.string.localizable.selectProduct()
         storeLabel.text = R.string.localizable.selectStore()
@@ -91,17 +81,17 @@ class NewCustomerViewController: UIViewController, UITextFieldDelegate, NVActivi
 
     @objc func provinceViewAction() {
         self.view.endEditing(true)
-        self.performSegue(withIdentifier: R.segue.newCustomerViewController.toSelectProvince, sender: self)
+        self.performSegue(withIdentifier: R.segue.addProductViewController.toSelectProvince, sender: self)
     }
 
     @objc func productViewAction() {
         self.view.endEditing(true)
-        self.performSegue(withIdentifier: R.segue.newCustomerViewController.toSelectProduct, sender: self)
+        self.performSegue(withIdentifier: R.segue.addProductViewController.toSelectProduct, sender: self)
     }
 
     @objc func storeViewAction() {
         self.view.endEditing(true)
-        self.performSegue(withIdentifier: R.segue.newCustomerViewController.toSelectStore, sender: self)
+        self.performSegue(withIdentifier: R.segue.addProductViewController.toSelectStore, sender: self)
     }
 
     func receiveDataFromProductView(product: String) {
@@ -117,24 +107,13 @@ class NewCustomerViewController: UIViewController, UITextFieldDelegate, NVActivi
     }
 
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        if textField == firstNameTextField {
-            lastNameTextField.becomeFirstResponder()
-        } else if textField == lastNameTextField {
-            carBrandTextField.becomeFirstResponder()
-        } else if textField == carBrandTextField {
-            prefixLicenseTextField.becomeFirstResponder()
-        } else if textField == prefixLicenseTextField {
+        if textField == prefixLicenseTextField {
             suffixLicenseTextField.becomeFirstResponder()
         } else if textField == suffixLicenseTextField {
-            addressTextField.becomeFirstResponder()
-        } else if textField == addressTextField {
-            emailTextField.becomeFirstResponder()
-        } else if textField == emailTextField {
-            phoneNumberTextField.becomeFirstResponder()
-        } else if textField == phoneNumberTextField {
-           saveClicked(self)
+            carBrandTextField.becomeFirstResponder()
+        } else if textField == carBrandTextField {
+            saveClicked(self)
         }
-
         return true
     }
 
@@ -144,9 +123,7 @@ class NewCustomerViewController: UIViewController, UITextFieldDelegate, NVActivi
     }
 
     func setSaveButtonIsEnabled() {
-        let editTexts = [firstNameTextField,
-                         lastNameTextField,
-                         carBrandTextField,
+        let editTexts = [carBrandTextField,
                          prefixLicenseTextField,
                          suffixLicenseTextField]
         let emptyCount = editTexts
@@ -154,14 +131,6 @@ class NewCustomerViewController: UIViewController, UITextFieldDelegate, NVActivi
                 textField?.text == "" }
             .count
         saveButton.isEnabled = emptyCount == 0
-    }
-
-    @IBAction func firstNameFieldEditingChanged(_ sender: Any) {
-        setSaveButtonIsEnabled()
-    }
-
-    @IBAction func lastNameFieldEditingChanged(_ sender: Any) {
-        setSaveButtonIsEnabled()
     }
 
     @IBAction func carBrandFieldEditingChanged(_ sender: Any) {
@@ -183,30 +152,25 @@ class NewCustomerViewController: UIViewController, UITextFieldDelegate, NVActivi
     @IBAction func saveClicked(_ sender: Any) {
         self.dismissKeyboard()
         startAnimating()
-        let firstName = firstNameTextField.text!
-        let lastName = lastNameTextField.text!
-        let carBrand = carBrandTextField.text!
-        let prefixLicense = prefixLicenseTextField.text!
-        let suffixLicense = suffixLicenseTextField.text!
-        let province = provinceLabel.text!
-        let address = addressTextField.text!
-        let email = emailTextField.text!
-        let phoneNumber = phoneNumberTextField.text!
-        let productId = getProductId
-        let storeId = getStoreId
-
-        CustomerManager().postCustomer(firstName: firstName, lastName: lastName,
-                                       address: address, email: email, carBrand: carBrand,
-                                       prefixLicense: prefixLicense, suffixLicense: suffixLicense,
-                                       province: province, phoneNumber: phoneNumber,
-                                       productId: productId, storeId: storeId,
-                                       onSuccess: { (resource)  in
-            self.stopAnimating()
-            self.showAlertSuccess()
-        }, onFailure: { errorResource in
-            self.stopAnimating()
-            ErrorResult().showError(errorResource: errorResource, vc: self)
-        })
+        //        let productId = getProductId
+        //        let storeId = getStoreId
+        //        let prefixLicense = prefixLicenseTextField.text!
+        //        let suffixLicense = suffixLicenseTextField.text!
+        //        let province = provinceLabel.text!
+        //        let carBrand = carBrandTextField.text!
+        //
+        //        CustomerManager().postCustomer(firstName: firstName, lastName: lastName,
+        //                                       address: address, email: email, carBrand: carBrand,
+        //                                       prefixLicense: prefixLicense, suffixLicense: suffixLicense,
+        //                                       province: province, phoneNumber: phoneNumber,
+        //                                       productId: productId, storeId: storeId,
+        //                                       onSuccess: { (resource)  in
+        //            self.stopAnimating()
+        //            self.showAlertSuccess()
+        //        }, onFailure: { errorResource in
+        //            self.stopAnimating()
+        //            ErrorResult().showError(errorResource: errorResource, vc: self)
+        //        })
     }
 
     func showAlertSuccess() {
@@ -222,12 +186,12 @@ class NewCustomerViewController: UIViewController, UITextFieldDelegate, NVActivi
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let typedInfo = R.segue.newCustomerViewController.toSelectProvince(segue: segue) {
+        if let typedInfo = R.segue.addProductViewController.toSelectProvince(segue: segue) {
             typedInfo.destination.delegate = self
-        } else if let typedInfo = R.segue.newCustomerViewController.toSelectProduct(segue: segue) {
+        } else if let typedInfo = R.segue.addProductViewController.toSelectProduct(segue: segue) {
             typedInfo.destination.productResource = productResource
             typedInfo.destination.delegate = self
-        } else if let typedInfo = R.segue.newCustomerViewController.toSelectStore(segue: segue) {
+        } else if let typedInfo = R.segue.addProductViewController.toSelectStore(segue: segue) {
             typedInfo.destination.storeResource = storeResource
             typedInfo.destination.delegate = self
         }

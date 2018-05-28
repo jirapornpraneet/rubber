@@ -10,7 +10,7 @@ import UIKit
 
 class ProvinceTableViewController: UITableViewController {
 
-    weak var delegate: NewCustomerViewController! = nil
+    weak var delegate: AddProductViewController! = nil
     var provinces = [String]()
 
     override func viewDidLoad() {

@@ -26,7 +26,6 @@
 		AB59E4D92032C99500C0631C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB59E4D72032C99500C0631C /* LaunchScreen.storyboard */; };
 		AB621EF320A153B700C9D147 /* StoreResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB621EF220A153B700C9D147 /* StoreResource.swift */; };
 		AB62AB1B203C6E2D009F8055 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB62AB1A203C6E2D009F8055 /* MainViewController.swift */; };
-		AB62AB1D203C6E3F009F8055 /* NewCustomerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB62AB1C203C6E3F009F8055 /* NewCustomerViewController.swift */; };
 		AB6B4B552035D13000BC895A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6B4B542035D13000BC895A /* Constants.swift */; };
 		AB6B4B572035D1BA00BC895A /* UserDefault+Tire.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6B4B562035D1BA00BC895A /* UserDefault+Tire.swift */; };
 		AB6B4B592035D7C700BC895A /* FunctionHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6B4B582035D7C700BC895A /* FunctionHelper.swift */; };
@@ -41,6 +40,7 @@
 		ABD8553D20332CE100B50E4C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD8553C20332CE100B50E4C /* LoginViewController.swift */; };
 		ABD8553F20332D4D00B50E4C /* BaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD8553E20332D4D00B50E4C /* BaseManager.swift */; };
 		ABD855442033337B00B50E4C /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD855432033337A00B50E4C /* R.generated.swift */; };
+		ABDE71C920BC42F700082A2F /* AddProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDE71C820BC42F700082A2F /* AddProductViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,7 +65,6 @@
 		AB59E4DA2032C99500C0631C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB621EF220A153B700C9D147 /* StoreResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreResource.swift; sourceTree = "<group>"; };
 		AB62AB1A203C6E2D009F8055 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		AB62AB1C203C6E3F009F8055 /* NewCustomerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCustomerViewController.swift; sourceTree = "<group>"; };
 		AB6B4B542035D13000BC895A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		AB6B4B562035D1BA00BC895A /* UserDefault+Tire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefault+Tire.swift"; sourceTree = "<group>"; };
 		AB6B4B582035D7C700BC895A /* FunctionHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionHelper.swift; sourceTree = "<group>"; };
@@ -83,6 +82,7 @@
 		ABD8553C20332CE100B50E4C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		ABD8553E20332D4D00B50E4C /* BaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseManager.swift; sourceTree = "<group>"; };
 		ABD855432033337A00B50E4C /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
+		ABDE71C820BC42F700082A2F /* AddProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProductViewController.swift; sourceTree = "<group>"; };
 		F0695F2EE99C913961CDC9B4 /* Pods_tire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE60D6DCF61F5751AACA7E4A /* Pods-tire.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tire.debug.xcconfig"; path = "Pods/Target Support Files/Pods-tire/Pods-tire.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -150,7 +150,6 @@
 			children = (
 				ABD8553C20332CE100B50E4C /* LoginViewController.swift */,
 				AB62AB1A203C6E2D009F8055 /* MainViewController.swift */,
-				AB62AB1C203C6E3F009F8055 /* NewCustomerViewController.swift */,
 				AB4888FB203C781700ED2779 /* SearchCustomerViewController.swift */,
 				ABCF56F5203D9073002CCBAB /* CustomerViewController.swift */,
 				AB9A59EE2053E5D40044B0F9 /* ProvinceTableViewController.swift */,
@@ -160,6 +159,7 @@
 				AB00D69D20A1684C00C85BF8 /* RegisterViewController.swift */,
 				ABCA9FE820BBE24800C1C380 /* AllCustomerTableViewController.swift */,
 				ABCA9FEA20BBEC3500C1C380 /* ListProductTableViewController.swift */,
+				ABDE71C820BC42F700082A2F /* AddProductViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -415,9 +415,9 @@
 				ABD8553F20332D4D00B50E4C /* BaseManager.swift in Sources */,
 				AB2496CD2036AD7E00F2658F /* CustomerResource.swift in Sources */,
 				ABD8553D20332CE100B50E4C /* LoginViewController.swift in Sources */,
-				AB62AB1D203C6E3F009F8055 /* NewCustomerViewController.swift in Sources */,
 				ABCA9FEB20BBEC3500C1C380 /* ListProductTableViewController.swift in Sources */,
 				AB2496CF2036AF8300F2658F /* LoginManager.swift in Sources */,
+				ABDE71C920BC42F700082A2F /* AddProductViewController.swift in Sources */,
 				AB00D6A220A1881400C85BF8 /* RegisterResource.swift in Sources */,
 				AB82B78F205811D500714E73 /* ProductResource.swift in Sources */,
 				ABCA9FE920BBE24800C1C380 /* AllCustomerTableViewController.swift in Sources */,

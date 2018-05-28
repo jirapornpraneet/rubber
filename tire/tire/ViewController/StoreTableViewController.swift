@@ -10,7 +10,7 @@ import UIKit
 
 class StoreTableViewController: UITableViewController {
 
-    weak var delegate: NewCustomerViewController! = nil
+    weak var delegate: AddProductViewController! = nil
     var storeResource = [StoreResource]()
 
     override func viewDidLoad() {

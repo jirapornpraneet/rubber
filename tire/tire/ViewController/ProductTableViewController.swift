@@ -10,7 +10,7 @@ import UIKit
 
 class ProductTableViewController: UITableViewController {
 
-    weak var delegate: NewCustomerViewController! = nil
+    weak var delegate: AddProductViewController! = nil
     var productResource = [ProductResource]()
 
     override func viewDidLoad() {
