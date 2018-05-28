@@ -10,7 +10,7 @@ import UIKit
 import Alamofire
 
 let postCustomerPath = "/web/api-buy-product/create"
-let getSearchCustomerPath = "/web/api-customer/search"
+let getSearchCustomerPath = "/web/api-product/customer-search"
 let getProductPath = "/web/api-product/get-product"
 let getStorePath = "/web/api-store/get-store"
 
