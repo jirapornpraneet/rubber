@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import NVActivityIndicatorView
 import SSPullToRefresh
 
 class ListProductTableViewCell: UITableViewCell {
@@ -19,8 +18,7 @@ class ListProductTableViewCell: UITableViewCell {
     @IBOutlet var sinceLabel: UILabel!
 }
 
-class ListProductTableViewController: UITableViewController,
-NVActivityIndicatorViewable, SSPullToRefreshViewDelegate {
+class ListProductTableViewController: UITableViewController, SSPullToRefreshViewDelegate {
 
     var customerResources = [CustomerResource]()
     var indexRow: Int = 0
@@ -38,14 +36,11 @@ NVActivityIndicatorViewable, SSPullToRefreshViewDelegate {
     }
 
     func getListProduct() {
-        startAnimating()
         CustomerManager().getListProduct(onSuccess: { (resource) in
-            self.stopAnimating()
             self.pullToRefreshView.finishLoading()
             self.customerResources = resource
             self.tableView.reloadData()
         }, onFailure: { errorResource in
-            self.stopAnimating()
             self.pullToRefreshView.finishLoading()
             ErrorResult().showError(errorResource: errorResource, vc: self)
         })

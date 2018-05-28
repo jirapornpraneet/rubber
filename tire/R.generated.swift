@@ -1562,6 +1562,7 @@ struct _R: Rswift.Validatable {
       let customerView = StoryboardViewControllerResource<ListProductTableViewController>(identifier: "CustomerView")
       let login = StoryboardViewControllerResource<LoginViewController>(identifier: "Login")
       let mainNavigation = StoryboardViewControllerResource<UIKit.UINavigationController>(identifier: "MainNavigation")
+      let mainNavigetionCustomerView = StoryboardViewControllerResource<UIKit.UINavigationController>(identifier: "MainNavigetionCustomerView")
       let mainViewController = StoryboardViewControllerResource<MainViewController>(identifier: "MainViewController")
       let name = "Main"
       
@@ -1575,6 +1576,10 @@ struct _R: Rswift.Validatable {
       
       func mainNavigation(_: Void = ()) -> UIKit.UINavigationController? {
         return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: mainNavigation)
+      }
+      
+      func mainNavigetionCustomerView(_: Void = ()) -> UIKit.UINavigationController? {
+        return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: mainNavigetionCustomerView)
       }
       
       func mainViewController(_: Void = ()) -> MainViewController? {
@@ -1592,6 +1597,7 @@ struct _R: Rswift.Validatable {
         if _R.storyboard.main().login() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'login' could not be loaded from storyboard 'Main' as 'LoginViewController'.") }
         if _R.storyboard.main().mainViewController() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'mainViewController' could not be loaded from storyboard 'Main' as 'MainViewController'.") }
         if _R.storyboard.main().mainNavigation() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'mainNavigation' could not be loaded from storyboard 'Main' as 'UIKit.UINavigationController'.") }
+        if _R.storyboard.main().mainNavigetionCustomerView() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'mainNavigetionCustomerView' could not be loaded from storyboard 'Main' as 'UIKit.UINavigationController'.") }
         if _R.storyboard.main().customerView() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'customerView' could not be loaded from storyboard 'Main' as 'ListProductTableViewController'.") }
       }
       

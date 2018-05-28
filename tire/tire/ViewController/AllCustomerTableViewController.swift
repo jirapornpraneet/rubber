@@ -7,11 +7,9 @@
 //
 
 import UIKit
-import NVActivityIndicatorView
 import SSPullToRefresh
 
-class AllCustomerTableViewController: UITableViewController, NVActivityIndicatorViewable,
- SSPullToRefreshViewDelegate {
+class AllCustomerTableViewController: UITableViewController, SSPullToRefreshViewDelegate {
 
     var customerResources = [CustomerResource]()
     var indexRow: Int = 0
@@ -29,14 +27,11 @@ class AllCustomerTableViewController: UITableViewController, NVActivityIndicator
     }
 
     func getAllCustomer() {
-        startAnimating()
         CustomerManager().getAllCustomer(onSuccess: { (resource) in
-            self.stopAnimating()
             self.pullToRefreshView.finishLoading()
             self.customerResources = resource
             self.tableView.reloadData()
         }, onFailure: { errorResource in
-            self.stopAnimating()
             self.pullToRefreshView.finishLoading()
             ErrorResult().showError(errorResource: errorResource, vc: self)
         })

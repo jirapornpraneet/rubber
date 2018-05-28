@@ -37,7 +37,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         if !UserDefaults.loadAccessToken().isEmpty && UserDefaults.loadIsAdmin() {
             self.window?.rootViewController = R.storyboard.main.mainNavigation()
         } else if !UserDefaults.loadAccessToken().isEmpty {
-            self.window?.rootViewController = R.storyboard.main.customerView()
+            self.window?.rootViewController = R.storyboard.main.mainNavigetionCustomerView()
         }
 
         if #available(iOS 10.0, *) {
