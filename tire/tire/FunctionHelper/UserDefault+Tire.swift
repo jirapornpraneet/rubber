@@ -11,6 +11,7 @@ import Foundation
 
 let accessToken: String = "accessToken"
 let fcmToken: String = "fcmToken"
+let isAdmin: String = "true"
 
 extension UserDefaults {
 
@@ -46,5 +47,19 @@ extension UserDefaults {
         for key in Array(UserDefaults.standard.dictionaryRepresentation().keys) {
             UserDefaults.standard.removeObject(forKey: key)
         }
+    }
+
+    class func saveIsAdmin(value: Bool) {
+        UserDefaults.standard.setValue(value, forKey: isAdmin)
+        UserDefaults.standard.synchronize()
+    }
+
+    class func loadIsAdmin() -> Bool {
+        return UserDefaults.standard.bool(forKey: isAdmin)
+    }
+
+    class func removeIsAdmin() {
+        let defaults = UserDefaults.standard
+        defaults.removeObject(forKey: isAdmin)
     }
 }

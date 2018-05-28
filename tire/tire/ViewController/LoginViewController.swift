@@ -87,8 +87,10 @@ class LoginViewController: UIViewController, UITextFieldDelegate, NVActivityIndi
             self.loginResource = resource
             UserDefaults.saveAccessToken(value: resource.accessToken!)
             if self.loginResource.isAdmin == false {
+                UserDefaults.removeIsAdmin()
                 self.performSegue(withIdentifier: R.segue.loginViewController.toCustomerView, sender: nil)
             } else {
+                UserDefaults.saveIsAdmin(value: resource.isAdmin)
                 self.performSegue(withIdentifier: R.segue.loginViewController.toMainView, sender: nil)
             }
         }, onFailure: { errorResource in

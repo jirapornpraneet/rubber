@@ -134,14 +134,14 @@ struct R: Rswift.Validatable {
     /// This struct is generated for `LoginViewController`, and contains static references to 2 segues.
     struct loginViewController {
       /// Segue identifier `toCustomerView`.
-      static let toCustomerView: Rswift.StoryboardSegueIdentifier<UIKit.UIStoryboardSegue, LoginViewController, AllCustomerTableViewController> = Rswift.StoryboardSegueIdentifier(identifier: "toCustomerView")
+      static let toCustomerView: Rswift.StoryboardSegueIdentifier<UIKit.UIStoryboardSegue, LoginViewController, ListProductTableViewController> = Rswift.StoryboardSegueIdentifier(identifier: "toCustomerView")
       /// Segue identifier `toMainView`.
       static let toMainView: Rswift.StoryboardSegueIdentifier<UIKit.UIStoryboardSegue, LoginViewController, UIKit.UINavigationController> = Rswift.StoryboardSegueIdentifier(identifier: "toMainView")
       
       /// Optionally returns a typed version of segue `toCustomerView`.
       /// Returns nil if either the segue identifier, the source, destination, or segue types don't match.
       /// For use inside `prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)`.
-      static func toCustomerView(segue: UIKit.UIStoryboardSegue) -> Rswift.TypedStoryboardSegueInfo<UIKit.UIStoryboardSegue, LoginViewController, AllCustomerTableViewController>? {
+      static func toCustomerView(segue: UIKit.UIStoryboardSegue) -> Rswift.TypedStoryboardSegueInfo<UIKit.UIStoryboardSegue, LoginViewController, ListProductTableViewController>? {
         return Rswift.TypedStoryboardSegueInfo(segueIdentifier: R.segue.loginViewController.toCustomerView, segue: segue)
       }
       
@@ -1454,10 +1454,15 @@ struct _R: Rswift.Validatable {
       typealias InitialController = LoginViewController
       
       let bundle = R.hostingBundle
+      let customerView = StoryboardViewControllerResource<ListProductTableViewController>(identifier: "CustomerView")
       let login = StoryboardViewControllerResource<LoginViewController>(identifier: "Login")
       let mainNavigation = StoryboardViewControllerResource<UIKit.UINavigationController>(identifier: "MainNavigation")
       let mainViewController = StoryboardViewControllerResource<MainViewController>(identifier: "MainViewController")
       let name = "Main"
+      
+      func customerView(_: Void = ()) -> ListProductTableViewController? {
+        return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: customerView)
+      }
       
       func login(_: Void = ()) -> LoginViewController? {
         return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: login)
@@ -1482,6 +1487,7 @@ struct _R: Rswift.Validatable {
         if _R.storyboard.main().login() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'login' could not be loaded from storyboard 'Main' as 'LoginViewController'.") }
         if _R.storyboard.main().mainViewController() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'mainViewController' could not be loaded from storyboard 'Main' as 'MainViewController'.") }
         if _R.storyboard.main().mainNavigation() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'mainNavigation' could not be loaded from storyboard 'Main' as 'UIKit.UINavigationController'.") }
+        if _R.storyboard.main().customerView() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'customerView' could not be loaded from storyboard 'Main' as 'ListProductTableViewController'.") }
       }
       
       fileprivate init() {}
