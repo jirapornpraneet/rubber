@@ -33,6 +33,7 @@
 		AB82B78F205811D500714E73 /* ProductResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB82B78E205811D500714E73 /* ProductResource.swift */; };
 		AB82B7912058180200714E73 /* ProductTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB82B7902058180200714E73 /* ProductTableViewController.swift */; };
 		AB9A59EF2053E5D40044B0F9 /* ProvinceTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9A59EE2053E5D40044B0F9 /* ProvinceTableViewController.swift */; };
+		ABCA9FE920BBE24800C1C380 /* AllCustomerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCA9FE820BBE24800C1C380 /* AllCustomerTableViewController.swift */; };
 		ABCF56F4203D2554002CCBAB /* CustomerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCF56F3203D2554002CCBAB /* CustomerManager.swift */; };
 		ABCF56F6203D9073002CCBAB /* CustomerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCF56F5203D9073002CCBAB /* CustomerViewController.swift */; };
 		ABCF56FB203D923D002CCBAB /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = ABCF56FD203D923D002CCBAB /* Localizable.strings */; };
@@ -70,6 +71,7 @@
 		AB82B78E205811D500714E73 /* ProductResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductResource.swift; sourceTree = "<group>"; };
 		AB82B7902058180200714E73 /* ProductTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableViewController.swift; sourceTree = "<group>"; };
 		AB9A59EE2053E5D40044B0F9 /* ProvinceTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProvinceTableViewController.swift; sourceTree = "<group>"; };
+		ABCA9FE820BBE24800C1C380 /* AllCustomerTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCustomerTableViewController.swift; sourceTree = "<group>"; };
 		ABCF56F3203D2554002CCBAB /* CustomerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerManager.swift; sourceTree = "<group>"; };
 		ABCF56F5203D9073002CCBAB /* CustomerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerViewController.swift; sourceTree = "<group>"; };
 		ABCF56F7203D91A6002CCBAB /* th */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = th; path = th.lproj/Main.strings; sourceTree = "<group>"; };
@@ -154,6 +156,7 @@
 				AB14F5FE205908B9003E5C8D /* CustomerTableViewController.swift */,
 				AB00D69B20A15C2800C85BF8 /* StoreTableViewController.swift */,
 				AB00D69D20A1684C00C85BF8 /* RegisterViewController.swift */,
+				ABCA9FE820BBE24800C1C380 /* AllCustomerTableViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -413,6 +416,7 @@
 				AB2496CF2036AF8300F2658F /* LoginManager.swift in Sources */,
 				AB00D6A220A1881400C85BF8 /* RegisterResource.swift in Sources */,
 				AB82B78F205811D500714E73 /* ProductResource.swift in Sources */,
+				ABCA9FE920BBE24800C1C380 /* AllCustomerTableViewController.swift in Sources */,
 				AB2496D32036B04A00F2658F /* ErrorResource.swift in Sources */,
 				AB82B7912058180200714E73 /* ProductTableViewController.swift in Sources */,
 				AB59E4CF2032C99500C0631C /* AppDelegate.swift in Sources */,

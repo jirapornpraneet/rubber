@@ -146,10 +146,12 @@ struct R: Rswift.Validatable {
       fileprivate init() {}
     }
     
-    /// This struct is generated for `MainViewController`, and contains static references to 2 segues.
+    /// This struct is generated for `MainViewController`, and contains static references to 3 segues.
     struct mainViewController {
       /// Segue identifier `toAdd`.
       static let toAdd: Rswift.StoryboardSegueIdentifier<UIKit.UIStoryboardSegue, MainViewController, RegisterViewController> = Rswift.StoryboardSegueIdentifier(identifier: "toAdd")
+      /// Segue identifier `toAllCustomer`.
+      static let toAllCustomer: Rswift.StoryboardSegueIdentifier<UIKit.UIStoryboardSegue, MainViewController, AllCustomerTableViewController> = Rswift.StoryboardSegueIdentifier(identifier: "toAllCustomer")
       /// Segue identifier `toSearch`.
       static let toSearch: Rswift.StoryboardSegueIdentifier<UIKit.UIStoryboardSegue, MainViewController, SearchCustomerViewController> = Rswift.StoryboardSegueIdentifier(identifier: "toSearch")
       
@@ -158,6 +160,13 @@ struct R: Rswift.Validatable {
       /// For use inside `prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)`.
       static func toAdd(segue: UIKit.UIStoryboardSegue) -> Rswift.TypedStoryboardSegueInfo<UIKit.UIStoryboardSegue, MainViewController, RegisterViewController>? {
         return Rswift.TypedStoryboardSegueInfo(segueIdentifier: R.segue.mainViewController.toAdd, segue: segue)
+      }
+      
+      /// Optionally returns a typed version of segue `toAllCustomer`.
+      /// Returns nil if either the segue identifier, the source, destination, or segue types don't match.
+      /// For use inside `prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)`.
+      static func toAllCustomer(segue: UIKit.UIStoryboardSegue) -> Rswift.TypedStoryboardSegueInfo<UIKit.UIStoryboardSegue, MainViewController, AllCustomerTableViewController>? {
+        return Rswift.TypedStoryboardSegueInfo(segueIdentifier: R.segue.mainViewController.toAllCustomer, segue: segue)
       }
       
       /// Optionally returns a typed version of segue `toSearch`.

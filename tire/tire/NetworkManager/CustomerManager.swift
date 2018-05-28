@@ -13,6 +13,7 @@ let postCustomerPath = "/web/api-buy-product/create"
 let getSearchCustomerPath = "/web/api-product/customer-search"
 let getProductPath = "/web/api-product/get-product"
 let getStorePath = "/web/api-store/get-store"
+let getAllCustomerPath = "/web/api-product/customer-all"
 
 typealias CustomerResourceOnSuccess = ([CustomerResource]) -> Void
 typealias CustomerResourceOnFailure = (ErrorResource) -> Void
@@ -72,4 +73,12 @@ class CustomerManager: NSObject {
         })
     }
 
+    func getAllCustomer(onSuccess: @escaping CustomerResourceOnSuccess, onFailure: @escaping CustomerResourceOnFailure) {
+
+        BaseManager().get(path: getAllCustomerPath, onSuccess: { (response: [CustomerResource]) in
+            onSuccess(response)
+        }, onFailure: { errorResource in
+            onFailure(errorResource)
+        })
+    }
 }

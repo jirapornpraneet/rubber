@@ -24,6 +24,7 @@ public class CustomerResource: EVObject {
     var phoneNumber: String = ""
     var productId: Int = 0
     var productName: String = ""
+    var storeName: String = ""
 
     override public func decodePropertyValue(value: Any, key: String) -> Any? {
         let keys = ["updatedAt", "createdAt"]

@@ -12,6 +12,7 @@ class MainViewController: UIViewController {
 
     @IBOutlet var searchCustomerView: UIView!
     @IBOutlet var newCustomerView: UIView!
+    @IBOutlet var allCustomerView: UIView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,6 +23,10 @@ class MainViewController: UIViewController {
         let tapGestureRecognizerNewCustomerView = UITapGestureRecognizer(target: self, action: #selector(newCustomerViewAction))
         newCustomerView.isUserInteractionEnabled = true
         newCustomerView.addGestureRecognizer(tapGestureRecognizerNewCustomerView)
+
+        let tapGestureRecognizerAllCustomerView = UITapGestureRecognizer(target: self, action: #selector(allCustomerViewAction))
+        allCustomerView.isUserInteractionEnabled = true
+        allCustomerView.addGestureRecognizer(tapGestureRecognizerAllCustomerView)
 
         UIApplication.shared.statusBarView?.backgroundColor = UIColor(red: 69/255, green: 90/255, blue: 100/255, alpha: 1.0)
     }
@@ -39,6 +44,11 @@ class MainViewController: UIViewController {
     @objc func newCustomerViewAction() {
         self.view.endEditing(true)
         self.performSegue(withIdentifier: R.segue.mainViewController.toAdd, sender: self)
+    }
+
+    @objc func allCustomerViewAction() {
+        self.view.endEditing(true)
+        self.performSegue(withIdentifier: R.segue.mainViewController.toAllCustomer, sender: self)
     }
 
     override func didReceiveMemoryWarning() {
