@@ -34,6 +34,7 @@
 		AB82B7912058180200714E73 /* ProductTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB82B7902058180200714E73 /* ProductTableViewController.swift */; };
 		AB9A59EF2053E5D40044B0F9 /* ProvinceTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9A59EE2053E5D40044B0F9 /* ProvinceTableViewController.swift */; };
 		ABCA9FE920BBE24800C1C380 /* AllCustomerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCA9FE820BBE24800C1C380 /* AllCustomerTableViewController.swift */; };
+		ABCA9FEB20BBEC3500C1C380 /* ListProductTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCA9FEA20BBEC3500C1C380 /* ListProductTableViewController.swift */; };
 		ABCF56F4203D2554002CCBAB /* CustomerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCF56F3203D2554002CCBAB /* CustomerManager.swift */; };
 		ABCF56F6203D9073002CCBAB /* CustomerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCF56F5203D9073002CCBAB /* CustomerViewController.swift */; };
 		ABCF56FB203D923D002CCBAB /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = ABCF56FD203D923D002CCBAB /* Localizable.strings */; };
@@ -72,6 +73,7 @@
 		AB82B7902058180200714E73 /* ProductTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableViewController.swift; sourceTree = "<group>"; };
 		AB9A59EE2053E5D40044B0F9 /* ProvinceTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProvinceTableViewController.swift; sourceTree = "<group>"; };
 		ABCA9FE820BBE24800C1C380 /* AllCustomerTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCustomerTableViewController.swift; sourceTree = "<group>"; };
+		ABCA9FEA20BBEC3500C1C380 /* ListProductTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListProductTableViewController.swift; sourceTree = "<group>"; };
 		ABCF56F3203D2554002CCBAB /* CustomerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerManager.swift; sourceTree = "<group>"; };
 		ABCF56F5203D9073002CCBAB /* CustomerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerViewController.swift; sourceTree = "<group>"; };
 		ABCF56F7203D91A6002CCBAB /* th */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = th; path = th.lproj/Main.strings; sourceTree = "<group>"; };
@@ -157,6 +159,7 @@
 				AB00D69B20A15C2800C85BF8 /* StoreTableViewController.swift */,
 				AB00D69D20A1684C00C85BF8 /* RegisterViewController.swift */,
 				ABCA9FE820BBE24800C1C380 /* AllCustomerTableViewController.swift */,
+				ABCA9FEA20BBEC3500C1C380 /* ListProductTableViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -413,6 +416,7 @@
 				AB2496CD2036AD7E00F2658F /* CustomerResource.swift in Sources */,
 				ABD8553D20332CE100B50E4C /* LoginViewController.swift in Sources */,
 				AB62AB1D203C6E3F009F8055 /* NewCustomerViewController.swift in Sources */,
+				ABCA9FEB20BBEC3500C1C380 /* ListProductTableViewController.swift in Sources */,
 				AB2496CF2036AF8300F2658F /* LoginManager.swift in Sources */,
 				AB00D6A220A1881400C85BF8 /* RegisterResource.swift in Sources */,
 				AB82B78F205811D500714E73 /* ProductResource.swift in Sources */,

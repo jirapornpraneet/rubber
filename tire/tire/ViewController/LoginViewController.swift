@@ -86,7 +86,11 @@ class LoginViewController: UIViewController, UITextFieldDelegate, NVActivityIndi
             self.stopAnimating()
             self.loginResource = resource
             UserDefaults.saveAccessToken(value: resource.accessToken!)
-            self.performSegue(withIdentifier: R.segue.loginViewController.toMainView, sender: nil)
+            if self.loginResource.isAdmin == false {
+                self.performSegue(withIdentifier: R.segue.loginViewController.toCustomerView, sender: nil)
+            } else {
+                self.performSegue(withIdentifier: R.segue.loginViewController.toMainView, sender: nil)
+            }
         }, onFailure: { errorResource in
             self.stopAnimating()
             ErrorResult().showError(errorResource: errorResource, vc: self)
