@@ -184,14 +184,14 @@ struct R: Rswift.Validatable {
     /// This struct is generated for `LoginViewController`, and contains static references to 2 segues.
     struct loginViewController {
       /// Segue identifier `toCustomerView`.
-      static let toCustomerView: Rswift.StoryboardSegueIdentifier<UIKit.UIStoryboardSegue, LoginViewController, ListProductTableViewController> = Rswift.StoryboardSegueIdentifier(identifier: "toCustomerView")
+      static let toCustomerView: Rswift.StoryboardSegueIdentifier<UIKit.UIStoryboardSegue, LoginViewController, UIKit.UINavigationController> = Rswift.StoryboardSegueIdentifier(identifier: "toCustomerView")
       /// Segue identifier `toMainView`.
       static let toMainView: Rswift.StoryboardSegueIdentifier<UIKit.UIStoryboardSegue, LoginViewController, UIKit.UINavigationController> = Rswift.StoryboardSegueIdentifier(identifier: "toMainView")
       
       /// Optionally returns a typed version of segue `toCustomerView`.
       /// Returns nil if either the segue identifier, the source, destination, or segue types don't match.
       /// For use inside `prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)`.
-      static func toCustomerView(segue: UIKit.UIStoryboardSegue) -> Rswift.TypedStoryboardSegueInfo<UIKit.UIStoryboardSegue, LoginViewController, ListProductTableViewController>? {
+      static func toCustomerView(segue: UIKit.UIStoryboardSegue) -> Rswift.TypedStoryboardSegueInfo<UIKit.UIStoryboardSegue, LoginViewController, UIKit.UINavigationController>? {
         return Rswift.TypedStoryboardSegueInfo(segueIdentifier: R.segue.loginViewController.toCustomerView, segue: segue)
       }
       
@@ -855,7 +855,7 @@ struct R: Rswift.Validatable {
       /// th translation: รายการสินค้า
       /// 
       /// Locales: th
-      static let rtgco2ocTitle = Rswift.StringResource(key: "RTG-CO-2oc.title", tableName: "Main", bundle: R.hostingBundle, locales: ["th"], comment: nil)
+      static let uiDP0Y3KTitle = Rswift.StringResource(key: "uiD-p0-Y3K.title", tableName: "Main", bundle: R.hostingBundle, locales: ["th"], comment: nil)
       /// th translation: รายชื่อลูกค้า
       /// 
       /// Locales: th
@@ -1390,8 +1390,8 @@ struct R: Rswift.Validatable {
       /// th translation: รายการสินค้า
       /// 
       /// Locales: th
-      static func rtgco2ocTitle(_: Void = ()) -> String {
-        return NSLocalizedString("RTG-CO-2oc.title", tableName: "Main", bundle: R.hostingBundle, comment: "")
+      static func uiDP0Y3KTitle(_: Void = ()) -> String {
+        return NSLocalizedString("uiD-p0-Y3K.title", tableName: "Main", bundle: R.hostingBundle, comment: "")
       }
       
       /// th translation: รายชื่อลูกค้า

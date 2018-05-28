@@ -195,7 +195,7 @@
                         <outlet property="showPasswordButton" destination="i2L-BN-IT1" id="zGQ-Ak-qk6"/>
                         <outlet property="usernameTextField" destination="uMV-xQ-uhn" id="A8j-O4-Yow"/>
                         <segue destination="38W-Pa-jZN" kind="show" identifier="toMainView" id="JDz-A5-S8B"/>
-                        <segue destination="ai2-Ir-gPx" kind="presentation" identifier="toCustomerView" id="nEo-Wo-Eye"/>
+                        <segue destination="ebq-8E-5eJ" kind="show" identifier="toCustomerView" id="M4a-R0-glC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -916,36 +916,6 @@
             </objects>
             <point key="canvasLocation" x="865" y="944"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="6cg-vN-ZYy">
-            <objects>
-                <navigationController id="oMU-de-dbw" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="lq9-P0-Qlp"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Tig-GG-OIK">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="barTintColor" red="0.37647058820000001" green="0.49019607840000001" blue="0.5450980392" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                        <textAttributes key="titleTextAttributes">
-                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        </textAttributes>
-                        <textAttributes key="largeTitleTextAttributes">
-                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        </textAttributes>
-                        <userDefinedRuntimeAttributes>
-                            <userDefinedRuntimeAttribute type="color" keyPath="dividerColor">
-                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </userDefinedRuntimeAttribute>
-                        </userDefinedRuntimeAttributes>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="gQu-1m-m6a" kind="relationship" relationship="rootViewController" id="9Nr-Tj-ZZh"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Iwj-2f-fWm" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1665" y="-550"/>
-        </scene>
         <!--Province Table View Controller-->
         <scene sceneID="4Ll-5a-lVe">
             <objects>
@@ -974,7 +944,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L3G-ED-VK5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3639" y="-725"/>
+            <point key="canvasLocation" x="3174" y="-671"/>
         </scene>
         <!--Add product-->
         <scene sceneID="eCQ-sf-KdA">
@@ -985,7 +955,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P9b-k6-6Ps">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="800"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="756"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rtp-QM-wru">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="700"/>
@@ -1296,6 +1266,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Add product" id="bo3-4c-AAQ">
                         <barButtonItem key="leftBarButtonItem" systemItem="stop" id="YFF-zh-NPX">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
                                 <action selector="dismissView:" destination="gQu-1m-m6a" id="22j-wz-emk"/>
                             </connections>
@@ -1320,7 +1291,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F4F-Vg-g2H" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2448.8000000000002" y="-490.25487256371815"/>
+            <point key="canvasLocation" x="2334" y="-565"/>
         </scene>
         <!--Product Table View Controller-->
         <scene sceneID="jG4-EO-Hoo">
@@ -1998,7 +1969,30 @@
             </objects>
             <point key="canvasLocation" x="1713" y="943"/>
         </scene>
-        <!--List Product Table View Controller-->
+        <!--Navigation Controller-->
+        <scene sceneID="Ets-EU-X3J">
+            <objects>
+                <navigationController id="ebq-8E-5eJ" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Iom-id-6Ti">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.37647058820000001" green="0.49019607840000001" blue="0.5450980392" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="ai2-Ir-gPx" kind="relationship" relationship="rootViewController" id="9oN-zK-8M7"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="00R-Nu-5Fg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="770" y="-604"/>
+        </scene>
+        <!--Product summary-->
         <scene sceneID="3QQ-D9-EOs">
             <objects>
                 <tableViewController storyboardIdentifier="CustomerView" id="ai2-Ir-gPx" customClass="ListProductTableViewController" customModule="tire" customModuleProvider="target" sceneMemberID="viewController">
@@ -2007,38 +2001,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.62352941179999999" green="0.69803921570000005" blue="0.72549019609999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="sectionIndexBackgroundColor" red="0.62352941179999999" green="0.69803921570000005" blue="0.72549019609999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <navigationBar key="tableHeaderView" contentMode="scaleToFill" id="qcT-Ws-6yg">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                            <color key="barTintColor" red="0.37647058820000001" green="0.49019607840000001" blue="0.5450980392" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                            <textAttributes key="titleTextAttributes">
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </textAttributes>
-                            <textAttributes key="largeTitleTextAttributes">
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </textAttributes>
-                            <items>
-                                <navigationItem title="Product summary" id="RTG-CO-2oc">
-                                    <rightBarButtonItems>
-                                        <barButtonItem image="ic_exit_to_app_white_36pt" id="vx2-Wn-VHR">
-                                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <connections>
-                                                <action selector="logout:" destination="ai2-Ir-gPx" id="97m-F1-bUM"/>
-                                            </connections>
-                                        </barButtonItem>
-                                        <barButtonItem systemItem="add" id="lUN-xO-Ta1">
-                                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <connections>
-                                                <segue destination="oMU-de-dbw" kind="show" id="mND-Qv-C9Z"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </rightBarButtonItems>
-                                </navigationItem>
-                            </items>
-                        </navigationBar>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="listProductCells" rowHeight="164" id="UCX-ck-xrO" customClass="ListProductTableViewCell" customModule="tire" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="72" width="375" height="164"/>
+                                <rect key="frame" x="0.0" y="28" width="375" height="164"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="UCX-ck-xrO" id="MeE-1l-c2s">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="163.5"/>
@@ -2146,11 +2111,27 @@
                         </connections>
                     </tableView>
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Product summary" id="uiD-p0-Y3K">
+                        <rightBarButtonItems>
+                            <barButtonItem title="Item" image="ic_exit_to_app_white_36pt" id="77e-Uy-ymQ">
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="logout:" destination="ai2-Ir-gPx" id="jhF-O9-iaM"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem systemItem="add" id="VmK-lS-44y">
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <segue destination="gQu-1m-m6a" kind="push" id="CnS-Mp-Hkc"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qjx-km-xDM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="865" y="-550"/>
+            <point key="canvasLocation" x="1577" y="-615"/>
         </scene>
     </scenes>
     <resources>
