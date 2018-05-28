@@ -1835,6 +1835,7 @@
                         <outlet property="lastNameTextField" destination="cdJ-zE-BPL" id="icl-kD-tQq"/>
                         <outlet property="passwordTextField" destination="wEE-g0-mxl" id="jKC-uC-DSs"/>
                         <outlet property="phoneNumberTextField" destination="AWB-8u-x7B" id="DOV-2q-eun"/>
+                        <outlet property="saveButton" destination="JY4-KN-wLb" id="X1l-YM-cEw"/>
                         <outlet property="usernameTextField" destination="SHs-TS-EkT" id="ogO-BW-rNZ"/>
                     </connections>
                 </viewController>
@@ -2128,7 +2129,7 @@
                             <barButtonItem systemItem="add" id="VmK-lS-44y">
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
-                                    <segue destination="gQu-1m-m6a" kind="push" id="CnS-Mp-Hkc"/>
+                                    <segue destination="gQu-1m-m6a" kind="push" id="hlj-W1-ujv"/>
                                 </connections>
                             </barButtonItem>
                         </rightBarButtonItems>

@@ -146,7 +146,7 @@ class AddProductViewController: UIViewController, UITextFieldDelegate, NVActivit
     }
 
     @IBAction func dismissView(_ sender: UIBarButtonItem) {
-        self.navigationController?.dismiss(animated: true, completion: nil)
+        self.navigationController?.popViewController(animated: true)
     }
 
     @IBAction func saveClicked(_ sender: Any) {
@@ -170,7 +170,7 @@ class AddProductViewController: UIViewController, UITextFieldDelegate, NVActivit
                                                 preferredStyle: UIAlertControllerStyle.alert)
 
         let okAction = UIAlertAction(title: "Ok", style: UIAlertActionStyle.default) { (_: UIAlertAction) -> Void in
-            self.dismiss(animated: true, completion: nil)
+            self.navigationController?.popViewController(animated: true)
         }
         alertController.addAction(okAction)
         self.present(alertController, animated: true, completion: nil)
