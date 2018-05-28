@@ -116,7 +116,7 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
-  /// This `R.segue` struct is generated, and contains static references to 5 view controllers.
+  /// This `R.segue` struct is generated, and contains static references to 6 view controllers.
   struct segue {
     /// This struct is generated for `AddProductViewController`, and contains static references to 3 segues.
     struct addProductViewController {
@@ -146,6 +146,21 @@ struct R: Rswift.Validatable {
       /// For use inside `prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)`.
       static func toSelectStore(segue: UIKit.UIStoryboardSegue) -> Rswift.TypedStoryboardSegueInfo<UIKit.UIStoryboardSegue, AddProductViewController, StoreTableViewController>? {
         return Rswift.TypedStoryboardSegueInfo(segueIdentifier: R.segue.addProductViewController.toSelectStore, segue: segue)
+      }
+      
+      fileprivate init() {}
+    }
+    
+    /// This struct is generated for `AllCustomerTableViewController`, and contains static references to 1 segues.
+    struct allCustomerTableViewController {
+      /// Segue identifier `toDetailCustomer`.
+      static let toDetailCustomer: Rswift.StoryboardSegueIdentifier<UIKit.UIStoryboardSegue, AllCustomerTableViewController, CustomerViewController> = Rswift.StoryboardSegueIdentifier(identifier: "toDetailCustomer")
+      
+      /// Optionally returns a typed version of segue `toDetailCustomer`.
+      /// Returns nil if either the segue identifier, the source, destination, or segue types don't match.
+      /// For use inside `prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)`.
+      static func toDetailCustomer(segue: UIKit.UIStoryboardSegue) -> Rswift.TypedStoryboardSegueInfo<UIKit.UIStoryboardSegue, AllCustomerTableViewController, CustomerViewController>? {
+        return Rswift.TypedStoryboardSegueInfo(segueIdentifier: R.segue.allCustomerTableViewController.toDetailCustomer, segue: segue)
       }
       
       fileprivate init() {}
@@ -571,7 +586,7 @@ struct R: Rswift.Validatable {
       fileprivate init() {}
     }
     
-    /// This `R.string.main` struct is generated, and contains static references to 82 localization keys.
+    /// This `R.string.main` struct is generated, and contains static references to 84 localization keys.
     struct main {
       /// th translation: Address
       /// 
@@ -712,6 +727,10 @@ struct R: Rswift.Validatable {
       /// th translation: ค้นหาลูกค้า
       /// 
       /// Locales: th
+      static let sqZNRNUmTitle = Rswift.StringResource(key: "SqZ-nR-nUm.title", tableName: "Main", bundle: R.hostingBundle, locales: ["th"], comment: nil)
+      /// th translation: ค้นหาลูกค้า
+      /// 
+      /// Locales: th
       static let ul7KdZKxText = Rswift.StringResource(key: "ul7-Kd-ZKx.text", tableName: "Main", bundle: R.hostingBundle, locales: ["th"], comment: nil)
       /// th translation: ค้นหาลูกค้าเดิม
       /// 
@@ -841,6 +860,10 @@ struct R: Rswift.Validatable {
       /// 
       /// Locales: th
       static let muSTYFijText = Rswift.StringResource(key: "MuS-TY-fij.text", tableName: "Main", bundle: R.hostingBundle, locales: ["th"], comment: nil)
+      /// th translation: รายชื่อลูกค้า
+      /// 
+      /// Locales: th
+      static let rKXtZ4uTitle = Rswift.StringResource(key: "6rK-Xt-Z4u.title", tableName: "Main", bundle: R.hostingBundle, locales: ["th"], comment: nil)
       /// th translation: ร้าน
       /// 
       /// Locales: th
@@ -1143,6 +1166,13 @@ struct R: Rswift.Validatable {
       /// th translation: ค้นหาลูกค้า
       /// 
       /// Locales: th
+      static func sqZNRNUmTitle(_: Void = ()) -> String {
+        return NSLocalizedString("SqZ-nR-nUm.title", tableName: "Main", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// th translation: ค้นหาลูกค้า
+      /// 
+      /// Locales: th
       static func ul7KdZKxText(_: Void = ()) -> String {
         return NSLocalizedString("ul7-Kd-ZKx.text", tableName: "Main", bundle: R.hostingBundle, comment: "")
       }
@@ -1369,6 +1399,13 @@ struct R: Rswift.Validatable {
       /// Locales: th
       static func muSTYFijText(_: Void = ()) -> String {
         return NSLocalizedString("MuS-TY-fij.text", tableName: "Main", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// th translation: รายชื่อลูกค้า
+      /// 
+      /// Locales: th
+      static func rKXtZ4uTitle(_: Void = ()) -> String {
+        return NSLocalizedString("6rK-Xt-Z4u.title", tableName: "Main", bundle: R.hostingBundle, comment: "")
       }
       
       /// th translation: ร้าน

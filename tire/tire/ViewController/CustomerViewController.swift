@@ -40,7 +40,11 @@ class CustomerViewController: UIViewController {
         productLabel.text = R.string.localizable.product(customerResource.productName)
         productSinceLabel.text = R.string.localizable.since((customerResource.createdAt?.toLongString())!)
         productInformationLabel.text = R.string.localizable.productInformation()
-        // Do any additional setup after loading the view.
+        self.navigationController?.navigationBar.topItem?.title = customerResource.firstName + " - " + customerResource.lastName
+    }
+
+    override func viewDidAppear(_ animated: Bool) {
+         self.navigationController?.navigationBar.topItem?.title = ""
     }
 
     override func didReceiveMemoryWarning() {

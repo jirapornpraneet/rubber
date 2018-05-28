@@ -624,9 +624,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V8Z-2I-CiQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3134" y="1709"/>
+            <point key="canvasLocation" x="3196" y="1399"/>
         </scene>
-        <!--Customer Table View Controller-->
+        <!--Search customer-->
         <scene sceneID="nXW-g4-D08">
             <objects>
                 <tableViewController id="L4Q-Qj-xbR" customClass="CustomerTableViewController" customModule="tire" customModuleProvider="target" sceneMemberID="viewController">
@@ -744,7 +744,7 @@
                             <outlet property="delegate" destination="L4Q-Qj-xbR" id="IDi-6c-i1q"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="SqZ-nR-nUm"/>
+                    <navigationItem key="navigationItem" title="Search customer" id="SqZ-nR-nUm"/>
                     <connections>
                         <segue destination="Kbg-8y-yiK" kind="push" identifier="toDetailCustomer" id="x1b-f7-05i"/>
                     </connections>
@@ -1871,7 +1871,7 @@
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="910.34482758620697"/>
         </scene>
-        <!--All Customer Table View Controller-->
+        <!--All Customer-->
         <scene sceneID="vXq-Pr-2Qv">
             <objects>
                 <tableViewController id="HTR-Nh-Cg5" customClass="AllCustomerTableViewController" customModule="tire" customModuleProvider="target" sceneMemberID="viewController">
@@ -1989,7 +1989,10 @@
                             <outlet property="delegate" destination="HTR-Nh-Cg5" id="Zso-d2-d6v"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="6rK-Xt-Z4u"/>
+                    <navigationItem key="navigationItem" title="All Customer" id="6rK-Xt-Z4u"/>
+                    <connections>
+                        <segue destination="Kbg-8y-yiK" kind="push" identifier="toDetailCustomer" id="d9v-bb-h3u"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jPs-W0-1gv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -2161,5 +2164,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="SHb-bj-dKK"/>
+        <segue reference="x1b-f7-05i"/>
     </inferredMetricsTieBreakers>
 </document>
