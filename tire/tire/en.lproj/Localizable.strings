@@ -32,3 +32,10 @@
 //Main
 "Logout?" = "Logout?";
 
+//ListProduct
+"Product name : %@" = "Product name : %@";
+"Store : %@" = "Store : %@";
+"Brand : %@" = "Brand : %@";
+"License plate : %@" = "License plate : %@";
+"Province : %@" = "Province : %@";
+

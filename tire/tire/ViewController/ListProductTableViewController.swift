@@ -8,6 +8,16 @@
 
 import UIKit
 import NVActivityIndicatorView
+import ESPullToRefresh
+
+class ListProductTableViewCell: UITableViewCell {
+    @IBOutlet var productNameLabel: UILabel!
+    @IBOutlet var storeNameLabel: UILabel!
+    @IBOutlet var brandLabel: UILabel!
+    @IBOutlet var licensePlateLabel: UILabel!
+    @IBOutlet var provinceLabel: UILabel!
+    @IBOutlet var sinceLabel: UILabel!
+}
 
 class ListProductTableViewController: UITableViewController, NVActivityIndicatorViewable {
 
@@ -20,7 +30,6 @@ class ListProductTableViewController: UITableViewController, NVActivityIndicator
 
         self.tableView.delegate = self
         self.tableView.dataSource = self
-        self.tableView.reloadData()
         getListProduct()
     }
 
@@ -29,6 +38,7 @@ class ListProductTableViewController: UITableViewController, NVActivityIndicator
         CustomerManager().getListProduct(onSuccess: { (resource) in
             self.stopAnimating()
             self.customerResources = resource
+            self.tableView.reloadData()
         }, onFailure: { errorResource in
             self.stopAnimating()
             ErrorResult().showError(errorResource: errorResource, vc: self)
@@ -42,14 +52,35 @@ class ListProductTableViewController: UITableViewController, NVActivityIndicator
 
     // MARK: - Table view data source
 
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
-    }
-
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+        var numOfSections: Int = 0
+        if customerResources.count > 0 {
+            tableView.separatorStyle = .singleLine
+            numOfSections = customerResources.count
+            tableView.backgroundView = nil
+        } else {
+            let noDataLabel: UILabel = UILabel(frame: CGRect(x: 0, y: 0, width: tableView.bounds.size.width, height: tableView.bounds.size.height))
+            noDataLabel.text = R.string.localizable.resultNotFound()
+            noDataLabel.textColor = UIColor.black
+            noDataLabel.textAlignment = .center
+            tableView.backgroundView = noDataLabel
+            tableView.separatorStyle = .none
+        }
+        return numOfSections
     }
 
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: R.reuseIdentifier.listProductCells, for: indexPath as IndexPath)!
+        let cellData = customerResources[indexPath.row]
+
+        cell.productNameLabel.text = R.string.localizable.productName(cellData.productName)
+        cell.storeNameLabel.text = R.string.localizable.store(cellData.storeName)
+        cell.brandLabel.text = R.string.localizable.brand(cellData.carBrand)
+        let licensePlate = cellData.prefixLicense + " - " + cellData.suffixLicense
+        cell.licensePlateLabel.text = R.string.localizable.licensePlateNumber(licensePlate)
+        cell.provinceLabel.text = R.string.localizable.province(cellData.province)
+        cell.sinceLabel.text = cellData.createdAt?.toLongString()
+        cell.layoutIfNeeded()
+        return cell
+    }
 }

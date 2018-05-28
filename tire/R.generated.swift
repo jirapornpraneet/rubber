@@ -100,10 +100,12 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
-  /// This `R.reuseIdentifier` struct is generated, and contains static references to 4 reuse identifiers.
+  /// This `R.reuseIdentifier` struct is generated, and contains static references to 5 reuse identifiers.
   struct reuseIdentifier {
     /// Reuse identifier `customerCells`.
     static let customerCells: Rswift.ReuseIdentifier<CustomerTableViewCell> = Rswift.ReuseIdentifier(identifier: "customerCells")
+    /// Reuse identifier `listProductCells`.
+    static let listProductCells: Rswift.ReuseIdentifier<ListProductTableViewCell> = Rswift.ReuseIdentifier(identifier: "listProductCells")
     /// Reuse identifier `productCells`.
     static let productCells: Rswift.ReuseIdentifier<UIKit.UITableViewCell> = Rswift.ReuseIdentifier(identifier: "productCells")
     /// Reuse identifier `provinceCells`.
@@ -266,12 +268,16 @@ struct R: Rswift.Validatable {
       fileprivate init() {}
     }
     
-    /// This `R.string.localizable` struct is generated, and contains static references to 23 localization keys.
+    /// This `R.string.localizable` struct is generated, and contains static references to 27 localization keys.
     struct localizable {
       /// en translation: Address : %@
       /// 
       /// Locales: en, th
       static let address = Rswift.StringResource(key: "Address : %@", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "th"], comment: nil)
+      /// en translation: Brand : %@
+      /// 
+      /// Locales: en, th
+      static let brand = Rswift.StringResource(key: "Brand : %@", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "th"], comment: nil)
       /// en translation: CANCEL
       /// 
       /// Locales: en, th
@@ -292,6 +298,10 @@ struct R: Rswift.Validatable {
       /// 
       /// Locales: en, th
       static let email = Rswift.StringResource(key: "Email : %@", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "th"], comment: nil)
+      /// en translation: License plate : %@
+      /// 
+      /// Locales: en, th
+      static let licensePlate = Rswift.StringResource(key: "License plate : %@", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "th"], comment: nil)
       /// en translation: License plate number : %@
       /// 
       /// Locales: en, th
@@ -328,6 +338,10 @@ struct R: Rswift.Validatable {
       /// 
       /// Locales: en, th
       static let productInformation = Rswift.StringResource(key: "Product information", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "th"], comment: nil)
+      /// en translation: Product name : %@
+      /// 
+      /// Locales: en, th
+      static let productName = Rswift.StringResource(key: "Product name : %@", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "th"], comment: nil)
       /// en translation: Province : %@
       /// 
       /// Locales: en, th
@@ -352,6 +366,10 @@ struct R: Rswift.Validatable {
       /// 
       /// Locales: en, th
       static let since = Rswift.StringResource(key: "Since : %@", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "th"], comment: nil)
+      /// en translation: Store : %@
+      /// 
+      /// Locales: en, th
+      static let store = Rswift.StringResource(key: "Store : %@", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "th"], comment: nil)
       /// en translation: Success
       /// 
       /// Locales: en, th
@@ -366,6 +384,13 @@ struct R: Rswift.Validatable {
       /// Locales: en, th
       static func address(_ value1: String) -> String {
         return String(format: NSLocalizedString("Address : %@", bundle: R.hostingBundle, comment: ""), locale: R.applicationLocale, value1)
+      }
+      
+      /// en translation: Brand : %@
+      /// 
+      /// Locales: en, th
+      static func brand(_ value1: String) -> String {
+        return String(format: NSLocalizedString("Brand : %@", bundle: R.hostingBundle, comment: ""), locale: R.applicationLocale, value1)
       }
       
       /// en translation: CANCEL
@@ -401,6 +426,13 @@ struct R: Rswift.Validatable {
       /// Locales: en, th
       static func email(_ value1: String) -> String {
         return String(format: NSLocalizedString("Email : %@", bundle: R.hostingBundle, comment: ""), locale: R.applicationLocale, value1)
+      }
+      
+      /// en translation: License plate : %@
+      /// 
+      /// Locales: en, th
+      static func licensePlate(_ value1: String) -> String {
+        return String(format: NSLocalizedString("License plate : %@", bundle: R.hostingBundle, comment: ""), locale: R.applicationLocale, value1)
       }
       
       /// en translation: License plate number : %@
@@ -466,6 +498,13 @@ struct R: Rswift.Validatable {
         return NSLocalizedString("Product information", bundle: R.hostingBundle, comment: "")
       }
       
+      /// en translation: Product name : %@
+      /// 
+      /// Locales: en, th
+      static func productName(_ value1: String) -> String {
+        return String(format: NSLocalizedString("Product name : %@", bundle: R.hostingBundle, comment: ""), locale: R.applicationLocale, value1)
+      }
+      
       /// en translation: Province : %@
       /// 
       /// Locales: en, th
@@ -506,6 +545,13 @@ struct R: Rswift.Validatable {
       /// Locales: en, th
       static func since(_ value1: String) -> String {
         return String(format: NSLocalizedString("Since : %@", bundle: R.hostingBundle, comment: ""), locale: R.applicationLocale, value1)
+      }
+      
+      /// en translation: Store : %@
+      /// 
+      /// Locales: en, th
+      static func store(_ value1: String) -> String {
+        return String(format: NSLocalizedString("Store : %@", bundle: R.hostingBundle, comment: ""), locale: R.applicationLocale, value1)
       }
       
       /// en translation: Success

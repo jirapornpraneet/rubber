@@ -31,3 +31,10 @@
 "Password not match, Please try again." = "รหัสผ่านไม่ตรงกัน กรุณาลองอีกครั้ง";
 //Main
 "Logout?" = "ออกจากระบบหรือไม่ ?";
+
+//ListProduct
+"Product name : %@" = "ชื่อสินค้า : %@";
+"Store : %@" = "ชื่อร้าน : %@";
+"Brand : %@" = "ยี่ห้อ : %@";
+"License plate : %@" = "ป้ายทะเบียนรถยนต์ : %@";
+"Province : %@" = "จังหวัด : %@";

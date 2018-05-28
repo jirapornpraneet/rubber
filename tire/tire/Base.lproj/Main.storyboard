@@ -7,6 +7,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -2262,9 +2263,32 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.62352941179999999" green="0.69803921570000005" blue="0.72549019609999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="sectionIndexBackgroundColor" red="0.62352941179999999" green="0.69803921570000005" blue="0.72549019609999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <navigationBar key="tableHeaderView" contentMode="scaleToFill" id="qcT-Ws-6yg">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <color key="barTintColor" red="0.37647058820000001" green="0.49019607840000001" blue="0.5450980392" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <textAttributes key="titleTextAttributes">
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </textAttributes>
+                            <textAttributes key="largeTitleTextAttributes">
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </textAttributes>
+                            <items>
+                                <navigationItem title="Product summary" id="RTG-CO-2oc">
+                                    <rightBarButtonItems>
+                                        <barButtonItem image="ic_exit_to_app_white_36pt" id="vx2-Wn-VHR">
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </barButtonItem>
+                                        <barButtonItem systemItem="add" id="lUN-xO-Ta1">
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </barButtonItem>
+                                    </rightBarButtonItems>
+                                </navigationItem>
+                            </items>
+                        </navigationBar>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="customerCells" rowHeight="164" id="UCX-ck-xrO" customClass="CustomerTableViewCell" customModule="tire" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="375" height="164"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="listProductCells" rowHeight="164" id="UCX-ck-xrO" customClass="ListProductTableViewCell" customModule="tire" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="72" width="375" height="164"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="UCX-ck-xrO" id="MeE-1l-c2s">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="163.5"/>
@@ -2286,7 +2310,7 @@
                                                 <constraint firstAttribute="height" constant="1" id="rZX-YK-FSP"/>
                                             </constraints>
                                         </view>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cza-Md-aBq">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Product name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cza-Md-aBq">
                                             <rect key="frame" x="15" y="32" width="345" height="21"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="21" id="PYC-kV-6I4"/>
@@ -2295,7 +2319,7 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pjM-IY-If7">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Store" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pjM-IY-If7">
                                             <rect key="frame" x="15" y="58" width="345" height="21"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="21" id="BLS-QZ-5dx"/>
@@ -2304,7 +2328,7 @@
                                             <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lLK-6J-yQy">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Brand" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lLK-6J-yQy">
                                             <rect key="frame" x="15" y="84" width="345" height="21"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="21" id="reH-Zr-QAB"/>
@@ -2313,7 +2337,7 @@
                                             <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gPz-Md-kWo">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="License plate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gPz-Md-kWo">
                                             <rect key="frame" x="15" y="110" width="345" height="21"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="21" id="McX-Ms-N2r"/>
@@ -2322,7 +2346,7 @@
                                             <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FbN-DY-Jou">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Province" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FbN-DY-Jou">
                                             <rect key="frame" x="15" y="136" width="345" height="21"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="21" id="IkL-4Q-Nc8"/>
@@ -2357,12 +2381,12 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="emailLabel" destination="gPz-Md-kWo" id="B7q-lB-7cm"/>
-                                    <outlet property="licensePlateLabel" destination="pjM-IY-If7" id="tak-OE-L8y"/>
-                                    <outlet property="nameLabel" destination="cza-Md-aBq" id="rKA-cK-TlJ"/>
-                                    <outlet property="phoneNumberLabel" destination="FbN-DY-Jou" id="kYB-JT-weI"/>
-                                    <outlet property="provinceLabel" destination="lLK-6J-yQy" id="0WF-Ab-3AU"/>
-                                    <outlet property="sinceLabel" destination="FsY-uO-q65" id="Ftx-Uq-8D2"/>
+                                    <outlet property="brandLabel" destination="lLK-6J-yQy" id="K9F-Da-tBp"/>
+                                    <outlet property="licensePlateLabel" destination="gPz-Md-kWo" id="RCf-9F-fno"/>
+                                    <outlet property="productNameLabel" destination="cza-Md-aBq" id="BGJ-x8-DSb"/>
+                                    <outlet property="provinceLabel" destination="FbN-DY-Jou" id="Hik-N4-n5Z"/>
+                                    <outlet property="sinceLabel" destination="FsY-uO-q65" id="36n-XY-nqJ"/>
+                                    <outlet property="storeNameLabel" destination="pjM-IY-If7" id="gfm-Ld-rIh"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -2371,7 +2395,8 @@
                             <outlet property="delegate" destination="ai2-Ir-gPx" id="5QY-zV-KNS"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="0Yf-iv-blu"/>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qjx-km-xDM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -2388,6 +2413,6 @@
         <image name="search" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Zq1-mQ-U5l"/>
+        <segue reference="SHb-bj-dKK"/>
     </inferredMetricsTieBreakers>
 </document>
