@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0700"
+   LastUpgradeVersion = "0930"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -13,11 +13,11 @@
             buildForProfiling = "YES"
             buildForArchiving = "YES">
             <BuildableReference
-               BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'F4E2D5573B51104C471144978038AE8C'
-               BlueprintName = 'EVReflection'
-               ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'EVReflection.framework'>
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "F4E2D5573B51104C471144978038AE8C"
+               BlueprintName = "EVReflection"
+               ReferencedContainer = "container:Pods.xcodeproj"
+               BuildableName = "EVReflection.framework">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

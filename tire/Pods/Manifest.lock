@@ -72,6 +72,7 @@ PODS:
   - SDWebImage (4.2.3):
     - SDWebImage/Core (= 4.2.3)
   - SDWebImage/Core (4.2.3)
+  - SSPullToRefresh (1.2.4-r1)
   - SwiftLint (0.24.2)
 
 DEPENDENCIES:
@@ -89,7 +90,18 @@ DEPENDENCIES:
   - OCThumbor (~> 0.3.1)
   - R.swift (~> 4.0.0)
   - SDWebImage (~> 4.2.3)
+  - SSPullToRefresh (from `https://repo.eoffice1.com/cocoa/sspulltorefresh.git`, tag `v1.2.4-r1`)
   - SwiftLint (~> 0.24.2)
+
+EXTERNAL SOURCES:
+  SSPullToRefresh:
+    :git: https://repo.eoffice1.com/cocoa/sspulltorefresh.git
+    :tag: v1.2.4-r1
+
+CHECKOUT OPTIONS:
+  SSPullToRefresh:
+    :git: https://repo.eoffice1.com/cocoa/sspulltorefresh.git
+    :tag: v1.2.4-r1
 
 SPEC CHECKSUMS:
   Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
@@ -99,7 +111,7 @@ SPEC CHECKSUMS:
   Firebase: dbfb98ccec2dcfcd21ab9cc1b4981a3f3c8c5e26
   FirebaseAnalytics: 5b02a63ead2c3f0259cfc7f15e053e440587ecf8
   FirebaseCore: 6cf108b63997bc08c04a1ffa55a3ac0d71a59ffc
-  FirebaseCrash: cded0fc566c03651aea606a101bc156085f333ca
+  FirebaseCrash: a7d980468dc8aa2db9792493c3e02722d601f6ab
   FirebaseInstanceID: 81df5805a08001e69138664bdd02c6719a9ac80f
   FirebaseMessaging: 1a11d1c0a9ed9b3f75a0685bb0ae5932e1062f5f
   Floaty: 4f88811bbf08521807f42355db6a9c0db85d5d78
@@ -116,8 +128,9 @@ SPEC CHECKSUMS:
   R.swift: d6a5ec2f55a8441dc0ed9f1f8b37d7d11ae85c66
   R.swift.Library: c3af34921024333546e23b70e70d0b4e0cffca75
   SDWebImage: 791bb72962b3492327ddcac4b1880bd1b5458431
+  SSPullToRefresh: e8f40460feb53179b2b7252105a4583a10b56b64
   SwiftLint: 2aa21b96c8d13396a051bc1cb659d2ce1e0075b0
 
-PODFILE CHECKSUM: fb1efe4c57147d16923467233c78163a234bd005
+PODFILE CHECKSUM: ad602a952443baaecec8a3cbb48cfae24fb4de90
 
-COCOAPODS: 1.3.1
+COCOAPODS: 1.4.0

@@ -27,5 +27,6 @@ pod 'R.swift', '~> 4.0.0'
 pod 'SDWebImage', '~> 4.2.3'
 pod 'ESPullToRefresh', '~> 2.7'
 pod 'KRProgressHUD', '~> 3.0.0'
+pod 'SSPullToRefresh', :git => 'https://repo.eoffice1.com/cocoa/sspulltorefresh.git', :tag => 'v1.2.4-r1'
 
 end
