@@ -8,14 +8,19 @@
 
 import UIKit
 import NVActivityIndicatorView
+import SSPullToRefresh
 
-class AllCustomerTableViewController: UITableViewController, NVActivityIndicatorViewable {
+class AllCustomerTableViewController: UITableViewController, NVActivityIndicatorViewable,
+ SSPullToRefreshViewDelegate {
 
     var customerResources = [CustomerResource]()
     var indexRow: Int = 0
+    var pullToRefreshView: SSPullToRefreshView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        pullToRefreshView = SSPullToRefreshView(scrollView: tableView, delegate: self)
+        pullToRefreshView.startLoadingAndExpand(true, animated: true)
         UIApplication.shared.statusBarView?.backgroundColor = UIColor(red: 69/255, green: 90/255, blue: 100/255, alpha: 1.0)
 
         self.tableView.delegate = self
@@ -27,10 +32,12 @@ class AllCustomerTableViewController: UITableViewController, NVActivityIndicator
         startAnimating()
         CustomerManager().getAllCustomer(onSuccess: { (resource) in
             self.stopAnimating()
+            self.pullToRefreshView.finishLoading()
             self.customerResources = resource
             self.tableView.reloadData()
         }, onFailure: { errorResource in
             self.stopAnimating()
+            self.pullToRefreshView.finishLoading()
             ErrorResult().showError(errorResource: errorResource, vc: self)
         })
 
@@ -85,5 +92,10 @@ class AllCustomerTableViewController: UITableViewController, NVActivityIndicator
         if let typedInfo = R.segue.allCustomerTableViewController.toDetailCustomer(segue: segue) {
             typedInfo.destination.customerResource = customerResources[indexRow]
         }
+    }
+
+    func pull(toRefreshViewDidStartLoading view: SSPullToRefreshView!) {
+        pullToRefreshView.startLoading()
+        getAllCustomer()
     }
 }

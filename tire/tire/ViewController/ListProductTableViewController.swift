@@ -8,7 +8,7 @@
 
 import UIKit
 import NVActivityIndicatorView
-import ESPullToRefresh
+import SSPullToRefresh
 
 class ListProductTableViewCell: UITableViewCell {
     @IBOutlet var productNameLabel: UILabel!
@@ -19,13 +19,17 @@ class ListProductTableViewCell: UITableViewCell {
     @IBOutlet var sinceLabel: UILabel!
 }
 
-class ListProductTableViewController: UITableViewController, NVActivityIndicatorViewable {
+class ListProductTableViewController: UITableViewController,
+NVActivityIndicatorViewable, SSPullToRefreshViewDelegate {
 
     var customerResources = [CustomerResource]()
     var indexRow: Int = 0
+    var pullToRefreshView: SSPullToRefreshView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        pullToRefreshView = SSPullToRefreshView(scrollView: tableView, delegate: self)
+        pullToRefreshView.startLoadingAndExpand(true, animated: true)
         UIApplication.shared.statusBarView?.backgroundColor = UIColor(red: 69/255, green: 90/255, blue: 100/255, alpha: 1.0)
 
         self.tableView.delegate = self
@@ -37,10 +41,12 @@ class ListProductTableViewController: UITableViewController, NVActivityIndicator
         startAnimating()
         CustomerManager().getListProduct(onSuccess: { (resource) in
             self.stopAnimating()
+            self.pullToRefreshView.finishLoading()
             self.customerResources = resource
             self.tableView.reloadData()
         }, onFailure: { errorResource in
             self.stopAnimating()
+            self.pullToRefreshView.finishLoading()
             ErrorResult().showError(errorResource: errorResource, vc: self)
         })
     }
@@ -83,16 +89,21 @@ class ListProductTableViewController: UITableViewController, NVActivityIndicator
         cell.layoutIfNeeded()
         return cell
     }
-    
+
     @IBAction func logout(_ sender: UIBarButtonItem) {
         let alert = UIAlertController(title: nil, message: R.string.localizable.logout(), preferredStyle: UIAlertControllerStyle.alert)
-        
+
         let okAction = UIAlertAction(title: R.string.localizable.oK(), style: UIAlertActionStyle.destructive) { _ in
             NotificationCenter.default.post(name: NSNotification.Name(rawValue: notificationNamePresentLoginView), object: nil)
         }
-        
+
         alert.addAction(okAction)
         alert.addAction(UIAlertAction(title: R.string.localizable.canceL(), style: UIAlertActionStyle.default, handler: nil))
         self.present(alert, animated: true, completion: nil)
+    }
+
+    func pull(toRefreshViewDidStartLoading view: SSPullToRefreshView!) {
+        pullToRefreshView.startLoading()
+        getListProduct()
     }
 }
