@@ -64,6 +64,44 @@ class RegisterViewController: UIViewController, UITextFieldDelegate, NVActivityI
 
         return true
     }
+    
+    func setLoginButtonIsEnabled() {
+        let editTexts = [firstNameTextField,
+                         lastNameTextField,
+                         usernameTextField,
+                         passwordTextField,
+                         confirmPasswordTextField,
+                         emailTextField]
+        let emptyCount = editTexts
+            .filter { (textField) -> Bool in
+                textField?.text == "" }
+            .count
+        saveButton.isEnabled = emptyCount == 0
+    }
+
+    @IBAction func firstNameFieldEditingChanged(_ sender: Any) {
+        setLoginButtonIsEnabled()
+    }
+
+    @IBAction func lastNameFieldEditingChanged(_ sender: Any) {
+        setLoginButtonIsEnabled()
+    }
+
+    @IBAction func usernameFieldEditingChanged(_ sender: Any) {
+        setLoginButtonIsEnabled()
+    }
+
+    @IBAction func passwordFieldEditingChanged(_ sender: Any) {
+        setLoginButtonIsEnabled()
+    }
+
+    @IBAction func confirmPasswordFieldEditingChanged(_ sender: Any) {
+        setLoginButtonIsEnabled()
+    }
+
+    @IBAction func emailFieldEditingChanged(_ sender: Any) {
+        setLoginButtonIsEnabled()
+    }
 
     @IBAction func saveClicked(_ sender: Any) {
         self.dismissKeyboard()

@@ -1376,7 +1376,7 @@
                                                 <action selector="dismissView:" destination="2qy-y9-5uK" id="q66-xv-M3p"/>
                                             </connections>
                                         </barButtonItem>
-                                        <barButtonItem key="rightBarButtonItem" image="ic_done_white" id="JY4-KN-wLb">
+                                        <barButtonItem key="rightBarButtonItem" enabled="NO" image="ic_done_white" id="JY4-KN-wLb">
                                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <connections>
                                                 <action selector="saveClicked:" destination="2qy-y9-5uK" id="XsP-AH-Z33"/>
@@ -1430,6 +1430,9 @@
                                                                 <nil key="textColor"/>
                                                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="16"/>
                                                                 <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                                                <connections>
+                                                                    <action selector="firstNameFieldEditingChanged:" destination="2qy-y9-5uK" eventType="editingChanged" id="50g-4u-Ti8"/>
+                                                                </connections>
                                                             </textField>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jh4-Kz-Hff">
                                                                 <rect key="frame" x="8" y="34" width="331" height="1"/>
@@ -1471,6 +1474,9 @@
                                                                 <nil key="textColor"/>
                                                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="16"/>
                                                                 <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                                                <connections>
+                                                                    <action selector="lastNameFieldEditingChanged:" destination="2qy-y9-5uK" eventType="editingChanged" id="lFq-dR-SwX"/>
+                                                                </connections>
                                                             </textField>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pI3-hb-izC">
                                                                 <rect key="frame" x="8" y="34" width="331" height="1"/>
@@ -1512,6 +1518,9 @@
                                                                 <nil key="textColor"/>
                                                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="16"/>
                                                                 <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                                                <connections>
+                                                                    <action selector="usernameFieldEditingChanged:" destination="2qy-y9-5uK" eventType="editingChanged" id="w9N-nw-8Iy"/>
+                                                                </connections>
                                                             </textField>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c4p-nr-Fw3">
                                                                 <rect key="frame" x="8" y="34" width="331" height="1"/>
@@ -1594,6 +1603,9 @@
                                                                 <nil key="textColor"/>
                                                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="16"/>
                                                                 <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                                                <connections>
+                                                                    <action selector="emailFieldEditingChanged:" destination="2qy-y9-5uK" eventType="editingChanged" id="QVT-RC-3r1"/>
+                                                                </connections>
                                                             </textField>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hr1-Kk-2ja">
                                                                 <rect key="frame" x="8" y="34" width="331" height="1"/>
@@ -1635,6 +1647,9 @@
                                                                 <nil key="textColor"/>
                                                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="16"/>
                                                                 <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                                                <connections>
+                                                                    <action selector="passwordFieldEditingChanged:" destination="2qy-y9-5uK" eventType="editingChanged" id="A42-aR-19I"/>
+                                                                </connections>
                                                             </textField>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A9o-H6-mJW">
                                                                 <rect key="frame" x="8" y="34" width="331" height="1"/>
@@ -1666,6 +1681,9 @@
                                                                 <nil key="textColor"/>
                                                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="16"/>
                                                                 <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                                                <connections>
+                                                                    <action selector="confirmPasswordFieldEditingChanged:" destination="2qy-y9-5uK" eventType="editingChanged" id="5fj-9E-qbp"/>
+                                                                </connections>
                                                             </textField>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1kn-94-LFo">
                                                                 <rect key="frame" x="8" y="34" width="331" height="1"/>
