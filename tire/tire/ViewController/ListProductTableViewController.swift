@@ -83,4 +83,16 @@ class ListProductTableViewController: UITableViewController, NVActivityIndicator
         cell.layoutIfNeeded()
         return cell
     }
+    
+    @IBAction func logout(_ sender: UIBarButtonItem) {
+        let alert = UIAlertController(title: nil, message: R.string.localizable.logout(), preferredStyle: UIAlertControllerStyle.alert)
+        
+        let okAction = UIAlertAction(title: R.string.localizable.oK(), style: UIAlertActionStyle.destructive) { _ in
+            NotificationCenter.default.post(name: NSNotification.Name(rawValue: notificationNamePresentLoginView), object: nil)
+        }
+        
+        alert.addAction(okAction)
+        alert.addAction(UIAlertAction(title: R.string.localizable.canceL(), style: UIAlertActionStyle.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+    }
 }

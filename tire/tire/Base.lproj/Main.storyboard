@@ -1579,7 +1579,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F4F-Vg-g2H" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4532" y="943"/>
+            <point key="canvasLocation" x="3729" y="745"/>
         </scene>
         <!--Product Table View Controller-->
         <scene sceneID="jG4-EO-Hoo">
@@ -2278,6 +2278,9 @@
                                     <rightBarButtonItems>
                                         <barButtonItem image="ic_exit_to_app_white_36pt" id="vx2-Wn-VHR">
                                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <connections>
+                                                <action selector="logout:" destination="ai2-Ir-gPx" id="97m-F1-bUM"/>
+                                            </connections>
                                         </barButtonItem>
                                         <barButtonItem systemItem="add" id="lUN-xO-Ta1">
                                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
