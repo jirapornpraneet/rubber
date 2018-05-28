@@ -16,6 +16,8 @@ class LoginViewController: UIViewController, UITextFieldDelegate, NVActivityIndi
     @IBOutlet var loginButton: UIButton!
     @IBOutlet var showPasswordButton: UIButton!
 
+    var loginResource: LoginResource!
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -82,8 +84,8 @@ class LoginViewController: UIViewController, UITextFieldDelegate, NVActivityIndi
         startAnimating()
         LoginManager().login(username: usernameTextField.text!, password: passwordTextField.text!, onSuccess: {(resource) in
             self.stopAnimating()
+            self.loginResource = resource
             UserDefaults.saveAccessToken(value: resource.accessToken!)
-
             self.performSegue(withIdentifier: R.segue.loginViewController.toMainView, sender: nil)
         }, onFailure: { errorResource in
             self.stopAnimating()

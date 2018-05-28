@@ -11,4 +11,5 @@ import EVReflection
 
 class LoginResource: EVObject {
     var accessToken: String?
+    var isAdmin: Bool = false
 }
