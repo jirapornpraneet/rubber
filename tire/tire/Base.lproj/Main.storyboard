@@ -1215,7 +1215,7 @@
                                                             <constraint firstAttribute="trailing" secondItem="rdk-qW-bvS" secondAttribute="trailing" constant="8" id="mxe-4w-dbF"/>
                                                         </constraints>
                                                     </view>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G3K-4B-cvU">
+                                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G3K-4B-cvU">
                                                         <rect key="frame" x="4" y="381" width="347" height="50"/>
                                                         <color key="backgroundColor" red="0.0" green="0.59999999999999998" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <constraints>
@@ -1224,6 +1224,9 @@
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                                         <state key="normal" title="SAVE">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <state key="disabled">
+                                                            <color key="titleColor" white="1" alpha="0.60000002379999995" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
                                                         <connections>
                                                             <action selector="saveClicked:" destination="gQu-1m-m6a" eventType="touchUpInside" id="Wn1-Na-7B5"/>
@@ -2023,7 +2026,7 @@
                                         <barButtonItem systemItem="add" id="lUN-xO-Ta1">
                                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <connections>
-                                                <segue destination="oMU-de-dbw" kind="push" id="eF2-NP-tbb"/>
+                                                <segue destination="oMU-de-dbw" kind="show" id="mND-Qv-C9Z"/>
                                             </connections>
                                         </barButtonItem>
                                     </rightBarButtonItems>

@@ -152,25 +152,16 @@ class AddProductViewController: UIViewController, UITextFieldDelegate, NVActivit
     @IBAction func saveClicked(_ sender: Any) {
         self.dismissKeyboard()
         startAnimating()
-        //        let productId = getProductId
-        //        let storeId = getStoreId
-        //        let prefixLicense = prefixLicenseTextField.text!
-        //        let suffixLicense = suffixLicenseTextField.text!
-        //        let province = provinceLabel.text!
-        //        let carBrand = carBrandTextField.text!
-        //
-        //        CustomerManager().postCustomer(firstName: firstName, lastName: lastName,
-        //                                       address: address, email: email, carBrand: carBrand,
-        //                                       prefixLicense: prefixLicense, suffixLicense: suffixLicense,
-        //                                       province: province, phoneNumber: phoneNumber,
-        //                                       productId: productId, storeId: storeId,
-        //                                       onSuccess: { (resource)  in
-        //            self.stopAnimating()
-        //            self.showAlertSuccess()
-        //        }, onFailure: { errorResource in
-        //            self.stopAnimating()
-        //            ErrorResult().showError(errorResource: errorResource, vc: self)
-        //        })
+        CustomerManager().postAddProduct(productId: getProductId,
+                                         carBrand: carBrandTextField.text!, prefixLicense: prefixLicenseTextField.text!,
+                                         suffixLicense: suffixLicenseTextField.text!, province: provinceLabel.text!, storeId: getStoreId,
+                                         onSuccess: { (resource) in
+                                            self.stopAnimating()
+                                            self.showAlertSuccess()
+        }, onFailure: { errorResource in
+            self.stopAnimating()
+            ErrorResult().showError(errorResource: errorResource, vc: self)
+        })
     }
 
     func showAlertSuccess() {

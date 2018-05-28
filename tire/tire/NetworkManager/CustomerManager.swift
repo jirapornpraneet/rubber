@@ -9,7 +9,7 @@
 import UIKit
 import Alamofire
 
-let postCustomerPath = "/web/api-buy-product/create"
+let postAddProductPath = "/web/api-product/add-product"
 let getSearchCustomerPath = "/web/api-product/customer-search"
 let getProductPath = "/web/api-product/get-product"
 let getStorePath = "/web/api-store/get-store"
@@ -25,20 +25,18 @@ typealias ProductResourceOnFailure = (ErrorResource) -> Void
 typealias StoreResourceOnSuccess = ([StoreResource]) -> Void
 typealias StoreResourceOnFailure = (ErrorResource) -> Void
 
-typealias PostCustomerOnSuccess = (CustomerResource) -> Void
-typealias PostCustomerOnFailure = (ErrorResource) -> Void
+typealias PostAddProductOnSuccess = (CustomerResource) -> Void
+typealias PostAddProductOnFailure = (ErrorResource) -> Void
 
 class CustomerManager: NSObject {
-    func postCustomer(firstName: String, lastName: String, address: String,
-                      email: String, carBrand: String, prefixLicense: String,
-                      suffixLicense: String, province: String, phoneNumber: String,
-                      productId: Int, storeId: Int, onSuccess: @escaping PostCustomerOnSuccess,
-                      onFailure: @escaping PostCustomerOnFailure) {
+    func postAddProduct(productId: Int, carBrand: String, prefixLicense: String,
+                        suffixLicense: String, province: String, storeId: Int,
+                        onSuccess: @escaping PostAddProductOnSuccess,
+                        onFailure: @escaping PostAddProductOnFailure) {
 
-        let params = ["firstName": firstName, "lastName": lastName, "address": address,
-                      "email": email, "carBrand": carBrand, "prefixLicense": prefixLicense,
-                      "suffixLicense": suffixLicense, "province": province, "phoneNumber": phoneNumber, "productId": productId, "storeId": storeId] as [String : Any]
-        BaseManager().post(path: postCustomerPath, params: params, onSuccess: { (response: CustomerResource) in
+        let params = ["productId": productId, "carBrand": carBrand, "prefixLicense": prefixLicense,
+                      "suffixLicense": suffixLicense, "province": province, "storeId": storeId] as [String: Any]
+        BaseManager().post(path: postAddProductPath, params: params, onSuccess: { (response: CustomerResource) in
             onSuccess(response)
         }, onFailure: { errorResource in
             onFailure(errorResource)
