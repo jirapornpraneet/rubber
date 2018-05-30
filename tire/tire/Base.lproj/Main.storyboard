@@ -1264,14 +1264,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Clx-cB-TsN"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Add product" id="bo3-4c-AAQ">
-                        <barButtonItem key="leftBarButtonItem" systemItem="stop" id="YFF-zh-NPX">
-                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <connections>
-                                <action selector="dismissView:" destination="gQu-1m-m6a" id="22j-wz-emk"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Add product" id="bo3-4c-AAQ"/>
                     <size key="freeformSize" width="375" height="800"/>
                     <connections>
                         <outlet property="carBrandTextField" destination="A0b-C9-7Ga" id="Hh0-lj-6HJ"/>

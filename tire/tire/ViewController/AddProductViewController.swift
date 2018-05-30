@@ -145,10 +145,6 @@ class AddProductViewController: UIViewController, UITextFieldDelegate, NVActivit
         setSaveButtonIsEnabled()
     }
 
-    @IBAction func dismissView(_ sender: UIBarButtonItem) {
-        self.navigationController?.popViewController(animated: true)
-    }
-
     @IBAction func saveClicked(_ sender: Any) {
         self.dismissKeyboard()
         startAnimating()
