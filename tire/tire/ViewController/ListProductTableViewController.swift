@@ -34,6 +34,10 @@ class ListProductTableViewController: UITableViewController, SSPullToRefreshView
         self.tableView.dataSource = self
         getListProduct()
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        getListProduct()
+    }
 
     func getListProduct() {
         CustomerManager().getListProduct(onSuccess: { (resource) in
