@@ -24,8 +24,13 @@ class AllCustomerTableViewController: UITableViewController, SSPullToRefreshView
         self.tableView.delegate = self
         self.tableView.dataSource = self
         getAllCustomer()
+        self.navigationController?.navigationBar.topItem?.title = R.string.localizable.allCustomer()
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+         self.navigationController?.navigationBar.topItem?.title = R.string.localizable.allCustomer()
+    }
+    
     func getAllCustomer() {
         CustomerManager().getAllCustomer(onSuccess: { (resource) in
             self.pullToRefreshView.finishLoading()

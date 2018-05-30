@@ -17,7 +17,7 @@
 "Since : %@" = "เป็นลูกค้าตั้งแต่ : %@";
 "Result not found" = "ไม่พบผลลัพธ์";
 
-"Search Customer" = "ค้นหาลูกค้าเดิม";
+"Search Customer" = "ค้นหาลูกค้า";
 "New Customer" = "เพิ่มลูกค้าใหม่";
 "Product information" = "ข้อมูลสินค้า";
 "Select Product" = "เลือกสินค้า";
@@ -38,3 +38,5 @@
 "Brand : %@" = "ยี่ห้อ : %@";
 "License plate : %@" = "ป้ายทะเบียนรถยนต์ : %@";
 "Province : %@" = "จังหวัด : %@";
+//
+"All Customer" = "รายชื่อลูกค้า";

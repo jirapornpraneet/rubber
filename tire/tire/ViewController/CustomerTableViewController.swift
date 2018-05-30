@@ -30,6 +30,11 @@ class CustomerTableViewController: UITableViewController {
         self.tableView.dataSource = self
         self.tableView.reloadData()
         print("customerResoueceeeee", customerResources)
+        self.navigationController?.navigationBar.topItem?.title = R.string.localizable.searchCustomer()
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.navigationBar.topItem?.title = R.string.localizable.searchCustomer()
     }
 
     override func didReceiveMemoryWarning() {
